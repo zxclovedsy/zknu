@@ -7,15 +7,15 @@ provides-member:
 - ["C10iZknu_0_0227LiaoTianTableViewController", ""]
 provides-dynamic-lookup:
 - "tableView"
-- "numberOfSectionsInTableView"
 - "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
 - "viewDidLoad"
 depends-top-level:
-- "UITableView"
 - "LiaoTianTableViewController"
-- "UITableViewController"
-- !private "StringLiteralType"
 - "Int"
+- "UITableView"
+- !private "StringLiteralType"
+- "UITableViewController"
 - !private "UIColor"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]

@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
+- "HuoDongViewController"
 - "UIViewController"
 - !private "UIColor"
-- "HuoDongViewController"
 - !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]

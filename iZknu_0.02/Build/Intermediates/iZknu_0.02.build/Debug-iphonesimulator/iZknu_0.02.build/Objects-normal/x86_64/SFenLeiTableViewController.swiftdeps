@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0226SFenLeiTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
 - "viewDidLoad"
-- "numberOfSectionsInTableView"
 - "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
+- "tableView"
 depends-top-level:
 - "UITableView"
 - "UITableViewController"
-- "SFenLeiTableViewController"
 - "Int"
+- "SFenLeiTableViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

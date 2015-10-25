@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221ZhaoXinViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "ZhaoXinViewController"
 - "UIViewController"

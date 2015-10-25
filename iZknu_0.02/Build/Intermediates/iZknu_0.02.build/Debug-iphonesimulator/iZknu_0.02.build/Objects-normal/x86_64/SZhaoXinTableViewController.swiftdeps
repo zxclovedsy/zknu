@@ -7,14 +7,14 @@ provides-member:
 - ["C10iZknu_0_0227SZhaoXinTableViewController", ""]
 provides-dynamic-lookup:
 - "numberOfSectionsInTableView"
-- "tableView"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "tableView"
 depends-top-level:
-- "UITableView"
-- "SZhaoXinTableViewController"
-- "Int"
 - "UITableViewController"
+- "SZhaoXinTableViewController"
+- "UITableView"
+- "Int"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

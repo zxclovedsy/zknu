@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
+- "SheTuanViewController"
 - "UIViewController"
 - !private "UIColor"
-- "SheTuanViewController"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "backgroundColor"]
