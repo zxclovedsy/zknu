@@ -6,36 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0211AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationWillResignActive"
 - "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
+- "window"
 - "application"
 - "applicationDidBecomeActive"
-- "window"
+- "applicationWillEnterForeground"
 - "applicationWillTerminate"
-- "applicationWillResignActive"
 depends-top-level:
-- "AppDelegate"
-- !private "HuoDongTableViewController"
-- !private "XinDeViewController"
 - !private "UITabBarItem"
-- !private "UIColor"
-- "UIResponder"
-- !private "UIImage"
-- !private "LiaoTianTableViewController"
-- !private "BooleanLiteralType"
-- !private "Array"
-- "AnyObject"
-- "UIApplication"
-- "Bool"
-- !private "UINavigationController"
-- !private "UIScreen"
-- !private "SheTuanTableViewController"
-- !private "UITabBarController"
-- "UIWindow"
 - "UIApplicationDelegate"
+- !private "SheTuanTableViewController"
+- !private "WoDeTableViewController"
 - !private "StringLiteralType"
 - "NSObject"
-- !private "WoDeTableViewController"
+- !private "HuoDongTableViewController"
+- !private "XinDeViewController"
+- !private "UINavigationController"
+- !private "UIImage"
+- "UIWindow"
+- "UIApplication"
+- "AnyObject"
+- !private "UIScreen"
+- !private "UITabBarController"
+- "UIResponder"
+- !private "Array"
+- "Bool"
+- "AppDelegate"
+- !private "BooleanLiteralType"
+- !private "UIColor"
+- !private "LiaoTianTableViewController"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -67,6 +67,7 @@ depends-member:
 - !private ["PSs9AnyObject", "mainScreen"]
 - !private ["PSs9AnyObject", "makeKeyAndVisible"]
 - !private ["PSs9AnyObject", "rootViewController"]
+- !private ["PSs9AnyObject", "selectedIndex"]
 - !private ["PSs9AnyObject", "tabBarItem"]
 - !private ["PSs9AnyObject", "viewControllers"]
 - !private ["PSs9AnyObject", "whiteColor"]
@@ -135,6 +136,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "mainScreen"]
 - !private ["PSs11CVarArgType", "makeKeyAndVisible"]
 - !private ["PSs11CVarArgType", "rootViewController"]
+- !private ["PSs11CVarArgType", "selectedIndex"]
 - !private ["PSs11CVarArgType", "tabBarItem"]
 - !private ["PSs11CVarArgType", "viewControllers"]
 - !private ["PSs11CVarArgType", "whiteColor"]
@@ -173,6 +175,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "mainScreen"]
 - !private ["PSs23CustomStringConvertible", "makeKeyAndVisible"]
 - !private ["PSs23CustomStringConvertible", "rootViewController"]
+- !private ["PSs23CustomStringConvertible", "selectedIndex"]
 - !private ["PSs23CustomStringConvertible", "tabBarItem"]
 - !private ["PSs23CustomStringConvertible", "viewControllers"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
@@ -208,6 +211,7 @@ depends-member:
 - !private ["PSs9Equatable", "mainScreen"]
 - !private ["PSs9Equatable", "makeKeyAndVisible"]
 - !private ["PSs9Equatable", "rootViewController"]
+- !private ["PSs9Equatable", "selectedIndex"]
 - !private ["PSs9Equatable", "tabBarItem"]
 - !private ["PSs9Equatable", "viewControllers"]
 - !private ["PSs9Equatable", "whiteColor"]
@@ -243,6 +247,7 @@ depends-member:
 - !private ["PSs8Hashable", "mainScreen"]
 - !private ["PSs8Hashable", "makeKeyAndVisible"]
 - !private ["PSs8Hashable", "rootViewController"]
+- !private ["PSs8Hashable", "selectedIndex"]
 - !private ["PSs8Hashable", "tabBarItem"]
 - !private ["PSs8Hashable", "viewControllers"]
 - !private ["PSs8Hashable", "whiteColor"]
@@ -258,11 +263,13 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "makeKeyAndVisible"]
 - !private ["PSo8NSCoding", "rootViewController"]
+- !private ["PSo8NSCoding", "selectedIndex"]
 - !private ["PSo8NSCoding", "tabBarItem"]
 - !private ["PSo8NSCoding", "viewControllers"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "selectedIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBarItem"]
 - !private ["PSo26NSExtensionRequestHandling", "viewControllers"]
 - ["CSo8NSObject", "AnyObject"]
@@ -299,6 +306,7 @@ depends-member:
 - !private ["CSo8NSObject", "mainScreen"]
 - !private ["CSo8NSObject", "makeKeyAndVisible"]
 - !private ["CSo8NSObject", "rootViewController"]
+- !private ["CSo8NSObject", "selectedIndex"]
 - !private ["CSo8NSObject", "tabBarItem"]
 - !private ["CSo8NSObject", "viewControllers"]
 - !private ["CSo8NSObject", "whiteColor"]
@@ -333,6 +341,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "mainScreen"]
 - !private ["PSo16NSObjectProtocol", "makeKeyAndVisible"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
+- !private ["PSo16NSObjectProtocol", "selectedIndex"]
 - !private ["PSo16NSObjectProtocol", "tabBarItem"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
@@ -356,6 +365,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "makeKeyAndVisible"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "selectedIndex"]
 - !private ["PSo21UIAppearanceContainer", "tabBarItem"]
 - !private ["PSo21UIAppearanceContainer", "viewControllers"]
 - !private ["PSo21UIApplicationDelegate", "HuoDongTableViewController"]
@@ -387,6 +397,7 @@ depends-member:
 - !private ["CSo9UIBarItem", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "selectedIndex"]
 - !private ["PSo18UIContentContainer", "tabBarItem"]
 - !private ["PSo18UIContentContainer", "viewControllers"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -401,6 +412,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "makeKeyAndVisible"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "selectedIndex"]
 - !private ["PSo18UIFocusEnvironment", "tabBarItem"]
 - !private ["PSo18UIFocusEnvironment", "viewControllers"]
 - !private ["CSo7UIImage", "init"]
@@ -438,6 +450,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "makeKeyAndVisible"]
 - !private ["CSo11UIResponder", "rootViewController"]
+- !private ["CSo11UIResponder", "selectedIndex"]
 - !private ["CSo11UIResponder", "tabBarItem"]
 - !private ["CSo11UIResponder", "viewControllers"]
 - ["CSo11UIResponder", "window"]
@@ -446,11 +459,14 @@ depends-member:
 - !private ["CSo8UIScreen", "mainScreen"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "selectedIndex"]
 - !private ["PSo16UIStateRestoring", "tabBarItem"]
 - !private ["PSo16UIStateRestoring", "viewControllers"]
 - !private ["CSo18UITabBarController", "init"]
+- !private ["CSo18UITabBarController", "selectedIndex"]
 - !private ["CSo18UITabBarController", "viewControllers"]
 - !private ["PSo16UITabBarDelegate", "init"]
+- !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "viewControllers"]
 - !private ["CSo12UITabBarItem", "init"]
 - !private ["CSo21UITableViewController", "init"]
@@ -462,6 +478,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "mainScreen"]
 - !private ["PSo18UITraitEnvironment", "makeKeyAndVisible"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["PSo18UITraitEnvironment", "selectedIndex"]
 - !private ["PSo18UITraitEnvironment", "tabBarItem"]
 - !private ["PSo18UITraitEnvironment", "viewControllers"]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -469,6 +486,7 @@ depends-member:
 - !private ["CSo6UIView", "makeKeyAndVisible"]
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "selectedIndex"]
 - !private ["CSo16UIViewController", "tabBarItem"]
 - !private ["CSo16UIViewController", "viewControllers"]
 - !private ["CSo8UIWindow", "backgroundColor"]

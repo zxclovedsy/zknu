@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83BDC471BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */; };
+		B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */; };
+		B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */; };
+		B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */; };
+		B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */; };
+		B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */; };
 		B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852566F1BD7D2B40028DD67 /* AppDelegate.swift */; };
 		B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85256761BD7D2B40028DD67 /* Assets.xcassets */; };
 		B85256851BD7D2B40028DD67 /* iZknu_0_02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256841BD7D2B40028DD67 /* iZknu_0_02Tests.swift */; };
@@ -38,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeFenSiTableViewController.swift; sourceTree = "<group>"; };
+		B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
+		B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiaRuDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
+		B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
+		B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanJiaDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
+		B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeGuanZhuTableViewController.swift; sourceTree = "<group>"; };
 		B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iZknu_0.02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B852566F1BD7D2B40028DD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85256761BD7D2B40028DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iZknu_0.02/Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +169,12 @@
 		B8A3927C1BDA741A0062CA3E /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */,
+				B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */,
+				B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */,
+				B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */,
+				B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */,
+				B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */,
 			);
 			name = "我的";
 			sourceTree = "<group>";
@@ -272,14 +290,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A392741BDA5D450062CA3E /* HYuanXiTableViewController.swift in Sources */,
+				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
 				B8E3F0511BDB268C004C9431 /* SYuanXiTableViewController.swift in Sources */,
 				B8A392761BDA5D5F0062CA3E /* HShiJianTableViewController.swift in Sources */,
+				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
+				B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */,
+				B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */,
 				B8E3F0531BDB26A3004C9431 /* SZhaoXinTableViewController.swift in Sources */,
 				B852569C1BD8AE0F0028DD67 /* SheTuanTableViewController.swift in Sources */,
 				B8E3F04F1BDB267B004C9431 /* SFenLeiTableViewController.swift in Sources */,
 				B8E3F0551BDB274B004C9431 /* SheTuanViewController.swift in Sources */,
+				B83BDC471BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift in Sources */,
 				B852569A1BD8AE010028DD67 /* HuoDongTableViewController.swift in Sources */,
+				B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */,
 				B8E3F0571BDB2833004C9431 /* ZhaoXinViewController.swift in Sources */,
 				B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */,
 				B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */,

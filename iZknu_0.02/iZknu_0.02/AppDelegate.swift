@@ -39,6 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarViewController = UITabBarController()
         tabBarViewController.viewControllers = [huoDongNavigationController, sheTuanNavigationController, xinDeNavigationController, liaoTianNavigationController, woDeNavigationController]
         
+        // 初选择
+        tabBarViewController.selectedIndex = 4
+        
         self.window?.rootViewController = tabBarViewController
 
         self.window?.makeKeyAndVisible()
