@@ -8,13 +8,17 @@
 
 import UIKit
 
-class LiaoTianTableViewController: UITableViewController {
+class LiaoTianTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var tableView: UITableView!
+    var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "聊天"
-       
+        
+        self.setupLabel()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,25 +28,25 @@ class LiaoTianTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -88,5 +92,15 @@ class LiaoTianTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - UI
+    
+    func setupLabel() {
+        label = UILabel(frame: self.view.frame)
+        label.text = "软件正在升级……\n敬请期待！"
+        label.numberOfLines = 2
+        label.textAlignment = .Center
+        self.view.addSubview(label)
+    }
 
 }

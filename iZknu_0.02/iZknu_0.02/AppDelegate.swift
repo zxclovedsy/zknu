@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarViewController.viewControllers = [huoDongNavigationController, sheTuanNavigationController, xinDeNavigationController, liaoTianNavigationController, woDeNavigationController]
         
         // 初选择
-        tabBarViewController.selectedIndex = 4
+        tabBarViewController.selectedIndex = 3
         
         self.window?.rootViewController = tabBarViewController
 

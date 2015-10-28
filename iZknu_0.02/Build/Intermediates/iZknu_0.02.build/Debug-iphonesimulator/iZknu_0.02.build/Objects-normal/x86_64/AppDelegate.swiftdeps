@@ -6,36 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
-- "applicationDidEnterBackground"
 - "window"
-- "application"
 - "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
+- "applicationWillResignActive"
 - "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "application"
+- "applicationWillEnterForeground"
 depends-top-level:
-- !private "UITabBarItem"
+- !private "UITabBarController"
+- !private "LiaoTianTableViewController"
+- !private "HuoDongTableViewController"
 - "UIApplicationDelegate"
-- !private "SheTuanTableViewController"
-- !private "WoDeTableViewController"
+- "UIWindow"
+- !private "UIImage"
 - !private "StringLiteralType"
 - "NSObject"
-- !private "HuoDongTableViewController"
-- !private "XinDeViewController"
-- !private "UINavigationController"
-- !private "UIImage"
-- "UIWindow"
-- "UIApplication"
-- "AnyObject"
-- !private "UIScreen"
-- !private "UITabBarController"
-- "UIResponder"
-- !private "Array"
-- "Bool"
 - "AppDelegate"
-- !private "BooleanLiteralType"
+- !private "UINavigationController"
+- "AnyObject"
+- !private "XinDeViewController"
+- !private "UITabBarItem"
+- "UIApplication"
+- !private "SheTuanTableViewController"
 - !private "UIColor"
-- !private "LiaoTianTableViewController"
+- !private "WoDeTableViewController"
+- !private "BooleanLiteralType"
+- !private "Array"
+- !private "UIScreen"
+- "UIResponder"
+- "Bool"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -469,7 +469,6 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "viewControllers"]
 - !private ["CSo12UITabBarItem", "init"]
-- !private ["CSo21UITableViewController", "init"]
 - !private ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo19UITableViewDelegate", "init"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -551,7 +550,6 @@ depends-nominal:
 - !private "CSo18UITabBarController"
 - !private "PSo16UITabBarDelegate"
 - !private "CSo12UITabBarItem"
-- !private "CSo21UITableViewController"
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
 - !private "PSo18UITraitEnvironment"

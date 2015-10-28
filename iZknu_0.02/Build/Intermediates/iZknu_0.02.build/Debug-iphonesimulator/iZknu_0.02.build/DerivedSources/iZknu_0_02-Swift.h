@@ -225,14 +225,18 @@ SWIFT_CLASS("_TtC10iZknu_0_0233JiaRuDeSheTuanTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 
 SWIFT_CLASS("_TtC10iZknu_0_0227LiaoTianTableViewController")
-@interface LiaoTianTableViewController : UITableViewController
+@interface LiaoTianTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UITableView * __null_unspecified tableView;
+@property (nonatomic, strong) UILabel * __null_unspecified label;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)setupLabel;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -326,7 +330,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0230WoDeGuanZhuTableViewController")
 
 @class UIImageView;
 @class UIView;
-@class UILabel;
 
 SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @interface WoDeTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
