@@ -356,14 +356,18 @@ SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @end
 
 @class UISegmentedControl;
+@class UITextField;
+@class UITextView;
 
 SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
-@interface XinDeViewController : UIViewController
+@interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UISegmentedControl * __null_unspecified segmentedControl;
 @property (nonatomic, strong) UIView * __null_unspecified anotherView;
 @property (nonatomic, strong) UIView * __nullable tempView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
 - (void)setupSegmentedControl;
 - (void)setupView;
 - (void)setupAnotherView;

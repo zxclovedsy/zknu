@@ -6,36 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0211AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "applicationDidBecomeActive"
-- "applicationWillResignActive"
-- "applicationWillTerminate"
-- "applicationDidEnterBackground"
 - "application"
 - "applicationWillEnterForeground"
+- "window"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
 depends-top-level:
-- !private "UITabBarController"
-- !private "LiaoTianTableViewController"
 - !private "HuoDongTableViewController"
-- "UIApplicationDelegate"
-- "UIWindow"
-- !private "UIImage"
+- !private "LiaoTianTableViewController"
+- !private "Array"
+- "AnyObject"
 - !private "StringLiteralType"
 - "NSObject"
-- "AppDelegate"
-- !private "UINavigationController"
-- "AnyObject"
-- !private "XinDeViewController"
-- !private "UITabBarItem"
-- "UIApplication"
-- !private "SheTuanTableViewController"
 - !private "UIColor"
-- !private "WoDeTableViewController"
-- !private "BooleanLiteralType"
-- !private "Array"
-- !private "UIScreen"
+- "UIApplicationDelegate"
+- "UIApplication"
+- !private "UITabBarController"
 - "UIResponder"
+- !private "UITabBarItem"
+- !private "WoDeTableViewController"
+- !private "UIScreen"
+- !private "UINavigationController"
+- !private "UIImage"
+- !private "XinDeViewController"
+- !private "SheTuanTableViewController"
+- !private "BooleanLiteralType"
 - "Bool"
+- "UIWindow"
+- "AppDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -471,6 +471,8 @@ depends-member:
 - !private ["CSo12UITabBarItem", "init"]
 - !private ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITextFieldDelegate", "init"]
+- !private ["PSo18UITextViewDelegate", "init"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -552,6 +554,8 @@ depends-nominal:
 - !private "CSo12UITabBarItem"
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
+- !private "PSo19UITextFieldDelegate"
+- !private "PSo18UITextViewDelegate"
 - !private "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"
