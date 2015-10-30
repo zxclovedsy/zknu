@@ -356,22 +356,33 @@ SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @end
 
 @class UISegmentedControl;
-@class UITextField;
 @class UITextView;
+@class UITextField;
+@class UIImagePickerController;
+@class UITapGestureRecognizer;
+@class UIButton;
 
 SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
-@interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UITextFieldDelegate>
+@interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UISegmentedControl * __null_unspecified segmentedControl;
 @property (nonatomic, strong) UIView * __null_unspecified anotherView;
 @property (nonatomic, strong) UIView * __nullable tempView;
+@property (nonatomic, strong) UITextView * __null_unspecified jianJieTextView;
+@property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
+- (void)textViewDidBeginEditing:(UITextView * __nonnull)textView;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 - (void)setupSegmentedControl;
 - (void)setupView;
 - (void)setupAnotherView;
 - (void)segmentedControlIndexChanged:(UISegmentedControl * __nonnull)sender;
+- (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
+- (void)finishButtonTapped:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

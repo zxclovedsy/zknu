@@ -6,36 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "application"
 - "applicationWillEnterForeground"
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
 - "window"
 - "applicationWillResignActive"
-- "applicationDidEnterBackground"
 - "applicationWillTerminate"
 depends-top-level:
-- !private "HuoDongTableViewController"
-- !private "LiaoTianTableViewController"
-- !private "Array"
-- "AnyObject"
+- !private "UITabBarController"
+- "UIApplication"
+- !private "SheTuanTableViewController"
+- "UIWindow"
+- "Bool"
 - !private "StringLiteralType"
 - "NSObject"
-- !private "UIColor"
+- !private "LiaoTianTableViewController"
+- !private "UIScreen"
 - "UIApplicationDelegate"
-- "UIApplication"
-- !private "UITabBarController"
+- !private "UIImage"
 - "UIResponder"
 - !private "UITabBarItem"
+- !private "UIColor"
 - !private "WoDeTableViewController"
-- !private "UIScreen"
-- !private "UINavigationController"
-- !private "UIImage"
-- !private "XinDeViewController"
-- !private "SheTuanTableViewController"
-- !private "BooleanLiteralType"
-- "Bool"
-- "UIWindow"
+- !private "Array"
 - "AppDelegate"
+- !private "HuoDongTableViewController"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- !private "UINavigationController"
+- !private "XinDeViewController"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -416,8 +416,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "tabBarItem"]
 - !private ["PSo18UIFocusEnvironment", "viewControllers"]
 - !private ["CSo7UIImage", "init"]
+- !private ["PSo31UIImagePickerControllerDelegate", "init"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "tabBarItem"]
+- !private ["PSo30UINavigationControllerDelegate", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "HuoDongTableViewController"]
@@ -544,7 +546,9 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - !private "PSo18UIFocusEnvironment"
 - !private "CSo7UIImage"
+- !private "PSo31UIImagePickerControllerDelegate"
 - !private "CSo22UINavigationController"
+- !private "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - !private "CSo8UIScreen"
 - !private "PSo20UIScrollViewDelegate"
