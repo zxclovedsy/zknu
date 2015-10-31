@@ -12,9 +12,9 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     
     var segmentedControl: UISegmentedControl!
     var scrollView: UIScrollView!
-    var anotherView: UIView!
-    var tempView: UIView?
-    var jianJieTextView: UITextView!
+    var anotherScrollView: UIScrollView!
+    var huoDongJianJieTextView: UITextView!
+    var sheTuanJianJieTextView: UITextView!
     var haiBaoImageView: UIImageView!
 
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         self.setupSegmentedControl()
         self.setupView()
         self.setupAnotherView()
+        //for text
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,15 +37,20 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     
     // MARK: UITextViewDelegate
     func textViewShouldEndEditing(textView: UITextView) -> Bool {
-        textView.resignFirstResponder()
-        print("end")
-        scrollView.contentOffset.y = 0
+        switch segmentedControl.selectedSegmentIndex {
+        case 0: scrollView.contentOffset.y = -50
+        case 1: anotherScrollView.contentOffset.y = -40
+        default:print("error")
+        }
         return true
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
-        print("begin")
-        scrollView.contentOffset.y = 150
+        switch segmentedControl.selectedSegmentIndex {
+        case 0: scrollView.contentOffset.y = 150
+        case 1: anotherScrollView.contentOffset.y = 80
+        default:print("error")
+        }
     }
     
     // MARK: UIImagePickerDelegate
@@ -77,8 +83,6 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         scrollView = UIScrollView(frame: self.view.frame)
         scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.1)
         scrollView.backgroundColor = UIColor.whiteColor()
-        //test
-
         
         // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 20, width: 70, height: 20))
@@ -147,9 +151,9 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         scrollView.addSubview(danWeiTextField)
         
         // jianJieTextField
-        jianJieTextView = UITextView(frame: CGRect(x: 20, y: 250, width: 280, height: 100))
-        jianJieTextView.delegate = self
-        jianJieTextView.textColor = UIColor.grayColor()
+        huoDongJianJieTextView = UITextView(frame: CGRect(x: 20, y: 250, width: 280, height: 100))
+        huoDongJianJieTextView.delegate = self
+        huoDongJianJieTextView.textColor = UIColor.grayColor()
         
         // 键盘上的工具栏
         let textViewToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
@@ -157,8 +161,8 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         let space = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         let doneButton = UIBarButtonItem(title: "完成", style: .Done, target: self, action: "doneButtonTapped:")
         textViewToolBar.items  = [undoButton, space, doneButton]
-        jianJieTextView.inputAccessoryView = textViewToolBar
-        scrollView.addSubview(jianJieTextView)
+        huoDongJianJieTextView.inputAccessoryView = textViewToolBar
+        scrollView.addSubview(huoDongJianJieTextView)
         
         // haiBaoImageView
         haiBaoImageView = UIImageView(frame: CGRect(x: 20, y: 400, width: 150, height: 150))
@@ -185,7 +189,40 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     }
     
     func setupAnotherView() {
-        anotherView = UIView(frame: self.view.frame)
+        anotherScrollView = UIScrollView(frame: self.view.frame)
+        anotherScrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.05)
+        anotherScrollView.backgroundColor = UIColor.whiteColor()
+        
+        let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 40, width: 70, height: 20))
+        let leiXingLabel =  UILabel(frame: CGRect(x: 20, y: 80, width: 70, height: 20))
+        let jiBieLabel = UILabel(frame: CGRect(x: 20, y: 120, width: 70, height: 20))
+        let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 160, width: 70, height: 20))
+        
+        mingChengLabel.text = "社团名称"
+        leiXingLabel.text = "社团类型"
+        jiBieLabel.text = "社团级别"
+        jianJieLabel.text = "社团简介"
+        
+        anotherScrollView.addSubview(mingChengLabel)
+        anotherScrollView.addSubview(leiXingLabel)
+        anotherScrollView.addSubview(jiBieLabel)
+        anotherScrollView.addSubview(jianJieLabel)
+        
+        // textView
+        sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 190, width: 280, height: 100))
+        sheTuanJianJieTextView.delegate = self
+        sheTuanJianJieTextView.textColor = UIColor.grayColor()
+        
+        // 键盘上的工具栏
+        let textViewToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
+        let undoButton = UIBarButtonItem(title: "全清", style: .Plain, target: self, action: "undoButtonTapped:")
+        let space = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
+        let doneButton = UIBarButtonItem(title: "完成", style: .Done, target: self, action: "doneButtonTapped:")
+        textViewToolBar.items  = [undoButton, space, doneButton]
+        sheTuanJianJieTextView.inputAccessoryView = textViewToolBar
+        
+        anotherScrollView.addSubview(sheTuanJianJieTextView)
+        
     }
     
     // MARK: Actions
@@ -194,11 +231,10 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         switch sender.selectedSegmentIndex {
         case 0:
             print("选择创活动")
-            view = tempView!
+            view = scrollView
         case 1:
             print("选择创社团")
-            tempView = view
-            view = anotherView
+            view = anotherScrollView
             
         default:
             print("error")
@@ -207,16 +243,25 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     
     // jianJianTextView
     func undoButtonTapped(sender: UIBarButtonItem) {
-        jianJieTextView.text = ""
+        switch segmentedControl.selectedSegmentIndex {
+        case 0: huoDongJianJieTextView.text = ""
+        case 1: sheTuanJianJieTextView.text = ""
+        default:print("error")
+        }
+        
     }
     
     func doneButtonTapped(sender: UIBarButtonItem) {
-        jianJieTextView.resignFirstResponder()
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:  huoDongJianJieTextView.resignFirstResponder()
+        case 1:  sheTuanJianJieTextView.resignFirstResponder()
+        default:print("error")
+        }
     }
     
     // tapGestureRecognizer
     func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
-        jianJieTextView.resignFirstResponder()
+        huoDongJianJieTextView.resignFirstResponder()
         
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self

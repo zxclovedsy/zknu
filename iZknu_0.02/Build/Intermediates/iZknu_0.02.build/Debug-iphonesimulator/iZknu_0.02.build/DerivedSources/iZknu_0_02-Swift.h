@@ -367,9 +367,9 @@ SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
 @interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UISegmentedControl * __null_unspecified segmentedControl;
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
-@property (nonatomic, strong) UIView * __null_unspecified anotherView;
-@property (nonatomic, strong) UIView * __nullable tempView;
-@property (nonatomic, strong) UITextView * __null_unspecified jianJieTextView;
+@property (nonatomic, strong) UIScrollView * __null_unspecified anotherScrollView;
+@property (nonatomic, strong) UITextView * __null_unspecified huoDongJianJieTextView;
+@property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
 @property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
