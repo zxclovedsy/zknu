@@ -6,60 +6,61 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0219XinDeViewController", ""]
 provides-dynamic-lookup:
-- "textViewShouldEndEditing"
-- "undoButtonTapped"
-- "setupAnotherView"
-- "textFieldShouldReturn"
-- "doneButtonTapped"
-- "didReceiveMemoryWarning"
-- "textViewDidBeginEditing"
-- "jianJieTextView"
-- "segmentedControl"
-- "viewDidLoad"
 - "anotherView"
-- "haiBaoImageView"
 - "setupSegmentedControl"
 - "segmentedControlIndexChanged"
-- "finishButtonTapped"
-- "selectImageFromPhotoLibrary"
-- "imagePickerController"
-- "tempView"
+- "haiBaoImageView"
 - "setupView"
+- "doneButtonTapped"
+- "undoButtonTapped"
+- "textViewDidBeginEditing"
+- "selectImageFromPhotoLibrary"
+- "scrollView"
+- "setupAnotherView"
+- "jianJieTextView"
+- "finishButtonTapped"
+- "didReceiveMemoryWarning"
+- "textFieldShouldReturn"
+- "viewDidLoad"
+- "segmentedControl"
+- "textViewShouldEndEditing"
+- "tempView"
+- "imagePickerController"
 depends-top-level:
-- "UINavigationControllerDelegate"
-- !private "CGRect"
-- !private "/"
-- !private "CGSize"
-- "UIViewController"
-- "UITextViewDelegate"
-- "UIImagePickerController"
-- !private "~="
-- "UIImagePickerControllerDelegate"
-- "UITextView"
-- !private "print"
-- !private "-"
-- !private "StringLiteralType"
-- !private "UIImage"
 - "UIView"
-- "UITextField"
-- !private "UILabel"
-- "UITapGestureRecognizer"
-- !private "Array"
-- "UIImageView"
-- "String"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "UIToolbar"
-- "XinDeViewController"
-- "AnyObject"
-- !private "*"
-- "UISegmentedControl"
-- !private "UIColor"
 - "UITextFieldDelegate"
-- "UIBarButtonItem"
-- !private "BooleanLiteralType"
-- !private "UIScrollView"
 - "Bool"
+- "String"
+- !private "UIToolbar"
+- !private "StringLiteralType"
+- "AnyObject"
+- !private "~="
+- "UIImageView"
+- !private "Array"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "UIImage"
+- "UITextField"
+- !private "BooleanLiteralType"
+- "UISegmentedControl"
+- "UITapGestureRecognizer"
 - "UIButton"
+- "UIBarButtonItem"
+- !private "-"
+- !private "CGSize"
+- !private "*"
+- "UIScrollView"
+- "UITextView"
+- !private "/"
+- "XinDeViewController"
+- !private "CGRect"
+- !private "UIColor"
+- "UINavigationControllerDelegate"
+- "UIImagePickerController"
+- !private "UILabel"
+- "UIViewController"
+- "UIImagePickerControllerDelegate"
+- !private "print"
+- "UITextViewDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CGSize"]
@@ -83,6 +84,7 @@ depends-member:
 - !private ["PSs9AnyObject", "addTarget"]
 - ["PSs9AnyObject", "anotherView"]
 - !private ["PSs9AnyObject", "backgroundColor"]
+- !private ["PSs9AnyObject", "contentOffset"]
 - !private ["PSs9AnyObject", "contentSize"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
@@ -110,6 +112,7 @@ depends-member:
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "resignFirstResponder"]
 - !private ["PSs9AnyObject", "returnKeyType"]
+- ["PSs9AnyObject", "scrollView"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
 - ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -199,6 +202,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "addTarget"]
 - ["PSs11CVarArgType", "anotherView"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
+- !private ["PSs11CVarArgType", "contentOffset"]
 - !private ["PSs11CVarArgType", "contentSize"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
@@ -226,6 +230,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "resignFirstResponder"]
 - !private ["PSs11CVarArgType", "returnKeyType"]
+- ["PSs11CVarArgType", "scrollView"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
 - ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -310,6 +315,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addTarget"]
 - ["PSs23CustomStringConvertible", "anotherView"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- !private ["PSs23CustomStringConvertible", "contentOffset"]
 - !private ["PSs23CustomStringConvertible", "contentSize"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -337,6 +343,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "resignFirstResponder"]
 - !private ["PSs23CustomStringConvertible", "returnKeyType"]
+- ["PSs23CustomStringConvertible", "scrollView"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -422,6 +429,7 @@ depends-member:
 - !private ["PSs9Equatable", "addTarget"]
 - ["PSs9Equatable", "anotherView"]
 - !private ["PSs9Equatable", "backgroundColor"]
+- !private ["PSs9Equatable", "contentOffset"]
 - !private ["PSs9Equatable", "contentSize"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
@@ -451,6 +459,7 @@ depends-member:
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "resignFirstResponder"]
 - !private ["PSs9Equatable", "returnKeyType"]
+- ["PSs9Equatable", "scrollView"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
 - ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -532,6 +541,7 @@ depends-member:
 - !private ["PSs8Hashable", "addTarget"]
 - ["PSs8Hashable", "anotherView"]
 - !private ["PSs8Hashable", "backgroundColor"]
+- !private ["PSs8Hashable", "contentOffset"]
 - !private ["PSs8Hashable", "contentSize"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
@@ -559,6 +569,7 @@ depends-member:
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "resignFirstResponder"]
 - !private ["PSs8Hashable", "returnKeyType"]
+- ["PSs8Hashable", "scrollView"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
 - ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -648,6 +659,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addTarget"]
 - ["PSo8NSCoding", "anotherView"]
 - !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "contentOffset"]
 - !private ["PSo8NSCoding", "contentSize"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -674,6 +686,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "returnKeyType"]
+- ["PSo8NSCoding", "scrollView"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -755,6 +768,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "scrollView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -808,7 +822,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
 - ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UILabel"]
-- !private ["CSo8NSObject", "UIScrollView"]
+- ["CSo8NSObject", "UIScrollView"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
@@ -820,6 +834,7 @@ depends-member:
 - !private ["CSo8NSObject", "addTarget"]
 - ["CSo8NSObject", "anotherView"]
 - !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "contentOffset"]
 - !private ["CSo8NSObject", "contentSize"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
@@ -848,6 +863,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "returnKeyType"]
+- ["CSo8NSObject", "scrollView"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -914,6 +930,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - ["PSo16NSObjectProtocol", "anotherView"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "contentOffset"]
 - !private ["PSo16NSObjectProtocol", "contentSize"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -941,6 +958,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "returnKeyType"]
+- ["PSo16NSObjectProtocol", "scrollView"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -1032,6 +1050,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "contentOffset"]
 - !private ["PSo29UIAccessibilityIdentification", "contentSize"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
@@ -1052,6 +1071,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "contentOffset"]
 - !private ["PSo12UIAppearance", "contentSize"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "frame"]
@@ -1090,6 +1110,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - ["PSo21UIAppearanceContainer", "anotherView"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "contentOffset"]
 - !private ["PSo21UIAppearanceContainer", "contentSize"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -1115,6 +1136,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "returnKeyType"]
+- ["PSo21UIAppearanceContainer", "scrollView"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1209,6 +1231,7 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "scrollView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1266,6 +1289,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "contentOffset"]
 - !private ["PSo17UICoordinateSpace", "contentSize"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "frame"]
@@ -1286,6 +1310,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "contentOffset"]
 - !private ["PSo13UIDynamicItem", "contentSize"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "frame"]
@@ -1324,6 +1349,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - ["PSo18UIFocusEnvironment", "anotherView"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "contentOffset"]
 - !private ["PSo18UIFocusEnvironment", "contentSize"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -1349,6 +1375,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "returnKeyType"]
+- ["PSo18UIFocusEnvironment", "scrollView"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1427,6 +1454,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo31UIImagePickerControllerDelegate", "presentViewController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "print"]
+- !private ["PSo31UIImagePickerControllerDelegate", "scrollView"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndDragging"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1510,6 +1538,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo30UINavigationControllerDelegate", "presentViewController"]
 - !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "scrollView"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndDragging"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1557,7 +1586,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UILabel"]
-- !private ["CSo11UIResponder", "UIScrollView"]
+- ["CSo11UIResponder", "UIScrollView"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
@@ -1569,6 +1598,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addTarget"]
 - ["CSo11UIResponder", "anotherView"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "contentOffset"]
 - !private ["CSo11UIResponder", "contentSize"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1594,6 +1624,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "returnKeyType"]
+- ["CSo11UIResponder", "scrollView"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1640,6 +1671,7 @@ depends-member:
 - !private ["OSC15UIReturnKeyType", "Done"]
 - !private ["CSo12UIScrollView", "addSubview"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
+- !private ["CSo12UIScrollView", "contentOffset"]
 - !private ["CSo12UIScrollView", "contentSize"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "init"]
@@ -1675,6 +1707,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "scrollView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1748,6 +1781,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "scrollView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1823,6 +1857,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo19UITextFieldDelegate", "presentViewController"]
 - !private ["PSo19UITextFieldDelegate", "print"]
+- !private ["PSo19UITextFieldDelegate", "scrollView"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1907,6 +1942,7 @@ depends-member:
 - ["PSo18UITextViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UITextViewDelegate", "presentViewController"]
 - !private ["PSo18UITextViewDelegate", "print"]
+- !private ["PSo18UITextViewDelegate", "scrollView"]
 - ["PSo18UITextViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo18UITextViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo18UITextViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1965,6 +2001,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - ["PSo18UITraitEnvironment", "anotherView"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "contentOffset"]
 - !private ["PSo18UITraitEnvironment", "contentSize"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -1990,6 +2027,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "returnKeyType"]
+- ["PSo18UITraitEnvironment", "scrollView"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -2038,6 +2076,7 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "contentOffset"]
 - !private ["CSo6UIView", "contentSize"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "frame"]
@@ -2067,7 +2106,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UILabel"]
-- !private ["CSo16UIViewController", "UIScrollView"]
+- ["CSo16UIViewController", "UIScrollView"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
@@ -2091,6 +2130,7 @@ depends-member:
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "scrollView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -2143,7 +2183,7 @@ depends-member:
 - !private ["C10iZknu_0_0219XinDeViewController", "UIImagePickerControllerOriginalImage"]
 - ["C10iZknu_0_0219XinDeViewController", "UIImageView"]
 - !private ["C10iZknu_0_0219XinDeViewController", "UILabel"]
-- !private ["C10iZknu_0_0219XinDeViewController", "UIScrollView"]
+- ["C10iZknu_0_0219XinDeViewController", "UIScrollView"]
 - ["C10iZknu_0_0219XinDeViewController", "UISegmentedControl"]
 - ["C10iZknu_0_0219XinDeViewController", "UITapGestureRecognizer"]
 - ["C10iZknu_0_0219XinDeViewController", "UITextField"]
@@ -2166,6 +2206,7 @@ depends-member:
 - ["C10iZknu_0_0219XinDeViewController", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["C10iZknu_0_0219XinDeViewController", "presentViewController"]
 - !private ["C10iZknu_0_0219XinDeViewController", "print"]
+- ["C10iZknu_0_0219XinDeViewController", "scrollView"]
 - ["C10iZknu_0_0219XinDeViewController", "scrollViewDidEndDecelerating"]
 - ["C10iZknu_0_0219XinDeViewController", "scrollViewDidEndDragging"]
 - ["C10iZknu_0_0219XinDeViewController", "scrollViewDidEndScrollingAnimation"]
@@ -2236,6 +2277,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
+- !private ["PSs12_Reflectable", "contentOffset"]
 - !private ["PSs12_Reflectable", "contentSize"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "frame"]
@@ -2392,4 +2434,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "b881ce6cfae460738a1164ac883587ee"
+interface-hash: "5363db49d1b2bbaa20f1b72bcaa78325"

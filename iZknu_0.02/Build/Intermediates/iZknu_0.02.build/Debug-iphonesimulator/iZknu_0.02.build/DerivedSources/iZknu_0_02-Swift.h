@@ -356,6 +356,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @end
 
 @class UISegmentedControl;
+@class UIScrollView;
 @class UITextView;
 @class UITextField;
 @class UIImagePickerController;
@@ -365,6 +366,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
 @interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UISegmentedControl * __null_unspecified segmentedControl;
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UIView * __null_unspecified anotherView;
 @property (nonatomic, strong) UIView * __nullable tempView;
 @property (nonatomic, strong) UITextView * __null_unspecified jianJieTextView;

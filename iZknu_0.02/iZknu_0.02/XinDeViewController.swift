@@ -11,6 +11,7 @@ import UIKit
 class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var segmentedControl: UISegmentedControl!
+    var scrollView: UIScrollView!
     var anotherView: UIView!
     var tempView: UIView?
     var jianJieTextView: UITextView!
@@ -37,13 +38,13 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     func textViewShouldEndEditing(textView: UITextView) -> Bool {
         textView.resignFirstResponder()
         print("end")
-        self.view.frame.origin.y = 0
+        scrollView.contentOffset.y = 0
         return true
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
         print("begin")
-        self.view.frame.origin.y = -150
+        scrollView.contentOffset.y = 150
     }
     
     // MARK: UIImagePickerDelegate
@@ -73,9 +74,11 @@ class XinDeViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     }
     
     func setupView() {
-        let scrollView = UIScrollView(frame: self.view.frame)
+        scrollView = UIScrollView(frame: self.view.frame)
         scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.1)
         scrollView.backgroundColor = UIColor.whiteColor()
+        //test
+
         
         // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 20, width: 70, height: 20))
