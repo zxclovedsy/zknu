@@ -6,36 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "application"
-- "applicationDidBecomeActive"
 - "applicationDidEnterBackground"
-- "window"
-- "applicationWillResignActive"
+- "application"
 - "applicationWillTerminate"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
+- "window"
+- "applicationWillEnterForeground"
 depends-top-level:
-- !private "UIColor"
-- !private "SheTuanTableViewController"
-- "UIResponder"
-- !private "UITabBarItem"
-- "Bool"
-- !private "Array"
-- !private "StringLiteralType"
-- "UIWindow"
-- "NSObject"
-- !private "HuoDongTableViewController"
-- "UIApplicationDelegate"
-- !private "UIImage"
 - !private "UIScreen"
-- !private "UITabBarController"
-- !private "WoDeTableViewController"
-- "AnyObject"
-- "AppDelegate"
-- !private "UINavigationController"
-- !private "LiaoTianTableViewController"
 - !private "BooleanLiteralType"
-- "UIApplication"
+- !private "HuoDongTableViewController"
+- "AppDelegate"
 - !private "XinDeViewController"
+- "Bool"
+- !private "UINavigationController"
+- !private "UIImage"
+- !private "SheTuanTableViewController"
+- !private "UITabBarController"
+- "UIResponder"
+- "UIWindow"
+- !private "Array"
+- !private "WoDeTableViewController"
+- "NSObject"
+- !private "UIColor"
+- !private "LiaoTianTableViewController"
+- "UIApplication"
+- !private "StringLiteralType"
+- !private "UITabBarItem"
+- "UIApplicationDelegate"
+- "AnyObject"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -416,10 +416,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "tabBarItem"]
 - !private ["PSo18UIFocusEnvironment", "viewControllers"]
 - !private ["CSo7UIImage", "init"]
-- !private ["PSo31UIImagePickerControllerDelegate", "init"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "tabBarItem"]
-- !private ["PSo30UINavigationControllerDelegate", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "HuoDongTableViewController"]
@@ -473,8 +471,6 @@ depends-member:
 - !private ["CSo12UITabBarItem", "init"]
 - !private ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo19UITableViewDelegate", "init"]
-- !private ["PSo19UITextFieldDelegate", "init"]
-- !private ["PSo18UITextViewDelegate", "init"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -546,9 +542,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - !private "PSo18UIFocusEnvironment"
 - !private "CSo7UIImage"
-- !private "PSo31UIImagePickerControllerDelegate"
 - !private "CSo22UINavigationController"
-- !private "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - !private "CSo8UIScreen"
 - !private "PSo20UIScrollViewDelegate"
@@ -558,8 +552,6 @@ depends-nominal:
 - !private "CSo12UITabBarItem"
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
-- !private "PSo19UITextFieldDelegate"
-- !private "PSo18UITextViewDelegate"
 - !private "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"

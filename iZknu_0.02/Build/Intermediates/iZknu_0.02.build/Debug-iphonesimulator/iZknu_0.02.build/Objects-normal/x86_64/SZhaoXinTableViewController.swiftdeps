@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0227SZhaoXinTableViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "tableView"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- "UITableViewController"
 - "SZhaoXinTableViewController"
-- "UITableView"
 - "Int"
+- "UITableView"
+- "UITableViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

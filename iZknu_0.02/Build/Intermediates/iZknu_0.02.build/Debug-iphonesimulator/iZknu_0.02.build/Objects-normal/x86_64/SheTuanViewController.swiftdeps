@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221SheTuanViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "SheTuanViewController"
 - "UIViewController"
 - !private "UIColor"
+- "SheTuanViewController"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "backgroundColor"]

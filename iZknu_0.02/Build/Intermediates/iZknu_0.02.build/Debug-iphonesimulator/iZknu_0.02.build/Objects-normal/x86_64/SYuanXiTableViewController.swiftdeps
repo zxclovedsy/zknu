@@ -11,10 +11,10 @@ provides-dynamic-lookup:
 - "tableView"
 - "numberOfSectionsInTableView"
 depends-top-level:
-- "Int"
 - "UITableViewController"
-- "UITableView"
+- "Int"
 - "SYuanXiTableViewController"
+- "UITableView"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

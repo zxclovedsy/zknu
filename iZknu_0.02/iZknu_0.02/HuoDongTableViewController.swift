@@ -49,7 +49,6 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
         }
         cell?.contentView.userInteractionEnabled = false
-        cell?.textLabel?.text = "test"
         return cell!
     }
     

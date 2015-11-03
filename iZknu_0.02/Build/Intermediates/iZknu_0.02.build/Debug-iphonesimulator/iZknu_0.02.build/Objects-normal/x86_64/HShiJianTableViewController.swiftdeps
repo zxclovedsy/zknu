@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0227HShiJianTableViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "numberOfSectionsInTableView"
 - "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
 - "tableView"
 depends-top-level:
+- "Int"
 - "HShiJianTableViewController"
 - !private "StringLiteralType"
 - "UITableViewController"
 - "UITableView"
-- "Int"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

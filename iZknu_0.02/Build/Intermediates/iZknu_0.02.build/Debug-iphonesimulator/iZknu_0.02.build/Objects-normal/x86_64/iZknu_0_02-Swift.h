@@ -241,6 +241,54 @@ SWIFT_CLASS("_TtC10iZknu_0_0227LiaoTianTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
+@class UITextView;
+@class UIImageView;
+@class UITextField;
+@class UIImagePickerController;
+@class UITapGestureRecognizer;
+@class UIButton;
+
+SWIFT_CLASS("_TtC10iZknu_0_0224NewHuoDongViewController")
+@interface NewHuoDongViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UITextView * __null_unspecified huoDongJianJieTextView;
+@property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
+- (void)textViewDidBeginEditing:(UITextView * __nonnull)textView;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
+- (void)setupView;
+- (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
+- (void)finishButtonTapped:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
+@interface NewSheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
+- (void)textViewDidBeginEditing:(UITextView * __nonnull)textView;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
+- (void)setupView;
+- (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
+- (void)finishButtonTapped:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10iZknu_0_0226SFenLeiTableViewController")
 @interface SFenLeiTableViewController : UITableViewController
@@ -328,7 +376,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0230WoDeGuanZhuTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 @class UIView;
 
 SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
@@ -356,35 +403,16 @@ SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @end
 
 @class UISegmentedControl;
-@class UIScrollView;
-@class UITextView;
-@class UITextField;
-@class UIImagePickerController;
-@class UITapGestureRecognizer;
-@class UIButton;
 
 SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
-@interface XinDeViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@interface XinDeViewController : UIViewController
 @property (nonatomic, strong) UISegmentedControl * __null_unspecified segmentedControl;
-@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
-@property (nonatomic, strong) UIScrollView * __null_unspecified anotherScrollView;
-@property (nonatomic, strong) UITextView * __null_unspecified huoDongJianJieTextView;
-@property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
-@property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
+@property (nonatomic, strong) NewHuoDongViewController * __null_unspecified newHuoDongViewController;
+@property (nonatomic, strong) NewSheTuanViewController * __null_unspecified newSheTuanViewController;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
-- (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
-- (void)textViewDidBeginEditing:(UITextView * __nonnull)textView;
-- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 - (void)setupSegmentedControl;
-- (void)setupView;
-- (void)setupAnotherView;
 - (void)segmentedControlIndexChanged:(UISegmentedControl * __nonnull)sender;
-- (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
-- (void)finishButtonTapped:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

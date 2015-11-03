@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221HuoDongViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "HuoDongViewController"
-- "UIViewController"
-- !private "UIColor"
 - !private "StringLiteralType"
+- !private "UIColor"
+- "UIViewController"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "backgroundColor"]
