@@ -274,6 +274,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 @interface NewSheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
+@property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;

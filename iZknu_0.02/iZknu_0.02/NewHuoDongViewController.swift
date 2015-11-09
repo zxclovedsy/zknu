@@ -92,25 +92,22 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
         let renShuTextField = UITextField(frame: CGRect(x: 120, y: 200, width: 150, height: 20))
         let danWeiTextField = UITextField(frame: CGRect(x: 120, y: 240, width: 150, height: 20))
         
-       /* mingChengTextField.placeholder = "活动名称"
-        shiJianTextField.placeholder = "活动时间"
-        diDianTextField.placeholder = "活动地点"
-        renShuTextField.placeholder = "需要人数"
-        danWeiTextField.placeholder = "承办单位"*/
-        let placeholders = [" 活动名称", " 活动时间", " 活动地点", " 需要人数", " 承办单位"]
+        let placeholders = ["活动名称", "活动时间", "活动地点", "需要人数", "承办单位"]
         let textFields = [mingChengTextField, shiJianTextField, diDianTextField, renShuTextField, danWeiTextField]
         
         for textField in textFields {
             textField.delegate = self
             
             textField.returnKeyType = .Done
-            textField.placeholder = placeholders[textFields.indexOf(textField)!]
+            textField.placeholder = "请输入" + placeholders[textFields.indexOf(textField)!]
             textField.textColor = UIColor.grayColor()
             textField.font = UIFont.systemFontOfSize(11)
             
             textField.layer.borderWidth = 0.5
             textField.layer.borderColor = UIColor.grayColor().CGColor
             textField.layer.cornerRadius = 3.0
+            
+            textField.textAlignment = .Center
             
             scrollView.addSubview(textField)
         }

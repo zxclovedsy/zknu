@@ -12,6 +12,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     
     var scrollView: UIScrollView!
     var sheTuanJianJieTextView: UITextView!
+    var haiBaoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +33,18 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     
     // MARK: UITextViewDelegate
     func textViewShouldEndEditing(textView: UITextView) -> Bool {
-        scrollView.contentOffset.y = -40
+        scrollView.contentOffset.y = 0
         return true
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
-        scrollView.contentOffset.y = 80
+        scrollView.contentOffset.y = 120
     }
     
     // MARK: UIImagePickerDelegate
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-       // let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
- 
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        haiBaoImageView.image = selectedImage
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -53,28 +54,49 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     // MARK: UI
     func setupView() {
         scrollView = UIScrollView(frame: self.view.frame)
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.5)
+        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.3)
         scrollView.backgroundColor = UIColor.whiteColor()
         
+        // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 80, width: 70, height: 20))
         let leiXingLabel =  UILabel(frame: CGRect(x: 20, y: 120, width: 70, height: 20))
         let jiBieLabel = UILabel(frame: CGRect(x: 20, y: 160, width: 70, height: 20))
         let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 200, width: 70, height: 20))
+        let haiBaoLabel = UILabel(frame: CGRect(x: 20, y: 350, width: 70, height: 20))
         
         mingChengLabel.text = "社团名称"
         leiXingLabel.text = "社团类型"
         jiBieLabel.text = "社团级别"
         jianJieLabel.text = "社团简介"
+        haiBaoLabel.text = "上传海报"
         
         scrollView.addSubview(mingChengLabel)
         scrollView.addSubview(leiXingLabel)
         scrollView.addSubview(jiBieLabel)
         scrollView.addSubview(jianJieLabel)
+        scrollView.addSubview(haiBaoLabel)
+        
+        //textField
+        let mingChengTextField = UITextField(frame: CGRect(x: 120, y: 80, width: 150, height: 20))
+        mingChengTextField.delegate = self
+        mingChengTextField.layer.borderColor = UIColor.grayColor().CGColor
+        mingChengTextField.layer.borderWidth = 0.5
+        mingChengTextField.layer.cornerRadius = 3.0
+        mingChengTextField.textColor = UIColor.grayColor()
+        mingChengTextField.textAlignment = .Center
+        mingChengTextField.returnKeyType = .Done
+        mingChengTextField.placeholder = "请输入社团名称"
+        mingChengTextField.font = UIFont.systemFontOfSize(11)
+        scrollView.addSubview(mingChengTextField)
         
         // textView
-        sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 220, width: 280, height: 100))
+        sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 230, width: 280, height: 100))
         sheTuanJianJieTextView.delegate = self
         sheTuanJianJieTextView.textColor = UIColor.grayColor()
+        sheTuanJianJieTextView.layer.borderColor = UIColor.grayColor().CGColor
+        sheTuanJianJieTextView.layer.cornerRadius = 5
+        sheTuanJianJieTextView.layer.borderWidth = 0.5
+        sheTuanJianJieTextView.font = UIFont.systemFontOfSize(11)
         
         // 键盘上的工具栏
         let textViewToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
@@ -84,6 +106,24 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         textViewToolBar.items  = [undoButton, space, doneButton]
         sheTuanJianJieTextView.inputAccessoryView = textViewToolBar
         scrollView.addSubview(sheTuanJianJieTextView)
+        
+        // haiBaoImageView
+        haiBaoImageView = UIImageView(frame: CGRect(x: 20, y: 380, width: 150, height: 150))
+        haiBaoImageView.image = UIImage(named: "noImage")
+        haiBaoImageView.userInteractionEnabled = true
+        // tapGestureRecoginizer
+        let tapGestureRecoginizer = UITapGestureRecognizer(target: self, action: "selectImageFromPhotoLibrary:")
+        tapGestureRecoginizer.locationInView(haiBaoImageView)
+        haiBaoImageView.addGestureRecognizer(tapGestureRecoginizer)
+        
+        scrollView.addSubview(haiBaoImageView)
+        
+        // finishButton
+        let finishButton = UIButton(type: .System)
+        finishButton.frame = CGRect(x: 100, y: 560, width: 100, height: 20)
+        finishButton.setTitle("申请创建", forState: .Normal)
+        finishButton.addTarget(self, action: "finishButtonTapped:", forControlEvents: .TouchDown)
+        scrollView.addSubview(finishButton)
     }
     
     // MARK: Actions
