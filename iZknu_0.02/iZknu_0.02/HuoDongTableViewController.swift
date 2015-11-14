@@ -11,7 +11,6 @@ import UIKit
 class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
     var scrollView: UIScrollView!
-    var toolBar: UIToolbar!
     var menu: DOPDropDownMenu!
     var carouselView: UICarouselView!
     var tableView: UITableView!

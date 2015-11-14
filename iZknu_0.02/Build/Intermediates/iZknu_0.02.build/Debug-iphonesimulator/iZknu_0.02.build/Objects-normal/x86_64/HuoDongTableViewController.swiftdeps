@@ -6,69 +6,67 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0226HuoDongTableViewController", ""]
 provides-dynamic-lookup:
-- "setupCarouselView"
-- "toolBar"
-- "setupTableView"
-- "viewDidLoad"
-- "setupMenu"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "scrollView"
-- "menu"
-- "menu"
-- "menu"
-- "menu"
 - "carouselView"
-- "setupScrollView"
-- "numberOfSectionsInTableView"
-- "departments"
-- "scrollViewDidScroll"
-- "setupContentSize"
-- "numberOfColumnsInMenu"
-- "times"
 - "types"
+- "setupTableView"
+- "setupCarouselView"
+- "setupScrollView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "menu"
+- "menu"
+- "menu"
+- "menu"
+- "numberOfSectionsInTableView"
+- "setupMenu"
+- "departments"
+- "viewDidLoad"
+- "setupContentSize"
+- "scrollViewDidScroll"
+- "times"
+- "numberOfColumnsInMenu"
 depends-top-level:
-- "NSIndexPath"
-- "UIScrollView"
-- !private "UIBarButtonItem"
-- !private "!="
-- "UITableViewCell"
+- !private "~="
 - "Int"
 - !private "=="
-- !private "UIApplication"
-- !private "-"
-- "UITableViewDelegate"
-- "DOPDropDownMenu"
-- "StringLiteralType"
-- !private "CGFloat"
+- !private "assert"
+- "DOPIndexPath"
+- "UIViewController"
+- "NSIndexPath"
+- "HuoDongTableViewController"
 - !private "CGPoint"
 - "Array"
-- "UIToolbar"
-- !private "+"
-- !private "~="
-- "UITableViewDataSource"
-- !private "<"
-- "DOPDropDownMenuDataSource"
-- "UIViewController"
+- !private "CGFloat"
 - !private ">"
+- !private "!="
+- !private "assertionFailure"
+- !private "-"
+- "UITableViewDelegate"
+- !private "UIImage"
+- "DOPDropDownMenu"
+- "UIScrollView"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- "StringLiteralType"
+- "DOPDropDownMenuDataSource"
+- !private "+"
 - !private "print"
-- !private "..."
 - !private "UIColor"
+- !private "UIBarButtonItem"
 - !private "CGRect"
 - "String"
-- !private "HuoDongViewController"
+- !private "UIApplication"
+- !private "..."
 - !private "CGSize"
-- !private "assert"
-- "UITableView"
-- "UICarouselView"
-- !private "assertionFailure"
-- !private "UIImage"
-- "DOPIndexPath"
-- "DOPDropDownMenuDelegate"
+- !private "<"
 - !private "BooleanLiteralType"
-- "HuoDongTableViewController"
+- "UICarouselView"
+- !private "HuoDongViewController"
+- "DOPDropDownMenuDelegate"
+- "UITableView"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "Stride"]
 - !private ["PSs9AnyObject", "CGPoint"]
@@ -141,7 +139,6 @@ depends-member:
 - !private ["PSs9AnyObject", "textLabel"]
 - ["PSs9AnyObject", "times"]
 - !private ["PSs9AnyObject", "title"]
-- ["PSs9AnyObject", "toolBar"]
 - ["PSs9AnyObject", "types"]
 - !private ["PSs9AnyObject", "userInteractionEnabled"]
 - !private ["PSs9AnyObject", "view"]
@@ -262,7 +259,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "textLabel"]
 - ["PSs11CVarArgType", "times"]
 - !private ["PSs11CVarArgType", "title"]
-- ["PSs11CVarArgType", "toolBar"]
 - ["PSs11CVarArgType", "types"]
 - !private ["PSs11CVarArgType", "userInteractionEnabled"]
 - !private ["PSs11CVarArgType", "view"]
@@ -377,7 +373,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "textLabel"]
 - ["PSs23CustomStringConvertible", "times"]
 - !private ["PSs23CustomStringConvertible", "title"]
-- ["PSs23CustomStringConvertible", "toolBar"]
 - ["PSs23CustomStringConvertible", "types"]
 - !private ["PSs23CustomStringConvertible", "userInteractionEnabled"]
 - !private ["PSs23CustomStringConvertible", "view"]
@@ -575,7 +570,6 @@ depends-member:
 - !private ["PSs9Equatable", "textLabel"]
 - ["PSs9Equatable", "times"]
 - !private ["PSs9Equatable", "title"]
-- ["PSs9Equatable", "toolBar"]
 - ["PSs9Equatable", "types"]
 - !private ["PSs9Equatable", "userInteractionEnabled"]
 - !private ["PSs9Equatable", "view"]
@@ -671,7 +665,6 @@ depends-member:
 - !private ["PSs8Hashable", "textLabel"]
 - ["PSs8Hashable", "times"]
 - !private ["PSs8Hashable", "title"]
-- ["PSs8Hashable", "toolBar"]
 - ["PSs8Hashable", "types"]
 - !private ["PSs8Hashable", "userInteractionEnabled"]
 - !private ["PSs8Hashable", "view"]
@@ -697,7 +690,6 @@ depends-member:
 - ["C10iZknu_0_0226HuoDongTableViewController", "UIScrollView"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "UITableView"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "UITableViewCell"]
-- ["C10iZknu_0_0226HuoDongTableViewController", "UIToolbar"]
 - !private ["C10iZknu_0_0226HuoDongTableViewController", "assert"]
 - !private ["C10iZknu_0_0226HuoDongTableViewController", "assertionFailure"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "carouselView"]
@@ -734,7 +726,6 @@ depends-member:
 - ["C10iZknu_0_0226HuoDongTableViewController", "tableView"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "times"]
 - !private ["C10iZknu_0_0226HuoDongTableViewController", "title"]
-- ["C10iZknu_0_0226HuoDongTableViewController", "toolBar"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "types"]
 - !private ["C10iZknu_0_0226HuoDongTableViewController", "view"]
 - ["C10iZknu_0_0226HuoDongTableViewController", "viewDidLoad"]
@@ -867,7 +858,6 @@ depends-member:
 - !private ["PSo8NSCoding", "textLabel"]
 - ["PSo8NSCoding", "times"]
 - !private ["PSo8NSCoding", "title"]
-- ["PSo8NSCoding", "toolBar"]
 - ["PSo8NSCoding", "types"]
 - !private ["PSo8NSCoding", "userInteractionEnabled"]
 - !private ["PSo8NSCoding", "view"]
@@ -929,7 +919,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "times"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
-- ["PSo26NSExtensionRequestHandling", "toolBar"]
 - ["PSo26NSExtensionRequestHandling", "types"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -956,7 +945,6 @@ depends-member:
 - ["CSo8NSObject", "UIScrollView"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
-- ["CSo8NSObject", "UIToolbar"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "assert"]
 - !private ["CSo8NSObject", "assertionFailure"]
@@ -1015,7 +1003,6 @@ depends-member:
 - !private ["CSo8NSObject", "textLabel"]
 - ["CSo8NSObject", "times"]
 - !private ["CSo8NSObject", "title"]
-- ["CSo8NSObject", "toolBar"]
 - ["CSo8NSObject", "types"]
 - !private ["CSo8NSObject", "userInteractionEnabled"]
 - !private ["CSo8NSObject", "view"]
@@ -1092,7 +1079,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textLabel"]
 - ["PSo16NSObjectProtocol", "times"]
 - !private ["PSo16NSObjectProtocol", "title"]
-- ["PSo16NSObjectProtocol", "toolBar"]
 - ["PSo16NSObjectProtocol", "types"]
 - !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1252,7 +1238,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - ["PSo21UIAppearanceContainer", "times"]
 - !private ["PSo21UIAppearanceContainer", "title"]
-- ["PSo21UIAppearanceContainer", "toolBar"]
 - ["PSo21UIAppearanceContainer", "types"]
 - !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -1319,7 +1304,6 @@ depends-member:
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "times"]
 - !private ["PSo18UIContentContainer", "title"]
-- ["PSo18UIContentContainer", "toolBar"]
 - ["PSo18UIContentContainer", "types"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -1422,7 +1406,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - ["PSo18UIFocusEnvironment", "times"]
 - !private ["PSo18UIFocusEnvironment", "title"]
-- ["PSo18UIFocusEnvironment", "toolBar"]
 - ["PSo18UIFocusEnvironment", "types"]
 - !private ["PSo18UIFocusEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -1457,7 +1440,6 @@ depends-member:
 - ["CSo11UIResponder", "UIScrollView"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
-- ["CSo11UIResponder", "UIToolbar"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "assert"]
 - !private ["CSo11UIResponder", "assertionFailure"]
@@ -1512,7 +1494,6 @@ depends-member:
 - !private ["CSo11UIResponder", "textLabel"]
 - ["CSo11UIResponder", "times"]
 - !private ["CSo11UIResponder", "title"]
-- ["CSo11UIResponder", "toolBar"]
 - ["CSo11UIResponder", "types"]
 - !private ["CSo11UIResponder", "userInteractionEnabled"]
 - !private ["CSo11UIResponder", "view"]
@@ -1635,7 +1616,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "times"]
 - !private ["PSo16UIStateRestoring", "title"]
-- ["PSo16UIStateRestoring", "toolBar"]
 - ["PSo16UIStateRestoring", "types"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -1834,7 +1814,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - ["PSo18UITraitEnvironment", "times"]
 - !private ["PSo18UITraitEnvironment", "title"]
-- ["PSo18UITraitEnvironment", "toolBar"]
 - ["PSo18UITraitEnvironment", "types"]
 - !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -1875,7 +1854,6 @@ depends-member:
 - ["CSo16UIViewController", "UIScrollView"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
-- ["CSo16UIViewController", "UIToolbar"]
 - !private ["CSo16UIViewController", "assert"]
 - !private ["CSo16UIViewController", "assertionFailure"]
 - ["CSo16UIViewController", "carouselView"]
@@ -1914,7 +1892,6 @@ depends-member:
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "times"]
 - !private ["CSo16UIViewController", "title"]
-- ["CSo16UIViewController", "toolBar"]
 - ["CSo16UIViewController", "types"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -2190,4 +2167,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "345b9968d4019e2e68afb24527410713"
+interface-hash: "0a32cd4b9df8241bad84f75f33eb956e"

@@ -96,10 +96,11 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: - UI
     
     func setupMenu() {
-        menu = DOPDropDownMenu(origin: CGPoint(x: 0, y: 60), andHeight: 40)
+        let navBarHeight = (self.navigationController?.navigationBar.frame.height)!
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        menu = DOPDropDownMenu(origin: CGPoint(x: 0, y: navBarHeight + statusBarHeight), andHeight: 40)
         menu.dataSource = self
         menu.delegate = self
-        menu.backgroundColor = UIColor.redColor()
         self.view.addSubview(menu)
     }
     

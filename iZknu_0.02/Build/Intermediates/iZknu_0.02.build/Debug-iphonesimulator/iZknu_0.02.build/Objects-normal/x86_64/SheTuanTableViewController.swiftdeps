@@ -11,47 +11,48 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "setupMenu"
-- "numberOfSectionsInTableView"
-- "viewDidLoad"
+- "menu"
+- "menu"
+- "menu"
+- "menu"
 - "recruitments"
-- "departments"
 - "setupTableView"
-- "types"
-- "menu"
-- "menu"
-- "menu"
-- "menu"
+- "departments"
 - "numberOfColumnsInMenu"
+- "viewDidLoad"
+- "types"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- "UITableViewDataSource"
+- !private "+"
+- !private "BooleanLiteralType"
+- !private "-"
 - "UITableView"
-- !private "UIColor"
 - "DOPDropDownMenuDelegate"
-- !private "~="
-- !private "UIBarButtonItem"
-- "UITableViewDelegate"
-- !private "=="
-- !private "CGRect"
-- "StringLiteralType"
-- !private "print"
 - "DOPDropDownMenuDataSource"
-- "Int"
-- "String"
 - "UIViewController"
+- !private "UIBarButtonItem"
+- "Int"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
 - "DOPDropDownMenu"
-- !private "assertionFailure"
-- "NSIndexPath"
-- !private "SheTuanViewController"
+- "String"
+- !private "print"
 - !private "CGPoint"
 - "Array"
 - "SheTuanTableViewController"
-- !private "UIApplication"
-- "DOPIndexPath"
-- !private "+"
-- !private "BooleanLiteralType"
+- "NSIndexPath"
 - "UITableViewCell"
-- !private "-"
+- "DOPIndexPath"
+- "StringLiteralType"
+- !private "~="
+- !private "UIColor"
+- !private "=="
+- !private "CGRect"
+- !private "SheTuanViewController"
+- !private "assertionFailure"
+- !private "UIApplication"
 depends-member:
+- !private ["PSs16AbsoluteValuable", "Stride"]
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "DOPDropDownMenu"]
@@ -83,7 +84,6 @@ depends-member:
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "pushViewController"]
 - ["PSs9AnyObject", "recruitments"]
-- !private ["PSs9AnyObject", "redColor"]
 - !private ["PSs9AnyObject", "row"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
@@ -131,8 +131,10 @@ depends-member:
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -150,6 +152,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "SheTuanViewController"]
+- !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "UIBarButtonItem"]
 - !private ["PSs11CVarArgType", "UIColor"]
@@ -177,7 +180,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "pushViewController"]
 - ["PSs11CVarArgType", "recruitments"]
-- !private ["PSs11CVarArgType", "redColor"]
 - !private ["PSs11CVarArgType", "row"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
@@ -218,6 +220,7 @@ depends-member:
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "init"]
 - ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
@@ -235,6 +238,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "SheTuanViewController"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIApplication"]
 - !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
@@ -265,7 +269,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "pushViewController"]
 - ["PSs23CustomStringConvertible", "recruitments"]
-- !private ["PSs23CustomStringConvertible", "redColor"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -297,7 +300,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["CSo15DOPDropDownMenu", "backgroundColor"]
 - !private ["CSo15DOPDropDownMenu", "dataSource"]
 - !private ["CSo15DOPDropDownMenu", "delegate"]
 - !private ["CSo15DOPDropDownMenu", "frame"]
@@ -386,6 +388,7 @@ depends-member:
 - ["PSo23DOPDropDownMenuDelegate", ""]
 - !private ["CSo12DOPIndexPath", "column"]
 - !private ["CSo12DOPIndexPath", "row"]
+- !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "CGPoint"]
 - !private ["PSs9Equatable", "CGRect"]
@@ -395,6 +398,7 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "Plain"]
 - !private ["PSs9Equatable", "SheTuanViewController"]
+- !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "UIApplication"]
 - !private ["PSs9Equatable", "UIBarButtonItem"]
 - !private ["PSs9Equatable", "UIColor"]
@@ -425,7 +429,6 @@ depends-member:
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "pushViewController"]
 - ["PSs9Equatable", "recruitments"]
-- !private ["PSs9Equatable", "redColor"]
 - !private ["PSs9Equatable", "row"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
@@ -460,8 +463,11 @@ depends-member:
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
+- !private ["PSs23FloatLiteralConvertible", "Stride"]
+- !private ["PSs17FloatingPointType", "Stride"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "CGPoint"]
 - !private ["PSs8Hashable", "CGRect"]
@@ -471,6 +477,7 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "Plain"]
 - !private ["PSs8Hashable", "SheTuanViewController"]
+- !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "UIApplication"]
 - !private ["PSs8Hashable", "UIBarButtonItem"]
 - !private ["PSs8Hashable", "UIColor"]
@@ -499,7 +506,6 @@ depends-member:
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "pushViewController"]
 - ["PSs8Hashable", "recruitments"]
-- !private ["PSs8Hashable", "redColor"]
 - !private ["PSs8Hashable", "row"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
@@ -541,6 +547,7 @@ depends-member:
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
@@ -548,12 +555,16 @@ depends-member:
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Stride"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "init"]
 - ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -603,7 +614,6 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - ["PSo8NSCoding", "recruitments"]
-- !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -633,7 +643,6 @@ depends-member:
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "redColor"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
@@ -721,7 +730,6 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
 - ["CSo8NSObject", "recruitments"]
-- !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -782,7 +790,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - ["PSo16NSObjectProtocol", "recruitments"]
-- !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -814,7 +821,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "redColor"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "deinit"]
@@ -824,6 +830,7 @@ depends-member:
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
 - !private ["VSs5Range", "deinit"]
 - ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
@@ -891,8 +898,10 @@ depends-member:
 - !private ["C10iZknu_0_0221SheTuanViewController", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "Stride"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Stride"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
@@ -901,6 +910,7 @@ depends-member:
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Stride"]
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -985,7 +995,6 @@ depends-member:
 - !private ["OSC20UIBarButtonItemStyle", "Plain"]
 - !private ["CSo9UIBarItem", "init"]
 - !private ["PSo16UIBarPositioning", "frame"]
-- !private ["CSo7UIColor", "redColor"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGPoint"]
 - !private ["PSo18UIContentContainer", "CGRect"]
@@ -1190,7 +1199,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITableView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "assertionFailure"]
-- !private ["PSo20UIScrollViewDelegate", "backgroundColor"]
 - !private ["PSo20UIScrollViewDelegate", "dataSource"]
 - !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "departments"]
@@ -1293,7 +1301,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableView"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "assertionFailure"]
-- !private ["PSo21UITableViewDataSource", "backgroundColor"]
 - !private ["PSo21UITableViewDataSource", "dataSource"]
 - !private ["PSo21UITableViewDataSource", "delegate"]
 - !private ["PSo21UITableViewDataSource", "departments"]
@@ -1339,7 +1346,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableView"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "assertionFailure"]
-- !private ["PSo19UITableViewDelegate", "backgroundColor"]
 - !private ["PSo19UITableViewDelegate", "dataSource"]
 - !private ["PSo19UITableViewDelegate", "delegate"]
 - !private ["PSo19UITableViewDelegate", "departments"]
@@ -1505,13 +1511,16 @@ depends-member:
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs19_CVarArgAlignedType", "Stride"]
+- !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
 - !private ["PSs16_CocoaStringType", "init"]
-- !private ["PSs24_ColorLiteralConvertible", "redColor"]
 - !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
 - ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
@@ -1521,15 +1530,19 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Stride"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
@@ -1538,11 +1551,13 @@ depends-member:
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs12_Reflectable", "Distance"]
 - ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
@@ -1563,9 +1578,12 @@ depends-member:
 - !private ["PSs12_Reflectable", "y"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "Stride"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Stride"]
 depends-nominal:
+- !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
 - "Sa"
 - "PSs23ArrayLiteralConvertible"
@@ -1592,6 +1610,8 @@ depends-nominal:
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
@@ -1683,10 +1703,13 @@ depends-nominal:
 - "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs32_BuiltinStringLiteralConvertible"
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"

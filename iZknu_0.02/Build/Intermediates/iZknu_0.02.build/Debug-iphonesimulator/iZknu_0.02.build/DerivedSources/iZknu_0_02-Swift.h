@@ -150,7 +150,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0238ChuangJianDeSheTuanTableViewController")
 @end
 
 @class UIScrollView;
-@class UIToolbar;
 @class DOPDropDownMenu;
 @class UICarouselView;
 @class NSIndexPath;
@@ -160,7 +159,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0238ChuangJianDeSheTuanTableViewController")
 SWIFT_CLASS("_TtC10iZknu_0_0226HuoDongTableViewController")
 @interface HuoDongTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
-@property (nonatomic, strong) UIToolbar * __null_unspecified toolBar;
 @property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
 @property (nonatomic, strong) UICarouselView * __null_unspecified carouselView;
 @property (nonatomic, strong) UITableView * __null_unspecified tableView;
@@ -198,7 +196,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0221HuoDongViewController")
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UIImageView * __null_unspecified imageView;
 @property (nonatomic, copy) NSArray<UITextField *> * __null_unspecified textFields;
-- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

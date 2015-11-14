@@ -15,7 +15,7 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     var textFields: [UITextField]!
     var origin: CGPoint!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         let clearImage = getImageWithColor(UIColor.clearColor(), size: (self.navigationController?.navigationBar.frame.size)!)
         let navBar = (self.navigationController?.navigationBar)!
         

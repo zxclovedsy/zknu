@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221HuoDongViewController", ""]
 provides-dynamic-lookup:
-- "imageView"
-- "setupScrollView"
 - "setupLabels"
 - "textViewShouldBeginEditing"
 - "didReceiveMemoryWarning"
+- "setupButton"
+- "scrollView"
 - "setupTextFields"
 - "textFieldShouldBeginEditing"
-- "viewWillDisappear"
-- "scrollView"
 - "viewDidLoad"
-- "getImageWithColor"
-- "setupTextView"
-- "setupImageView"
-- "buttonTapped"
-- "viewWillAppear"
-- "setupButton"
 - "textFields"
+- "setupScrollView"
+- "getImageWithColor"
+- "viewWillDisappear"
+- "viewDidAppear"
+- "setupTextView"
+- "buttonTapped"
+- "setupImageView"
+- "imageView"
 depends-top-level:
-- !private "+"
-- !private "UIGraphicsEndImageContext"
-- !private "-"
-- !private "Array"
-- !private "UIApplication"
-- "UITextField"
-- "UIButton"
-- !private "StringLiteralType"
 - "HuoDongViewController"
-- "UIImageView"
-- !private "/"
-- !private "UILabel"
-- "UITextFieldDelegate"
+- "UIScrollView"
+- !private "CGRectMake"
+- !private "+"
+- "UIImage"
+- "UIViewController"
+- !private "-"
+- "UIColor"
+- !private "Array"
+- "CGPoint"
+- !private "StringLiteralType"
+- !private "UIFont"
+- "UIButton"
 - !private "*"
 - !private "CGFloat"
-- "UITextViewDelegate"
-- !private "CGRectMake"
-- "CGPoint"
-- "UIViewController"
-- "UIColor"
-- !private "UIRectFill"
-- "UIScrollView"
-- "Bool"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "CGSize"
-- "UITextView"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "BooleanLiteralType"
+- !private "UIGraphicsEndImageContext"
+- !private "/"
+- "UITextField"
 - !private "CGRect"
-- "UIImage"
-- !private "UIFont"
+- !private "UIApplication"
+- "UITextFieldDelegate"
+- "CGSize"
+- "UITextViewDelegate"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- "UIImageView"
+- "UITextView"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIRectFill"
+- !private "UILabel"
+- !private "BooleanLiteralType"
+- "Bool"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -147,9 +147,9 @@ depends-member:
 - ["PSs9AnyObject", "textViewShouldBeginEditing"]
 - ["PSs9AnyObject", "textViewShouldEndEditing"]
 - !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
-- ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "viewWillDisappear"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", ""]
@@ -282,9 +282,9 @@ depends-member:
 - ["PSs11CVarArgType", "textViewShouldBeginEditing"]
 - ["PSs11CVarArgType", "textViewShouldEndEditing"]
 - !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
-- ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", "viewWillDisappear"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
@@ -398,9 +398,9 @@ depends-member:
 - ["PSs23CustomStringConvertible", "textViewShouldBeginEditing"]
 - ["PSs23CustomStringConvertible", "textViewShouldEndEditing"]
 - !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
-- ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "viewWillDisappear"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
@@ -507,9 +507,9 @@ depends-member:
 - ["PSs9Equatable", "textViewShouldBeginEditing"]
 - ["PSs9Equatable", "textViewShouldEndEditing"]
 - !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
-- ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", "viewWillDisappear"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
@@ -619,9 +619,9 @@ depends-member:
 - ["PSs8Hashable", "textViewShouldBeginEditing"]
 - ["PSs8Hashable", "textViewShouldEndEditing"]
 - !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
-- ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "viewWillDisappear"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
@@ -688,9 +688,9 @@ depends-member:
 - ["C10iZknu_0_0221HuoDongViewController", "textViewShouldBeginEditing"]
 - ["C10iZknu_0_0221HuoDongViewController", "textViewShouldEndEditing"]
 - !private ["C10iZknu_0_0221HuoDongViewController", "view"]
+- ["C10iZknu_0_0221HuoDongViewController", "viewDidAppear"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewDidLoad"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewForZoomingInScrollView"]
-- ["C10iZknu_0_0221HuoDongViewController", "viewWillAppear"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewWillDisappear"]
 - !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
@@ -815,9 +815,9 @@ depends-member:
 - ["PSo8NSCoding", "textViewShouldBeginEditing"]
 - ["PSo8NSCoding", "textViewShouldEndEditing"]
 - !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
-- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
@@ -889,9 +889,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textViewShouldBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textViewShouldEndEditing"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
-- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
@@ -983,9 +983,9 @@ depends-member:
 - ["CSo8NSObject", "textViewShouldBeginEditing"]
 - ["CSo8NSObject", "textViewShouldEndEditing"]
 - !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
-- ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
@@ -1076,9 +1076,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textViewShouldBeginEditing"]
 - ["PSo16NSObjectProtocol", "textViewShouldEndEditing"]
 - !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
-- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1236,9 +1236,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "textViewShouldBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textViewShouldEndEditing"]
 - !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
-- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "sharedApplication"]
@@ -1319,9 +1319,9 @@ depends-member:
 - ["PSo18UIContentContainer", "textViewShouldBeginEditing"]
 - ["PSo18UIContentContainer", "textViewShouldEndEditing"]
 - !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
-- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
@@ -1448,9 +1448,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "textViewShouldBeginEditing"]
 - ["PSo18UIFocusEnvironment", "textViewShouldEndEditing"]
 - !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
-- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "systemFontOfSize"]
@@ -1552,9 +1552,9 @@ depends-member:
 - ["CSo11UIResponder", "textViewShouldBeginEditing"]
 - ["CSo11UIResponder", "textViewShouldEndEditing"]
 - !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
-- ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "contentSize"]
@@ -1686,9 +1686,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "textViewShouldBeginEditing"]
 - ["PSo16UIStateRestoring", "textViewShouldEndEditing"]
 - !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
-- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "delegate"]
@@ -1914,9 +1914,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "textViewShouldBeginEditing"]
 - ["PSo18UITraitEnvironment", "textViewShouldEndEditing"]
 - !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
-- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
@@ -1999,9 +1999,9 @@ depends-member:
 - ["CSo16UIViewController", "textViewShouldBeginEditing"]
 - ["CSo16UIViewController", "textViewShouldEndEditing"]
 - !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
-- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs10_ArrayType", "Element"]
@@ -2209,4 +2209,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "a2469653b1077b61a345565d985a4690"
+interface-hash: "4593232f8c11910609df1365c5053598"

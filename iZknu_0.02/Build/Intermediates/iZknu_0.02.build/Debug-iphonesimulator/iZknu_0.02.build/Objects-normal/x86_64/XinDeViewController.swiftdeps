@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0219XinDeViewController", ""]
 provides-dynamic-lookup:
-- "newHuoDongViewController"
-- "viewDidLoad"
-- "segmentedControlIndexChanged"
 - "segmentedControl"
-- "didReceiveMemoryWarning"
 - "newSheTuanViewController"
 - "setupSegmentedControl"
+- "didReceiveMemoryWarning"
+- "segmentedControlIndexChanged"
+- "viewDidLoad"
+- "newHuoDongViewController"
 depends-top-level:
-- "NewSheTuanViewController"
-- "UIViewController"
-- !private "~="
-- "NewHuoDongViewController"
-- !private "StringLiteralType"
-- !private "-"
-- "UISegmentedControl"
-- "XinDeViewController"
-- !private "/"
-- !private "BooleanLiteralType"
 - !private "print"
+- "NewSheTuanViewController"
+- !private "~="
+- !private "StringLiteralType"
+- "UISegmentedControl"
+- "UIViewController"
+- "XinDeViewController"
+- !private "-"
+- "NewHuoDongViewController"
+- !private "BooleanLiteralType"
+- !private "/"
 depends-member:
 - !private ["PSs9AnyObject", "NewHuoDongViewController"]
 - !private ["PSs9AnyObject", "NewSheTuanViewController"]
