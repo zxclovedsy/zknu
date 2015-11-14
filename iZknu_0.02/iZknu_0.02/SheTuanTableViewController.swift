@@ -8,36 +8,72 @@
 
 import UIKit
 
-class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
     var tableView: UITableView!
-    var toolBar: UIToolbar!
+    var menu: DOPDropDownMenu!
     
+    let departments = ["所有院系", "网络工程学院", "计算机科学与技术学院", "文学院", "政法学院", "外国语学院", "数学与统计学院", "物理与电信工程学院", "化学化工学院", "生命科学与农学学院", "教育科学学院", "美术学院", "音乐舞蹈学院", "体育学院", "经济与管理学院", "新闻与传媒学院", "机械与电气工程学院", "设计学院", "软件学院", "继续教育学院", "马克思主义学院", "公共艺术与职业技能教研部"]
+    let types = ["所有类型", "学术", "艺术", "公益", "爱好", "社会实践", "官方组织", "其它"]
+    let recruitments = ["所有社团","招新", "已招满"]
     
     override func viewDidLoad() {
-        let tableViewY: CGFloat = 40
+        
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "社团"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
-        // tableView
-        self.tableView = UITableView(frame: CGRect(x: 0, y: tableViewY, width: self.view.frame.width, height: self.view.frame.height))
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.view.addSubview(tableView)
-        setupToolBar()
+        
+        self.setupMenu()
+        self.setupTableView()
+        
     }
     
+    // MARK: - menuDataSource
+    func numberOfColumnsInMenu(menu: DOPDropDownMenu!) -> Int {
+        return 3
+    }
     
+    func menu(menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
+        switch column {
+        case 0: return departments.count
+        case 1: return types.count
+        case 2: return recruitments.count
+        default:
+            assertionFailure("ERROR in number of rows in column")
+            return 0
+        }
+    }
     
-    // MARK: -UITableViewDataSource
+    func menu(menu: DOPDropDownMenu!, titleForRowAtIndexPath indexPath: DOPIndexPath!) -> String! {
+        let row = indexPath.row
+        switch indexPath.column {
+        case 0: return departments[row]
+        case 1: return types[row]
+        case 2: return recruitments[row]
+        default:
+            assertionFailure("ERROR in title for row at indexpath")
+            return ""
+        }
+    }
+    
+    func menu(menu: DOPDropDownMenu!, didSelectRowAtIndexPath indexPath: DOPIndexPath!) {
+        switch indexPath.column {
+        case 0: print("Selected 院系 \(departments[indexPath.row])")
+        case 1: print("Selected 类型 \(types[indexPath.row])")
+        case 2: print("Selected 人员状况 \(recruitments[indexPath.row])")
+        default: assertionFailure("ERROR in did seletct menu ")
+        }
+    }
+    
+    // MARK: - UITableViewDataSource
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 50
     }
     
     
@@ -46,6 +82,7 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
         if cell == nil {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
+            cell?.textLabel!.text = "\(indexPath.row)"
         }
         return cell!
     }
@@ -56,48 +93,30 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    // MARK: - UI
     
-    // MARK: Actions
-    
-    func setupToolBar() {
-        
-        let toolBarHeight: CGFloat = 40
-        let toolBarY: CGFloat = 60
-        // 修复tableView 顶部被 toolbar 覆盖
-        self.toolBar = UIToolbar(frame: CGRect(x: 0, y: toolBarY, width: self.view.frame.width, height: toolBarHeight))
-        self.toolBar.tintColor = UIColor.blackColor()
-        
-        let leiXingBarButtonItem = UIBarButtonItem(title: "分类 V", style: .Plain, target: self, action: "fenLeiBarButtonItemTapped:")
-        let yuanXiBarButtonItem = UIBarButtonItem(title: "院系 V", style: .Plain, target: self, action: "yuanXiBarButtonItemTapped:")
-        let shiJianBarButtonItem = UIBarButtonItem(title: "招新 V", style: .Plain, target: self, action: "zhaoXinBarButtonItemTapped:")
-        
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-        self.toolBar.items = [
-            leiXingBarButtonItem,
-            flexibleSpace,
-            yuanXiBarButtonItem,
-            flexibleSpace,
-            shiJianBarButtonItem
-        ]
-        
-        
-        self.view.addSubview(toolBar)
-        
+    func setupMenu() {
+        menu = DOPDropDownMenu(origin: CGPoint(x: 0, y: 60), andHeight: 40)
+        menu.dataSource = self
+        menu.delegate = self
+        menu.backgroundColor = UIColor.redColor()
+        self.view.addSubview(menu)
     }
     
-    func fenLeiBarButtonItemTapped(sender: UIBarButtonItem) {
-        print("fenLeiBarButtonItemTapped")
-        self.navigationController?.pushViewController(SFenLeiTableViewController(), animated: true)
+    func setupTableView() {
+        let menuHeight = self.menu.frame.height
+        let tabBarHeight = (self.tabBarController?.tabBar.frame.height)!
+        let navBarHeight = (self.navigationController?.navigationBar.frame.height)!
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let tableViewY = menu.frame.origin.y + menu.frame.height
+        self.tableView = UITableView(frame: CGRect(x: 0, y: tableViewY, width: self.view.frame.width, height: self.view.frame.height - menuHeight - tabBarHeight - navBarHeight - statusBarHeight))
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.view.addSubview(tableView)
     }
     
-    func yuanXiBarButtonItemTapped(sender: UIBarButtonItem) {
-        print("yuanXiBarButtonItemTapped")
-        self.navigationController?.pushViewController(SYuanXiTableViewController(), animated: true)
-    }
     
-    func zhaoXinBarButtonItemTapped(sender: UIBarButtonItem) {
-        print("zhaoXinBarButtonItemTapped")
-        self.navigationController?.pushViewController(SZhaoXinTableViewController(), animated: true)
-    }
+    
+    // MARK: - Actions
     
 }

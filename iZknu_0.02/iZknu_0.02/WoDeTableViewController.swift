@@ -22,7 +22,6 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
-        
         self.setupTopView()
         self.setupTableView()
         self.setupTouXiangImageView()
@@ -89,9 +88,12 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func setupTableView() {
-        let tableViewY: CGFloat = 100
-        tableView = UITableView(frame: CGRect(x: 0, y: tableViewY, width: self.view.frame.width, height: self.view.frame.height))
+        let y: CGFloat = 100
+        let tabBarHeight = (self.tabBarController?.tabBar.frame.height)!
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        tableView = UITableView(frame: CGRect(x: 0, y: y, width: self.view.frame.width, height: self.view.frame.height - tabBarHeight - topView.frame.height - statusBarHeight))
         tableView.rowHeight = 60
+        tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)

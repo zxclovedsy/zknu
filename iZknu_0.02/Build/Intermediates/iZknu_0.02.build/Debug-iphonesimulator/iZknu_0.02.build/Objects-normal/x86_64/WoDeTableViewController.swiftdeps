@@ -6,62 +6,65 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0223WoDeTableViewController", ""]
 provides-dynamic-lookup:
-- "nameLabel"
-- "setupLabels"
-- "numberLabel"
-- "viewWillAppear"
-- "setupTopView"
-- "touXiangImageView"
-- "didReceiveMemoryWarning"
 - "info"
-- "viewDidLoad"
-- "topView"
-- "setupTableView"
 - "viewWillDisappear"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "setupTopView"
+- "nameLabel"
 - "numberOfSectionsInTableView"
 - "setupTouXiangImageView"
+- "topView"
+- "setupLabels"
+- "setupTableView"
+- "touXiangImageView"
+- "numberLabel"
+- "viewWillAppear"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
 depends-top-level:
-- "NSIndexPath"
-- "UIViewController"
-- "UITableViewCell"
-- !private "CanJiaDeHuoDongTableViewController"
 - "UIView"
-- "Array"
+- "UITableViewDataSource"
+- !private "UIFont"
 - !private "~="
 - !private "=="
-- !private "ChuangJianDeHuoDongTableViewController"
-- !private "CGRect"
-- !private "WoDeGuanZhuTableViewController"
-- "StringLiteralType"
-- "UILabel"
-- !private "JiaRuDeSheTuanTableViewController"
-- "Int"
-- !private "UIImage"
-- !private "/"
-- !private "UIBarButtonItem"
-- !private "UIColor"
-- "WoDeTableViewController"
-- "UIImageView"
-- "UITableView"
 - !private "print"
-- "Bool"
-- !private "WoDeFenSiTableViewController"
-- !private "UIFont"
 - "UITableViewDelegate"
-- !private "BooleanLiteralType"
-- "UITableViewDataSource"
+- !private "CGRect"
+- "StringLiteralType"
+- !private "WoDeGuanZhuTableViewController"
+- !private "ChuangJianDeHuoDongTableViewController"
+- !private "UIApplication"
+- "UITableView"
+- !private "UIColor"
+- "UITableViewCell"
+- !private "WoDeFenSiTableViewController"
 - !private "CGFloat"
+- "Int"
+- !private "CanJiaDeHuoDongTableViewController"
+- !private "JiaRuDeSheTuanTableViewController"
+- "UIImageView"
+- "UILabel"
 - !private "ChuangJianDeSheTuanTableViewController"
+- "WoDeTableViewController"
+- "NSIndexPath"
+- !private "/"
+- "Array"
+- "UIViewController"
+- !private "UIBarButtonItem"
+- !private "-"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "UIImage"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CanJiaDeHuoDongTableViewController"]
 - !private ["PSs9AnyObject", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSs9AnyObject", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSs9AnyObject", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "UIBarButtonItem"]
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIFont"]
@@ -117,7 +120,12 @@ depends-member:
 - ["PSs9AnyObject", "setupTableView"]
 - ["PSs9AnyObject", "setupTopView"]
 - ["PSs9AnyObject", "setupTouXiangImageView"]
+- !private ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
+- !private ["PSs9AnyObject", "statusBarFrame"]
 - !private ["PSs9AnyObject", "systemFontOfSize"]
+- !private ["PSs9AnyObject", "tabBar"]
+- !private ["PSs9AnyObject", "tabBarController"]
 - ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textLabel"]
@@ -165,6 +173,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "UIBarButtonItem"]
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIFont"]
@@ -220,7 +229,12 @@ depends-member:
 - ["PSs11CVarArgType", "setupTableView"]
 - ["PSs11CVarArgType", "setupTopView"]
 - ["PSs11CVarArgType", "setupTouXiangImageView"]
+- !private ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "showsVerticalScrollIndicator"]
+- !private ["PSs11CVarArgType", "statusBarFrame"]
 - !private ["PSs11CVarArgType", "systemFontOfSize"]
+- !private ["PSs11CVarArgType", "tabBar"]
+- !private ["PSs11CVarArgType", "tabBarController"]
 - ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textLabel"]
@@ -262,6 +276,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "JiaRuDeSheTuanTableViewController"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIApplication"]
 - !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
@@ -319,8 +334,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "setupTableView"]
 - ["PSs23CustomStringConvertible", "setupTopView"]
 - ["PSs23CustomStringConvertible", "setupTouXiangImageView"]
+- !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "showsVerticalScrollIndicator"]
+- !private ["PSs23CustomStringConvertible", "statusBarFrame"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
+- !private ["PSs23CustomStringConvertible", "tabBar"]
+- !private ["PSs23CustomStringConvertible", "tabBarController"]
 - ["PSs23CustomStringConvertible", "tableView"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textLabel"]
@@ -343,6 +363,7 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "JiaRuDeSheTuanTableViewController"]
 - !private ["PSs9Equatable", "Plain"]
+- !private ["PSs9Equatable", "UIApplication"]
 - !private ["PSs9Equatable", "UIBarButtonItem"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIFont"]
@@ -400,7 +421,12 @@ depends-member:
 - ["PSs9Equatable", "setupTableView"]
 - ["PSs9Equatable", "setupTopView"]
 - ["PSs9Equatable", "setupTouXiangImageView"]
+- !private ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "showsVerticalScrollIndicator"]
+- !private ["PSs9Equatable", "statusBarFrame"]
 - !private ["PSs9Equatable", "systemFontOfSize"]
+- !private ["PSs9Equatable", "tabBar"]
+- !private ["PSs9Equatable", "tabBarController"]
 - ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textLabel"]
@@ -426,6 +452,7 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "JiaRuDeSheTuanTableViewController"]
 - !private ["PSs8Hashable", "Plain"]
+- !private ["PSs8Hashable", "UIApplication"]
 - !private ["PSs8Hashable", "UIBarButtonItem"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIFont"]
@@ -482,7 +509,12 @@ depends-member:
 - ["PSs8Hashable", "setupTableView"]
 - ["PSs8Hashable", "setupTopView"]
 - ["PSs8Hashable", "setupTouXiangImageView"]
+- !private ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "showsVerticalScrollIndicator"]
+- !private ["PSs8Hashable", "statusBarFrame"]
 - !private ["PSs8Hashable", "systemFontOfSize"]
+- !private ["PSs8Hashable", "tabBar"]
+- !private ["PSs8Hashable", "tabBarController"]
 - ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textLabel"]
@@ -538,6 +570,7 @@ depends-member:
 - !private ["PSo8NSCoding", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo8NSCoding", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo8NSCoding", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -593,6 +626,9 @@ depends-member:
 - ["PSo8NSCoding", "setupTableView"]
 - ["PSo8NSCoding", "setupTopView"]
 - ["PSo8NSCoding", "setupTouXiangImageView"]
+- !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
+- !private ["PSo8NSCoding", "tabBar"]
+- !private ["PSo8NSCoding", "tabBarController"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
@@ -613,6 +649,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -653,6 +690,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "setupTableView"]
 - ["PSo26NSExtensionRequestHandling", "setupTopView"]
 - ["PSo26NSExtensionRequestHandling", "setupTouXiangImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "tabBar"]
+- !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "topView"]
 - ["PSo26NSExtensionRequestHandling", "touXiangImageView"]
@@ -673,6 +712,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JiaRuDeSheTuanTableViewController"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
@@ -730,7 +770,12 @@ depends-member:
 - ["CSo8NSObject", "setupTableView"]
 - ["CSo8NSObject", "setupTopView"]
 - ["CSo8NSObject", "setupTouXiangImageView"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
+- !private ["CSo8NSObject", "statusBarFrame"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
+- !private ["CSo8NSObject", "tabBar"]
+- !private ["CSo8NSObject", "tabBarController"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textLabel"]
@@ -747,6 +792,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo16NSObjectProtocol", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo16NSObjectProtocol", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -802,7 +848,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setupTableView"]
 - ["PSo16NSObjectProtocol", "setupTopView"]
 - ["PSo16NSObjectProtocol", "setupTouXiangImageView"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
+- !private ["PSo16NSObjectProtocol", "statusBarFrame"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
+- !private ["PSo16NSObjectProtocol", "tabBar"]
+- !private ["PSo16NSObjectProtocol", "tabBarController"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
@@ -862,6 +913,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "addSubview"]
@@ -877,6 +929,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "rowHeight"]
+- !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
@@ -884,6 +937,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo21UIAppearanceContainer", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo21UIAppearanceContainer", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -936,6 +990,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setupTableView"]
 - ["PSo21UIAppearanceContainer", "setupTopView"]
 - ["PSo21UIAppearanceContainer", "setupTouXiangImageView"]
+- !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
+- !private ["PSo21UIAppearanceContainer", "tabBar"]
+- !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
@@ -947,6 +1004,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["CSo13UIApplication", "statusBarFrame"]
 - !private ["CSo15UIBarButtonItem", "init"]
 - !private ["OSC20UIBarButtonItemStyle", "Plain"]
 - !private ["CSo9UIBarItem", "init"]
@@ -956,6 +1015,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo18UIContentContainer", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo18UIContentContainer", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -996,6 +1056,8 @@ depends-member:
 - ["PSo18UIContentContainer", "setupTableView"]
 - ["PSo18UIContentContainer", "setupTopView"]
 - ["PSo18UIContentContainer", "setupTouXiangImageView"]
+- !private ["PSo18UIContentContainer", "tabBar"]
+- !private ["PSo18UIContentContainer", "tabBarController"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "topView"]
 - ["PSo18UIContentContainer", "touXiangImageView"]
@@ -1018,6 +1080,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
+- !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -1033,6 +1096,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
+- !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
@@ -1040,6 +1104,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo18UIFocusEnvironment", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo18UIFocusEnvironment", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -1092,6 +1157,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setupTableView"]
 - ["PSo18UIFocusEnvironment", "setupTopView"]
 - ["PSo18UIFocusEnvironment", "setupTouXiangImageView"]
+- !private ["PSo18UIFocusEnvironment", "showsVerticalScrollIndicator"]
+- !private ["PSo18UIFocusEnvironment", "tabBar"]
+- !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
@@ -1127,6 +1195,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "JiaRuDeSheTuanTableViewController"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
@@ -1180,6 +1249,11 @@ depends-member:
 - ["CSo11UIResponder", "setupTableView"]
 - ["CSo11UIResponder", "setupTopView"]
 - ["CSo11UIResponder", "setupTouXiangImageView"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
+- !private ["CSo11UIResponder", "statusBarFrame"]
+- !private ["CSo11UIResponder", "tabBar"]
+- !private ["CSo11UIResponder", "tabBarController"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
@@ -1196,11 +1270,13 @@ depends-member:
 - !private ["CSo12UIScrollView", "deselectRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "rowHeight"]
+- !private ["CSo12UIScrollView", "showsVerticalScrollIndicator"]
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "CanJiaDeHuoDongTableViewController"]
 - !private ["PSo20UIScrollViewDelegate", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo20UIScrollViewDelegate", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo20UIScrollViewDelegate", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
@@ -1238,6 +1314,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "setupTableView"]
 - !private ["PSo20UIScrollViewDelegate", "setupTopView"]
 - !private ["PSo20UIScrollViewDelegate", "setupTouXiangImageView"]
+- !private ["PSo20UIScrollViewDelegate", "tabBarController"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "topView"]
 - !private ["PSo20UIScrollViewDelegate", "touXiangImageView"]
@@ -1249,6 +1326,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo16UIStateRestoring", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo16UIStateRestoring", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -1289,6 +1367,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "setupTableView"]
 - ["PSo16UIStateRestoring", "setupTopView"]
 - ["PSo16UIStateRestoring", "setupTouXiangImageView"]
+- !private ["PSo16UIStateRestoring", "tabBar"]
+- !private ["PSo16UIStateRestoring", "tabBarController"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "topView"]
 - ["PSo16UIStateRestoring", "touXiangImageView"]
@@ -1298,12 +1378,16 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo8UITabBar", "frame"]
+- !private ["CSo18UITabBarController", "tabBar"]
+- !private ["PSo16UITabBarDelegate", "tabBar"]
 - !private ["CSo11UITableView", "dataSource"]
 - !private ["CSo11UITableView", "delegate"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "deselectRowAtIndexPath"]
 - !private ["CSo11UITableView", "init"]
 - !private ["CSo11UITableView", "rowHeight"]
+- !private ["CSo11UITableView", "showsVerticalScrollIndicator"]
 - !private ["CSo15UITableViewCell", "init"]
 - !private ["CSo15UITableViewCell", "textLabel"]
 - !private ["OSC20UITableViewCellStyle", "Default"]
@@ -1313,6 +1397,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo21UITableViewDataSource", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo21UITableViewDataSource", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
@@ -1350,6 +1435,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "setupTableView"]
 - !private ["PSo21UITableViewDataSource", "setupTopView"]
 - !private ["PSo21UITableViewDataSource", "setupTouXiangImageView"]
+- !private ["PSo21UITableViewDataSource", "tabBarController"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "topView"]
 - !private ["PSo21UITableViewDataSource", "touXiangImageView"]
@@ -1361,6 +1447,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo19UITableViewDelegate", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo19UITableViewDelegate", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo19UITableViewDelegate", "UIApplication"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
@@ -1398,6 +1485,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "setupTableView"]
 - !private ["PSo19UITableViewDelegate", "setupTopView"]
 - !private ["PSo19UITableViewDelegate", "setupTouXiangImageView"]
+- !private ["PSo19UITableViewDelegate", "tabBarController"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "topView"]
 - !private ["PSo19UITableViewDelegate", "touXiangImageView"]
@@ -1409,6 +1497,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "ChuangJianDeHuoDongTableViewController"]
 - !private ["PSo18UITraitEnvironment", "ChuangJianDeSheTuanTableViewController"]
 - !private ["PSo18UITraitEnvironment", "JiaRuDeSheTuanTableViewController"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -1461,6 +1550,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setupTableView"]
 - ["PSo18UITraitEnvironment", "setupTopView"]
 - ["PSo18UITraitEnvironment", "setupTouXiangImageView"]
+- !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
+- !private ["PSo18UITraitEnvironment", "tabBar"]
+- !private ["PSo18UITraitEnvironment", "tabBarController"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
@@ -1485,6 +1577,7 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "rowHeight"]
+- !private ["CSo6UIView", "showsVerticalScrollIndicator"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "Bool"]
@@ -1496,6 +1589,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "JiaRuDeSheTuanTableViewController"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
@@ -1537,6 +1631,8 @@ depends-member:
 - ["CSo16UIViewController", "setupTableView"]
 - ["CSo16UIViewController", "setupTopView"]
 - ["CSo16UIViewController", "setupTouXiangImageView"]
+- !private ["CSo16UIViewController", "tabBar"]
+- !private ["CSo16UIViewController", "tabBarController"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "topView"]
 - ["CSo16UIViewController", "touXiangImageView"]
@@ -1557,6 +1653,7 @@ depends-member:
 - ["C10iZknu_0_0223WoDeTableViewController", "Int"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "JiaRuDeSheTuanTableViewController"]
 - ["C10iZknu_0_0223WoDeTableViewController", "NSIndexPath"]
+- !private ["C10iZknu_0_0223WoDeTableViewController", "UIApplication"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "UIBarButtonItem"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "UIColor"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "UIFont"]
@@ -1597,6 +1694,7 @@ depends-member:
 - ["C10iZknu_0_0223WoDeTableViewController", "setupTableView"]
 - ["C10iZknu_0_0223WoDeTableViewController", "setupTopView"]
 - ["C10iZknu_0_0223WoDeTableViewController", "setupTouXiangImageView"]
+- !private ["C10iZknu_0_0223WoDeTableViewController", "tabBarController"]
 - ["C10iZknu_0_0223WoDeTableViewController", "tableView"]
 - ["C10iZknu_0_0223WoDeTableViewController", "topView"]
 - ["C10iZknu_0_0223WoDeTableViewController", "touXiangImageView"]
@@ -1662,6 +1760,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "rowHeight"]
+- !private ["PSs12_Reflectable", "showsVerticalScrollIndicator"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textLabel"]
@@ -1731,6 +1830,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
 - !private "CSo15UIBarButtonItem"
 - !private "OSC20UIBarButtonItemStyle"
 - !private "CSo9UIBarItem"
@@ -1750,6 +1850,9 @@ depends-nominal:
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- !private "CSo8UITabBar"
+- !private "CSo18UITabBarController"
+- !private "PSo16UITabBarDelegate"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
 - !private "OSC20UITableViewCellStyle"
@@ -1780,6 +1883,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/juno/Documents/git/zknu/iZknu_0.02/iZknu_0.02-Bridging-Header.h"
+- "/Users/juno/Documents/git/zknu/iZknu_0.02/./DOPDropDownMenu.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"

@@ -54,7 +54,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     // MARK: UI
     func setupView() {
         scrollView = UIScrollView(frame: self.view.frame)
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.3)
+        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.4)
         scrollView.backgroundColor = UIColor.whiteColor()
         
         // labels

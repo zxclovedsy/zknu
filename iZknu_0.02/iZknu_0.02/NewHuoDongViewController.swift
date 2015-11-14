@@ -53,7 +53,7 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
     
     func setupView() {
         scrollView = UIScrollView(frame: self.view.frame)
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.4)
+        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.5)
         scrollView.backgroundColor = UIColor.whiteColor()
         
         // labels

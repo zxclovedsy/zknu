@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4A1BE8C940001DC7AA /* NewHuoDongViewController.swift */; };
 		B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4C1BE8C94C001DC7AA /* NewSheTuanViewController.swift */; };
+		B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */; };
 		B83BDC471BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */; };
 		B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */; };
 		B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */; };
 		B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */; };
 		B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */; };
 		B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */; };
+		B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8466B611BF475AE0086EE0F /* UICarouselView.swift */; };
 		B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852566F1BD7D2B40028DD67 /* AppDelegate.swift */; };
 		B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85256761BD7D2B40028DD67 /* Assets.xcassets */; };
 		B85256851BD7D2B40028DD67 /* iZknu_0_02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256841BD7D2B40028DD67 /* iZknu_0_02Tests.swift */; };
@@ -23,9 +25,6 @@
 		B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */; };
 		B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */; };
 		B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */; };
-		B8A392721BDA5D2B0062CA3E /* HLeiXIngTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392711BDA5D2B0062CA3E /* HLeiXIngTableViewController.swift */; };
-		B8A392741BDA5D450062CA3E /* HYuanXiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392731BDA5D450062CA3E /* HYuanXiTableViewController.swift */; };
-		B8A392761BDA5D5F0062CA3E /* HShiJianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392751BDA5D5F0062CA3E /* HShiJianTableViewController.swift */; };
 		B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */; };
 		B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */; };
 		B8E3F04F1BDB267B004C9431 /* SFenLeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F04E1BDB267B004C9431 /* SFenLeiTableViewController.swift */; };
@@ -48,12 +47,16 @@
 /* Begin PBXFileReference section */
 		B805FD4A1BE8C940001DC7AA /* NewHuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHuoDongViewController.swift; sourceTree = "<group>"; };
 		B805FD4C1BE8C94C001DC7AA /* NewSheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSheTuanViewController.swift; sourceTree = "<group>"; };
+		B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iZknu_0.02-Bridging-Header.h"; sourceTree = "<group>"; };
+		B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
+		B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
 		B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeFenSiTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiaRuDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanJiaDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeGuanZhuTableViewController.swift; sourceTree = "<group>"; };
+		B8466B611BF475AE0086EE0F /* UICarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UICarouselView.swift; path = ../UICarouselView.swift; sourceTree = "<group>"; };
 		B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iZknu_0.02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B852566F1BD7D2B40028DD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85256761BD7D2B40028DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iZknu_0.02/Assets.xcassets; sourceTree = "<group>"; };
@@ -66,9 +69,6 @@
 		B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiaoTianTableViewController.swift; sourceTree = "<group>"; };
 		B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeTableViewController.swift; sourceTree = "<group>"; };
 		B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XinDeViewController.swift; sourceTree = "<group>"; };
-		B8A392711BDA5D2B0062CA3E /* HLeiXIngTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLeiXIngTableViewController.swift; sourceTree = "<group>"; };
-		B8A392731BDA5D450062CA3E /* HYuanXiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYuanXiTableViewController.swift; sourceTree = "<group>"; };
-		B8A392751BDA5D5F0062CA3E /* HShiJianTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HShiJianTableViewController.swift; sourceTree = "<group>"; };
 		B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongViewController.swift; sourceTree = "<group>"; };
 		B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B8E3F04E1BDB267B004C9431 /* SFenLeiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFenLeiTableViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B83025C51BF6C89500752EAE /* 第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */,
+				B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */,
+				B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */,
+			);
+			name = "第三方";
+			sourceTree = "<group>";
+		};
 		B85256631BD7D2B40028DD67 = {
 			isa = PBXGroup;
 			children = (
 				B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */,
 				B85256761BD7D2B40028DD67 /* Assets.xcassets */,
 				B852567B1BD7D2B40028DD67 /* Info.plist */,
+				B83025C51BF6C89500752EAE /* 第三方 */,
 				B852566E1BD7D2B40028DD67 /* iZknu_0.02 */,
 				B85256831BD7D2B40028DD67 /* iZknu_0.02Tests */,
 				B852566D1BD7D2B40028DD67 /* Products */,
@@ -188,9 +199,7 @@
 		B8DD71511BD912B8003D8C15 /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
-				B8A392711BDA5D2B0062CA3E /* HLeiXIngTableViewController.swift */,
-				B8A392731BDA5D450062CA3E /* HYuanXiTableViewController.swift */,
-				B8A392751BDA5D5F0062CA3E /* HShiJianTableViewController.swift */,
+				B8466B611BF475AE0086EE0F /* UICarouselView.swift */,
 				B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */,
 			);
 			name = "活动";
@@ -240,11 +249,13 @@
 		B85256641BD7D2B40028DD67 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = cn.edu.zknu.jkx;
 				TargetAttributes = {
 					B852566B1BD7D2B40028DD67 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = FL3B8CL923;
 					};
 					B852567F1BD7D2B40028DD67 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -295,12 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A392741BDA5D450062CA3E /* HYuanXiTableViewController.swift in Sources */,
 				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
 				B8E3F0511BDB268C004C9431 /* SYuanXiTableViewController.swift in Sources */,
-				B8A392761BDA5D5F0062CA3E /* HShiJianTableViewController.swift in Sources */,
 				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
+				B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */,
 				B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */,
 				B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */,
 				B8E3F0531BDB26A3004C9431 /* SZhaoXinTableViewController.swift in Sources */,
@@ -317,7 +327,7 @@
 				B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */,
 				B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */,
 				B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */,
-				B8A392721BDA5D2B0062CA3E /* HLeiXIngTableViewController.swift in Sources */,
+				B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +438,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -435,6 +448,9 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -443,6 +459,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -450,6 +469,8 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
 			};
 			name = Release;
 		};

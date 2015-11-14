@@ -87,7 +87,10 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
+
+#import "/Users/juno/Documents/git/zknu/iZknu_0.02/iZknu_0.02-Bridging-Header.h"
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -146,69 +149,69 @@ SWIFT_CLASS("_TtC10iZknu_0_0238ChuangJianDeSheTuanTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10iZknu_0_0227HLeiXIngTableViewController")
-@interface HLeiXIngTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0227HShiJianTableViewController")
-@interface HShiJianTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0226HYuanXiTableViewController")
-@interface HYuanXiTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
+@class UIScrollView;
 @class UIToolbar;
+@class DOPDropDownMenu;
+@class UICarouselView;
 @class NSIndexPath;
 @class UITableViewCell;
-@class UIBarButtonItem;
+@class DOPIndexPath;
 
 SWIFT_CLASS("_TtC10iZknu_0_0226HuoDongTableViewController")
-@interface HuoDongTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) UITableView * __null_unspecified tableView;
+@interface HuoDongTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UIToolbar * __null_unspecified toolBar;
+@property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
+@property (nonatomic, strong) UICarouselView * __null_unspecified carouselView;
+@property (nonatomic, strong) UITableView * __null_unspecified tableView;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull departments;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull types;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull times;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)setupToolBar;
-- (void)leiXingBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)yuanXiBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)shiJianBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
+- (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu * __null_unspecified)menu;
+- (NSInteger)menu:(DOPDropDownMenu * __null_unspecified)menu numberOfRowsInColumn:(NSInteger)column;
+- (NSString * __null_unspecified)menu:(DOPDropDownMenu * __null_unspecified)menu titleForRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
+- (void)menu:(DOPDropDownMenu * __null_unspecified)menu didSelectRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
+- (void)setupScrollView;
+- (void)setupMenu;
+- (void)setupCarouselView;
+- (void)setupTableView;
+- (void)setupContentSize;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UITextField;
+@class UITextView;
+@class UIColor;
+@class UIImage;
+@class UIButton;
 
 SWIFT_CLASS("_TtC10iZknu_0_0221HuoDongViewController")
-@interface HuoDongViewController : UIViewController
+@interface HuoDongViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UITextFieldDelegate>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UIImageView * __null_unspecified imageView;
+@property (nonatomic, copy) NSArray<UITextField *> * __null_unspecified textFields;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)setupScrollView;
+- (void)setupImageView;
+- (void)setupLabels;
+- (void)setupTextFields;
+- (void)setupTextView;
+- (void)setupButton;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * __nonnull)textField;
+- (BOOL)textViewShouldBeginEditing:(UITextView * __nonnull)textView;
+- (UIImage * __nonnull)getImageWithColor:(UIColor * __nonnull)color size:(CGSize)size;
+- (void)buttonTapped:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -241,13 +244,9 @@ SWIFT_CLASS("_TtC10iZknu_0_0227LiaoTianTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIScrollView;
-@class UITextView;
-@class UIImageView;
-@class UITextField;
 @class UIImagePickerController;
+@class UIBarButtonItem;
 @class UITapGestureRecognizer;
-@class UIButton;
 
 SWIFT_CLASS("_TtC10iZknu_0_0224NewHuoDongViewController")
 @interface NewHuoDongViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
@@ -328,18 +327,23 @@ SWIFT_CLASS("_TtC10iZknu_0_0227SZhaoXinTableViewController")
 
 
 SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
-@interface SheTuanTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface SheTuanTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView * __null_unspecified tableView;
-@property (nonatomic, strong) UIToolbar * __null_unspecified toolBar;
+@property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull departments;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull types;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull recruitments;
 - (void)viewDidLoad;
+- (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu * __null_unspecified)menu;
+- (NSInteger)menu:(DOPDropDownMenu * __null_unspecified)menu numberOfRowsInColumn:(NSInteger)column;
+- (NSString * __null_unspecified)menu:(DOPDropDownMenu * __null_unspecified)menu titleForRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
+- (void)menu:(DOPDropDownMenu * __null_unspecified)menu didSelectRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)setupToolBar;
-- (void)fenLeiBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)yuanXiBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
-- (void)zhaoXinBarButtonItemTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)setupMenu;
+- (void)setupTableView;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -351,6 +355,29 @@ SWIFT_CLASS("_TtC10iZknu_0_0221SheTuanViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIPageControl;
+@class NSTimer;
+
+SWIFT_CLASS("_TtC10iZknu_0_0214UICarouselView")
+@interface UICarouselView : UIView <UIScrollViewDelegate>
+@property (nonatomic, copy) NSArray<UIImage *> * __null_unspecified images;
+@property (nonatomic) NSInteger pages;
+@property (nonatomic) NSInteger currentPage;
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UIPageControl * __null_unspecified pageControl;
+@property (nonatomic, strong) NSTimer * __null_unspecified timer;
+- (nonnull instancetype)initWithImages:(NSArray<UIImage *> * __nonnull)images origin:(CGPoint)origin height:(CGFloat)height OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setupScrollView;
+- (void)setupImageViews;
+- (void)setupPageControl;
+- (void)setupTimer;
+- (void)addViews;
+- (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
+- (void)backToEnd;
+- (void)autoScroll;
 @end
 
 
@@ -377,7 +404,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0230WoDeGuanZhuTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIView;
 
 SWIFT_CLASS("_TtC10iZknu_0_0223WoDeTableViewController")
 @interface WoDeTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
