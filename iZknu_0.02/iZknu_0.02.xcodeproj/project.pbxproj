@@ -10,7 +10,7 @@
 		B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4A1BE8C940001DC7AA /* NewHuoDongViewController.swift */; };
 		B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4C1BE8C94C001DC7AA /* NewSheTuanViewController.swift */; };
 		B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */; };
-		B83BDC471BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */; };
+		B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */; };
 		B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */; };
 		B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */; };
 		B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */; };
@@ -27,11 +27,7 @@
 		B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */; };
 		B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */; };
 		B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */; };
-		B8E3F04F1BDB267B004C9431 /* SFenLeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F04E1BDB267B004C9431 /* SFenLeiTableViewController.swift */; };
-		B8E3F0511BDB268C004C9431 /* SYuanXiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0501BDB268C004C9431 /* SYuanXiTableViewController.swift */; };
-		B8E3F0531BDB26A3004C9431 /* SZhaoXinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0521BDB26A3004C9431 /* SZhaoXinTableViewController.swift */; };
-		B8E3F0551BDB274B004C9431 /* SheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0541BDB274B004C9431 /* SheTuanViewController.swift */; };
-		B8E3F0571BDB2833004C9431 /* ZhaoXinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0561BDB2833004C9431 /* ZhaoXinViewController.swift */; };
+		B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +46,7 @@
 		B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iZknu_0.02-Bridging-Header.h"; sourceTree = "<group>"; };
 		B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
 		B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
-		B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeFenSiTableViewController.swift; sourceTree = "<group>"; };
+		B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShenQingJiaRuViewController.swift; sourceTree = "<group>"; };
 		B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiaRuDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
@@ -71,11 +67,7 @@
 		B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XinDeViewController.swift; sourceTree = "<group>"; };
 		B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongViewController.swift; sourceTree = "<group>"; };
 		B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B8E3F04E1BDB267B004C9431 /* SFenLeiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFenLeiTableViewController.swift; sourceTree = "<group>"; };
-		B8E3F0501BDB268C004C9431 /* SYuanXiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYuanXiTableViewController.swift; sourceTree = "<group>"; };
-		B8E3F0521BDB26A3004C9431 /* SZhaoXinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZhaoXinTableViewController.swift; sourceTree = "<group>"; };
-		B8E3F0541BDB274B004C9431 /* SheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheTuanViewController.swift; sourceTree = "<group>"; };
-		B8E3F0561BDB2833004C9431 /* ZhaoXinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhaoXinViewController.swift; sourceTree = "<group>"; };
+		B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheTuanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,11 +150,8 @@
 		B8A392791BDA73A60062CA3E /* 社团 */ = {
 			isa = PBXGroup;
 			children = (
-				B8E3F04E1BDB267B004C9431 /* SFenLeiTableViewController.swift */,
-				B8E3F0501BDB268C004C9431 /* SYuanXiTableViewController.swift */,
-				B8E3F0521BDB26A3004C9431 /* SZhaoXinTableViewController.swift */,
-				B8E3F0541BDB274B004C9431 /* SheTuanViewController.swift */,
-				B8E3F0561BDB2833004C9431 /* ZhaoXinViewController.swift */,
+				B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */,
+				B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */,
 			);
 			name = "社团";
 			sourceTree = "<group>";
@@ -186,7 +175,6 @@
 		B8A3927C1BDA741A0062CA3E /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
-				B83BDC461BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift */,
 				B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */,
 				B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */,
 				B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */,
@@ -307,20 +295,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
+				B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
-				B8E3F0511BDB268C004C9431 /* SYuanXiTableViewController.swift in Sources */,
 				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
 				B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */,
 				B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */,
 				B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */,
-				B8E3F0531BDB26A3004C9431 /* SZhaoXinTableViewController.swift in Sources */,
 				B852569C1BD8AE0F0028DD67 /* SheTuanTableViewController.swift in Sources */,
-				B8E3F04F1BDB267B004C9431 /* SFenLeiTableViewController.swift in Sources */,
-				B8E3F0551BDB274B004C9431 /* SheTuanViewController.swift in Sources */,
-				B83BDC471BDDF514008DA4A6 /* WoDeFenSiTableViewController.swift in Sources */,
 				B852569A1BD8AE010028DD67 /* HuoDongTableViewController.swift in Sources */,
 				B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */,
-				B8E3F0571BDB2833004C9431 /* ZhaoXinViewController.swift in Sources */,
+				B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */,
 				B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */,
 				B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */,
 				B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */,
@@ -443,7 +427,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
@@ -464,7 +448,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";

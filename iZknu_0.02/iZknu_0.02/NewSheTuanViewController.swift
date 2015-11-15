@@ -14,8 +14,11 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     var sheTuanJianJieTextView: UITextView!
     var haiBaoImageView: UIImageView!
     var pickerView: UIPickerView!
+    var textsNeedToFill: [UIView] = []
+    var finishButton: UIButton!
+    var newImage = false
     
-    let types = ["全部类型","学术", "艺术", "公益", "爱好", "社会实践", "官方组织", "其它类型"]
+    let types = ["学术", "艺术", "公益", "爱好", "社会实践", "官方组织", "其它类型"]
     let levels = ["校级", "院级"]
     
     override func viewDidLoad() {
@@ -33,12 +36,14 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     // MARK: UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        self.isReadyToEnableDoneButton()
         return true
     }
     
     // MARK: UITextViewDelegate
     func textViewShouldEndEditing(textView: UITextView) -> Bool {
         scrollView.contentOffset.y = 0
+        self.isReadyToEnableDoneButton()
         return true
     }
     
@@ -50,6 +55,8 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         haiBaoImageView.image = selectedImage
+        newImage = true
+        self.isReadyToEnableDoneButton()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -77,13 +84,13 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         }
     }
     
-    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    /*func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return 150
-    }
+    }*/
     
-    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    /*func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 20
-    }
+    }*/
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("selected")
@@ -97,10 +104,14 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
             label = UILabel()
             label.minimumScaleFactor = 12
             label.adjustsFontSizeToFitWidth = true
-            //label.textAlignment = .Center
             label.textColor = UIColor.blackColor()
             label.font = UIFont.systemFontOfSize(12)
-            label.text = self.pickerView(pickerView, titleForRow: row, forComponent: component)
+            if component == 1 {
+                label.textAlignment = .Center
+                label.text = self.pickerView(pickerView, titleForRow: row, forComponent: component)
+            } else {
+                label.text = "    " + self.pickerView(pickerView, titleForRow: row, forComponent: component)!
+            }
             return label
         }
         return view!
@@ -115,7 +126,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 80, width: 70, height: 20))
         let leiXingLabel =  UILabel(frame: CGRect(x: 20, y: 120, width: 70, height: 20))
-        let jiBieLabel = UILabel(frame: CGRect(x: 150, y: 120, width: 70, height: 20))
+        let jiBieLabel = UILabel(frame: CGRect(x: 160, y: 120, width: 70, height: 20))
         let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 200, width: 70, height: 20))
         let haiBaoLabel = UILabel(frame: CGRect(x: 20, y: 350, width: 70, height: 20))
         
@@ -142,19 +153,8 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         mingChengTextField.returnKeyType = .Done
         mingChengTextField.placeholder = "请输入社团名称"
         mingChengTextField.font = UIFont.systemFontOfSize(11)
+        textsNeedToFill.append(mingChengTextField)
         scrollView.addSubview(mingChengTextField)
-        
-      /*  let jibieTextField = UITextField(frame: CGRect(x: 120, y: 160, width: 150, height: 20))
-        jibieTextField.delegate = self
-        jibieTextField.layer.borderColor = UIColor.grayColor().CGColor
-        jibieTextField.layer.borderWidth = 0.5
-        jibieTextField.layer.cornerRadius = 3.0
-        jibieTextField.textColor = UIColor.grayColor()
-        jibieTextField.textAlignment = .Center
-        jibieTextField.returnKeyType = .Done
-        jibieTextField.placeholder = "院级／校级"
-        jibieTextField.font = UIFont.systemFontOfSize(11)
-        scrollView.addSubview(jibieTextField)*/
         
         // textView
         sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 230, width: 280, height: 100))
@@ -164,6 +164,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         sheTuanJianJieTextView.layer.cornerRadius = 5
         sheTuanJianJieTextView.layer.borderWidth = 0.5
         sheTuanJianJieTextView.font = UIFont.systemFontOfSize(11)
+        textsNeedToFill.append(sheTuanJianJieTextView)
         
         // 键盘上的工具栏
         let textViewToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
@@ -186,15 +187,16 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         scrollView.addSubview(haiBaoImageView)
         
         // finishButton
-        let finishButton = UIButton(type: .System)
+        finishButton = UIButton(type: .System)
         finishButton.frame = CGRect(x: 100, y: 560, width: 100, height: 20)
         finishButton.setTitle("申请创建", forState: .Normal)
         finishButton.addTarget(self, action: "finishButtonTapped:", forControlEvents: .TouchDown)
+        finishButton.enabled = false
         scrollView.addSubview(finishButton)
     }
     
     func setupPickerView() {
-        pickerView = UIPickerView(frame: CGRect(x: 20, y: 140, width: 250, height: 60))
+        pickerView = UIPickerView(frame: CGRect(x: 20, y: 140, width: 230, height: 60))
         pickerView.autoresizingMask = .FlexibleHeight
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -224,8 +226,41 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     func finishButtonTapped(sender: UIButton) {
-        print("申请创建")
-        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        let alertView = UIAlertView(title: "提交成功", message: "等待审核", delegate: self, cancelButtonTitle: "OK")
+        for view in textsNeedToFill {
+            if let textField = view as? UITextField {
+                textField.text = ""
+            } else if let textView  = view as? UITextView {
+                textView.text = ""
+            }
+        }
+        haiBaoImageView.image = UIImage(named: "noImage")
+        newImage = false
+        finishButton.enabled = false
+        scrollView.contentOffset.y = 0
+        alertView.show()
+    }
+    
+    func isReadyToEnableDoneButton() -> Bool {
+        for view in textsNeedToFill {
+            if let textField = view as? UITextField {
+                if textField.text?.isEmpty == true {
+                    
+                    finishButton.enabled = false
+                    return false
+                }
+            } else if let textView  = view as? UITextView {
+                if textView.text.isEmpty == true {
+                    finishButton.enabled = false
+                    return false
+                }
+            }
+        }
+        if newImage == false {
+            return false
+        }
+        finishButton.enabled = true
+        return true
     }
 
 }

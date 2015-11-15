@@ -196,7 +196,8 @@ SWIFT_CLASS("_TtC10iZknu_0_0221HuoDongViewController")
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UIImageView * __null_unspecified imageView;
 @property (nonatomic, copy) NSArray<UITextField *> * __null_unspecified textFields;
-- (void)viewDidAppear:(BOOL)animated;
+@property (nonatomic) BOOL joined;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -242,6 +243,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0227LiaoTianTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 @class UIImagePickerController;
 @class UIBarButtonItem;
 @class UITapGestureRecognizer;
@@ -251,6 +253,9 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewHuoDongViewController")
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UITextView * __null_unspecified huoDongJianJieTextView;
 @property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
+@property (nonatomic, copy) NSArray<UIView *> * __nonnull textsNeedToFill;
+@property (nonatomic, strong) UIButton * __null_unspecified finishButton;
+@property (nonatomic) BOOL newImage;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
@@ -262,12 +267,12 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewHuoDongViewController")
 - (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
 - (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
 - (void)finishButtonTapped:(UIButton * __nonnull)sender;
+- (BOOL)isReadyToEnableDoneButton;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIPickerView;
-@class UIView;
 
 SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 @interface NewSheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
@@ -275,6 +280,9 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 @property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
 @property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
 @property (nonatomic, strong) UIPickerView * __null_unspecified pickerView;
+@property (nonatomic, copy) NSArray<UIView *> * __nonnull textsNeedToFill;
+@property (nonatomic, strong) UIButton * __null_unspecified finishButton;
+@property (nonatomic) BOOL newImage;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull types;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull levels;
 - (void)viewDidLoad;
@@ -286,8 +294,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
-- (CGFloat)pickerView:(UIPickerView * __nonnull)pickerView widthForComponent:(NSInteger)component;
-- (CGFloat)pickerView:(UIPickerView * __nonnull)pickerView rowHeightForComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (UIView * __nonnull)pickerView:(UIPickerView * __nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * __nullable)view;
 - (void)setupView;
@@ -296,42 +302,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 - (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
 - (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
 - (void)finishButtonTapped:(UIButton * __nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0226SFenLeiTableViewController")
-@interface SFenLeiTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0226SYuanXiTableViewController")
-@interface SYuanXiTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0227SZhaoXinTableViewController")
-@interface SZhaoXinTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isReadyToEnableDoneButton;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -363,9 +334,66 @@ SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
 
 
 SWIFT_CLASS("_TtC10iZknu_0_0221SheTuanViewController")
-@interface SheTuanViewController : UIViewController
+@interface SheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UITextFieldDelegate>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UIImageView * __null_unspecified imageView;
+@property (nonatomic, copy) NSArray<UITextField *> * __null_unspecified textFields;
+@property (nonatomic, strong) UIScrollView * __null_unspecified photosScrollView;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)setupScrollView;
+- (void)setupImageView;
+- (void)setupLabels;
+- (void)setupTextFields;
+- (void)setupTextView;
+- (void)setupPhotosScrollView;
+- (void)setupButton;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * __nonnull)textField;
+- (BOOL)textViewShouldBeginEditing:(UITextView * __nonnull)textView;
+- (UIImage * __nonnull)getImageWithColor:(UIColor * __nonnull)color size:(CGSize)size;
+- (void)woYaoGuanZhuButtonTapped:(UIButton * __nonnull)sender;
+- (void)shenQingJiaRuButtonTapped:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iZknu_0_0227ShenQingJiaRuViewController")
+@interface ShenQingJiaRuViewController : UIViewController <UIPickerViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIScrollViewDelegate, UIPickerViewDelegate, UITextViewDelegate, UITextFieldDelegate>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
+@property (nonatomic, strong) UIImageView * __null_unspecified imageView;
+@property (nonatomic, strong) UITapGestureRecognizer * __null_unspecified tapGestureRecoginizer;
+@property (nonatomic, copy) NSArray<UIView *> * __nonnull textsNeedToFill;
+@property (nonatomic, strong) UITextView * __null_unspecified textView;
+@property (nonatomic) BOOL newImage;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull departments;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * __nonnull)textField;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (UIView * __nonnull)pickerView:(UIPickerView * __nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * __nullable)view;
+- (BOOL)textViewShouldBeginEditing:(UITextView * __nonnull)textView;
+- (void)textViewDidEndEditing:(UITextView * __nonnull)textView;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
+- (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
+- (void)setupScrollView;
+- (void)setupLabels;
+- (void)setupTextFields;
+- (void)setupPickerView;
+- (void)setupTextView;
+- (void)setupImageView;
+- (void)cancelBarButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)doneBarButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
+- (BOOL)isReadyToEnableDoneButton;
+- (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
+- (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -391,18 +419,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0214UICarouselView")
 - (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
 - (void)backToEnd;
 - (void)autoScroll;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0228WoDeFenSiTableViewController")
-@interface WoDeFenSiTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -453,15 +469,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
 - (void)didReceiveMemoryWarning;
 - (void)setupSegmentedControl;
 - (void)segmentedControlIndexChanged:(UISegmentedControl * __nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10iZknu_0_0221ZhaoXinViewController")
-@interface ZhaoXinViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

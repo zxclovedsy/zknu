@@ -6,55 +6,58 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221HuoDongViewController", ""]
 provides-dynamic-lookup:
+- "textFieldShouldBeginEditing"
+- "setupTextFields"
+- "buttonTapped"
+- "joined"
+- "imageView"
+- "setupScrollView"
 - "setupLabels"
 - "textViewShouldBeginEditing"
-- "didReceiveMemoryWarning"
+- "viewWillDisappear"
+- "setupImageView"
 - "setupButton"
 - "scrollView"
-- "setupTextFields"
-- "textFieldShouldBeginEditing"
-- "viewDidLoad"
+- "viewWillAppear"
+- "didReceiveMemoryWarning"
 - "textFields"
-- "setupScrollView"
-- "getImageWithColor"
-- "viewWillDisappear"
-- "viewDidAppear"
 - "setupTextView"
-- "buttonTapped"
-- "setupImageView"
-- "imageView"
+- "viewDidLoad"
+- "getImageWithColor"
 depends-top-level:
-- "HuoDongViewController"
-- "UIScrollView"
-- !private "CGRectMake"
-- !private "+"
-- "UIImage"
-- "UIViewController"
-- !private "-"
-- "UIColor"
-- !private "Array"
-- "CGPoint"
 - !private "StringLiteralType"
-- !private "UIFont"
-- "UIButton"
-- !private "*"
-- !private "CGFloat"
-- !private "UIGraphicsEndImageContext"
-- !private "/"
-- "UITextField"
-- !private "CGRect"
-- !private "UIApplication"
-- "UITextFieldDelegate"
 - "CGSize"
-- "UITextViewDelegate"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- "UIImageView"
-- "UITextView"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "Array"
+- !private "CGRectMake"
+- "HuoDongViewController"
+- !private "*"
 - !private "UIRectFill"
-- !private "UILabel"
-- !private "BooleanLiteralType"
+- !private "UIFont"
+- !private "/"
+- !private "UIApplication"
+- "CGPoint"
+- "UITextField"
+- "UIImage"
+- "UIColor"
+- !private "+"
+- "UITextViewDelegate"
 - "Bool"
+- !private "-"
+- "UITextView"
+- !private "UIAlertView"
+- !private "UIGraphicsEndImageContext"
+- "UIScrollView"
+- "UIImageView"
+- "UIButton"
+- !private "UILabel"
+- !private "=="
+- !private "UIGraphicsBeginImageContextWithOptions"
+- "BooleanLiteralType"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGRect"
+- "UITextFieldDelegate"
+- "UIViewController"
+- !private "CGFloat"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -65,6 +68,7 @@ depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "CGSize"]
+- !private ["PSs9AnyObject", "UIAlertView"]
 - !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "UIButton"]
 - !private ["PSs9AnyObject", "UIColor"]
@@ -98,6 +102,7 @@ depends-member:
 - !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imageView"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "joined"]
 - !private ["PSs9AnyObject", "layer"]
 - !private ["PSs9AnyObject", "navigationBar"]
 - !private ["PSs9AnyObject", "navigationController"]
@@ -125,6 +130,7 @@ depends-member:
 - ["PSs9AnyObject", "setupTextFields"]
 - ["PSs9AnyObject", "setupTextView"]
 - !private ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "show"]
 - !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
 - !private ["PSs9AnyObject", "statusBarFrame"]
 - !private ["PSs9AnyObject", "systemFontOfSize"]
@@ -147,9 +153,9 @@ depends-member:
 - ["PSs9AnyObject", "textViewShouldBeginEditing"]
 - ["PSs9AnyObject", "textViewShouldEndEditing"]
 - !private ["PSs9AnyObject", "view"]
-- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
+- ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "viewWillDisappear"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", ""]
@@ -171,6 +177,9 @@ depends-member:
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "borderColor"]
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
@@ -200,6 +209,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "Stride"]
+- !private ["PSs11CVarArgType", "UIAlertView"]
 - !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "UIButton"]
 - !private ["PSs11CVarArgType", "UIColor"]
@@ -233,6 +243,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imageView"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "joined"]
 - !private ["PSs11CVarArgType", "layer"]
 - !private ["PSs11CVarArgType", "navigationBar"]
 - !private ["PSs11CVarArgType", "navigationController"]
@@ -260,6 +271,7 @@ depends-member:
 - ["PSs11CVarArgType", "setupTextFields"]
 - ["PSs11CVarArgType", "setupTextView"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "show"]
 - !private ["PSs11CVarArgType", "showsVerticalScrollIndicator"]
 - !private ["PSs11CVarArgType", "statusBarFrame"]
 - !private ["PSs11CVarArgType", "systemFontOfSize"]
@@ -282,9 +294,9 @@ depends-member:
 - ["PSs11CVarArgType", "textViewShouldBeginEditing"]
 - ["PSs11CVarArgType", "textViewShouldEndEditing"]
 - !private ["PSs11CVarArgType", "view"]
-- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
+- ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", "viewWillDisappear"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
@@ -314,6 +326,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
+- !private ["PSs23CustomStringConvertible", "UIAlertView"]
 - !private ["PSs23CustomStringConvertible", "UIApplication"]
 - !private ["PSs23CustomStringConvertible", "UIButton"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
@@ -329,6 +342,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UITextField"]
 - !private ["PSs23CustomStringConvertible", "UITextView"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
 - !private ["PSs23CustomStringConvertible", "addTarget"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
@@ -349,6 +363,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imageView"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "joined"]
 - !private ["PSs23CustomStringConvertible", "layer"]
 - !private ["PSs23CustomStringConvertible", "navigationBar"]
 - !private ["PSs23CustomStringConvertible", "navigationController"]
@@ -376,6 +391,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "setupTextFields"]
 - ["PSs23CustomStringConvertible", "setupTextView"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "show"]
 - !private ["PSs23CustomStringConvertible", "showsVerticalScrollIndicator"]
 - !private ["PSs23CustomStringConvertible", "statusBarFrame"]
 - !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
@@ -398,9 +414,9 @@ depends-member:
 - ["PSs23CustomStringConvertible", "textViewShouldBeginEditing"]
 - ["PSs23CustomStringConvertible", "textViewShouldEndEditing"]
 - !private ["PSs23CustomStringConvertible", "view"]
-- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "viewWillDisappear"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
@@ -423,6 +439,7 @@ depends-member:
 - !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "System"]
 - !private ["PSs9Equatable", "TouchDown"]
+- !private ["PSs9Equatable", "UIAlertView"]
 - !private ["PSs9Equatable", "UIApplication"]
 - !private ["PSs9Equatable", "UIButton"]
 - !private ["PSs9Equatable", "UIColor"]
@@ -437,6 +454,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIScrollView"]
 - !private ["PSs9Equatable", "UITextField"]
 - !private ["PSs9Equatable", "UITextView"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addSubview"]
 - !private ["PSs9Equatable", "addTarget"]
 - !private ["PSs9Equatable", "backgroundColor"]
@@ -457,6 +475,7 @@ depends-member:
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imageView"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "joined"]
 - !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "navigationBar"]
 - !private ["PSs9Equatable", "navigationController"]
@@ -484,6 +503,7 @@ depends-member:
 - ["PSs9Equatable", "setupTextFields"]
 - ["PSs9Equatable", "setupTextView"]
 - !private ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "show"]
 - !private ["PSs9Equatable", "showsVerticalScrollIndicator"]
 - !private ["PSs9Equatable", "size"]
 - !private ["PSs9Equatable", "statusBarFrame"]
@@ -507,9 +527,9 @@ depends-member:
 - ["PSs9Equatable", "textViewShouldBeginEditing"]
 - ["PSs9Equatable", "textViewShouldEndEditing"]
 - !private ["PSs9Equatable", "view"]
-- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
+- ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", "viewWillDisappear"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
@@ -537,6 +557,7 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "System"]
+- !private ["PSs8Hashable", "UIAlertView"]
 - !private ["PSs8Hashable", "UIApplication"]
 - !private ["PSs8Hashable", "UIButton"]
 - !private ["PSs8Hashable", "UIColor"]
@@ -551,6 +572,7 @@ depends-member:
 - !private ["PSs8Hashable", "UIScrollView"]
 - !private ["PSs8Hashable", "UITextField"]
 - !private ["PSs8Hashable", "UITextView"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addSubview"]
 - !private ["PSs8Hashable", "addTarget"]
 - !private ["PSs8Hashable", "backgroundColor"]
@@ -570,6 +592,7 @@ depends-member:
 - !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imageView"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "joined"]
 - !private ["PSs8Hashable", "layer"]
 - !private ["PSs8Hashable", "navigationBar"]
 - !private ["PSs8Hashable", "navigationController"]
@@ -597,6 +620,7 @@ depends-member:
 - ["PSs8Hashable", "setupTextFields"]
 - ["PSs8Hashable", "setupTextView"]
 - !private ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "show"]
 - !private ["PSs8Hashable", "showsVerticalScrollIndicator"]
 - !private ["PSs8Hashable", "statusBarFrame"]
 - !private ["PSs8Hashable", "systemFontOfSize"]
@@ -619,9 +643,9 @@ depends-member:
 - ["PSs8Hashable", "textViewShouldBeginEditing"]
 - ["PSs8Hashable", "textViewShouldEndEditing"]
 - !private ["PSs8Hashable", "view"]
-- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
+- ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "viewWillDisappear"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
@@ -631,6 +655,7 @@ depends-member:
 - !private ["C10iZknu_0_0221HuoDongViewController", "CGRect"]
 - !private ["C10iZknu_0_0221HuoDongViewController", "CGRectMake"]
 - ["C10iZknu_0_0221HuoDongViewController", "CGSize"]
+- !private ["C10iZknu_0_0221HuoDongViewController", "UIAlertView"]
 - !private ["C10iZknu_0_0221HuoDongViewController", "UIApplication"]
 - ["C10iZknu_0_0221HuoDongViewController", "UIButton"]
 - ["C10iZknu_0_0221HuoDongViewController", "UIColor"]
@@ -651,6 +676,7 @@ depends-member:
 - ["C10iZknu_0_0221HuoDongViewController", "getImageWithColor"]
 - ["C10iZknu_0_0221HuoDongViewController", "imageView"]
 - ["C10iZknu_0_0221HuoDongViewController", "init"]
+- ["C10iZknu_0_0221HuoDongViewController", "joined"]
 - !private ["C10iZknu_0_0221HuoDongViewController", "navigationController"]
 - ["C10iZknu_0_0221HuoDongViewController", "origin"]
 - ["C10iZknu_0_0221HuoDongViewController", "scrollView"]
@@ -688,9 +714,9 @@ depends-member:
 - ["C10iZknu_0_0221HuoDongViewController", "textViewShouldBeginEditing"]
 - ["C10iZknu_0_0221HuoDongViewController", "textViewShouldEndEditing"]
 - !private ["C10iZknu_0_0221HuoDongViewController", "view"]
-- ["C10iZknu_0_0221HuoDongViewController", "viewDidAppear"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewDidLoad"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewForZoomingInScrollView"]
+- ["C10iZknu_0_0221HuoDongViewController", "viewWillAppear"]
 - ["C10iZknu_0_0221HuoDongViewController", "viewWillDisappear"]
 - !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
@@ -736,6 +762,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "CGSize"]
+- !private ["PSo8NSCoding", "UIAlertView"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -769,6 +796,7 @@ depends-member:
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "joined"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
@@ -795,6 +823,7 @@ depends-member:
 - ["PSo8NSCoding", "setupScrollView"]
 - ["PSo8NSCoding", "setupTextFields"]
 - ["PSo8NSCoding", "setupTextView"]
+- !private ["PSo8NSCoding", "show"]
 - !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
@@ -815,9 +844,9 @@ depends-member:
 - ["PSo8NSCoding", "textViewShouldBeginEditing"]
 - ["PSo8NSCoding", "textViewShouldEndEditing"]
 - !private ["PSo8NSCoding", "view"]
-- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
@@ -832,6 +861,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertView"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -851,6 +881,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getImageWithColor"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "joined"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "origin"]
@@ -889,9 +920,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textViewShouldBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textViewShouldEndEditing"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
-- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
@@ -901,6 +932,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "UIAlertView"]
 - !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
@@ -934,6 +966,7 @@ depends-member:
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "joined"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
@@ -961,6 +994,7 @@ depends-member:
 - ["CSo8NSObject", "setupTextFields"]
 - ["CSo8NSObject", "setupTextView"]
 - !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "show"]
 - !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
 - !private ["CSo8NSObject", "statusBarFrame"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
@@ -983,9 +1017,9 @@ depends-member:
 - ["CSo8NSObject", "textViewShouldBeginEditing"]
 - ["CSo8NSObject", "textViewShouldEndEditing"]
 - !private ["CSo8NSObject", "view"]
-- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
@@ -994,6 +1028,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "UIAlertView"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -1027,6 +1062,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "joined"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -1054,6 +1090,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setupTextFields"]
 - ["PSo16NSObjectProtocol", "setupTextView"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "show"]
 - !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
 - !private ["PSo16NSObjectProtocol", "statusBarFrame"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
@@ -1076,9 +1113,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textViewShouldBeginEditing"]
 - ["PSo16NSObjectProtocol", "textViewShouldEndEditing"]
 - !private ["PSo16NSObjectProtocol", "view"]
-- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1137,10 +1174,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "setBackgroundImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "show"]
 - !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["CSo11UIAlertView", "init"]
+- !private ["CSo11UIAlertView", "show"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -1154,6 +1194,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "setBackgroundImage"]
 - !private ["PSo12UIAppearance", "setTitle"]
+- !private ["PSo12UIAppearance", "show"]
 - !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
@@ -1163,6 +1204,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertView"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -1191,6 +1233,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "joined"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
@@ -1216,6 +1259,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setupScrollView"]
 - ["PSo21UIAppearanceContainer", "setupTextFields"]
 - ["PSo21UIAppearanceContainer", "setupTextView"]
+- !private ["PSo21UIAppearanceContainer", "show"]
 - !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
@@ -1236,9 +1280,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "textViewShouldBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textViewShouldEndEditing"]
 - !private ["PSo21UIAppearanceContainer", "view"]
-- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "sharedApplication"]
@@ -1262,6 +1306,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "CGSize"]
+- !private ["PSo18UIContentContainer", "UIAlertView"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIButton"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -1281,6 +1326,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getImageWithColor"]
 - ["PSo18UIContentContainer", "imageView"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "joined"]
 - !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "origin"]
@@ -1319,9 +1365,9 @@ depends-member:
 - ["PSo18UIContentContainer", "textViewShouldBeginEditing"]
 - ["PSo18UIContentContainer", "textViewShouldEndEditing"]
 - !private ["PSo18UIContentContainer", "view"]
-- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
@@ -1349,6 +1395,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "setBackgroundImage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
+- !private ["PSo17UICoordinateSpace", "show"]
 - !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
@@ -1366,6 +1413,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "setBackgroundImage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
+- !private ["PSo13UIDynamicItem", "show"]
 - !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
@@ -1375,6 +1423,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertView"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -1403,6 +1452,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "joined"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
@@ -1428,6 +1478,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setupScrollView"]
 - ["PSo18UIFocusEnvironment", "setupTextFields"]
 - ["PSo18UIFocusEnvironment", "setupTextView"]
+- !private ["PSo18UIFocusEnvironment", "show"]
 - !private ["PSo18UIFocusEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
@@ -1448,9 +1499,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "textViewShouldBeginEditing"]
 - ["PSo18UIFocusEnvironment", "textViewShouldEndEditing"]
 - !private ["PSo18UIFocusEnvironment", "view"]
-- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "systemFontOfSize"]
@@ -1477,6 +1528,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - ["CSo11UIResponder", "CGSize"]
+- !private ["CSo11UIResponder", "UIAlertView"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
@@ -1505,6 +1557,7 @@ depends-member:
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "joined"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
@@ -1531,6 +1584,7 @@ depends-member:
 - ["CSo11UIResponder", "setupTextFields"]
 - ["CSo11UIResponder", "setupTextView"]
 - !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "show"]
 - !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
 - !private ["CSo11UIResponder", "statusBarFrame"]
 - !private ["CSo11UIResponder", "text"]
@@ -1552,9 +1606,9 @@ depends-member:
 - ["CSo11UIResponder", "textViewShouldBeginEditing"]
 - ["CSo11UIResponder", "textViewShouldEndEditing"]
 - !private ["CSo11UIResponder", "view"]
-- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "contentSize"]
@@ -1570,6 +1624,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "CGRectMake"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertView"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIButton"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
@@ -1586,6 +1641,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITextView"]
 - !private ["PSo20UIScrollViewDelegate", "getImageWithColor"]
 - !private ["PSo20UIScrollViewDelegate", "imageView"]
+- !private ["PSo20UIScrollViewDelegate", "joined"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "origin"]
 - !private ["PSo20UIScrollViewDelegate", "scrollView"]
@@ -1629,6 +1685,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
+- !private ["PSo16UIStateRestoring", "UIAlertView"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -1648,6 +1705,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getImageWithColor"]
 - ["PSo16UIStateRestoring", "imageView"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "joined"]
 - !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "origin"]
@@ -1686,9 +1744,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "textViewShouldBeginEditing"]
 - ["PSo16UIStateRestoring", "textViewShouldEndEditing"]
 - !private ["PSo16UIStateRestoring", "view"]
-- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "delegate"]
@@ -1703,6 +1761,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "CGRect"]
 - !private ["PSo19UITextFieldDelegate", "CGRectMake"]
 - !private ["PSo19UITextFieldDelegate", "CGSize"]
+- !private ["PSo19UITextFieldDelegate", "UIAlertView"]
 - !private ["PSo19UITextFieldDelegate", "UIApplication"]
 - !private ["PSo19UITextFieldDelegate", "UIButton"]
 - !private ["PSo19UITextFieldDelegate", "UIColor"]
@@ -1719,6 +1778,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UITextView"]
 - !private ["PSo19UITextFieldDelegate", "getImageWithColor"]
 - !private ["PSo19UITextFieldDelegate", "imageView"]
+- !private ["PSo19UITextFieldDelegate", "joined"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
 - !private ["PSo19UITextFieldDelegate", "origin"]
 - !private ["PSo19UITextFieldDelegate", "scrollView"]
@@ -1782,6 +1842,7 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "CGRect"]
 - !private ["PSo18UITextViewDelegate", "CGRectMake"]
 - !private ["PSo18UITextViewDelegate", "CGSize"]
+- !private ["PSo18UITextViewDelegate", "UIAlertView"]
 - !private ["PSo18UITextViewDelegate", "UIApplication"]
 - !private ["PSo18UITextViewDelegate", "UIButton"]
 - !private ["PSo18UITextViewDelegate", "UIColor"]
@@ -1798,6 +1859,7 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "UITextView"]
 - !private ["PSo18UITextViewDelegate", "getImageWithColor"]
 - !private ["PSo18UITextViewDelegate", "imageView"]
+- !private ["PSo18UITextViewDelegate", "joined"]
 - !private ["PSo18UITextViewDelegate", "navigationController"]
 - !private ["PSo18UITextViewDelegate", "origin"]
 - !private ["PSo18UITextViewDelegate", "scrollView"]
@@ -1841,6 +1903,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
+- !private ["PSo18UITraitEnvironment", "UIAlertView"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -1869,6 +1932,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "joined"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
@@ -1894,6 +1958,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setupScrollView"]
 - ["PSo18UITraitEnvironment", "setupTextFields"]
 - ["PSo18UITraitEnvironment", "setupTextView"]
+- !private ["PSo18UITraitEnvironment", "show"]
 - !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
@@ -1914,9 +1979,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "textViewShouldBeginEditing"]
 - ["PSo18UITraitEnvironment", "textViewShouldEndEditing"]
 - !private ["PSo18UITraitEnvironment", "view"]
-- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
@@ -1932,6 +1997,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "setBackgroundImage"]
 - !private ["CSo6UIView", "setTitle"]
+- !private ["CSo6UIView", "show"]
 - !private ["CSo6UIView", "showsVerticalScrollIndicator"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
@@ -1942,6 +2008,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "CGRectMake"]
 - ["CSo16UIViewController", "CGSize"]
+- !private ["CSo16UIViewController", "UIAlertView"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIColor"]
@@ -1961,6 +2028,7 @@ depends-member:
 - ["CSo16UIViewController", "getImageWithColor"]
 - ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "joined"]
 - !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "origin"]
@@ -1999,9 +2067,9 @@ depends-member:
 - ["CSo16UIViewController", "textViewShouldBeginEditing"]
 - ["CSo16UIViewController", "textViewShouldEndEditing"]
 - !private ["CSo16UIViewController", "view"]
-- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs10_ArrayType", "Element"]
@@ -2009,6 +2077,7 @@ depends-member:
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "enumerate"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -2047,6 +2116,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "enumerate"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
@@ -2059,6 +2129,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
@@ -2075,6 +2146,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "origin"]
 - !private ["PSs12_Reflectable", "setBackgroundImage"]
 - !private ["PSs12_Reflectable", "setTitle"]
+- !private ["PSs12_Reflectable", "show"]
 - !private ["PSs12_Reflectable", "showsVerticalScrollIndicator"]
 - !private ["PSs12_Reflectable", "size"]
 - !private ["PSs12_Reflectable", "text"]
@@ -2096,6 +2168,9 @@ depends-nominal:
 - !private "PSs23ArrayLiteralConvertible"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
@@ -2146,6 +2221,7 @@ depends-nominal:
 - !private "PSs16SignedNumberType"
 - !private "PSs10Strideable"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo11UIAlertView"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo13UIApplication"
@@ -2182,6 +2258,7 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs31_BuiltinFloatLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs19_CVarArgAlignedType"
@@ -2209,4 +2286,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "4593232f8c11910609df1365c5053598"
+interface-hash: "4bb73e32f69cbc17fea0431746bbad79"

@@ -13,7 +13,11 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
     var scrollView: UIScrollView!
     var huoDongJianJieTextView: UITextView!
     var haiBaoImageView: UIImageView!
-
+    var textsNeedToFill: [UIView] = []
+    var finishButton: UIButton!
+    
+    var newImage = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
@@ -28,12 +32,14 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
     // MARK: UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        self.isReadyToEnableDoneButton()
         return true
     }
     
     // MARK: UITextViewDelegate
     func textViewShouldEndEditing(textView: UITextView) -> Bool {
         scrollView.contentOffset.y = 0
+        self.isReadyToEnableDoneButton()
         return true
     }
     
@@ -46,6 +52,8 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         self.haiBaoImageView.image = selectedImage
+        newImage = true
+        self.isReadyToEnableDoneButton()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -108,7 +116,7 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
             textField.layer.cornerRadius = 3.0
             
             textField.textAlignment = .Center
-            
+            textsNeedToFill.append(textField)
             scrollView.addSubview(textField)
         }
         
@@ -120,6 +128,7 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
         huoDongJianJieTextView.layer.borderColor = UIColor.grayColor().CGColor
         huoDongJianJieTextView.layer.borderWidth = 0.5
         huoDongJianJieTextView.layer.cornerRadius = 5.0
+        textsNeedToFill.append(huoDongJianJieTextView)
 
         
         // 键盘上的工具栏
@@ -143,10 +152,11 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
         scrollView.addSubview(haiBaoImageView)
         
         // finishButton
-        let finishButton = UIButton(type: .System)
+        finishButton = UIButton(type: .System)
         finishButton.frame = CGRect(x: 100, y: 640, width: 100, height: 20)
         finishButton.setTitle("申请创建", forState: .Normal)
         finishButton.addTarget(self, action: "finishButtonTapped:", forControlEvents: .TouchDown)
+        finishButton.enabled = false
         scrollView.addSubview(finishButton)
         
         self.view = scrollView
@@ -175,7 +185,41 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     func finishButtonTapped(sender: UIButton) {
-        print("申请创建")
-        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        let alertView = UIAlertView(title: "提交成功", message: "等待审核", delegate: self, cancelButtonTitle: "OK")
+        for view in textsNeedToFill {
+            if let textField = view as? UITextField {
+                textField.text = ""
+            } else if let textView  = view as? UITextView {
+                textView.text = ""
+            }
+        }
+        haiBaoImageView.image = UIImage(named: "noImage")
+        newImage = false
+        finishButton.enabled = false
+        scrollView.contentOffset.y = 0
+        alertView.show()
+        
+    }
+    
+    func isReadyToEnableDoneButton() -> Bool {
+        for view in textsNeedToFill {
+            if let textField = view as? UITextField {
+                if textField.text?.isEmpty == true {
+                    
+                    finishButton.enabled = false
+                    return false
+                }
+            } else if let textView  = view as? UITextView {
+                if textView.text.isEmpty == true {
+                    finishButton.enabled = false
+                    return false
+                }
+            }
+        }
+        if newImage == false {
+            return false
+        }
+        finishButton.enabled = true
+        return true
     }
 }

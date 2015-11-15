@@ -14,8 +14,9 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     var imageView: UIImageView!
     var textFields: [UITextField]!
     var origin: CGPoint!
+    var joined = false
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         let clearImage = getImageWithColor(UIColor.clearColor(), size: (self.navigationController?.navigationBar.frame.size)!)
         let navBar = (self.navigationController?.navigationBar)!
         
@@ -139,6 +140,15 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func buttonTapped(sender: UIButton) {
+        if joined == false {
+            let alertView = UIAlertView(title: "报名请求已上传", message: "", delegate: self, cancelButtonTitle: "OK")
+            joined = true
+            alertView.show()
+        } else {
+            let alertView = UIAlertView(title: "请勿重复报名", message: "", delegate: self, cancelButtonTitle: "我知道了")
+            joined = true
+            alertView.show()
+        }
         
     }
 

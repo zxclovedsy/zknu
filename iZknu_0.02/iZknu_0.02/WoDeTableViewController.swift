@@ -16,7 +16,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
     var nameLabel: UILabel!
     var numberLabel: UILabel!
     
-    let info = ["我的粉丝", "创建的社团", "加入的社团", "创建的活动", "参加的活动", "我的关注"]
+    let info = ["创建的社团", "加入的社团", "创建的活动", "参加的活动", "我的关注"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
             cell = UITableViewCell(style: .Default, reuseIdentifier: cellIdentifier)
         }
         cell?.textLabel?.text = info[indexPath.row]
+        cell?.imageView?.image = UIImage(named: "noImage")
         
         return cell!
     }
@@ -68,12 +69,11 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var pushViewController: UIViewController?
         switch indexPath.row {
-        case 0: pushViewController = WoDeFenSiTableViewController() //我的粉丝
-        case 1: pushViewController = ChuangJianDeSheTuanTableViewController() // 创建的社团
-        case 2: pushViewController = JiaRuDeSheTuanTableViewController()    // 加入的社团
-        case 3: pushViewController = ChuangJianDeHuoDongTableViewController()   // 创建的活动
-        case 4: pushViewController = CanJiaDeHuoDongTableViewController()   // 参加的活动
-        case 5: pushViewController = WoDeGuanZhuTableViewController()   // 我的关注
+        case 0: pushViewController = ChuangJianDeSheTuanTableViewController() // 创建的社团
+        case 1: pushViewController = JiaRuDeSheTuanTableViewController()    // 加入的社团
+        case 2: pushViewController = ChuangJianDeHuoDongTableViewController()   // 创建的活动
+        case 3: pushViewController = CanJiaDeHuoDongTableViewController()   // 参加的活动
+        case 4: pushViewController = WoDeGuanZhuTableViewController()   // 我的关注
         default:print("error")
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -92,7 +92,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         let tabBarHeight = (self.tabBarController?.tabBar.frame.height)!
         let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
         tableView = UITableView(frame: CGRect(x: 0, y: y, width: self.view.frame.width, height: self.view.frame.height - tabBarHeight - topView.frame.height - statusBarHeight))
-        tableView.rowHeight = 60
+        //tableView.rowHeight = 60
         tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self

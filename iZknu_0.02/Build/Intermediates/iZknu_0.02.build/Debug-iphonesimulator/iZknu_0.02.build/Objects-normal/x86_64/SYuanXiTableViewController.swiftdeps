@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0226SYuanXiTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "numberOfSectionsInTableView"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "tableView"
+- "numberOfSectionsInTableView"
 depends-top-level:
 - "UITableView"
 - "Int"
