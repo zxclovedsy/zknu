@@ -6,53 +6,55 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0226SheTuanTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "scrollView"
 - "setupMenu"
-- "menu"
-- "menu"
-- "menu"
-- "menu"
-- "recruitments"
-- "setupTableView"
-- "departments"
-- "numberOfColumnsInMenu"
 - "viewDidLoad"
-- "types"
 - "numberOfSectionsInTableView"
+- "setupTableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "numberOfColumnsInMenu"
+- "departments"
+- "setupScrollView"
+- "recruitments"
+- "menu"
+- "menu"
+- "menu"
+- "menu"
+- "types"
 depends-top-level:
-- !private "+"
-- !private "BooleanLiteralType"
-- !private "-"
-- "UITableView"
-- "DOPDropDownMenuDelegate"
-- "DOPDropDownMenuDataSource"
-- "UIViewController"
-- !private "UIBarButtonItem"
-- "Int"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- "DOPDropDownMenu"
 - "String"
-- !private "print"
-- !private "CGPoint"
-- "Array"
 - "SheTuanTableViewController"
-- "NSIndexPath"
 - "UITableViewCell"
-- "DOPIndexPath"
-- "StringLiteralType"
-- !private "~="
-- !private "UIColor"
-- !private "=="
+- !private "CGPoint"
+- "UIViewController"
+- "UIScrollView"
 - !private "CGRect"
 - !private "SheTuanViewController"
-- !private "assertionFailure"
+- !private "UIBarButtonItem"
+- "Array"
+- !private "BooleanLiteralType"
+- !private "-"
+- "UITableViewDelegate"
+- "DOPDropDownMenuDelegate"
+- !private "+"
+- "DOPIndexPath"
+- !private "=="
+- !private "~="
 - !private "UIApplication"
+- "UITableViewDataSource"
+- "StringLiteralType"
+- !private "print"
+- "DOPDropDownMenu"
+- "UITableView"
+- "NSIndexPath"
+- "DOPDropDownMenuDataSource"
+- "Int"
+- !private "assertionFailure"
+- !private "UIColor"
 depends-member:
-- !private ["PSs16AbsoluteValuable", "Stride"]
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "DOPDropDownMenu"]
@@ -60,6 +62,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "UIBarButtonItem"]
 - !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIScrollView"]
 - !private ["PSs9AnyObject", "UITableView"]
 - !private ["PSs9AnyObject", "UITableViewCell"]
 - !private ["PSs9AnyObject", "addSubview"]
@@ -85,6 +88,7 @@ depends-member:
 - !private ["PSs9AnyObject", "pushViewController"]
 - ["PSs9AnyObject", "recruitments"]
 - !private ["PSs9AnyObject", "row"]
+- ["PSs9AnyObject", "scrollView"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
 - ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -99,8 +103,10 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - ["PSs9AnyObject", "setupMenu"]
+- ["PSs9AnyObject", "setupScrollView"]
 - ["PSs9AnyObject", "setupTableView"]
 - !private ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
 - !private ["PSs9AnyObject", "statusBarFrame"]
 - !private ["PSs9AnyObject", "tabBar"]
 - !private ["PSs9AnyObject", "tabBarController"]
@@ -131,10 +137,8 @@ depends-member:
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
-- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -152,10 +156,10 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "SheTuanViewController"]
-- !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "UIBarButtonItem"]
 - !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIScrollView"]
 - !private ["PSs11CVarArgType", "UITableView"]
 - !private ["PSs11CVarArgType", "UITableViewCell"]
 - !private ["PSs11CVarArgType", "addSubview"]
@@ -181,6 +185,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "pushViewController"]
 - ["PSs11CVarArgType", "recruitments"]
 - !private ["PSs11CVarArgType", "row"]
+- ["PSs11CVarArgType", "scrollView"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
 - ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -195,8 +200,10 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - ["PSs11CVarArgType", "setupMenu"]
+- ["PSs11CVarArgType", "setupScrollView"]
 - ["PSs11CVarArgType", "setupTableView"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "showsVerticalScrollIndicator"]
 - !private ["PSs11CVarArgType", "statusBarFrame"]
 - !private ["PSs11CVarArgType", "tabBar"]
 - !private ["PSs11CVarArgType", "tabBarController"]
@@ -220,7 +227,6 @@ depends-member:
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
-- !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "init"]
 - ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
@@ -238,11 +244,11 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "SheTuanViewController"]
-- !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIApplication"]
 - !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIScrollView"]
 - !private ["PSs23CustomStringConvertible", "UITableView"]
 - !private ["PSs23CustomStringConvertible", "UITableViewCell"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -270,6 +276,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "pushViewController"]
 - ["PSs23CustomStringConvertible", "recruitments"]
 - !private ["PSs23CustomStringConvertible", "row"]
+- ["PSs23CustomStringConvertible", "scrollView"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -284,8 +291,10 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - ["PSs23CustomStringConvertible", "setupMenu"]
+- ["PSs23CustomStringConvertible", "setupScrollView"]
 - ["PSs23CustomStringConvertible", "setupTableView"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "showsVerticalScrollIndicator"]
 - !private ["PSs23CustomStringConvertible", "statusBarFrame"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "tabBar"]
@@ -311,6 +320,7 @@ depends-member:
 - !private ["PSo25DOPDropDownMenuDataSource", "UIApplication"]
 - !private ["PSo25DOPDropDownMenuDataSource", "UIBarButtonItem"]
 - !private ["PSo25DOPDropDownMenuDataSource", "UIColor"]
+- !private ["PSo25DOPDropDownMenuDataSource", "UIScrollView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "UITableView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "UITableViewCell"]
 - !private ["PSo25DOPDropDownMenuDataSource", "assertionFailure"]
@@ -323,6 +333,7 @@ depends-member:
 - ["PSo25DOPDropDownMenuDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "print"]
 - !private ["PSo25DOPDropDownMenuDataSource", "recruitments"]
+- !private ["PSo25DOPDropDownMenuDataSource", "scrollView"]
 - ["PSo25DOPDropDownMenuDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo25DOPDropDownMenuDataSource", "scrollViewDidEndDragging"]
 - ["PSo25DOPDropDownMenuDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -337,6 +348,7 @@ depends-member:
 - ["PSo25DOPDropDownMenuDataSource", "scrollViewWillEndDragging"]
 - ["PSo25DOPDropDownMenuDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "setupMenu"]
+- !private ["PSo25DOPDropDownMenuDataSource", "setupScrollView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "setupTableView"]
 - !private ["PSo25DOPDropDownMenuDataSource", "tabBarController"]
 - ["PSo25DOPDropDownMenuDataSource", "tableView"]
@@ -352,6 +364,7 @@ depends-member:
 - !private ["PSo23DOPDropDownMenuDelegate", "UIApplication"]
 - !private ["PSo23DOPDropDownMenuDelegate", "UIBarButtonItem"]
 - !private ["PSo23DOPDropDownMenuDelegate", "UIColor"]
+- !private ["PSo23DOPDropDownMenuDelegate", "UIScrollView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "UITableView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "UITableViewCell"]
 - !private ["PSo23DOPDropDownMenuDelegate", "assertionFailure"]
@@ -364,6 +377,7 @@ depends-member:
 - ["PSo23DOPDropDownMenuDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "print"]
 - !private ["PSo23DOPDropDownMenuDelegate", "recruitments"]
+- !private ["PSo23DOPDropDownMenuDelegate", "scrollView"]
 - ["PSo23DOPDropDownMenuDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo23DOPDropDownMenuDelegate", "scrollViewDidEndDragging"]
 - ["PSo23DOPDropDownMenuDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -378,6 +392,7 @@ depends-member:
 - ["PSo23DOPDropDownMenuDelegate", "scrollViewWillEndDragging"]
 - ["PSo23DOPDropDownMenuDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "setupMenu"]
+- !private ["PSo23DOPDropDownMenuDelegate", "setupScrollView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "setupTableView"]
 - !private ["PSo23DOPDropDownMenuDelegate", "tabBarController"]
 - ["PSo23DOPDropDownMenuDelegate", "tableView"]
@@ -388,7 +403,6 @@ depends-member:
 - ["PSo23DOPDropDownMenuDelegate", ""]
 - !private ["CSo12DOPIndexPath", "column"]
 - !private ["CSo12DOPIndexPath", "row"]
-- !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "CGPoint"]
 - !private ["PSs9Equatable", "CGRect"]
@@ -398,10 +412,10 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "Plain"]
 - !private ["PSs9Equatable", "SheTuanViewController"]
-- !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "UIApplication"]
 - !private ["PSs9Equatable", "UIBarButtonItem"]
 - !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIScrollView"]
 - !private ["PSs9Equatable", "UITableView"]
 - !private ["PSs9Equatable", "UITableViewCell"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -430,6 +444,7 @@ depends-member:
 - !private ["PSs9Equatable", "pushViewController"]
 - ["PSs9Equatable", "recruitments"]
 - !private ["PSs9Equatable", "row"]
+- ["PSs9Equatable", "scrollView"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
 - ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -444,8 +459,10 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - ["PSs9Equatable", "setupMenu"]
+- ["PSs9Equatable", "setupScrollView"]
 - ["PSs9Equatable", "setupTableView"]
 - !private ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "showsVerticalScrollIndicator"]
 - !private ["PSs9Equatable", "statusBarFrame"]
 - !private ["PSs9Equatable", "tabBar"]
 - !private ["PSs9Equatable", "tabBarController"]
@@ -463,11 +480,8 @@ depends-member:
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
-- !private ["PSs23FloatLiteralConvertible", "Stride"]
-- !private ["PSs17FloatingPointType", "Stride"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "CGPoint"]
 - !private ["PSs8Hashable", "CGRect"]
@@ -477,10 +491,10 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "Plain"]
 - !private ["PSs8Hashable", "SheTuanViewController"]
-- !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "UIApplication"]
 - !private ["PSs8Hashable", "UIBarButtonItem"]
 - !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIScrollView"]
 - !private ["PSs8Hashable", "UITableView"]
 - !private ["PSs8Hashable", "UITableViewCell"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -507,6 +521,7 @@ depends-member:
 - !private ["PSs8Hashable", "pushViewController"]
 - ["PSs8Hashable", "recruitments"]
 - !private ["PSs8Hashable", "row"]
+- ["PSs8Hashable", "scrollView"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
 - ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -521,8 +536,10 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - ["PSs8Hashable", "setupMenu"]
+- ["PSs8Hashable", "setupScrollView"]
 - ["PSs8Hashable", "setupTableView"]
 - !private ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "showsVerticalScrollIndicator"]
 - !private ["PSs8Hashable", "statusBarFrame"]
 - !private ["PSs8Hashable", "tabBar"]
 - !private ["PSs8Hashable", "tabBarController"]
@@ -547,7 +564,6 @@ depends-member:
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
@@ -555,16 +571,12 @@ depends-member:
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs21IntegerArithmeticType", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs25IntegerLiteralConvertible", "Stride"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["PSs11IntegerType", "Stride"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "init"]
 - ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -591,6 +603,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIScrollView"]
 - !private ["PSo8NSCoding", "UITableView"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -615,6 +628,7 @@ depends-member:
 - !private ["PSo8NSCoding", "pushViewController"]
 - ["PSo8NSCoding", "recruitments"]
 - !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", "scrollView"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -629,7 +643,9 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - ["PSo8NSCoding", "setupMenu"]
+- ["PSo8NSCoding", "setupScrollView"]
 - ["PSo8NSCoding", "setupTableView"]
+- !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
 - !private ["PSo8NSCoding", "tabBar"]
 - !private ["PSo8NSCoding", "tabBarController"]
 - ["PSo8NSCoding", "tableView"]
@@ -652,6 +668,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScrollView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
 - !private ["PSo26NSExtensionRequestHandling", "assertionFailure"]
@@ -667,6 +684,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - ["PSo26NSExtensionRequestHandling", "recruitments"]
+- ["PSo26NSExtensionRequestHandling", "scrollView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -681,6 +699,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "setupMenu"]
+- ["PSo26NSExtensionRequestHandling", "setupScrollView"]
 - ["PSo26NSExtensionRequestHandling", "setupTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBar"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
@@ -705,6 +724,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIScrollView"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -731,6 +751,7 @@ depends-member:
 - !private ["CSo8NSObject", "pushViewController"]
 - ["CSo8NSObject", "recruitments"]
 - !private ["CSo8NSObject", "row"]
+- ["CSo8NSObject", "scrollView"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -745,8 +766,10 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - ["CSo8NSObject", "setupMenu"]
+- ["CSo8NSObject", "setupScrollView"]
 - ["CSo8NSObject", "setupTableView"]
 - !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
 - !private ["CSo8NSObject", "statusBarFrame"]
 - !private ["CSo8NSObject", "tabBar"]
 - !private ["CSo8NSObject", "tabBarController"]
@@ -766,6 +789,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIScrollView"]
 - !private ["PSo16NSObjectProtocol", "UITableView"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -791,6 +815,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - ["PSo16NSObjectProtocol", "recruitments"]
 - !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", "scrollView"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -805,8 +830,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - ["PSo16NSObjectProtocol", "setupMenu"]
+- ["PSo16NSObjectProtocol", "setupScrollView"]
 - ["PSo16NSObjectProtocol", "setupTableView"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
 - !private ["PSo16NSObjectProtocol", "statusBarFrame"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
@@ -830,7 +857,6 @@ depends-member:
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["PSs21RandomAccessIndexType", "Stride"]
 - !private ["VSs5Range", "deinit"]
 - ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
@@ -859,6 +885,7 @@ depends-member:
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "UIApplication"]
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "UIBarButtonItem"]
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "UIColor"]
+- ["C10iZknu_0_0226SheTuanTableViewController", "UIScrollView"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "UITableView"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "UITableViewCell"]
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "assertionFailure"]
@@ -873,6 +900,7 @@ depends-member:
 - ["C10iZknu_0_0226SheTuanTableViewController", "numberOfSectionsInTableView"]
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "print"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "recruitments"]
+- ["C10iZknu_0_0226SheTuanTableViewController", "scrollView"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "scrollViewDidEndDecelerating"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "scrollViewDidEndDragging"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "scrollViewDidEndScrollingAnimation"]
@@ -887,6 +915,7 @@ depends-member:
 - ["C10iZknu_0_0226SheTuanTableViewController", "scrollViewWillEndDragging"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "sectionIndexTitlesForTableView"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "setupMenu"]
+- ["C10iZknu_0_0226SheTuanTableViewController", "setupScrollView"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "setupTableView"]
 - !private ["C10iZknu_0_0226SheTuanTableViewController", "tabBarController"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "tableView"]
@@ -898,10 +927,8 @@ depends-member:
 - !private ["C10iZknu_0_0221SheTuanViewController", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs17SignedIntegerType", "Stride"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
-- !private ["PSs16SignedNumberType", "Stride"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
@@ -910,7 +937,6 @@ depends-member:
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
-- !private ["PSs10Strideable", "Stride"]
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -922,6 +948,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "addSubview"]
@@ -932,6 +959,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "deselectRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGPoint"]
@@ -941,6 +969,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIScrollView"]
 - !private ["PSo21UIAppearanceContainer", "UITableView"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -963,6 +992,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - ["PSo21UIAppearanceContainer", "recruitments"]
+- ["PSo21UIAppearanceContainer", "scrollView"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -977,7 +1007,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - ["PSo21UIAppearanceContainer", "setupMenu"]
+- ["PSo21UIAppearanceContainer", "setupScrollView"]
 - ["PSo21UIAppearanceContainer", "setupTableView"]
+- !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
 - !private ["PSo21UIAppearanceContainer", "tabBar"]
 - !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -1003,6 +1035,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIScrollView"]
 - !private ["PSo18UIContentContainer", "UITableView"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
 - !private ["PSo18UIContentContainer", "assertionFailure"]
@@ -1018,6 +1051,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
 - ["PSo18UIContentContainer", "recruitments"]
+- ["PSo18UIContentContainer", "scrollView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1032,6 +1066,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "setupMenu"]
+- ["PSo18UIContentContainer", "setupScrollView"]
 - ["PSo18UIContentContainer", "setupTableView"]
 - !private ["PSo18UIContentContainer", "tabBar"]
 - !private ["PSo18UIContentContainer", "tabBarController"]
@@ -1050,6 +1085,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "deselectRowAtIndexPath"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -1060,6 +1096,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "deselectRowAtIndexPath"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "CGPoint"]
@@ -1069,6 +1106,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIScrollView"]
 - !private ["PSo18UIFocusEnvironment", "UITableView"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
@@ -1091,6 +1129,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - ["PSo18UIFocusEnvironment", "recruitments"]
+- ["PSo18UIFocusEnvironment", "scrollView"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1105,7 +1144,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UIFocusEnvironment", "setupMenu"]
+- ["PSo18UIFocusEnvironment", "setupScrollView"]
 - ["PSo18UIFocusEnvironment", "setupTableView"]
+- !private ["PSo18UIFocusEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UIFocusEnvironment", "tabBar"]
 - !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -1135,6 +1176,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIScrollView"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -1157,6 +1199,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - ["CSo11UIResponder", "recruitments"]
+- ["CSo11UIResponder", "scrollView"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1171,8 +1214,10 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - ["CSo11UIResponder", "setupMenu"]
+- ["CSo11UIResponder", "setupScrollView"]
 - ["CSo11UIResponder", "setupTableView"]
 - !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
 - !private ["CSo11UIResponder", "statusBarFrame"]
 - !private ["CSo11UIResponder", "tabBar"]
 - !private ["CSo11UIResponder", "tabBarController"]
@@ -1189,6 +1234,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "deselectRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "init"]
+- !private ["CSo12UIScrollView", "showsVerticalScrollIndicator"]
 - !private ["PSo20UIScrollViewDelegate", "CGPoint"]
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "DOPDropDownMenu"]
@@ -1196,6 +1242,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "assertionFailure"]
@@ -1212,6 +1259,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "recruitments"]
+- !private ["PSo20UIScrollViewDelegate", "scrollView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1226,6 +1274,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo20UIScrollViewDelegate", "setupMenu"]
+- !private ["PSo20UIScrollViewDelegate", "setupScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "setupTableView"]
 - !private ["PSo20UIScrollViewDelegate", "tabBarController"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
@@ -1241,6 +1290,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIScrollView"]
 - !private ["PSo16UIStateRestoring", "UITableView"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
 - !private ["PSo16UIStateRestoring", "assertionFailure"]
@@ -1256,6 +1306,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
 - ["PSo16UIStateRestoring", "recruitments"]
+- ["PSo16UIStateRestoring", "scrollView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1270,6 +1321,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "setupMenu"]
+- ["PSo16UIStateRestoring", "setupScrollView"]
 - ["PSo16UIStateRestoring", "setupTableView"]
 - !private ["PSo16UIStateRestoring", "tabBar"]
 - !private ["PSo16UIStateRestoring", "tabBarController"]
@@ -1298,6 +1350,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIScrollView"]
 - !private ["PSo21UITableViewDataSource", "UITableView"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "assertionFailure"]
@@ -1314,6 +1367,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "recruitments"]
+- !private ["PSo21UITableViewDataSource", "scrollView"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -1328,6 +1382,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UITableViewDataSource", "setupMenu"]
+- !private ["PSo21UITableViewDataSource", "setupScrollView"]
 - !private ["PSo21UITableViewDataSource", "setupTableView"]
 - !private ["PSo21UITableViewDataSource", "tabBarController"]
 - ["PSo21UITableViewDataSource", "tableView"]
@@ -1343,6 +1398,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIApplication"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIScrollView"]
 - !private ["PSo19UITableViewDelegate", "UITableView"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "assertionFailure"]
@@ -1359,6 +1415,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "recruitments"]
+- !private ["PSo19UITableViewDelegate", "scrollView"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1373,6 +1430,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITableViewDelegate", "setupMenu"]
+- !private ["PSo19UITableViewDelegate", "setupScrollView"]
 - !private ["PSo19UITableViewDelegate", "setupTableView"]
 - !private ["PSo19UITableViewDelegate", "tabBarController"]
 - ["PSo19UITableViewDelegate", "tableView"]
@@ -1388,6 +1446,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIScrollView"]
 - !private ["PSo18UITraitEnvironment", "UITableView"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -1410,6 +1469,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
 - ["PSo18UITraitEnvironment", "recruitments"]
+- ["PSo18UITraitEnvironment", "scrollView"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1424,7 +1484,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UITraitEnvironment", "setupMenu"]
+- ["PSo18UITraitEnvironment", "setupScrollView"]
 - ["PSo18UITraitEnvironment", "setupTableView"]
+- !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UITraitEnvironment", "tabBar"]
 - !private ["PSo18UITraitEnvironment", "tabBarController"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -1444,6 +1506,7 @@ depends-member:
 - !private ["CSo6UIView", "deselectRowAtIndexPath"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "showsVerticalScrollIndicator"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - !private ["CSo16UIViewController", "CGPoint"]
@@ -1457,6 +1520,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIScrollView"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "assertionFailure"]
@@ -1472,6 +1536,7 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "recruitments"]
+- ["CSo16UIViewController", "scrollView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1486,6 +1551,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "setupMenu"]
+- ["CSo16UIViewController", "setupScrollView"]
 - ["CSo16UIViewController", "setupTableView"]
 - !private ["CSo16UIViewController", "tabBar"]
 - !private ["CSo16UIViewController", "tabBarController"]
@@ -1511,15 +1577,11 @@ depends-member:
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs19_CVarArgAlignedType", "Stride"]
-- !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
 - ["PSs24_DestructorSafeContainer", "Element"]
@@ -1530,19 +1592,15 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
-- !private ["PSs14_Incrementable", "Stride"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs22_IntegerArithmeticType", "Stride"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
-- !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
@@ -1551,13 +1609,11 @@ depends-member:
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs12_Reflectable", "Distance"]
 - ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
@@ -1571,6 +1627,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "origin"]
+- !private ["PSs12_Reflectable", "showsVerticalScrollIndicator"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textLabel"]
@@ -1578,12 +1635,9 @@ depends-member:
 - !private ["PSs12_Reflectable", "y"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs18_SignedIntegerType", "Stride"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
-- !private ["PSs11_Strideable", "Stride"]
 depends-nominal:
-- !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
 - "Sa"
 - "PSs23ArrayLiteralConvertible"
@@ -1610,8 +1664,6 @@ depends-nominal:
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
-- !private "PSs23FloatLiteralConvertible"
-- !private "PSs17FloatingPointType"
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
@@ -1703,13 +1755,10 @@ depends-nominal:
 - "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "PSs31_BuiltinFloatLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs32_BuiltinStringLiteralConvertible"
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "PSs19_CVarArgAlignedType"
-- !private "PSs22_CVarArgPassedAsDouble"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"
@@ -1734,4 +1783,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "d84ffe51d60c7158909f0fdd8bef8e71"
+interface-hash: "66dce747c29b14f4e0bc67de1efe6543"

@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0219XinDeViewController", ""]
 provides-dynamic-lookup:
-- "segmentedControl"
-- "newSheTuanViewController"
-- "setupSegmentedControl"
+- "newHuoDongViewController"
 - "didReceiveMemoryWarning"
 - "segmentedControlIndexChanged"
 - "viewDidLoad"
-- "newHuoDongViewController"
+- "segmentedControl"
+- "newSheTuanViewController"
+- "setupSegmentedControl"
 depends-top-level:
-- !private "print"
-- "NewSheTuanViewController"
-- !private "~="
-- !private "StringLiteralType"
-- "UISegmentedControl"
-- "UIViewController"
-- "XinDeViewController"
 - !private "-"
-- "NewHuoDongViewController"
-- !private "BooleanLiteralType"
+- "UISegmentedControl"
 - !private "/"
+- !private "StringLiteralType"
+- !private "~="
+- !private "print"
+- !private "BooleanLiteralType"
+- "NewHuoDongViewController"
+- "XinDeViewController"
+- "UIViewController"
+- "NewSheTuanViewController"
 depends-member:
 - !private ["PSs9AnyObject", "NewHuoDongViewController"]
 - !private ["PSs9AnyObject", "NewSheTuanViewController"]
@@ -444,6 +444,10 @@ depends-member:
 - !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["PSo30UINavigationControllerDelegate", "init"]
 - !private ["PSo30UINavigationControllerDelegate", "view"]
+- !private ["PSo22UIPickerViewDataSource", "init"]
+- !private ["PSo22UIPickerViewDataSource", "view"]
+- !private ["PSo20UIPickerViewDelegate", "init"]
+- !private ["PSo20UIPickerViewDelegate", "view"]
 - ["CSo11UIResponder", "NewHuoDongViewController"]
 - ["CSo11UIResponder", "NewSheTuanViewController"]
 - ["CSo11UIResponder", "UISegmentedControl"]
@@ -667,6 +671,8 @@ depends-nominal:
 - !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - !private "PSo30UINavigationControllerDelegate"
+- !private "PSo22UIPickerViewDataSource"
+- !private "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
 - !private "PSo20UIScrollViewDelegate"
 - !private "CSo18UISegmentedControl"

@@ -8,16 +8,21 @@
 
 import UIKit
 
-class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     var scrollView: UIScrollView!
     var sheTuanJianJieTextView: UITextView!
     var haiBaoImageView: UIImageView!
+    var pickerView: UIPickerView!
+    
+    let types = ["全部类型","学术", "艺术", "公益", "爱好", "社会实践", "官方组织", "其它类型"]
+    let levels = ["校级", "院级"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        self.setupView()
         view = scrollView
+        self.setupPickerView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,8 +53,58 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // MARK: - PickerViewDataSource
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 2
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch component {
+        case 0: return types.count
+        case 1: return levels.count
+        default: return 0
+        }
+    }
+    
+    // MARK: - PickerViewDelegate
 
-
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch component {
+        case 0: return types[row]
+        case 1: return levels[row]
+        default: return ""
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        return 150
+    }
+    
+    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 20
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("selected")
+    }
+    
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, var reusingView view: UIView?) -> UIView {
+        if view == nil {
+            view = UILabel() as UIView
+        }
+        if var label = view as? UILabel {
+            label = UILabel()
+            label.minimumScaleFactor = 12
+            label.adjustsFontSizeToFitWidth = true
+            //label.textAlignment = .Center
+            label.textColor = UIColor.blackColor()
+            label.font = UIFont.systemFontOfSize(12)
+            label.text = self.pickerView(pickerView, titleForRow: row, forComponent: component)
+            return label
+        }
+        return view!
+    }
     
     // MARK: UI
     func setupView() {
@@ -60,7 +115,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 80, width: 70, height: 20))
         let leiXingLabel =  UILabel(frame: CGRect(x: 20, y: 120, width: 70, height: 20))
-        let jiBieLabel = UILabel(frame: CGRect(x: 20, y: 160, width: 70, height: 20))
+        let jiBieLabel = UILabel(frame: CGRect(x: 150, y: 120, width: 70, height: 20))
         let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 200, width: 70, height: 20))
         let haiBaoLabel = UILabel(frame: CGRect(x: 20, y: 350, width: 70, height: 20))
         
@@ -88,6 +143,18 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         mingChengTextField.placeholder = "请输入社团名称"
         mingChengTextField.font = UIFont.systemFontOfSize(11)
         scrollView.addSubview(mingChengTextField)
+        
+      /*  let jibieTextField = UITextField(frame: CGRect(x: 120, y: 160, width: 150, height: 20))
+        jibieTextField.delegate = self
+        jibieTextField.layer.borderColor = UIColor.grayColor().CGColor
+        jibieTextField.layer.borderWidth = 0.5
+        jibieTextField.layer.cornerRadius = 3.0
+        jibieTextField.textColor = UIColor.grayColor()
+        jibieTextField.textAlignment = .Center
+        jibieTextField.returnKeyType = .Done
+        jibieTextField.placeholder = "院级／校级"
+        jibieTextField.font = UIFont.systemFontOfSize(11)
+        scrollView.addSubview(jibieTextField)*/
         
         // textView
         sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 230, width: 280, height: 100))
@@ -125,6 +192,15 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         finishButton.addTarget(self, action: "finishButtonTapped:", forControlEvents: .TouchDown)
         scrollView.addSubview(finishButton)
     }
+    
+    func setupPickerView() {
+        pickerView = UIPickerView(frame: CGRect(x: 20, y: 140, width: 250, height: 60))
+        pickerView.autoresizingMask = .FlexibleHeight
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        self.scrollView.addSubview(pickerView)
+    }
+    
     
     // MARK: Actions
     

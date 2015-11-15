@@ -10,6 +10,7 @@ import UIKit
 
 class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
+    var scrollView: UIScrollView!
     var tableView: UITableView!
     var menu: DOPDropDownMenu!
     
@@ -23,7 +24,7 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "社团"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
-        
+        self.setupScrollView()
         self.setupMenu()
         self.setupTableView()
         
@@ -95,10 +96,16 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - UI
     
+    func setupScrollView() {
+        scrollView = UIScrollView(frame: self.view.frame)
+        scrollView.showsVerticalScrollIndicator = false
+        view = scrollView
+    }
+    
     func setupMenu() {
-        let navBarHeight = (self.navigationController?.navigationBar.frame.height)!
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        menu = DOPDropDownMenu(origin: CGPoint(x: 0, y: navBarHeight + statusBarHeight), andHeight: 40)
+        //let navBarHeight = (self.navigationController?.navigationBar.frame.height)!
+        //let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        menu = DOPDropDownMenu(origin: CGPoint(x: 0, y: 0), andHeight: 40)
         menu.dataSource = self
         menu.delegate = self
         self.view.addSubview(menu)

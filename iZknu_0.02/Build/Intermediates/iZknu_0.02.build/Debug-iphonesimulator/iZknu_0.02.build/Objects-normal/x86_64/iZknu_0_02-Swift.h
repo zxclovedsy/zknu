@@ -266,19 +266,32 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewHuoDongViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
+@class UIView;
 
 SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
-@interface NewSheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@interface NewSheTuanViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UITextView * __null_unspecified sheTuanJianJieTextView;
 @property (nonatomic, strong) UIImageView * __null_unspecified haiBaoImageView;
+@property (nonatomic, strong) UIPickerView * __null_unspecified pickerView;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull types;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull levels;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (BOOL)textViewShouldEndEditing:(UITextView * __nonnull)textView;
 - (void)textViewDidBeginEditing:(UITextView * __nonnull)textView;
 - (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (CGFloat)pickerView:(UIPickerView * __nonnull)pickerView widthForComponent:(NSInteger)component;
+- (CGFloat)pickerView:(UIPickerView * __nonnull)pickerView rowHeightForComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (UIView * __nonnull)pickerView:(UIPickerView * __nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * __nullable)view;
 - (void)setupView;
+- (void)setupPickerView;
 - (void)undoButtonTapped:(UIBarButtonItem * __nonnull)sender;
 - (void)doneButtonTapped:(UIBarButtonItem * __nonnull)sender;
 - (void)selectImageFromPhotoLibrary:(UITapGestureRecognizer * __nonnull)sender;
@@ -326,6 +339,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0227SZhaoXinTableViewController")
 
 SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
 @interface SheTuanTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UITableView * __null_unspecified tableView;
 @property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull departments;
@@ -340,6 +354,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)setupScrollView;
 - (void)setupMenu;
 - (void)setupTableView;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
