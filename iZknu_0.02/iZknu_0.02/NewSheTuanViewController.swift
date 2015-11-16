@@ -120,15 +120,15 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     // MARK: UI
     func setupView() {
         scrollView = UIScrollView(frame: self.view.frame)
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.4)
+        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.5)
         scrollView.backgroundColor = UIColor.whiteColor()
         
         // labels
         let mingChengLabel = UILabel(frame: CGRect(x: 20, y: 80, width: 70, height: 20))
         let leiXingLabel =  UILabel(frame: CGRect(x: 20, y: 120, width: 70, height: 20))
         let jiBieLabel = UILabel(frame: CGRect(x: 160, y: 120, width: 70, height: 20))
-        let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 200, width: 70, height: 20))
-        let haiBaoLabel = UILabel(frame: CGRect(x: 20, y: 350, width: 70, height: 20))
+        let jianJieLabel = UILabel(frame: CGRect(x: 20, y: 240, width: 70, height: 20))
+        let haiBaoLabel = UILabel(frame: CGRect(x: 20, y: 390, width: 70, height: 20))
         
         mingChengLabel.text = "社团名称"
         leiXingLabel.text = "社团类型"
@@ -157,7 +157,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         scrollView.addSubview(mingChengTextField)
         
         // textView
-        sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 230, width: 280, height: 100))
+        sheTuanJianJieTextView = UITextView(frame: CGRect(x: 20, y: 270, width: 280, height: 100))
         sheTuanJianJieTextView.delegate = self
         sheTuanJianJieTextView.textColor = UIColor.grayColor()
         sheTuanJianJieTextView.layer.borderColor = UIColor.grayColor().CGColor
@@ -176,7 +176,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         scrollView.addSubview(sheTuanJianJieTextView)
         
         // haiBaoImageView
-        haiBaoImageView = UIImageView(frame: CGRect(x: 20, y: 380, width: 150, height: 150))
+        haiBaoImageView = UIImageView(frame: CGRect(x: 20, y: 440, width: 150, height: 150))
         haiBaoImageView.image = UIImage(named: "noImage")
         haiBaoImageView.userInteractionEnabled = true
         // tapGestureRecoginizer
@@ -188,7 +188,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
         
         // finishButton
         finishButton = UIButton(type: .System)
-        finishButton.frame = CGRect(x: 100, y: 560, width: 100, height: 20)
+        finishButton.frame = CGRect(x: 100, y: 610, width: 100, height: 20)
         finishButton.setTitle("申请创建", forState: .Normal)
         finishButton.addTarget(self, action: "finishButtonTapped:", forControlEvents: .TouchDown)
         finishButton.enabled = false
@@ -196,7 +196,7 @@ class NewSheTuanViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     func setupPickerView() {
-        pickerView = UIPickerView(frame: CGRect(x: 20, y: 140, width: 230, height: 60))
+        pickerView = UIPickerView(frame: CGRect(x: 20, y: 100, width: 230, height: 162))
         pickerView.autoresizingMask = .FlexibleHeight
         pickerView.delegate = self
         pickerView.dataSource = self

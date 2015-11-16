@@ -127,7 +127,7 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         scrollView.delegate = self
         //scrollView.showsVerticalScrollIndicator = false
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.2)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.4)
         scrollView.backgroundColor = UIColor.whiteColor()
         view = scrollView
     }
@@ -139,6 +139,12 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
             let label = UILabel(frame: CGRect(x: 20, y: originY + CGFloat(index) * CGFloat(40), width: 70, height: 20))
             if index == 6 {
                 label.frame.origin.y += 100
+            }
+            if index == 3 {
+                label.frame.origin.y += 40
+            }
+            if index > 3 {
+                label.frame.origin.y += 80
             }
             label.text = text
             self.view.addSubview(label)
@@ -153,6 +159,9 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
                 continue
             }
             let textField = UITextField(frame: CGRect(x: 120, y: CGFloat(40 * index) + originY, width: 150, height: 20))
+            if index == 4 {
+                textField.frame.origin.y += 80
+            }
             textField.delegate = self
             textField.tag = index
             textField.placeholder = text
@@ -169,14 +178,15 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     }
     
     func setupPickerView() {
-        let pickerView = UIPickerView(frame: CGRect(x: 120, y: 130, width: 150, height: 40))
+        let pickerView = UIPickerView(frame: CGRect(x: 120, y: 110, width: 150, height: 162))
         pickerView.dataSource = self
         pickerView.delegate = self
         self.view.addSubview(pickerView)
+        print(pickerView.frame)
     }
     
     func setupTextView() {
-        textView = UITextView(frame: CGRect(x: 20, y: 250, width: 280, height: 100))
+        textView = UITextView(frame: CGRect(x: 20, y: 250 + 80, width: 280, height: 100))
         textView.delegate = self
         textView.textColor = UIColor.grayColor()
         textView.layer.borderColor = UIColor.grayColor().CGColor
@@ -199,7 +209,7 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     }
     
     func setupImageView() {
-        imageView = UIImageView(frame: CGRect(x: 20, y: 400, width: 150, height: 150))
+        imageView = UIImageView(frame: CGRect(x: 20, y: 400 + 80, width: 150, height: 150))
         imageView.image = UIImage(named: "noImage")
         imageView.userInteractionEnabled = true
         // tapGestureRecoginizer

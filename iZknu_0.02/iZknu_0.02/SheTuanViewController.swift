@@ -54,7 +54,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         scrollView.delegate = self
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.1)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.2)
         scrollView.backgroundColor = UIColor.whiteColor()
         view = scrollView
     }
