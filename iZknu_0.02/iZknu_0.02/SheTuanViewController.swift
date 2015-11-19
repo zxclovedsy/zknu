@@ -88,7 +88,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             textField.text = text
             textField.textColor = UIColor.grayColor()
             textField.font = UIFont.systemFontOfSize(11)
-            textField.layer.borderWidth = 0.5
+            textField.layer.borderWidth = 0
             textField.layer.borderColor = UIColor.grayColor().CGColor
             textField.layer.cornerRadius = 3.0
             textField.textAlignment = .Center
@@ -105,7 +105,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         textView.textColor = UIColor.grayColor()
         textView.font = UIFont.systemFontOfSize(11)
         textView.layer.borderColor = UIColor.grayColor().CGColor
-        textView.layer.borderWidth = 0.5
+        textView.layer.borderWidth = 0
         textView.layer.cornerRadius = 5.0
         self.view.addSubview(textView)
     }

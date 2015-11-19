@@ -88,6 +88,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
+@import ObjectiveC;
 #endif
 
 #import "/Users/juno/Documents/git/zknu/iZknu_0.02/iZknu_0.02-Bridging-Header.h"
@@ -471,6 +472,33 @@ SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
 - (void)segmentedControlIndexChanged:(UISegmentedControl * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iZknu_0_0211ccOrgMember")
+@interface ccOrgMember : NSObject
+@property (nonatomic) NSInteger id;
+@property (nonatomic, copy) NSString * __nonnull name;
+@property (nonatomic, copy) NSString * __nonnull headImage;
+@property (nonatomic, copy) NSString * __nonnull grade;
+@property (nonatomic, copy) NSString * __nonnull college;
+@property (nonatomic, copy) NSString * __nonnull department;
+@property (nonatomic, copy) NSString * __nonnull job;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name grade:(NSString * __nonnull)grade college:(NSString * __nonnull)college OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name headImage:(NSString * __nonnull)headImage grade:(NSString * __nonnull)grade college:(NSString * __nonnull)college department:(NSString * __nonnull)department job:(NSString * __nonnull)job OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iZknu_0_0214ccOrganization")
+@interface ccOrganization : NSObject
+@property (nonatomic) NSInteger id;
+@property (nonatomic, copy) NSString * __nonnull name;
+@property (nonatomic, copy) NSString * __nonnull summary;
+@property (nonatomic, copy) NSDictionary<NSNumber *, ccOrgMember *> * __nonnull memberList;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)addOrgMember:(ccOrgMember * __nonnull)newMember;
+- (BOOL)deleteOrgMember:(NSInteger)id;
+- (ccOrgMember * __nullable)getOrgMember:(NSInteger)id;
 @end
 
 #pragma clang diagnostic pop

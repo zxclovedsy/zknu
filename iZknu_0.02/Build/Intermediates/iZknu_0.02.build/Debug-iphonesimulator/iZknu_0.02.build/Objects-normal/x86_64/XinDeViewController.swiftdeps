@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0219XinDeViewController", ""]
 provides-dynamic-lookup:
-- "segmentedControl"
-- "didReceiveMemoryWarning"
 - "segmentedControlIndexChanged"
 - "newSheTuanViewController"
-- "setupSegmentedControl"
-- "viewDidLoad"
 - "newHuoDongViewController"
+- "segmentedControl"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "setupSegmentedControl"
 depends-top-level:
-- "UISegmentedControl"
-- !private "StringLiteralType"
-- !private "/"
-- !private "-"
-- "NewHuoDongViewController"
-- "NewSheTuanViewController"
-- !private "~="
 - !private "print"
-- !private "BooleanLiteralType"
+- !private "~="
+- !private "StringLiteralType"
 - "XinDeViewController"
+- !private "-"
+- "UISegmentedControl"
+- "NewHuoDongViewController"
+- !private "/"
+- !private "BooleanLiteralType"
 - "UIViewController"
+- "NewSheTuanViewController"
 depends-member:
 - !private ["PSs9AnyObject", "NewHuoDongViewController"]
 - !private ["PSs9AnyObject", "NewSheTuanViewController"]
@@ -708,4 +708,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/juno/Documents/git/zknu/iZknu_0.02/./GDataXMLNode.h"
 interface-hash: "de681171df63f5882efc5cac60564059"

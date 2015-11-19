@@ -25,6 +25,20 @@
 		B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */; };
 		B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */; };
 		B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */; };
+		B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8A30DF01BFC9101009B77FB /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */; };
+		B8A30E021BFCAA17009B77FB /* ccDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E011BFCAA17009B77FB /* ccDataManager.swift */; };
+		B8A30E041BFCAA1D009B77FB /* ccLogicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E031BFCAA1D009B77FB /* ccLogicManager.swift */; };
+		B8A30E061BFCAA23009B77FB /* ccIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E051BFCAA23009B77FB /* ccIF.swift */; };
+		B8A30E081BFCAA39009B77FB /* ccBaseLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E071BFCAA39009B77FB /* ccBaseLogic.swift */; };
+		B8A30E0A1BFCAA4A009B77FB /* ccFileWapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E091BFCAA4A009B77FB /* ccFileWapper.swift */; };
+		B8A30E0C1BFCAA59009B77FB /* ccSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E0B1BFCAA59009B77FB /* ccSingleton.swift */; };
+		B8A30E0F1BFCAA84009B77FB /* ccMemberConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E0E1BFCAA84009B77FB /* ccMemberConfigData.swift */; };
+		B8A30E111BFCAA88009B77FB /* ccOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E101BFCAA88009B77FB /* ccOrganization.swift */; };
+		B8A30E131BFCAA8D009B77FB /* ccOrgDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */; };
+		B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */; };
+		B8A30E171BFCAA9B009B77FB /* ccOrgMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */; };
+		B8A30E1D1BFCB24D009B77FB /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8A30E1C1BFCB24D009B77FB /* testXML.xml */; };
 		B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */; };
 		B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */; };
 		B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */; };
@@ -52,7 +66,7 @@
 		B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanJiaDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
 		B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeGuanZhuTableViewController.swift; sourceTree = "<group>"; };
-		B8466B611BF475AE0086EE0F /* UICarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UICarouselView.swift; path = ../UICarouselView.swift; sourceTree = "<group>"; };
+		B8466B611BF475AE0086EE0F /* UICarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICarouselView.swift; sourceTree = "<group>"; };
 		B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iZknu_0.02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B852566F1BD7D2B40028DD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85256761BD7D2B40028DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iZknu_0.02/Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +79,21 @@
 		B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiaoTianTableViewController.swift; sourceTree = "<group>"; };
 		B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeTableViewController.swift; sourceTree = "<group>"; };
 		B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XinDeViewController.swift; sourceTree = "<group>"; };
+		B8A30DEC1BFC90BA009B77FB /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		B8A30E011BFCAA17009B77FB /* ccDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccDataManager.swift; sourceTree = "<group>"; };
+		B8A30E031BFCAA1D009B77FB /* ccLogicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccLogicManager.swift; sourceTree = "<group>"; };
+		B8A30E051BFCAA23009B77FB /* ccIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccIF.swift; sourceTree = "<group>"; };
+		B8A30E071BFCAA39009B77FB /* ccBaseLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccBaseLogic.swift; sourceTree = "<group>"; };
+		B8A30E091BFCAA4A009B77FB /* ccFileWapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccFileWapper.swift; sourceTree = "<group>"; };
+		B8A30E0B1BFCAA59009B77FB /* ccSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccSingleton.swift; sourceTree = "<group>"; };
+		B8A30E0E1BFCAA84009B77FB /* ccMemberConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccMemberConfigData.swift; sourceTree = "<group>"; };
+		B8A30E101BFCAA88009B77FB /* ccOrganization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrganization.swift; sourceTree = "<group>"; };
+		B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgDataManager.swift; sourceTree = "<group>"; };
+		B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgIF.swift; sourceTree = "<group>"; };
+		B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgMember.swift; sourceTree = "<group>"; };
+		B8A30E1C1BFCB24D009B77FB /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
 		B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongViewController.swift; sourceTree = "<group>"; };
 		B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheTuanViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A30DF01BFC9101009B77FB /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,14 +118,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B83025C51BF6C89500752EAE /* 第三方 */ = {
+		B83025C51BF6C89500752EAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */,
-				B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */,
-				B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */,
+				B8A30E001BFCA9A1009B77FB /* ccCore */,
+				B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */,
 			);
-			name = "第三方";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B85256631BD7D2B40028DD67 = {
@@ -104,9 +133,12 @@
 				B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */,
 				B85256761BD7D2B40028DD67 /* Assets.xcassets */,
 				B852567B1BD7D2B40028DD67 /* Info.plist */,
-				B83025C51BF6C89500752EAE /* 第三方 */,
-				B852566E1BD7D2B40028DD67 /* iZknu_0.02 */,
-				B85256831BD7D2B40028DD67 /* iZknu_0.02Tests */,
+				B8A30E1B1BFCB227009B77FB /* Samples */,
+				B8A30DE91BFC7DB2009B77FB /* Utilities */,
+				B83025C51BF6C89500752EAE /* Frameworks */,
+				B8A30E0D1BFCAA79009B77FB /* DAL */,
+				B852566E1BD7D2B40028DD67 /* BLL */,
+				B85256831BD7D2B40028DD67 /* Tests */,
 				B852566D1BD7D2B40028DD67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +152,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B852566E1BD7D2B40028DD67 /* iZknu_0.02 */ = {
+		B852566E1BD7D2B40028DD67 /* BLL */ = {
 			isa = PBXGroup;
 			children = (
 				B852566F1BD7D2B40028DD67 /* AppDelegate.swift */,
@@ -135,16 +167,64 @@
 				B8A3927B1BDA740A0062CA3E /* 聊天 */,
 				B8A3927C1BDA741A0062CA3E /* 我的 */,
 			);
+			name = BLL;
 			path = iZknu_0.02;
 			sourceTree = "<group>";
 		};
-		B85256831BD7D2B40028DD67 /* iZknu_0.02Tests */ = {
+		B85256831BD7D2B40028DD67 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				B85256841BD7D2B40028DD67 /* iZknu_0_02Tests.swift */,
 				B85256861BD7D2B40028DD67 /* Info.plist */,
 			);
+			name = Tests;
 			path = iZknu_0.02Tests;
+			sourceTree = "<group>";
+		};
+		B8A30DE91BFC7DB2009B77FB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B8A30DEC1BFC90BA009B77FB /* GDataXMLNode.h */,
+				B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */,
+				B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */,
+				B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */,
+				B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */,
+				B8466B611BF475AE0086EE0F /* UICarouselView.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B8A30E001BFCA9A1009B77FB /* ccCore */ = {
+			isa = PBXGroup;
+			children = (
+				B8A30E071BFCAA39009B77FB /* ccBaseLogic.swift */,
+				B8A30E051BFCAA23009B77FB /* ccIF.swift */,
+				B8A30E011BFCAA17009B77FB /* ccDataManager.swift */,
+				B8A30E0B1BFCAA59009B77FB /* ccSingleton.swift */,
+				B8A30E031BFCAA1D009B77FB /* ccLogicManager.swift */,
+				B8A30E091BFCAA4A009B77FB /* ccFileWapper.swift */,
+			);
+			name = ccCore;
+			sourceTree = "<group>";
+		};
+		B8A30E0D1BFCAA79009B77FB /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */,
+				B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */,
+				B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */,
+				B8A30E101BFCAA88009B77FB /* ccOrganization.swift */,
+				B8A30E0E1BFCAA84009B77FB /* ccMemberConfigData.swift */,
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
+		B8A30E1B1BFCB227009B77FB /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				B8A30E1C1BFCB24D009B77FB /* testXML.xml */,
+			);
+			name = Samples;
 			sourceTree = "<group>";
 		};
 		B8A392791BDA73A60062CA3E /* 社团 */ = {
@@ -187,7 +267,6 @@
 		B8DD71511BD912B8003D8C15 /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
-				B8466B611BF475AE0086EE0F /* UICarouselView.swift */,
 				B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */,
 			);
 			name = "活动";
@@ -275,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A30E1D1BFCB24D009B77FB /* testXML.xml in Resources */,
 				B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */,
 				B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */,
 			);
@@ -294,22 +374,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A30E081BFCAA39009B77FB /* ccBaseLogic.swift in Sources */,
+				B8A30E061BFCAA23009B77FB /* ccIF.swift in Sources */,
+				B8A30E171BFCAA9B009B77FB /* ccOrgMember.swift in Sources */,
 				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
+				B8A30E021BFCAA17009B77FB /* ccDataManager.swift in Sources */,
+				B8A30E131BFCAA8D009B77FB /* ccOrgDataManager.swift in Sources */,
 				B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
+				B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */,
+				B8A30E0F1BFCAA84009B77FB /* ccMemberConfigData.swift in Sources */,
 				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
+				B8A30E111BFCAA88009B77FB /* ccOrganization.swift in Sources */,
 				B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */,
 				B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */,
 				B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */,
 				B852569C1BD8AE0F0028DD67 /* SheTuanTableViewController.swift in Sources */,
 				B852569A1BD8AE010028DD67 /* HuoDongTableViewController.swift in Sources */,
 				B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */,
+				B8A30E041BFCAA1D009B77FB /* ccLogicManager.swift in Sources */,
 				B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */,
 				B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */,
 				B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */,
+				B8A30E0A1BFCAA4A009B77FB /* ccFileWapper.swift in Sources */,
 				B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */,
+				B8A30E0C1BFCAA59009B77FB /* ccSingleton.swift in Sources */,
 				B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */,
 				B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */,
+				B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */,
 				B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */,
 				B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */,
 			);
@@ -425,11 +517,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/iZknu_0.02",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -446,11 +542,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/iZknu_0.02";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/iZknu_0.02",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2";
 				INFOPLIST_FILE = iZknu_0.02/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

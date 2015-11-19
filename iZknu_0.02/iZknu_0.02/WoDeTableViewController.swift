@@ -25,8 +25,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         self.setupTopView()
         self.setupTableView()
         self.setupTouXiangImageView()
-        self.setupLabels()
-        
+        self.setupLabels()        
     }
     
     override func viewWillAppear(animated: Bool) {
