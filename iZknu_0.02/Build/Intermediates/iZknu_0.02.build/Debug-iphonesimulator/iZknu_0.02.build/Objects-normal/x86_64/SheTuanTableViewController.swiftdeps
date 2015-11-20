@@ -6,60 +6,60 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0226SheTuanTableViewController", ""]
 provides-dynamic-lookup:
-- "menu"
-- "menu"
-- "menu"
-- "menu"
-- "setupMenu"
-- "recruitments"
-- "setupTableView"
 - "setupScrollView"
-- "numberOfColumnsInMenu"
 - "setupOrganizationList"
+- "numberOfColumnsInMenu"
+- "menu"
+- "menu"
+- "menu"
+- "menu"
 - "types"
+- "recruitments"
 - "departments"
-- "numberOfSectionsInTableView"
 - "scrollView"
 - "organizationList"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "setupMenu"
 - "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "setupTableView"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- "UITableViewCell"
-- !private "ccOrgDataManager"
-- !private "-"
-- "ccOrganization"
-- "DOPDropDownMenu"
-- "Array"
-- "UIScrollView"
-- !private "ccOrgIF"
-- "StringLiteralType"
-- "UIViewController"
-- !private "UIBarButtonItem"
+- !private "SheTuanTableViewCell"
 - "DOPIndexPath"
-- !private "print"
-- "DOPDropDownMenuDataSource"
-- "DOPDropDownMenuDelegate"
-- "Int"
-- !private "=="
-- !private "~="
-- "UITableViewDataSource"
-- "NSIndexPath"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- "UIScrollView"
+- !private "-"
+- "SheTuanTableViewController"
+- "UITableViewDelegate"
 - !private "CGPoint"
 - !private "assertionFailure"
-- !private "BooleanLiteralType"
-- !private "+"
-- !private "CGRect"
-- "UITableViewDelegate"
-- !private "SheTuanViewController"
-- !private "SheTuanTableViewCell"
-- !private "UIApplication"
-- "UITableView"
+- "ccOrganization"
+- "Array"
 - "String"
-- "SheTuanTableViewController"
+- !private "CGRect"
+- !private "ccOrgDataManager"
+- "DOPDropDownMenu"
+- "UITableViewCell"
 - !private "UIColor"
+- !private "UIBarButtonItem"
+- "NSIndexPath"
+- "DOPDropDownMenuDataSource"
+- !private "UIApplication"
+- "DOPDropDownMenuDelegate"
+- !private "print"
+- !private "+"
+- "UITableViewDataSource"
+- "Int"
+- "StringLiteralType"
+- !private "~="
+- !private "=="
+- !private "SheTuanViewController"
+- !private "ccOrgIF"
+- "UITableView"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "CGRect"]
@@ -735,6 +735,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfColumnsInMenu"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "organization"]
 - ["PSo26NSExtensionRequestHandling", "organizationList"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
@@ -998,6 +999,7 @@ depends-member:
 - ["C10iZknu_0_0226SheTuanTableViewController", "viewDidLoad"]
 - ["C10iZknu_0_0226SheTuanTableViewController", "viewForZoomingInScrollView"]
 - !private ["C10iZknu_0_0221SheTuanViewController", "init"]
+- !private ["C10iZknu_0_0221SheTuanViewController", "organization"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs16SignedNumberType", "Distance"]
@@ -1125,6 +1127,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfColumnsInMenu"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "organization"]
 - ["PSo18UIContentContainer", "organizationList"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
@@ -1346,6 +1349,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfColumnsInMenu"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "organization"]
 - !private ["PSo20UIScrollViewDelegate", "organizationList"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "recruitments"]
@@ -1395,6 +1399,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfColumnsInMenu"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "organization"]
 - ["PSo16UIStateRestoring", "organizationList"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
@@ -1541,7 +1546,9 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo19UITextFieldDelegate", "init"]
+- !private ["PSo19UITextFieldDelegate", "organization"]
 - !private ["PSo18UITextViewDelegate", "init"]
+- !private ["PSo18UITextViewDelegate", "organization"]
 - !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "DOPDropDownMenu"]
@@ -1643,6 +1650,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfColumnsInMenu"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "organization"]
 - ["CSo16UIViewController", "organizationList"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]

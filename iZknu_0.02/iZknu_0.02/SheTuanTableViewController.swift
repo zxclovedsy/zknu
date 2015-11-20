@@ -26,9 +26,8 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "社团"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
-        
+
         self.setupOrganizationList()
-        
         self.setupScrollView()
         self.setupMenu()
         self.setupTableView()
@@ -95,8 +94,10 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        self.navigationController?.pushViewController(SheTuanViewController(), animated: true)
+        let organization = organizationList[indexPath.row]
+        let viewController = SheTuanViewController()
+        viewController.organization  = organization
+        self.navigationController?.pushViewController(viewController, animated: true)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     

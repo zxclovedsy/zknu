@@ -6,59 +6,57 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0223WoDeTableViewController", ""]
 provides-dynamic-lookup:
+- "setupTableView"
+- "setupTouXiangImageView"
 - "nameLabel"
-- "info"
+- "setupLabels"
 - "viewWillDisappear"
-- "setupTopView"
+- "numberOfSectionsInTableView"
 - "topView"
 - "viewWillAppear"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "touXiangImageView"
-- "setupTouXiangImageView"
 - "didReceiveMemoryWarning"
-- "setupLabels"
-- "numberOfSectionsInTableView"
+- "info"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "setupTopView"
+- "viewDidLoad"
 - "numberLabel"
-- "setupTableView"
+- "touXiangImageView"
 depends-top-level:
-- !private "~="
-- !private "=="
+- !private "-"
+- "UIView"
+- "UITableView"
+- !private "CGFloat"
 - !private "ChuangJianDeHuoDongTableViewController"
 - "NSIndexPath"
-- !private "ccOrgIF"
-- !private "/"
+- !private "UIColor"
+- !private "=="
+- !private "print"
+- !private "~="
+- !private "JiaRuDeSheTuanTableViewController"
+- "StringLiteralType"
+- !private "UIImage"
 - !private "UIFont"
-- "UITableViewCell"
+- !private "UIApplication"
+- !private "/"
+- !private "ChuangJianDeSheTuanTableViewController"
+- "UILabel"
+- "Array"
+- "UIImageView"
+- "UITableViewDataSource"
+- !private "UIBarButtonItem"
+- !private "WoDeGuanZhuTableViewController"
 - "UITableViewDelegate"
 - "WoDeTableViewController"
-- !private "UIColor"
-- "StringLiteralType"
-- !private "ccOrgDataManager"
-- !private "UIApplication"
-- "UITableViewDataSource"
 - !private "CGRect"
-- "UIView"
-- "Array"
-- !private "UIImage"
-- "UITableView"
-- "UILabel"
-- "UIImageView"
-- "Int"
-- !private "print"
-- !private "BooleanLiteralType"
-- !private "-"
-- "UIViewController"
-- !private "UIBarButtonItem"
-- !private "JiaRuDeSheTuanTableViewController"
-- !private "CanJiaDeHuoDongTableViewController"
-- !private "ChuangJianDeSheTuanTableViewController"
-- !private "WoDeGuanZhuTableViewController"
 - "Bool"
-- !private "CGFloat"
+- !private "CanJiaDeHuoDongTableViewController"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- "Int"
+- "UITableViewCell"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CanJiaDeHuoDongTableViewController"]
@@ -79,7 +77,6 @@ depends-member:
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "backBarButtonItem"]
 - !private ["PSs9AnyObject", "backgroundColor"]
-- !private ["PSs9AnyObject", "ccOrgIF"]
 - !private ["PSs9AnyObject", "clipsToBounds"]
 - !private ["PSs9AnyObject", "cornerRadius"]
 - !private ["PSs9AnyObject", "dataSource"]
@@ -89,15 +86,12 @@ depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "font"]
 - !private ["PSs9AnyObject", "frame"]
-- !private ["PSs9AnyObject", "getDataManager"]
-- !private ["PSs9AnyObject", "getMember"]
 - !private ["PSs9AnyObject", "image"]
 - !private ["PSs9AnyObject", "imageView"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9AnyObject", "info"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "layer"]
-- !private ["PSs9AnyObject", "name"]
 - ["PSs9AnyObject", "nameLabel"]
 - !private ["PSs9AnyObject", "navigationBarHidden"]
 - !private ["PSs9AnyObject", "navigationController"]
@@ -125,7 +119,6 @@ depends-member:
 - ["PSs9AnyObject", "setupTopView"]
 - ["PSs9AnyObject", "setupTouXiangImageView"]
 - !private ["PSs9AnyObject", "sharedApplication"]
-- !private ["PSs9AnyObject", "sharedInstance"]
 - !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
 - !private ["PSs9AnyObject", "statusBarFrame"]
 - !private ["PSs9AnyObject", "systemFontOfSize"]
@@ -192,7 +185,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "backBarButtonItem"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
-- !private ["PSs11CVarArgType", "ccOrgIF"]
 - !private ["PSs11CVarArgType", "clipsToBounds"]
 - !private ["PSs11CVarArgType", "cornerRadius"]
 - !private ["PSs11CVarArgType", "dataSource"]
@@ -208,7 +200,6 @@ depends-member:
 - ["PSs11CVarArgType", "info"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "layer"]
-- !private ["PSs11CVarArgType", "name"]
 - ["PSs11CVarArgType", "nameLabel"]
 - !private ["PSs11CVarArgType", "navigationBarHidden"]
 - !private ["PSs11CVarArgType", "navigationController"]
@@ -297,7 +288,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addSubview"]
 - !private ["PSs23CustomStringConvertible", "backBarButtonItem"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
-- !private ["PSs23CustomStringConvertible", "ccOrgIF"]
 - !private ["PSs23CustomStringConvertible", "clipsToBounds"]
 - !private ["PSs23CustomStringConvertible", "cornerRadius"]
 - !private ["PSs23CustomStringConvertible", "count"]
@@ -314,7 +304,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "info"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "layer"]
-- !private ["PSs23CustomStringConvertible", "name"]
 - ["PSs23CustomStringConvertible", "nameLabel"]
 - !private ["PSs23CustomStringConvertible", "navigationBarHidden"]
 - !private ["PSs23CustomStringConvertible", "navigationController"]
@@ -385,7 +374,6 @@ depends-member:
 - !private ["PSs9Equatable", "addSubview"]
 - !private ["PSs9Equatable", "backBarButtonItem"]
 - !private ["PSs9Equatable", "backgroundColor"]
-- !private ["PSs9Equatable", "ccOrgIF"]
 - !private ["PSs9Equatable", "clipsToBounds"]
 - !private ["PSs9Equatable", "cornerRadius"]
 - !private ["PSs9Equatable", "dataSource"]
@@ -402,7 +390,6 @@ depends-member:
 - ["PSs9Equatable", "info"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "layer"]
-- !private ["PSs9Equatable", "name"]
 - ["PSs9Equatable", "nameLabel"]
 - !private ["PSs9Equatable", "navigationBarHidden"]
 - !private ["PSs9Equatable", "navigationController"]
@@ -475,7 +462,6 @@ depends-member:
 - !private ["PSs8Hashable", "addSubview"]
 - !private ["PSs8Hashable", "backBarButtonItem"]
 - !private ["PSs8Hashable", "backgroundColor"]
-- !private ["PSs8Hashable", "ccOrgIF"]
 - !private ["PSs8Hashable", "clipsToBounds"]
 - !private ["PSs8Hashable", "cornerRadius"]
 - !private ["PSs8Hashable", "dataSource"]
@@ -491,7 +477,6 @@ depends-member:
 - ["PSs8Hashable", "info"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "layer"]
-- !private ["PSs8Hashable", "name"]
 - ["PSs8Hashable", "nameLabel"]
 - !private ["PSs8Hashable", "navigationBarHidden"]
 - !private ["PSs8Hashable", "navigationController"]
@@ -593,7 +578,6 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "backBarButtonItem"]
 - !private ["PSo8NSCoding", "backgroundColor"]
-- !private ["PSo8NSCoding", "ccOrgIF"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "dataSource"]
@@ -669,7 +653,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "WoDeGuanZhuTableViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "ccOrgIF"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "info"]
@@ -736,8 +719,6 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "backBarButtonItem"]
 - !private ["CSo8NSObject", "backgroundColor"]
-- !private ["CSo8NSObject", "ccOrgDataManager"]
-- !private ["CSo8NSObject", "ccOrgIF"]
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "dataSource"]
@@ -754,7 +735,6 @@ depends-member:
 - ["CSo8NSObject", "info"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
-- !private ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "nameLabel"]
 - !private ["CSo8NSObject", "navigationBarHidden"]
 - !private ["CSo8NSObject", "navigationController"]
@@ -817,7 +797,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "backBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
-- !private ["PSo16NSObjectProtocol", "ccOrgIF"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
@@ -833,7 +812,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "info"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
-- !private ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "nameLabel"]
 - !private ["PSo16NSObjectProtocol", "navigationBarHidden"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -962,7 +940,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "WoDeGuanZhuTableViewController"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
-- !private ["PSo21UIAppearanceContainer", "ccOrgIF"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -1038,7 +1015,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "WoDeGuanZhuTableViewController"]
-- !private ["PSo18UIContentContainer", "ccOrgIF"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "info"]
@@ -1129,7 +1105,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "WoDeGuanZhuTableViewController"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
-- !private ["PSo18UIFocusEnvironment", "ccOrgIF"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -1222,8 +1197,6 @@ depends-member:
 - !private ["CSo11UIResponder", "WoDeGuanZhuTableViewController"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "backgroundColor"]
-- !private ["CSo11UIResponder", "ccOrgDataManager"]
-- !private ["CSo11UIResponder", "ccOrgIF"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
@@ -1300,7 +1273,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
 - !private ["PSo20UIScrollViewDelegate", "WoDeGuanZhuTableViewController"]
-- !private ["PSo20UIScrollViewDelegate", "ccOrgIF"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "info"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
@@ -1350,7 +1322,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "WoDeGuanZhuTableViewController"]
-- !private ["PSo16UIStateRestoring", "ccOrgIF"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "info"]
@@ -1421,7 +1392,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
 - !private ["PSo21UITableViewDataSource", "WoDeGuanZhuTableViewController"]
-- !private ["PSo21UITableViewDataSource", "ccOrgIF"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "info"]
 - !private ["PSo21UITableViewDataSource", "init"]
@@ -1471,7 +1441,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
 - !private ["PSo19UITableViewDelegate", "WoDeGuanZhuTableViewController"]
-- !private ["PSo19UITableViewDelegate", "ccOrgIF"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "info"]
 - !private ["PSo19UITableViewDelegate", "init"]
@@ -1523,7 +1492,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "WoDeGuanZhuTableViewController"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
-- !private ["PSo18UITraitEnvironment", "ccOrgIF"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -1614,8 +1582,6 @@ depends-member:
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "UIViewController"]
 - !private ["CSo16UIViewController", "WoDeGuanZhuTableViewController"]
-- !private ["CSo16UIViewController", "ccOrgDataManager"]
-- !private ["CSo16UIViewController", "ccOrgIF"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "info"]
@@ -1678,8 +1644,6 @@ depends-member:
 - ["C10iZknu_0_0223WoDeTableViewController", "UIView"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "UIViewController"]
 - !private ["C10iZknu_0_0223WoDeTableViewController", "WoDeGuanZhuTableViewController"]
-- !private ["C10iZknu_0_0223WoDeTableViewController", "ccOrgDataManager"]
-- !private ["C10iZknu_0_0223WoDeTableViewController", "ccOrgIF"]
 - ["C10iZknu_0_0223WoDeTableViewController", "deinit"]
 - ["C10iZknu_0_0223WoDeTableViewController", "didReceiveMemoryWarning"]
 - ["C10iZknu_0_0223WoDeTableViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1783,14 +1747,6 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
-- !private ["P10iZknu_0_0213ccDataManager", "getMember"]
-- !private ["P10iZknu_0_024ccIF", "getDataManager"]
-- !private ["P10iZknu_0_024ccIF", "sharedInstance"]
-- !private ["C10iZknu_0_0216ccOrgDataManager", "getMember"]
-- !private ["C10iZknu_0_027ccOrgIF", "deinit"]
-- !private ["C10iZknu_0_027ccOrgIF", "getDataManager"]
-- !private ["C10iZknu_0_027ccOrgIF", "sharedInstance"]
-- !private ["C10iZknu_0_0211ccOrgMember", "name"]
 depends-nominal:
 - "PSs9AnyObject"
 - "Sa"
@@ -1901,11 +1857,6 @@ depends-nominal:
 - "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
-- !private "P10iZknu_0_0213ccDataManager"
-- !private "P10iZknu_0_024ccIF"
-- !private "C10iZknu_0_0216ccOrgDataManager"
-- !private "C10iZknu_0_027ccOrgIF"
-- !private "C10iZknu_0_0211ccOrgMember"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

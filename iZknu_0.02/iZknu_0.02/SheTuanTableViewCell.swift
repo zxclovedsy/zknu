@@ -11,7 +11,7 @@ import UIKit
 class SheTuanTableViewCell: UITableViewCell {
     
     var organization: ccOrganization!
-    //var imageView: UIImageView!
+    var ccImageView: UIImageView!
     var nameLabel: UILabel!
     var numberOfPeopleLabel: UILabel!
     
@@ -29,29 +29,35 @@ class SheTuanTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.setupImageView()
-        self.setupLabels()
+        let url = organization.headImageUrl
+        let ccImageView = UIImageView(frame: CGRect(x: 5, y: 5, width: self.contentView.frame.width / 2, height: 100))
+        if let image = UIImage(named: url) {
+            ccImageView.image = image
+        } else {
+            ccImageView.image = UIImage(named: "noImage")
+        }
+        self.contentView.addSubview(ccImageView)
+        
+        let x = ccImageView.frame.width + ccImageView.frame.origin.x + CGFloat(15)
+        
+        nameLabel = UILabel(frame: CGRect(x: x, y: 20, width: 140, height: 20))
+        numberOfPeopleLabel = UILabel(frame: CGRect(x: x, y: nameLabel.frame.origin.y + 20 + 20, width: 120, height: 20))
+        nameLabel.text = organization.name
+        numberOfPeopleLabel.text = "\(organization.numberOfPeople) / \(organization.scale)"
+        numberOfPeopleLabel.textAlignment = .Center
+        self.contentView.addSubview(nameLabel)
+        self.contentView.addSubview(numberOfPeopleLabel)
+        //self.setupImageView()
+        //self.setupLabels()
     }
     
     // MARK: - UI
     
     func setupImageView() {
-        let url = organization.headImageUrl
-        let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: self.contentView.frame.width / 2, height: 100))
-        if let image = UIImage(named: url) {
-            imageView.image = image
-        } else {
-            imageView.image = UIImage(named: "noImage")
-        }
+        
     }
     
     func setupLabels() {
-        let x = (self.imageView?.frame.width)! + (self.imageView?.frame.origin.x)! + CGFloat(20)
-        nameLabel = UILabel(frame: CGRect(x: x, y: 20, width: 100, height: 20))
-        numberOfPeopleLabel = UILabel(frame: CGRect(x: x, y: nameLabel.frame.origin.y + 20 + 20, width: 100, height: 20))
-        nameLabel.text = organization.name
-        numberOfPeopleLabel.text = "\(organization.numberOfPeople) / \(organization.scale)"
-        self.contentView.addSubview(nameLabel)
-        self.contentView.addSubview(numberOfPeopleLabel)
+        
     }
 }

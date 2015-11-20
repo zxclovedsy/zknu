@@ -26,8 +26,8 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         self.setupTableView()
         self.setupTouXiangImageView()
         self.setupLabels()
-        let dtMgr : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
-        print(dtMgr.getMember(101)?.name)
+        /*let dtMgr : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+        print(dtMgr.getMember(101)?.name)*/
         
     }
     

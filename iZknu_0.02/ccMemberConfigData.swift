@@ -11,7 +11,7 @@ import Foundation
 public class ccMemberConfigData {
     var memberList = [Int: ccOrgMember]()
     public func initConfigData() {
-        let fileWapper = ccFileWapper(name:"testXML", type:FileType.FileXML.rawValue)
+        let fileWapper = ccFileWapper(name:"MembersXML", type:FileType.FileXML.rawValue)
         let xmlData: NSData = fileWapper.open()
         
         do {
@@ -29,5 +29,6 @@ public class ccMemberConfigData {
                 memberList.updateValue(newMember, forKey: newMember.id)
             }
         } catch{}
+
     }
 }

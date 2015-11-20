@@ -313,6 +313,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 SWIFT_CLASS("_TtC10iZknu_0_0220SheTuanTableViewCell")
 @interface SheTuanTableViewCell : UITableViewCell
 @property (nonatomic, strong) ccOrganization * __null_unspecified organization;
+@property (nonatomic, strong) UIImageView * __null_unspecified ccImageView;
 @property (nonatomic, strong) UILabel * __null_unspecified nameLabel;
 @property (nonatomic, strong) UILabel * __null_unspecified numberOfPeopleLabel;
 - (void)awakeFromNib;
@@ -358,6 +359,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0221SheTuanViewController")
 @property (nonatomic, strong) UIImageView * __null_unspecified imageView;
 @property (nonatomic, copy) NSArray<UITextField *> * __null_unspecified textFields;
 @property (nonatomic, strong) UIScrollView * __null_unspecified photosScrollView;
+@property (nonatomic, strong) ccOrganization * __null_unspecified organization;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -512,7 +514,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0214ccOrganization")
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * __nonnull name;
 @property (nonatomic, copy) NSString * __nonnull summary;
-@property (nonatomic, copy) NSDictionary<NSNumber *, ccOrgMember *> * __nonnull memberList;
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull membersId;
 @property (nonatomic) NSInteger scale;
 @property (nonatomic) NSInteger numberOfPeople;
 @property (nonatomic, copy) NSString * __nonnull department;
@@ -520,10 +522,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0214ccOrganization")
 @property (nonatomic, copy) NSString * __nonnull level;
 @property (nonatomic, copy) NSString * __nonnull headImageUrl;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull photosUrl;
-- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary memberList:(NSDictionary<NSNumber *, ccOrgMember *> * __nonnull)memberList scale:(NSInteger)scale numberOfPeople:(NSInteger)numberOfPeople department:(NSString * __nonnull)department recruitment:(BOOL)recruitment level:(NSString * __nonnull)level headImageUrl:(NSString * __nonnull)headImageUrl photosUrl:(NSArray<NSString *> * __nonnull)photosUrl OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)addOrgMember:(ccOrgMember * __nonnull)newMember;
-- (BOOL)deleteOrgMember:(NSInteger)id;
-- (ccOrgMember * __nullable)getOrgMember:(NSInteger)id;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary membersId:(NSArray<NSNumber *> * __nonnull)membersId scale:(NSInteger)scale numberOfPeople:(NSInteger)numberOfPeople department:(NSString * __nonnull)department recruitment:(BOOL)recruitment level:(NSString * __nonnull)level headImageUrl:(NSString * __nonnull)headImageUrl photosUrl:(NSArray<NSString *> * __nonnull)photosUrl OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

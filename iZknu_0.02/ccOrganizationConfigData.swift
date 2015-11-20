@@ -63,17 +63,20 @@ public class ccOrganizationConfigData {
                     photosUrl.append(photoUrl!)
                 }
                 
-                let dataManager : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+
+                /*let dataManager : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+
                 var members: [Int: ccOrgMember] = [:]
                 for id in membersId {
                     members.updateValue(dataManager.getMember(id)!, forKey: id)
-                }
+                }*/
                 
-                let newOrganization = ccOrganization(name: name!, summary: summary!, memberList: members, scale: scale!, numberOfPeople: numberOfPeople!, department: department!, recruitment: recruitment, level: level!, headImageUrl: headImageUrl!, photosUrl: photosUrl)
+                let newOrganization = ccOrganization(name: name!, summary: summary!, membersId: membersId, scale: scale!, numberOfPeople: numberOfPeople!, department: department!, recruitment: recruitment, level: level!, headImageUrl: headImageUrl!, photosUrl: photosUrl)
                 newOrganization.id = Int(id)!
                 
                 organizationList.updateValue(newOrganization, forKey: newOrganization.id)
             }
         } catch{}
+
     }
 }

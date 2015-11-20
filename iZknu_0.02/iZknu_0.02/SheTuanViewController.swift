@@ -16,6 +16,8 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     var photosScrollView: UIScrollView!
     var origin: CGPoint!
     
+    var organization: ccOrganization!
+    
     override func viewWillAppear(animated: Bool) {
         let clearImage = getImageWithColor(UIColor.clearColor(), size: (self.navigationController?.navigationBar.frame.size)!)
         let navBar = (self.navigationController?.navigationBar)!
@@ -61,7 +63,8 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     func setupImageView() {
         imageView = UIImageView(frame: CGRect(x: 0, y: origin.y, width: self.view.frame.width, height: 200))
-        imageView.image = UIImage(named: "noImage")
+        let imageUrl = organization.headImageUrl
+        imageView.image = UIImage(named: imageUrl)
         self.view.addSubview(imageView)
     }
     
@@ -80,7 +83,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func setupTextFields() {
-        let texts = ["社团名称", "社团规模", "社团人数"]
+        let texts = [organization.name, "\(organization.scale)人社团", "\(organization.numberOfPeople)"]
         let originY = origin.y + imageView.frame.height + 20
         for (index, text) in texts.enumerate() {
             let textField = UITextField(frame: CGRect(x: 120, y: CGFloat(40 * index) + originY, width: 150, height: 20))
@@ -97,7 +100,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func setupTextView() {
-        let text = "这里是活动的具体简介……"
+        let text = organization.summary
         let originY: CGFloat = 360.0 + 30 + 30
         let textView = UITextView(frame: CGRect(x: 20, y: originY, width: 280, height: 100))
         textView.delegate = self
@@ -113,8 +116,8 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     func setupPhotosScrollView() {
         photosScrollView = UIScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.width, height: 80))
         var images: [UIImage] = []
-        for _ in 0...6 {
-            let image = UIImage(named: "noImage")
+        for nameUrl in organization.photosUrl {
+            let image = UIImage(named: nameUrl)
             images.append(image!)
         }
         let width: CGFloat = 140

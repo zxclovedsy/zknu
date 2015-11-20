@@ -12,7 +12,7 @@ public class ccOrganization: NSObject {
     var id =  0
     var name = ""//名称
     var summary = "" //简介
-    var memberList =  [Int: ccOrgMember]() //成员
+    var membersId =  [Int]() //成员id
     var scale = 0 //规模
     var numberOfPeople = 0 //人数
     var department = "" // 部门
@@ -21,10 +21,10 @@ public class ccOrganization: NSObject {
     var headImageUrl = "" //头像路径
     var photosUrl: [String] = [] //相册区
     
-    public init(name: String, summary: String, memberList: [Int: ccOrgMember], scale: Int, numberOfPeople: Int, department: String, recruitment: Bool, level: String, headImageUrl: String, photosUrl: [String]) {
+    public init(name: String, summary: String, membersId: [Int], scale: Int, numberOfPeople: Int, department: String, recruitment: Bool, level: String, headImageUrl: String, photosUrl: [String]) {
         self.name = name
         self.summary = summary
-        self.memberList = memberList
+        self.membersId = membersId
         self.scale = scale
         self.numberOfPeople = numberOfPeople
         self.department = department
@@ -36,7 +36,7 @@ public class ccOrganization: NSObject {
     }
     
     
-    public func addOrgMember(newMember: ccOrgMember) -> Bool {
+    /*public func addOrgMember(newMember: ccOrgMember) -> Bool {
         if memberList.indexForKey(newMember.id) == nil {
             memberList.updateValue(newMember, forKey: newMember.id)
             return true
@@ -59,6 +59,6 @@ public class ccOrganization: NSObject {
         } else {
             return memberList[id]
         }
-    }
+    }*/
     
 }
