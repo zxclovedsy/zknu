@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Organizations>
+    <Organization id="0">
+        <name>炫舞精灵舞蹈社</name>
+        <summary>喜欢舞蹈的一起来！让我们一起摇摆！</summary>
+        <members>
+            <member>1</member>
+            <member>2</member>
+        </members>
+        <scale>500</scale>
+        <numberOfPeople>350</numberOfPeople>
+        <department>音乐舞蹈学院</department>
+        <recruitment>true</recruitment>
+        <level>院级</level>
+        <headImageUrl>headImage</headImageUrl>
+        <photos>
+            <photo>photo0</photo>
+            <photo>photo1</photo>
+            <photo>photo2</photo>
+            <photo>photo3</photo>
+            <photo>photo4</photo>
+            <photo>photo5</photo>
+            <photo>photo6</photo>
+        </photos>
+    </Organization>
+</Organizations>
+

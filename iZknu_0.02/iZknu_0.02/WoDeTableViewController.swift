@@ -25,7 +25,10 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         self.setupTopView()
         self.setupTableView()
         self.setupTouXiangImageView()
-        self.setupLabels()        
+        self.setupLabels()
+        let dtMgr : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+        print(dtMgr.getMember(101)?.name)
+        
     }
     
     override func viewWillAppear(animated: Bool) {

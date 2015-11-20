@@ -38,7 +38,11 @@
 		B8A30E131BFCAA8D009B77FB /* ccOrgDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */; };
 		B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */; };
 		B8A30E171BFCAA9B009B77FB /* ccOrgMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */; };
-		B8A30E1D1BFCB24D009B77FB /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8A30E1C1BFCB24D009B77FB /* testXML.xml */; };
+		B8A30E1D1BFCB24D009B77FB /* MembersXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8A30E1C1BFCB24D009B77FB /* MembersXML.xml */; };
+		B8A30E1F1BFDEC65009B77FB /* ccOrgActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E1E1BFDEC65009B77FB /* ccOrgActivity.swift */; };
+		B8A30E211BFDF380009B77FB /* ccOrganizationConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E201BFDF380009B77FB /* ccOrganizationConfigData.swift */; };
+		B8A30E231BFDF6BC009B77FB /* SheTuanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E221BFDF6BC009B77FB /* SheTuanTableViewCell.swift */; };
+		B8A30E5E1BFEE5CA009B77FB /* OrganizationsXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8A30E5D1BFEE5CA009B77FB /* OrganizationsXML.xml */; };
 		B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */; };
 		B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */; };
 		B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */; };
@@ -93,7 +97,11 @@
 		B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgDataManager.swift; sourceTree = "<group>"; };
 		B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgIF.swift; sourceTree = "<group>"; };
 		B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgMember.swift; sourceTree = "<group>"; };
-		B8A30E1C1BFCB24D009B77FB /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
+		B8A30E1C1BFCB24D009B77FB /* MembersXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MembersXML.xml; sourceTree = "<group>"; };
+		B8A30E1E1BFDEC65009B77FB /* ccOrgActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgActivity.swift; sourceTree = "<group>"; };
+		B8A30E201BFDF380009B77FB /* ccOrganizationConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrganizationConfigData.swift; sourceTree = "<group>"; };
+		B8A30E221BFDF6BC009B77FB /* SheTuanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheTuanTableViewCell.swift; sourceTree = "<group>"; };
+		B8A30E5D1BFEE5CA009B77FB /* OrganizationsXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OrganizationsXML.xml; sourceTree = "<group>"; };
 		B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongViewController.swift; sourceTree = "<group>"; };
 		B8DD714F1BD90A03003D8C15 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheTuanViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +223,8 @@
 				B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */,
 				B8A30E101BFCAA88009B77FB /* ccOrganization.swift */,
 				B8A30E0E1BFCAA84009B77FB /* ccMemberConfigData.swift */,
+				B8A30E1E1BFDEC65009B77FB /* ccOrgActivity.swift */,
+				B8A30E201BFDF380009B77FB /* ccOrganizationConfigData.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -222,7 +232,8 @@
 		B8A30E1B1BFCB227009B77FB /* Samples */ = {
 			isa = PBXGroup;
 			children = (
-				B8A30E1C1BFCB24D009B77FB /* testXML.xml */,
+				B8A30E1C1BFCB24D009B77FB /* MembersXML.xml */,
+				B8A30E5D1BFEE5CA009B77FB /* OrganizationsXML.xml */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 			children = (
 				B8E3F0561BDB2833004C9431 /* SheTuanViewController.swift */,
 				B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */,
+				B8A30E221BFDF6BC009B77FB /* SheTuanTableViewCell.swift */,
 			);
 			name = "社团";
 			sourceTree = "<group>";
@@ -354,7 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A30E1D1BFCB24D009B77FB /* testXML.xml in Resources */,
+				B8A30E5E1BFEE5CA009B77FB /* OrganizationsXML.xml in Resources */,
+				B8A30E1D1BFCB24D009B77FB /* MembersXML.xml in Resources */,
 				B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */,
 				B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */,
 			);
@@ -378,8 +391,10 @@
 				B8A30E061BFCAA23009B77FB /* ccIF.swift in Sources */,
 				B8A30E171BFCAA9B009B77FB /* ccOrgMember.swift in Sources */,
 				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
+				B8A30E211BFDF380009B77FB /* ccOrganizationConfigData.swift in Sources */,
 				B8A30E021BFCAA17009B77FB /* ccDataManager.swift in Sources */,
 				B8A30E131BFCAA8D009B77FB /* ccOrgDataManager.swift in Sources */,
+				B8A30E1F1BFDEC65009B77FB /* ccOrgActivity.swift in Sources */,
 				B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
 				B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */,
@@ -400,6 +415,7 @@
 				B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */,
 				B8A30E0C1BFCAA59009B77FB /* ccSingleton.swift in Sources */,
 				B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */,
+				B8A30E231BFDF6BC009B77FB /* SheTuanTableViewCell.swift in Sources */,
 				B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */,
 				B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */,
 				B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */,

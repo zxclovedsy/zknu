@@ -21,6 +21,7 @@ public class ccOrgMember: NSObject {
         self.name = name
         self.grade = grade
         self.college = college
+        
         super.init()
     }
     

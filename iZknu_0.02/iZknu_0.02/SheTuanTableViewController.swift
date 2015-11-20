@@ -10,6 +10,8 @@ import UIKit
 
 class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
+    var organizationList: [Int: ccOrganization]!
+    
     var scrollView: UIScrollView!
     var tableView: UITableView!
     var menu: DOPDropDownMenu!
@@ -24,6 +26,9 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "社团"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
+        
+        self.setupOrganizationList()
+        
         self.setupScrollView()
         self.setupMenu()
         self.setupTableView()
@@ -74,17 +79,18 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return organizationList.count
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "testCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
+        let cellIdentifier = "SheTuanTableCell"
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? SheTuanTableViewCell
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
-            cell?.textLabel!.text = "\(indexPath.row)"
+            cell = SheTuanTableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
         }
+        let id = indexPath.row
+        cell?.organization = organizationList[id]
         return cell!
     }
     
@@ -92,6 +98,13 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         
         self.navigationController?.pushViewController(SheTuanViewController(), animated: true)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    // MARK: Data
+    
+    func setupOrganizationList() {
+        let dataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+        organizationList = dataManager.configDataOrganization.organizationList
     }
     
     // MARK: - UI
@@ -120,8 +133,12 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView = UITableView(frame: CGRect(x: 0, y: tableViewY, width: self.view.frame.width, height: self.view.frame.height - menuHeight - tabBarHeight - navBarHeight - statusBarHeight))
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.rowHeight = 110
         self.view.addSubview(tableView)
     }
+    
+    
+    
     
     
     

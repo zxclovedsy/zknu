@@ -308,9 +308,26 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class ccOrganization;
+
+SWIFT_CLASS("_TtC10iZknu_0_0220SheTuanTableViewCell")
+@interface SheTuanTableViewCell : UITableViewCell
+@property (nonatomic, strong) ccOrganization * __null_unspecified organization;
+@property (nonatomic, strong) UILabel * __null_unspecified nameLabel;
+@property (nonatomic, strong) UILabel * __null_unspecified numberOfPeopleLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)layoutSubviews;
+- (void)setupImageView;
+- (void)setupLabels;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
 @interface SheTuanTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSDictionary<NSNumber *, ccOrganization *> * __null_unspecified organizationList;
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) UITableView * __null_unspecified tableView;
 @property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
@@ -326,6 +343,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0226SheTuanTableViewController")
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)setupOrganizationList;
 - (void)setupScrollView;
 - (void)setupMenu;
 - (void)setupTableView;
@@ -495,7 +513,14 @@ SWIFT_CLASS("_TtC10iZknu_0_0214ccOrganization")
 @property (nonatomic, copy) NSString * __nonnull name;
 @property (nonatomic, copy) NSString * __nonnull summary;
 @property (nonatomic, copy) NSDictionary<NSNumber *, ccOrgMember *> * __nonnull memberList;
-- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) NSInteger scale;
+@property (nonatomic) NSInteger numberOfPeople;
+@property (nonatomic, copy) NSString * __nonnull department;
+@property (nonatomic) BOOL recruitment;
+@property (nonatomic, copy) NSString * __nonnull level;
+@property (nonatomic, copy) NSString * __nonnull headImageUrl;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull photosUrl;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary memberList:(NSDictionary<NSNumber *, ccOrgMember *> * __nonnull)memberList scale:(NSInteger)scale numberOfPeople:(NSInteger)numberOfPeople department:(NSString * __nonnull)department recruitment:(BOOL)recruitment level:(NSString * __nonnull)level headImageUrl:(NSString * __nonnull)headImageUrl photosUrl:(NSArray<NSString *> * __nonnull)photosUrl OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)addOrgMember:(ccOrgMember * __nonnull)newMember;
 - (BOOL)deleteOrgMember:(NSInteger)id;
 - (ccOrgMember * __nullable)getOrgMember:(NSInteger)id;
