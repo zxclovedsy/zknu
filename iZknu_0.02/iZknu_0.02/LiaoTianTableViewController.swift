@@ -16,7 +16,7 @@ class LiaoTianTableViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        self.title = "聊天"
+        self.title = "其它"
         
         self.setupLabel()
     }

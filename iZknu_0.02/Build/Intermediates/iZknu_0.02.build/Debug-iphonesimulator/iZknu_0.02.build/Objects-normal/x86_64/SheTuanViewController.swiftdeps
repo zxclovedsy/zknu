@@ -6,64 +6,64 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0221SheTuanViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "imageView"
-- "setupLabels"
-- "getImageWithColor"
-- "textFields"
 - "setupPhotosScrollView"
+- "imageView"
 - "shenQingJiaRuButtonTapped"
-- "scrollView"
-- "textViewShouldBeginEditing"
-- "viewWillDisappear"
-- "textFieldShouldBeginEditing"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "woYaoGuanZhuButtonTapped"
-- "setupTextFields"
 - "setupButton"
-- "setupTextView"
+- "scrollView"
 - "organization"
-- "setupScrollView"
+- "setupTextFields"
+- "viewWillDisappear"
+- "setupTextView"
+- "textViewShouldBeginEditing"
 - "photosScrollView"
 - "viewWillAppear"
-- "viewDidLoad"
+- "textFieldShouldBeginEditing"
+- "textFields"
+- "getImageWithColor"
+- "setupLabels"
 - "setupImageView"
+- "setupScrollView"
 depends-top-level:
-- !private "CGRect"
-- !private "CGRectMake"
-- "UIViewController"
-- "ccOrganization"
-- "UITextFieldDelegate"
-- "UITextView"
-- !private "=="
-- "UIScrollView"
-- !private "*"
-- !private "Array"
-- !private "UIFont"
-- !private "UINavigationController"
-- !private "CGFloat"
-- "UIColor"
-- "SheTuanViewController"
-- !private "UIRectFill"
-- !private "ShenQingJiaRuViewController"
-- "Bool"
-- "UIImage"
-- !private "+="
-- "UITextViewDelegate"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "CGSize"
-- !private "+"
-- !private "UIAlertView"
-- !private "UIApplication"
-- "UITextField"
-- "CGPoint"
-- "UIButton"
-- !private "UIGraphicsBeginImageContextWithOptions"
 - !private "-"
-- !private "UILabel"
-- !private "UIGraphicsEndImageContext"
-- "UIImageView"
+- !private "CGRectMake"
+- "Bool"
+- !private "=="
+- !private "CGFloat"
+- !private "Array"
 - !private "/"
+- "CGSize"
+- !private "UIGraphicsEndImageContext"
+- "SheTuanViewController"
+- "UIImageView"
+- !private "UILabel"
+- "UIViewController"
+- !private "ShenQingJiaRuViewController"
+- !private "+="
+- !private "UIRectFill"
+- "UIButton"
+- "UIImage"
+- !private "UIFont"
+- "UIScrollView"
+- "UITextView"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UITextViewDelegate"
+- "CGPoint"
+- !private "UIAlertView"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "*"
 - !private "BooleanLiteralType"
+- !private "CGRect"
+- !private "UINavigationController"
+- !private "+"
+- "UITextField"
+- "UIColor"
+- "UITextFieldDelegate"
+- "ccOrganization"
+- !private "UIApplication"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -356,6 +356,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
@@ -1204,8 +1205,10 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "init"]
 - !private ["OSC15NSTextAlignment", "Center"]
+- ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "Normal"]
 - !private ["PSs13OptionSetType", "TouchDown"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
@@ -2381,6 +2384,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_Element"]
@@ -2446,7 +2450,7 @@ depends-nominal:
 - !private "VSs9Character"
 - !private "PSs14CollectionType"
 - !private "PSs10Comparable"
-- !private "PSs28CustomDebugStringConvertible"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - !private "Sd"
 - !private "VSs18EnumerateGenerator"
@@ -2482,8 +2486,9 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "OSC15NSTextAlignment"
+- "PSs21NilLiteralConvertible"
 - !private "PSs13OptionSetType"
-- !private "Sq"
+- "Sq"
 - !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
@@ -2567,7 +2572,7 @@ depends-nominal:
 - !private "PSs12_IntegerType"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "PSs22_RandomAccessAmbiguity"
-- !private "PSs12_Reflectable"
+- "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
 - !private "C10iZknu_0_0214ccOrganization"

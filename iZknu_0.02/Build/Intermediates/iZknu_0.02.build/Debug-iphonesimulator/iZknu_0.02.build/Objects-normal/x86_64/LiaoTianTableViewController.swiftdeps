@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C10iZknu_0_0227LiaoTianTableViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "label"
 - "setupLabel"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- "UITableViewDataSource"
-- !private "StringLiteralType"
-- "UITableView"
-- !private "UIColor"
 - "LiaoTianTableViewController"
-- "Int"
-- "UITableViewCell"
-- "UIViewController"
 - "NSIndexPath"
-- "UITableViewDelegate"
+- "UITableView"
 - "UILabel"
+- !private "UIColor"
+- "UITableViewCell"
+- !private "StringLiteralType"
+- "UIViewController"
+- "Int"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UILabel"]

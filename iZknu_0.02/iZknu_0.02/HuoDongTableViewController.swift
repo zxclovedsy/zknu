@@ -10,6 +10,8 @@ import UIKit
 
 class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
+    var activityList = [Int: ccOrgActivity]()
+    
     var scrollView: UIScrollView!
     var menu: DOPDropDownMenu!
     var carouselView: UICarouselView!
@@ -26,12 +28,16 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
         self.navigationController?.title = "活动"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
         
+        self.setupActivityList()
+        
         self.setupScrollView()
         self.setupMenu()
         self.setupCarouselView()
         self.setupTableView()
         self.setupContentSize()
     }
+    
+    
 
     
 
@@ -42,17 +48,17 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return activityList.count
     }
 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "testCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
+        let cellIdentifier = "HuoDongTableCell"
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? HuoDongTableViewCell
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
+            cell = HuoDongTableViewCell(style: .Default, reuseIdentifier: cellIdentifier)
         }
-        cell?.textLabel?.text = "\(indexPath.row)"
+        cell?.activity = activityList[indexPath.row]
         cell?.contentView.userInteractionEnabled = false
         return cell!
     }
@@ -69,7 +75,6 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
         let firstOffset:CGFloat = -64
         let menuHeight:CGFloat = 40
         let sumOffset = self.carouselView.frame.height + self.carouselView.frame.origin.y + firstOffset - menuHeight
-        
         if self.scrollView.scrollEnabled == true {
             tableView.scrollEnabled = false
         } else {
@@ -87,6 +92,9 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
             self.scrollView.contentOffset.y = sumOffset
             tableView.scrollEnabled = true
             self.scrollView.scrollEnabled = false
+        }
+        if self.scrollView.contentOffset.y == 72 {
+            self.scrollView.contentOffset.y = 136
         }
     }
     
@@ -125,6 +133,13 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
         case 2: print("Selected 时间 \(times[indexPath.row])")
         default: assertionFailure("ERROR in did seletct menu ")
         }
+    }
+    
+    // MARK: Data
+    
+    func setupActivityList() {
+        let dtMgr = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+        self.activityList = dtMgr.configDataActivity.activityList
     }
 
     // MARK: UI
@@ -167,6 +182,7 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
         tableView.delegate = self
         tableView.showsVerticalScrollIndicator = false
         tableView.scrollEnabled = false
+        tableView.rowHeight = 110
         self.scrollView.addSubview(tableView)
     }
     

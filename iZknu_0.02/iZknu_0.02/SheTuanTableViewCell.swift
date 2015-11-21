@@ -11,10 +11,6 @@ import UIKit
 class SheTuanTableViewCell: UITableViewCell {
     
     var organization: ccOrganization!
-    var ccImageView: UIImageView!
-    var nameLabel: UILabel!
-    var numberOfPeopleLabel: UILabel!
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,8 +36,8 @@ class SheTuanTableViewCell: UITableViewCell {
         
         let x = ccImageView.frame.width + ccImageView.frame.origin.x + CGFloat(15)
         
-        nameLabel = UILabel(frame: CGRect(x: x, y: 20, width: 140, height: 20))
-        numberOfPeopleLabel = UILabel(frame: CGRect(x: x, y: nameLabel.frame.origin.y + 20 + 20, width: 120, height: 20))
+        let nameLabel = UILabel(frame: CGRect(x: x, y: 20, width: 140, height: 20))
+        let numberOfPeopleLabel = UILabel(frame: CGRect(x: x, y: nameLabel.frame.origin.y + 20 + 20, width: 120, height: 20))
         nameLabel.text = organization.name
         numberOfPeopleLabel.text = "\(organization.numberOfPeople) / \(organization.scale)"
         numberOfPeopleLabel.textAlignment = .Center

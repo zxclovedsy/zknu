@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         xinDeNavigationController.tabBarItem = UITabBarItem(title: "新的", image: UIImage(named: "tabBarItem3"), selectedImage: UIImage(named: "tabBarItem3Selected"))
         
         let liaoTianNavigationController = UINavigationController(rootViewController: LiaoTianTableViewController())
-        liaoTianNavigationController.tabBarItem = UITabBarItem(title: "聊天", image: UIImage(named: "tabBarItem4"), selectedImage: UIImage(named: "tabBarItem4Selected"))
+        liaoTianNavigationController.tabBarItem = UITabBarItem(title: "其它", image: UIImage(named: "tabBarItem4"), selectedImage: UIImage(named: "tabBarItem4Selected"))
         
         let woDeNavigationController = UINavigationController(rootViewController: WoDeTableViewController())
         woDeNavigationController.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named:"tabBarItem5"), selectedImage: UIImage(named: "tabBarItem5Selected"))

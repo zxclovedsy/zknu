@@ -150,15 +150,27 @@ SWIFT_CLASS("_TtC10iZknu_0_0238ChuangJianDeSheTuanTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class ccOrgActivity;
+
+SWIFT_CLASS("_TtC10iZknu_0_0220HuoDongTableViewCell")
+@interface HuoDongTableViewCell : UITableViewCell
+@property (nonatomic, strong) ccOrgActivity * __null_unspecified activity;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIScrollView;
 @class DOPDropDownMenu;
 @class UICarouselView;
 @class NSIndexPath;
-@class UITableViewCell;
 @class DOPIndexPath;
 
 SWIFT_CLASS("_TtC10iZknu_0_0226HuoDongTableViewController")
 @interface HuoDongTableViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSDictionary<NSNumber *, ccOrgActivity *> * __nonnull activityList;
 @property (nonatomic, strong) UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) DOPDropDownMenu * __null_unspecified menu;
 @property (nonatomic, strong) UICarouselView * __null_unspecified carouselView;
@@ -176,6 +188,7 @@ SWIFT_CLASS("_TtC10iZknu_0_0226HuoDongTableViewController")
 - (NSInteger)menu:(DOPDropDownMenu * __null_unspecified)menu numberOfRowsInColumn:(NSInteger)column;
 - (NSString * __null_unspecified)menu:(DOPDropDownMenu * __null_unspecified)menu titleForRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
 - (void)menu:(DOPDropDownMenu * __null_unspecified)menu didSelectRowAtIndexPath:(DOPIndexPath * __null_unspecified)indexPath;
+- (void)setupActivityList;
 - (void)setupScrollView;
 - (void)setupMenu;
 - (void)setupCarouselView;
@@ -313,9 +326,6 @@ SWIFT_CLASS("_TtC10iZknu_0_0224NewSheTuanViewController")
 SWIFT_CLASS("_TtC10iZknu_0_0220SheTuanTableViewCell")
 @interface SheTuanTableViewCell : UITableViewCell
 @property (nonatomic, strong) ccOrganization * __null_unspecified organization;
-@property (nonatomic, strong) UIImageView * __null_unspecified ccImageView;
-@property (nonatomic, strong) UILabel * __null_unspecified nameLabel;
-@property (nonatomic, strong) UILabel * __null_unspecified numberOfPeopleLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)layoutSubviews;
@@ -495,6 +505,25 @@ SWIFT_CLASS("_TtC10iZknu_0_0219XinDeViewController")
 @end
 
 
+SWIFT_CLASS("_TtC10iZknu_0_0213ccOrgActivity")
+@interface ccOrgActivity : NSObject
+@property (nonatomic) NSInteger id;
+@property (nonatomic, copy) NSString * __nonnull headImageUrl;
+@property (nonatomic, copy) NSString * __nonnull name;
+@property (nonatomic, copy) NSString * __nonnull place;
+@property (nonatomic, copy) NSString * __nonnull level;
+@property (nonatomic) NSInteger peopleNow;
+@property (nonatomic) NSInteger peopleMost;
+@property (nonatomic, copy) NSString * __nonnull summary;
+@property (nonatomic, copy) NSString * __nonnull department;
+@property (nonatomic, copy) NSString * __nonnull type;
+@property (nonatomic, copy) NSString * __nonnull holdTime;
+@property (nonatomic, copy) NSString * __nonnull postTime;
+@property (nonatomic, copy) NSString * __nonnull contractor;
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull memberListId;
+@end
+
+
 SWIFT_CLASS("_TtC10iZknu_0_0211ccOrgMember")
 @interface ccOrgMember : NSObject
 @property (nonatomic) NSInteger id;
@@ -522,7 +551,8 @@ SWIFT_CLASS("_TtC10iZknu_0_0214ccOrganization")
 @property (nonatomic, copy) NSString * __nonnull level;
 @property (nonatomic, copy) NSString * __nonnull headImageUrl;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull photosUrl;
-- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary membersId:(NSArray<NSNumber *> * __nonnull)membersId scale:(NSInteger)scale numberOfPeople:(NSInteger)numberOfPeople department:(NSString * __nonnull)department recruitment:(BOOL)recruitment level:(NSString * __nonnull)level headImageUrl:(NSString * __nonnull)headImageUrl photosUrl:(NSArray<NSString *> * __nonnull)photosUrl OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * __nonnull type;
+- (nonnull instancetype)initWithName:(NSString * __nonnull)name summary:(NSString * __nonnull)summary membersId:(NSArray<NSNumber *> * __nonnull)membersId scale:(NSInteger)scale numberOfPeople:(NSInteger)numberOfPeople department:(NSString * __nonnull)department recruitment:(BOOL)recruitment level:(NSString * __nonnull)level headImageUrl:(NSString * __nonnull)headImageUrl photosUrl:(NSArray<NSString *> * __nonnull)photosUrl type:(NSString * __nonnull)type OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

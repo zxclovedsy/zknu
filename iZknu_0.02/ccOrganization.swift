@@ -20,8 +20,9 @@ public class ccOrganization: NSObject {
     var level = "" //级别
     var headImageUrl = "" //头像路径
     var photosUrl: [String] = [] //相册区
+    var type = ""
     
-    public init(name: String, summary: String, membersId: [Int], scale: Int, numberOfPeople: Int, department: String, recruitment: Bool, level: String, headImageUrl: String, photosUrl: [String]) {
+    public init(name: String, summary: String, membersId: [Int], scale: Int, numberOfPeople: Int, department: String, recruitment: Bool, level: String, headImageUrl: String, photosUrl: [String], type: String) {
         self.name = name
         self.summary = summary
         self.membersId = membersId
@@ -32,6 +33,7 @@ public class ccOrganization: NSObject {
         self.level = level
         self.headImageUrl = headImageUrl
         self.photosUrl = photosUrl
+        self.type = type
         super.init()
     }
     

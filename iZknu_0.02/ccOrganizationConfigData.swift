@@ -63,6 +63,9 @@ public class ccOrganizationConfigData {
                     photosUrl.append(photoUrl!)
                 }
                 
+                let typeElement = organization.elementsForName("type")[0] as? GDataXMLElement
+                let type = typeElement?.stringValue()
+                
 
                 /*let dataManager : ccOrgDataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
 
@@ -71,7 +74,7 @@ public class ccOrganizationConfigData {
                     members.updateValue(dataManager.getMember(id)!, forKey: id)
                 }*/
                 
-                let newOrganization = ccOrganization(name: name!, summary: summary!, membersId: membersId, scale: scale!, numberOfPeople: numberOfPeople!, department: department!, recruitment: recruitment, level: level!, headImageUrl: headImageUrl!, photosUrl: photosUrl)
+                let newOrganization = ccOrganization(name: name!, summary: summary!, membersId: membersId, scale: scale!, numberOfPeople: numberOfPeople!, department: department!, recruitment: recruitment, level: level!, headImageUrl: headImageUrl!, photosUrl: photosUrl, type: type!)
                 newOrganization.id = Int(id)!
                 
                 organizationList.updateValue(newOrganization, forKey: newOrganization.id)

@@ -12,16 +12,17 @@
         <department>音乐舞蹈学院</department>
         <recruitment>true</recruitment>
         <level>院级</level>
-        <headImageUrl>headImage</headImageUrl>
+        <headImageUrl>OrgheadImage0</headImageUrl>
         <photos>
-            <photo>photo0</photo>
-            <photo>photo1</photo>
-            <photo>photo2</photo>
-            <photo>photo3</photo>
-            <photo>photo4</photo>
-            <photo>photo5</photo>
-            <photo>photo6</photo>
+            <photo>Orgphoto0</photo>
+            <photo>Orgphoto1</photo>
+            <photo>Orgphoto2</photo>
+            <photo>Orgphoto3</photo>
+            <photo>Orgphoto4</photo>
+            <photo>Orgphoto5</photo>
+            <photo>Orgphoto6</photo>
         </photos>
+        <type>艺术</type>
     </Organization>
     <Organization id="1">
         <name>炫舞精灵舞蹈社1</name>
@@ -35,7 +36,7 @@
         <department>音乐舞蹈学院</department>
         <recruitment>true</recruitment>
         <level>院级</level>
-        <headImageUrl>headImage</headImageUrl>
+        <headImageUrl>headImage0</headImageUrl>
         <photos>
             <photo>photo0</photo>
             <photo>photo1</photo>
@@ -45,6 +46,7 @@
             <photo>photo5</photo>
             <photo>photo6</photo>
         </photos>
+        <type>艺术</type>
     </Organization>
     <Organization id="2">
         <name>炫舞精灵舞蹈社2</name>
@@ -58,7 +60,7 @@
         <department>音乐舞蹈学院</department>
         <recruitment>true</recruitment>
         <level>院级</level>
-        <headImageUrl>headImage</headImageUrl>
+        <headImageUrl>headImage0</headImageUrl>
         <photos>
             <photo>photo0</photo>
             <photo>photo1</photo>
@@ -68,6 +70,7 @@
             <photo>photo5</photo>
             <photo>photo6</photo>
         </photos>
+        <type>艺术</type>
     </Organization>
     <Organization id="3">
         <name>炫舞精灵舞蹈社3</name>
@@ -81,7 +84,7 @@
         <department>音乐舞蹈学院</department>
         <recruitment>true</recruitment>
         <level>院级</level>
-        <headImageUrl>headImage</headImageUrl>
+        <headImageUrl>headImage0</headImageUrl>
         <photos>
             <photo>photo0</photo>
             <photo>photo1</photo>
@@ -91,6 +94,7 @@
             <photo>photo5</photo>
             <photo>photo6</photo>
         </photos>
+        <type>艺术</type>
     </Organization>
     <Organization id="4">
         <name>炫舞精灵舞蹈社4</name>
@@ -104,7 +108,7 @@
         <department>音乐舞蹈学院</department>
         <recruitment>true</recruitment>
         <level>院级</level>
-        <headImageUrl>headImage</headImageUrl>
+        <headImageUrl>headImage0</headImageUrl>
         <photos>
             <photo>photo0</photo>
             <photo>photo1</photo>
@@ -114,6 +118,7 @@
             <photo>photo5</photo>
             <photo>photo6</photo>
         </photos>
+        <type>艺术</type>
     </Organization>
 </Organizations>
 

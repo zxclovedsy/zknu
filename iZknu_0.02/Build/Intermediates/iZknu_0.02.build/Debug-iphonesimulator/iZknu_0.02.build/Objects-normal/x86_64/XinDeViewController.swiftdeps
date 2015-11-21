@@ -7,23 +7,23 @@ provides-member:
 - ["C10iZknu_0_0219XinDeViewController", ""]
 provides-dynamic-lookup:
 - "segmentedControlIndexChanged"
-- "newSheTuanViewController"
 - "newHuoDongViewController"
-- "segmentedControl"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "segmentedControl"
+- "newSheTuanViewController"
 - "setupSegmentedControl"
 depends-top-level:
-- !private "print"
 - !private "~="
+- !private "print"
 - !private "StringLiteralType"
-- "XinDeViewController"
+- "UIViewController"
 - !private "-"
 - "UISegmentedControl"
+- "XinDeViewController"
 - "NewHuoDongViewController"
 - !private "/"
 - !private "BooleanLiteralType"
-- "UIViewController"
 - "NewSheTuanViewController"
 depends-member:
 - !private ["PSs9AnyObject", "NewHuoDongViewController"]

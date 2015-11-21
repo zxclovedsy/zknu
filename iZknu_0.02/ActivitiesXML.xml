@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrgActivities>
+    <OrgActivity id = "0">
+        <headImageUrl> </headImageUrl>
+        <name> </name>
+        <place> </place>
+        <level> </level>
+        <peopleNow> </peopleNow>
+        <peopleMost> </peopleMost>
+        <summary> </summary>
+        <department> </department>
+        <type> </type>
+        <holdTime> </holdTime>
+        <postTime> </postTime>
+        <contractor> </contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+</OrgActivities>

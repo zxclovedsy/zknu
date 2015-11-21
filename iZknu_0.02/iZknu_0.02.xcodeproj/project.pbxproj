@@ -25,6 +25,9 @@
 		B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */; };
 		B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */; };
 		B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */; };
+		B871F1181C0055F700C9662D /* ccOrgActivityConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871F1171C0055F700C9662D /* ccOrgActivityConfigData.swift */; };
+		B871F11A1C00562200C9662D /* ActivitiesXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B871F1191C00562200C9662D /* ActivitiesXML.xml */; };
+		B871F11C1C00656200C9662D /* HuoDongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871F11B1C00656200C9662D /* HuoDongTableViewCell.swift */; };
 		B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B8A30DF01BFC9101009B77FB /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */; };
 		B8A30E021BFCAA17009B77FB /* ccDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A30E011BFCAA17009B77FB /* ccDataManager.swift */; };
@@ -83,6 +86,9 @@
 		B852569D1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiaoTianTableViewController.swift; sourceTree = "<group>"; };
 		B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeTableViewController.swift; sourceTree = "<group>"; };
 		B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XinDeViewController.swift; sourceTree = "<group>"; };
+		B871F1171C0055F700C9662D /* ccOrgActivityConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgActivityConfigData.swift; sourceTree = "<group>"; };
+		B871F1191C00562200C9662D /* ActivitiesXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ActivitiesXML.xml; sourceTree = "<group>"; };
+		B871F11B1C00656200C9662D /* HuoDongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongTableViewCell.swift; sourceTree = "<group>"; };
 		B8A30DEC1BFC90BA009B77FB /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -172,7 +178,7 @@
 				B8DD71511BD912B8003D8C15 /* 活动 */,
 				B8A392791BDA73A60062CA3E /* 社团 */,
 				B8A3927A1BDA73C50062CA3E /* 新的 */,
-				B8A3927B1BDA740A0062CA3E /* 聊天 */,
+				B8A3927B1BDA740A0062CA3E /* 其它 */,
 				B8A3927C1BDA741A0062CA3E /* 我的 */,
 			);
 			name = BLL;
@@ -218,13 +224,14 @@
 		B8A30E0D1BFCAA79009B77FB /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				B8A30E101BFCAA88009B77FB /* ccOrganization.swift */,
 				B8A30E161BFCAA9B009B77FB /* ccOrgMember.swift */,
+				B8A30E1E1BFDEC65009B77FB /* ccOrgActivity.swift */,
 				B8A30E141BFCAA92009B77FB /* ccOrgIF.swift */,
 				B8A30E121BFCAA8D009B77FB /* ccOrgDataManager.swift */,
-				B8A30E101BFCAA88009B77FB /* ccOrganization.swift */,
 				B8A30E0E1BFCAA84009B77FB /* ccMemberConfigData.swift */,
-				B8A30E1E1BFDEC65009B77FB /* ccOrgActivity.swift */,
 				B8A30E201BFDF380009B77FB /* ccOrganizationConfigData.swift */,
+				B871F1171C0055F700C9662D /* ccOrgActivityConfigData.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 			children = (
 				B8A30E1C1BFCB24D009B77FB /* MembersXML.xml */,
 				B8A30E5D1BFEE5CA009B77FB /* OrganizationsXML.xml */,
+				B871F1191C00562200C9662D /* ActivitiesXML.xml */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -257,11 +265,11 @@
 			name = "新的";
 			sourceTree = "<group>";
 		};
-		B8A3927B1BDA740A0062CA3E /* 聊天 */ = {
+		B8A3927B1BDA740A0062CA3E /* 其它 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "聊天";
+			name = "其它";
 			sourceTree = "<group>";
 		};
 		B8A3927C1BDA741A0062CA3E /* 我的 */ = {
@@ -280,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				B8A392771BDA68AC0062CA3E /* HuoDongViewController.swift */,
+				B871F11B1C00656200C9662D /* HuoDongTableViewCell.swift */,
 			);
 			name = "活动";
 			sourceTree = "<group>";
@@ -368,6 +377,7 @@
 			files = (
 				B8A30E5E1BFEE5CA009B77FB /* OrganizationsXML.xml in Resources */,
 				B8A30E1D1BFCB24D009B77FB /* MembersXML.xml in Resources */,
+				B871F11A1C00562200C9662D /* ActivitiesXML.xml in Resources */,
 				B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */,
 				B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */,
 			);
@@ -398,6 +408,7 @@
 				B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
 				B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */,
+				B871F1181C0055F700C9662D /* ccOrgActivityConfigData.swift in Sources */,
 				B8A30E0F1BFCAA84009B77FB /* ccMemberConfigData.swift in Sources */,
 				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
 				B8A30E111BFCAA88009B77FB /* ccOrganization.swift in Sources */,
@@ -416,6 +427,7 @@
 				B8A30E0C1BFCAA59009B77FB /* ccSingleton.swift in Sources */,
 				B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */,
 				B8A30E231BFDF6BC009B77FB /* SheTuanTableViewCell.swift in Sources */,
+				B871F11C1C00656200C9662D /* HuoDongTableViewCell.swift in Sources */,
 				B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */,
 				B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */,
 				B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */,

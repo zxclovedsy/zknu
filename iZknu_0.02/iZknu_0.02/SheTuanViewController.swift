@@ -64,7 +64,12 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     func setupImageView() {
         imageView = UIImageView(frame: CGRect(x: 0, y: origin.y, width: self.view.frame.width, height: 200))
         let imageUrl = organization.headImageUrl
-        imageView.image = UIImage(named: imageUrl)
+        if let image = UIImage(named: imageUrl) {
+            imageView.image = image
+        } else {
+            imageView.image = UIImage(named: "noImage")
+        }
+        
         self.view.addSubview(imageView)
     }
     
@@ -116,9 +121,14 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     func setupPhotosScrollView() {
         photosScrollView = UIScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.width, height: 80))
         var images: [UIImage] = []
+        let noImage = UIImage(named: "noImage")!
         for nameUrl in organization.photosUrl {
-            let image = UIImage(named: nameUrl)
-            images.append(image!)
+            if let image = UIImage(named: nameUrl) {
+                images.append(image)
+            }else {
+                images.append(noImage)
+            }
+            
         }
         let width: CGFloat = 140
         let height = photosScrollView.frame.height
