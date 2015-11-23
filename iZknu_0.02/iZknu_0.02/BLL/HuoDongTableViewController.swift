@@ -192,7 +192,7 @@ class HuoDongTableViewController: UIViewController, UITableViewDataSource, UITab
     func setupCarouselView() {
         var images: [UIImage] = []
         for i in 0...3 {
-            let image = UIImage(named: "daohang\(i)")
+            let image = UIImage(named: "Cache/daohang\(i)")
             images.append(image!)
         }
         carouselView = UICarouselView(images: images, origin: CGPoint(x: 0, y: 40), height: 200)

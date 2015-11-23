@@ -21,19 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 5个导航视图
         let huoDongNavigationController = UINavigationController(rootViewController: HuoDongTableViewController())
-        huoDongNavigationController.tabBarItem = UITabBarItem(title: "活动", image: UIImage(named: "tabBarItem1"), selectedImage: UIImage(named: "tabBarItem1Selected"))
+        huoDongNavigationController.tabBarItem = UITabBarItem(title: "活动", image: UIImage(named: "Cache/tabBarItem0"), selectedImage: UIImage(named: "Cache/tabBarItem0"))
 
         let sheTuanNavigationController = UINavigationController(rootViewController: SheTuanTableViewController())
-        sheTuanNavigationController.tabBarItem = UITabBarItem(title: "社团", image: UIImage(named: "tabBarItem2"), selectedImage: UIImage(named: "tabBarItem2Selected"))
+        sheTuanNavigationController.tabBarItem = UITabBarItem(title: "社团", image: UIImage(named: "Cache/tabBarItem1"), selectedImage: UIImage(named: "Cache/tabBarItem1"))
         
         let xinDeNavigationController = UINavigationController(rootViewController: XinDeViewController())
-        xinDeNavigationController.tabBarItem = UITabBarItem(title: "新的", image: UIImage(named: "tabBarItem3"), selectedImage: UIImage(named: "tabBarItem3Selected"))
+        xinDeNavigationController.tabBarItem = UITabBarItem(title: "新的", image: UIImage(named: "Cache/tabBarItem2"), selectedImage: UIImage(named: "Cache/tabBarItem2"))
         
         let liaoTianNavigationController = UINavigationController(rootViewController: LiaoTianTableViewController())
-        liaoTianNavigationController.tabBarItem = UITabBarItem(title: "其它", image: UIImage(named: "tabBarItem4"), selectedImage: UIImage(named: "tabBarItem4Selected"))
+        liaoTianNavigationController.tabBarItem = UITabBarItem(title: "其它", image: UIImage(named: "Cache/tabBarItem3"), selectedImage: UIImage(named: "Cache/tabBarItem3"))
         
         let woDeNavigationController = UINavigationController(rootViewController: WoDeTableViewController())
-        woDeNavigationController.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named:"tabBarItem5"), selectedImage: UIImage(named: "tabBarItem5Selected"))
+        woDeNavigationController.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named:"Cache/tabBarItem4"), selectedImage: UIImage(named: "Cache/tabBarItem4"))
         
         
         // 标签栏

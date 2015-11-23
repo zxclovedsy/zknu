@@ -10,7 +10,7 @@ import Foundation
 public class ccOrganizationConfigData {
     var organizationList = [Int: ccOrganization]()
     public func initConfigData() {
-        let fileWapper = ccFileWapper(name:"OrganizationsXML", type:FileType.FileXML.rawValue)
+        let fileWapper = ccFileWapper(name:"Cache/OrganizationsXML", type:FileType.FileXML.rawValue)
         let xmlData: NSData = fileWapper.open()
         
         do {
@@ -53,14 +53,17 @@ public class ccOrganizationConfigData {
                 let level = levelElement?.stringValue()
                 
                 let headImageUrlElement = organization.elementsForName("headImageUrl")[0] as? GDataXMLElement
-                let headImageUrl = headImageUrlElement?.stringValue()
+                var headImageUrl = ""
+                if let url = headImageUrlElement!.stringValue() {
+                    headImageUrl = "Cache/\(url)"
+                }
                 
                 var photosUrl: [String] = []
                 let photosUrlElement = organization.elementsForName("photos")[0] as? GDataXMLElement
                 let photoUrlElement = photosUrlElement?.elementsForName("photo") as? [GDataXMLElement]
                 
                 for index in photoUrlElement! {
-                    let photoUrl = index.stringValue()
+                    let photoUrl = "Cache/\(index.stringValue())"
                     photosUrl.append(photoUrl ?? " ")
                 }
                 

@@ -11,7 +11,7 @@ import Foundation
 public class ccOrgActivityConfigData {
     var activityList = [Int: ccOrgActivity]()
     public func initConfigData() {
-        let fileWapper = ccFileWapper(name:"ActivitiesXML", type:FileType.FileXML.rawValue)
+        let fileWapper = ccFileWapper(name:"Cache/ActivitiesXML", type:FileType.FileXML.rawValue)
         let xmlData: NSData = fileWapper.open()
         
         do {
@@ -23,7 +23,10 @@ public class ccOrgActivityConfigData {
                 let id = activity.attributeForName("id").stringValue()
                 //活动图片
                 let headImageUrlElement = activity.elementsForName("headImageUrl")[0] as? GDataXMLElement
-                let headImageUrl = headImageUrlElement?.stringValue()
+                var headImageUrl = ""
+                if let url = headImageUrlElement!.stringValue() {
+                    headImageUrl = "Cache/\(url)"
+                }
                 //名称
                 let nameElement = activity.elementsForName("name")[0] as? GDataXMLElement
                 let name = nameElement?.stringValue()
