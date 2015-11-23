@@ -15,6 +15,10 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     var textFields: [UITextField]!
     var photosScrollView: UIScrollView!
     var origin: CGPoint!
+    var leftButton: UIButton!
+    var rightButton: UIButton!
+    var leftButtonEnabled = true
+    var rightButtonEnabled = true
     
     var organization: ccOrganization!
     
@@ -144,13 +148,23 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     func setupButton() {
         let y: CGFloat = 390 + 100 + 20 + 30
-        let leftButton = UIButton(type: .System)
+        leftButton = UIButton(type: .System)
         leftButton.frame = CGRect(x: (self.view.frame.width / 2 - 100) / 2, y: y, width: 100, height: 20)
-        leftButton.setTitle("我要关注", forState: .Normal)
+        if leftButtonEnabled {
+            leftButton.setTitle("我要关注", forState: .Normal)
+        } else {
+            leftButton.setTitle("已关注", forState: .Normal)
+            leftButton.enabled = false
+        }
         leftButton.addTarget(self, action: "woYaoGuanZhuButtonTapped:", forControlEvents: .TouchDown)
-        let rightButton = UIButton(type: .System)
+        rightButton = UIButton(type: .System)
         rightButton.frame = CGRect(x: self.view.frame.width / 2 + leftButton.frame.origin.x, y: y, width: 100, height: 20)
-        rightButton.setTitle("申请加入", forState: .Normal)
+        if rightButtonEnabled {
+            rightButton.setTitle("申请加入", forState: .Normal)
+        } else {
+            rightButton.setTitle("已加入", forState: .Normal)
+            rightButton.enabled = false
+        }
         rightButton.addTarget(self, action: "shenQingJiaRuButtonTapped:", forControlEvents: .TouchDown)
         
         self.view.addSubview(leftButton)

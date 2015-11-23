@@ -15,26 +15,30 @@ public class ccOrganization: NSObject {
     var membersId =  [Int]() //成员id
     var scale = 0 //规模
     var numberOfPeople = 0 //人数
-    var department = "" // 部门
-    var recruitment = false //是否招新
+    var college = "" // 院系
+    var recruitment = "" //招新
     var level = "" //级别
     var headImageUrl = "" //头像路径
     var photosUrl: [String] = [] //相册区
     var type = ""
     
-    public init(name: String, summary: String, membersId: [Int], scale: Int, numberOfPeople: Int, department: String, recruitment: Bool, level: String, headImageUrl: String, photosUrl: [String], type: String) {
-        self.name = name
-        self.summary = summary
+    public init(name: String?, summary: String?, membersId: [Int], scale: Int?, numberOfPeople: Int?, college: String?, recruitment: String?, level: String?, headImageUrl: String?, photosUrl: [String], type: String?) {
+        self.name = name ?? " "
+        self.summary = summary ?? " "
         self.membersId = membersId
-        self.scale = scale
-        self.numberOfPeople = numberOfPeople
-        self.department = department
-        self.recruitment = recruitment
-        self.level = level
-        self.headImageUrl = headImageUrl
+        self.scale = scale ?? 0
+        self.numberOfPeople = numberOfPeople ?? 0
+        self.college = college ?? " "
+        self.recruitment = recruitment ?? "招新"
+        self.level = level ?? " "
+        self.headImageUrl = headImageUrl ?? " "
         self.photosUrl = photosUrl
-        self.type = type
+        self.type = type ?? " "
         super.init()
+    }
+    
+    public func iscollege(college: String) -> Bool {
+        return self.college == college
     }
     
     

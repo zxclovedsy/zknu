@@ -2,68 +2,72 @@
 provides-top-level:
 - "SheTuanViewController"
 provides-nominal:
-- "C10iZknu_0_0221SheTuanViewController"
+- "C6OrgSys21SheTuanViewController"
 provides-member:
-- ["C10iZknu_0_0221SheTuanViewController", ""]
+- ["C6OrgSys21SheTuanViewController", ""]
 provides-dynamic-lookup:
-- "setupPhotosScrollView"
-- "imageView"
-- "shenQingJiaRuButtonTapped"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "woYaoGuanZhuButtonTapped"
-- "setupButton"
-- "scrollView"
-- "organization"
-- "setupTextFields"
-- "viewWillDisappear"
-- "setupTextView"
-- "textViewShouldBeginEditing"
 - "photosScrollView"
 - "viewWillAppear"
+- "setupTextFields"
+- "organization"
+- "getImageWithColor"
+- "setupPhotosScrollView"
+- "setupTextView"
+- "rightButton"
+- "setupButton"
+- "leftButtonEnabled"
+- "viewWillDisappear"
+- "setupImageView"
+- "viewDidLoad"
+- "textViewShouldBeginEditing"
+- "rightButtonEnabled"
+- "setupLabels"
+- "setupScrollView"
+- "shenQingJiaRuButtonTapped"
+- "imageView"
+- "didReceiveMemoryWarning"
 - "textFieldShouldBeginEditing"
 - "textFields"
-- "getImageWithColor"
-- "setupLabels"
-- "setupImageView"
-- "setupScrollView"
+- "scrollView"
+- "leftButton"
+- "woYaoGuanZhuButtonTapped"
 depends-top-level:
 - !private "-"
-- !private "CGRectMake"
-- "Bool"
-- !private "=="
-- !private "CGFloat"
-- !private "Array"
-- !private "/"
-- "CGSize"
-- !private "UIGraphicsEndImageContext"
-- "SheTuanViewController"
-- "UIImageView"
-- !private "UILabel"
-- "UIViewController"
-- !private "ShenQingJiaRuViewController"
-- !private "+="
 - !private "UIRectFill"
-- "UIButton"
-- "UIImage"
-- !private "UIFont"
-- "UIScrollView"
+- !private "/"
+- "UITextFieldDelegate"
+- "CGSize"
 - "UITextView"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UIImage"
+- !private "CGRectMake"
 - "UITextViewDelegate"
+- "UIViewController"
+- !private "UINavigationController"
+- !private "+="
+- !private "Array"
+- !private "=="
+- "UIButton"
+- "Bool"
 - "CGPoint"
-- !private "UIAlertView"
+- "BooleanLiteralType"
+- "UIColor"
+- "UITextField"
+- !private "UIGraphicsEndImageContext"
+- "UIImageView"
+- !private "CGFloat"
+- "UIScrollView"
+- !private "UILabel"
 - !private "UIGraphicsBeginImageContextWithOptions"
 - !private "*"
-- !private "BooleanLiteralType"
-- !private "CGRect"
-- !private "UINavigationController"
-- !private "+"
-- "UITextField"
-- "UIColor"
-- "UITextFieldDelegate"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
 - "ccOrganization"
+- !private "CGRect"
+- !private "UIAlertView"
+- "SheTuanViewController"
+- !private "+"
 - !private "UIApplication"
+- !private "ShenQingJiaRuViewController"
+- !private "UIFont"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -102,6 +106,7 @@ depends-member:
 - !private ["PSs9AnyObject", "cornerRadius"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "enabled"]
 - !private ["PSs9AnyObject", "font"]
 - !private ["PSs9AnyObject", "frame"]
 - ["PSs9AnyObject", "getImageWithColor"]
@@ -111,6 +116,8 @@ depends-member:
 - ["PSs9AnyObject", "imageView"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "layer"]
+- ["PSs9AnyObject", "leftButton"]
+- ["PSs9AnyObject", "leftButtonEnabled"]
 - !private ["PSs9AnyObject", "name"]
 - !private ["PSs9AnyObject", "navigationBar"]
 - !private ["PSs9AnyObject", "navigationController"]
@@ -120,6 +127,8 @@ depends-member:
 - ["PSs9AnyObject", "photosScrollView"]
 - !private ["PSs9AnyObject", "photosUrl"]
 - !private ["PSs9AnyObject", "presentViewController"]
+- ["PSs9AnyObject", "rightButton"]
+- ["PSs9AnyObject", "rightButtonEnabled"]
 - !private ["PSs9AnyObject", "scale"]
 - ["PSs9AnyObject", "scrollView"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
@@ -265,6 +274,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "cornerRadius"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "enabled"]
 - !private ["PSs11CVarArgType", "font"]
 - !private ["PSs11CVarArgType", "frame"]
 - ["PSs11CVarArgType", "getImageWithColor"]
@@ -274,6 +284,8 @@ depends-member:
 - ["PSs11CVarArgType", "imageView"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "layer"]
+- ["PSs11CVarArgType", "leftButton"]
+- ["PSs11CVarArgType", "leftButtonEnabled"]
 - !private ["PSs11CVarArgType", "name"]
 - !private ["PSs11CVarArgType", "navigationBar"]
 - !private ["PSs11CVarArgType", "navigationController"]
@@ -283,6 +295,8 @@ depends-member:
 - ["PSs11CVarArgType", "photosScrollView"]
 - !private ["PSs11CVarArgType", "photosUrl"]
 - !private ["PSs11CVarArgType", "presentViewController"]
+- ["PSs11CVarArgType", "rightButton"]
+- ["PSs11CVarArgType", "rightButtonEnabled"]
 - !private ["PSs11CVarArgType", "scale"]
 - ["PSs11CVarArgType", "scrollView"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
@@ -408,6 +422,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "enabled"]
 - !private ["PSs23CustomStringConvertible", "enumerate"]
 - !private ["PSs23CustomStringConvertible", "font"]
 - !private ["PSs23CustomStringConvertible", "frame"]
@@ -418,6 +433,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "imageView"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "layer"]
+- ["PSs23CustomStringConvertible", "leftButton"]
+- ["PSs23CustomStringConvertible", "leftButtonEnabled"]
 - !private ["PSs23CustomStringConvertible", "name"]
 - !private ["PSs23CustomStringConvertible", "navigationBar"]
 - !private ["PSs23CustomStringConvertible", "navigationController"]
@@ -427,6 +444,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "photosScrollView"]
 - !private ["PSs23CustomStringConvertible", "photosUrl"]
 - !private ["PSs23CustomStringConvertible", "presentViewController"]
+- ["PSs23CustomStringConvertible", "rightButton"]
+- ["PSs23CustomStringConvertible", "rightButtonEnabled"]
 - !private ["PSs23CustomStringConvertible", "scale"]
 - ["PSs23CustomStringConvertible", "scrollView"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -532,6 +551,7 @@ depends-member:
 - !private ["PSs9Equatable", "cornerRadius"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "enabled"]
 - !private ["PSs9Equatable", "font"]
 - !private ["PSs9Equatable", "frame"]
 - ["PSs9Equatable", "getImageWithColor"]
@@ -542,6 +562,8 @@ depends-member:
 - ["PSs9Equatable", "imageView"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "layer"]
+- ["PSs9Equatable", "leftButton"]
+- ["PSs9Equatable", "leftButtonEnabled"]
 - !private ["PSs9Equatable", "name"]
 - !private ["PSs9Equatable", "navigationBar"]
 - !private ["PSs9Equatable", "navigationController"]
@@ -551,6 +573,8 @@ depends-member:
 - ["PSs9Equatable", "photosScrollView"]
 - !private ["PSs9Equatable", "photosUrl"]
 - !private ["PSs9Equatable", "presentViewController"]
+- ["PSs9Equatable", "rightButton"]
+- ["PSs9Equatable", "rightButtonEnabled"]
 - !private ["PSs9Equatable", "scale"]
 - ["PSs9Equatable", "scrollView"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
@@ -665,6 +689,7 @@ depends-member:
 - !private ["PSs8Hashable", "cornerRadius"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "enabled"]
 - !private ["PSs8Hashable", "font"]
 - !private ["PSs8Hashable", "frame"]
 - ["PSs8Hashable", "getImageWithColor"]
@@ -674,6 +699,8 @@ depends-member:
 - ["PSs8Hashable", "imageView"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "layer"]
+- ["PSs8Hashable", "leftButton"]
+- ["PSs8Hashable", "leftButtonEnabled"]
 - !private ["PSs8Hashable", "name"]
 - !private ["PSs8Hashable", "navigationBar"]
 - !private ["PSs8Hashable", "navigationController"]
@@ -683,6 +710,8 @@ depends-member:
 - ["PSs8Hashable", "photosScrollView"]
 - !private ["PSs8Hashable", "photosUrl"]
 - !private ["PSs8Hashable", "presentViewController"]
+- ["PSs8Hashable", "rightButton"]
+- ["PSs8Hashable", "rightButtonEnabled"]
 - !private ["PSs8Hashable", "scale"]
 - ["PSs8Hashable", "scrollView"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
@@ -829,6 +858,7 @@ depends-member:
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "enabled"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "getImageWithColor"]
@@ -837,12 +867,16 @@ depends-member:
 - ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "leftButton"]
+- ["PSo8NSCoding", "leftButtonEnabled"]
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "organization"]
 - ["PSo8NSCoding", "origin"]
 - ["PSo8NSCoding", "photosScrollView"]
 - !private ["PSo8NSCoding", "presentViewController"]
+- ["PSo8NSCoding", "rightButton"]
+- ["PSo8NSCoding", "rightButtonEnabled"]
 - ["PSo8NSCoding", "scrollView"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -928,12 +962,16 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getImageWithColor"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "leftButton"]
+- ["PSo26NSExtensionRequestHandling", "leftButtonEnabled"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "organization"]
 - ["PSo26NSExtensionRequestHandling", "origin"]
 - ["PSo26NSExtensionRequestHandling", "photosScrollView"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "rightButton"]
+- ["PSo26NSExtensionRequestHandling", "rightButtonEnabled"]
 - ["PSo26NSExtensionRequestHandling", "scrollView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -1014,6 +1052,7 @@ depends-member:
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "enabled"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "getImageWithColor"]
@@ -1023,6 +1062,8 @@ depends-member:
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "leftButton"]
+- ["CSo8NSObject", "leftButtonEnabled"]
 - !private ["CSo8NSObject", "name"]
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
@@ -1032,6 +1073,8 @@ depends-member:
 - ["CSo8NSObject", "photosScrollView"]
 - !private ["CSo8NSObject", "photosUrl"]
 - !private ["CSo8NSObject", "presentViewController"]
+- ["CSo8NSObject", "rightButton"]
+- ["CSo8NSObject", "rightButtonEnabled"]
 - !private ["CSo8NSObject", "scale"]
 - ["CSo8NSObject", "scrollView"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
@@ -1122,6 +1165,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "enabled"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "getImageWithColor"]
@@ -1131,6 +1175,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "leftButton"]
+- ["PSo16NSObjectProtocol", "leftButtonEnabled"]
 - !private ["PSo16NSObjectProtocol", "name"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -1140,6 +1186,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "photosScrollView"]
 - !private ["PSo16NSObjectProtocol", "photosUrl"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
+- ["PSo16NSObjectProtocol", "rightButton"]
+- ["PSo16NSObjectProtocol", "rightButtonEnabled"]
 - !private ["PSo16NSObjectProtocol", "scale"]
 - ["PSo16NSObjectProtocol", "scrollView"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
@@ -1238,82 +1286,86 @@ depends-member:
 - !private ["PSs12SequenceType", "enumerate"]
 - !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["PSs14SetAlgebraType", "TouchDown"]
-- ["C10iZknu_0_0221SheTuanViewController", "Bool"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "CGFloat"]
-- ["C10iZknu_0_0221SheTuanViewController", "CGPoint"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "CGRect"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "CGRectMake"]
-- ["C10iZknu_0_0221SheTuanViewController", "CGSize"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "ShenQingJiaRuViewController"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIAlertView"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIApplication"]
-- ["C10iZknu_0_0221SheTuanViewController", "UIButton"]
-- ["C10iZknu_0_0221SheTuanViewController", "UIColor"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIFont"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIGraphicsEndImageContext"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIGraphicsGetImageFromCurrentImageContext"]
-- ["C10iZknu_0_0221SheTuanViewController", "UIImage"]
-- ["C10iZknu_0_0221SheTuanViewController", "UIImageView"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UILabel"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UINavigationController"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "UIRectFill"]
-- ["C10iZknu_0_0221SheTuanViewController", "UIScrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "UITextField"]
-- ["C10iZknu_0_0221SheTuanViewController", "UITextView"]
-- ["C10iZknu_0_0221SheTuanViewController", "ccOrganization"]
-- ["C10iZknu_0_0221SheTuanViewController", "deinit"]
-- ["C10iZknu_0_0221SheTuanViewController", "didReceiveMemoryWarning"]
-- ["C10iZknu_0_0221SheTuanViewController", "getImageWithColor"]
-- ["C10iZknu_0_0221SheTuanViewController", "imageView"]
-- ["C10iZknu_0_0221SheTuanViewController", "init"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "navigationController"]
-- ["C10iZknu_0_0221SheTuanViewController", "organization"]
-- ["C10iZknu_0_0221SheTuanViewController", "origin"]
-- ["C10iZknu_0_0221SheTuanViewController", "photosScrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidEndDecelerating"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidEndDragging"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidEndScrollingAnimation"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidEndZooming"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidScroll"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidScrollToTop"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewDidZoom"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewShouldScrollToTop"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewWillBeginDecelerating"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewWillBeginDragging"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewWillBeginZooming"]
-- ["C10iZknu_0_0221SheTuanViewController", "scrollViewWillEndDragging"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupButton"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupImageView"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupLabels"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupPhotosScrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupScrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupTextFields"]
-- ["C10iZknu_0_0221SheTuanViewController", "setupTextView"]
-- ["C10iZknu_0_0221SheTuanViewController", "shenQingJiaRuButtonTapped"]
-- ["C10iZknu_0_0221SheTuanViewController", "textField"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldDidBeginEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldDidEndEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldShouldBeginEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldShouldClear"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldShouldEndEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFieldShouldReturn"]
-- ["C10iZknu_0_0221SheTuanViewController", "textFields"]
-- ["C10iZknu_0_0221SheTuanViewController", "textView"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewDidBeginEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewDidChange"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewDidChangeSelection"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewDidEndEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewShouldBeginEditing"]
-- ["C10iZknu_0_0221SheTuanViewController", "textViewShouldEndEditing"]
-- !private ["C10iZknu_0_0221SheTuanViewController", "view"]
-- ["C10iZknu_0_0221SheTuanViewController", "viewDidLoad"]
-- ["C10iZknu_0_0221SheTuanViewController", "viewForZoomingInScrollView"]
-- ["C10iZknu_0_0221SheTuanViewController", "viewWillAppear"]
-- ["C10iZknu_0_0221SheTuanViewController", "viewWillDisappear"]
-- ["C10iZknu_0_0221SheTuanViewController", "woYaoGuanZhuButtonTapped"]
-- !private ["C10iZknu_0_0227ShenQingJiaRuViewController", "init"]
+- ["C6OrgSys21SheTuanViewController", "Bool"]
+- !private ["C6OrgSys21SheTuanViewController", "CGFloat"]
+- ["C6OrgSys21SheTuanViewController", "CGPoint"]
+- !private ["C6OrgSys21SheTuanViewController", "CGRect"]
+- !private ["C6OrgSys21SheTuanViewController", "CGRectMake"]
+- ["C6OrgSys21SheTuanViewController", "CGSize"]
+- !private ["C6OrgSys21SheTuanViewController", "ShenQingJiaRuViewController"]
+- !private ["C6OrgSys21SheTuanViewController", "UIAlertView"]
+- !private ["C6OrgSys21SheTuanViewController", "UIApplication"]
+- ["C6OrgSys21SheTuanViewController", "UIButton"]
+- ["C6OrgSys21SheTuanViewController", "UIColor"]
+- !private ["C6OrgSys21SheTuanViewController", "UIFont"]
+- !private ["C6OrgSys21SheTuanViewController", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["C6OrgSys21SheTuanViewController", "UIGraphicsEndImageContext"]
+- !private ["C6OrgSys21SheTuanViewController", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["C6OrgSys21SheTuanViewController", "UIImage"]
+- ["C6OrgSys21SheTuanViewController", "UIImageView"]
+- !private ["C6OrgSys21SheTuanViewController", "UILabel"]
+- !private ["C6OrgSys21SheTuanViewController", "UINavigationController"]
+- !private ["C6OrgSys21SheTuanViewController", "UIRectFill"]
+- ["C6OrgSys21SheTuanViewController", "UIScrollView"]
+- ["C6OrgSys21SheTuanViewController", "UITextField"]
+- ["C6OrgSys21SheTuanViewController", "UITextView"]
+- ["C6OrgSys21SheTuanViewController", "ccOrganization"]
+- ["C6OrgSys21SheTuanViewController", "deinit"]
+- ["C6OrgSys21SheTuanViewController", "didReceiveMemoryWarning"]
+- ["C6OrgSys21SheTuanViewController", "getImageWithColor"]
+- ["C6OrgSys21SheTuanViewController", "imageView"]
+- ["C6OrgSys21SheTuanViewController", "init"]
+- ["C6OrgSys21SheTuanViewController", "leftButton"]
+- ["C6OrgSys21SheTuanViewController", "leftButtonEnabled"]
+- !private ["C6OrgSys21SheTuanViewController", "navigationController"]
+- ["C6OrgSys21SheTuanViewController", "organization"]
+- ["C6OrgSys21SheTuanViewController", "origin"]
+- ["C6OrgSys21SheTuanViewController", "photosScrollView"]
+- ["C6OrgSys21SheTuanViewController", "rightButton"]
+- ["C6OrgSys21SheTuanViewController", "rightButtonEnabled"]
+- ["C6OrgSys21SheTuanViewController", "scrollView"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidEndDecelerating"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidEndDragging"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidEndScrollingAnimation"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidEndZooming"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidScroll"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidScrollToTop"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewDidZoom"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewShouldScrollToTop"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewWillBeginDecelerating"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewWillBeginDragging"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewWillBeginZooming"]
+- ["C6OrgSys21SheTuanViewController", "scrollViewWillEndDragging"]
+- ["C6OrgSys21SheTuanViewController", "setupButton"]
+- ["C6OrgSys21SheTuanViewController", "setupImageView"]
+- ["C6OrgSys21SheTuanViewController", "setupLabels"]
+- ["C6OrgSys21SheTuanViewController", "setupPhotosScrollView"]
+- ["C6OrgSys21SheTuanViewController", "setupScrollView"]
+- ["C6OrgSys21SheTuanViewController", "setupTextFields"]
+- ["C6OrgSys21SheTuanViewController", "setupTextView"]
+- ["C6OrgSys21SheTuanViewController", "shenQingJiaRuButtonTapped"]
+- ["C6OrgSys21SheTuanViewController", "textField"]
+- ["C6OrgSys21SheTuanViewController", "textFieldDidBeginEditing"]
+- ["C6OrgSys21SheTuanViewController", "textFieldDidEndEditing"]
+- ["C6OrgSys21SheTuanViewController", "textFieldShouldBeginEditing"]
+- ["C6OrgSys21SheTuanViewController", "textFieldShouldClear"]
+- ["C6OrgSys21SheTuanViewController", "textFieldShouldEndEditing"]
+- ["C6OrgSys21SheTuanViewController", "textFieldShouldReturn"]
+- ["C6OrgSys21SheTuanViewController", "textFields"]
+- ["C6OrgSys21SheTuanViewController", "textView"]
+- ["C6OrgSys21SheTuanViewController", "textViewDidBeginEditing"]
+- ["C6OrgSys21SheTuanViewController", "textViewDidChange"]
+- ["C6OrgSys21SheTuanViewController", "textViewDidChangeSelection"]
+- ["C6OrgSys21SheTuanViewController", "textViewDidEndEditing"]
+- ["C6OrgSys21SheTuanViewController", "textViewShouldBeginEditing"]
+- ["C6OrgSys21SheTuanViewController", "textViewShouldEndEditing"]
+- !private ["C6OrgSys21SheTuanViewController", "view"]
+- ["C6OrgSys21SheTuanViewController", "viewDidLoad"]
+- ["C6OrgSys21SheTuanViewController", "viewForZoomingInScrollView"]
+- ["C6OrgSys21SheTuanViewController", "viewWillAppear"]
+- ["C6OrgSys21SheTuanViewController", "viewWillDisappear"]
+- ["C6OrgSys21SheTuanViewController", "woYaoGuanZhuButtonTapped"]
+- !private ["C6OrgSys27ShenQingJiaRuViewController", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs17SignedIntegerType", "Stride"]
@@ -1335,6 +1387,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "contentSize"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "enabled"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -1355,6 +1408,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "contentSize"]
 - !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "enabled"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
@@ -1396,6 +1450,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "contentSize"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "enabled"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "getImageWithColor"]
@@ -1403,12 +1458,16 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "leftButton"]
+- ["PSo21UIAppearanceContainer", "leftButtonEnabled"]
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "organization"]
 - ["PSo21UIAppearanceContainer", "origin"]
 - ["PSo21UIAppearanceContainer", "photosScrollView"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- ["PSo21UIAppearanceContainer", "rightButton"]
+- ["PSo21UIAppearanceContainer", "rightButtonEnabled"]
 - ["PSo21UIAppearanceContainer", "scrollView"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
@@ -1466,6 +1525,7 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "frame"]
 - !private ["PSo16UIBarPositioning", "setBackgroundImage"]
 - !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "enabled"]
 - !private ["CSo8UIButton", "frame"]
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "setTitle"]
@@ -1501,12 +1561,16 @@ depends-member:
 - ["PSo18UIContentContainer", "getImageWithColor"]
 - ["PSo18UIContentContainer", "imageView"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "leftButton"]
+- ["PSo18UIContentContainer", "leftButtonEnabled"]
 - !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "organization"]
 - ["PSo18UIContentContainer", "origin"]
 - ["PSo18UIContentContainer", "photosScrollView"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "rightButton"]
+- ["PSo18UIContentContainer", "rightButtonEnabled"]
 - ["PSo18UIContentContainer", "scrollView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -1552,6 +1616,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "delegate"]
+- !private ["CSo9UIControl", "enabled"]
 - !private ["CSo9UIControl", "font"]
 - !private ["CSo9UIControl", "frame"]
 - !private ["CSo9UIControl", "init"]
@@ -1568,6 +1633,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "contentSize"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "enabled"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -1586,6 +1652,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "contentSize"]
 - !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "enabled"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -1627,6 +1694,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "contentSize"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "enabled"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "getImageWithColor"]
@@ -1634,12 +1702,16 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "leftButton"]
+- ["PSo18UIFocusEnvironment", "leftButtonEnabled"]
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "organization"]
 - ["PSo18UIFocusEnvironment", "origin"]
 - ["PSo18UIFocusEnvironment", "photosScrollView"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- ["PSo18UIFocusEnvironment", "rightButton"]
+- ["PSo18UIFocusEnvironment", "rightButtonEnabled"]
 - ["PSo18UIFocusEnvironment", "scrollView"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
@@ -1746,6 +1818,7 @@ depends-member:
 - !private ["CSo11UIResponder", "contentSize"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "enabled"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "getImageWithColor"]
@@ -1753,12 +1826,16 @@ depends-member:
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "leftButton"]
+- ["CSo11UIResponder", "leftButtonEnabled"]
 - !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "organization"]
 - ["CSo11UIResponder", "origin"]
 - ["CSo11UIResponder", "photosScrollView"]
 - !private ["CSo11UIResponder", "presentViewController"]
+- ["CSo11UIResponder", "rightButton"]
+- ["CSo11UIResponder", "rightButtonEnabled"]
 - ["CSo11UIResponder", "scrollView"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
@@ -1846,10 +1923,14 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "getImageWithColor"]
 - !private ["PSo20UIScrollViewDelegate", "imageView"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "leftButton"]
+- !private ["PSo20UIScrollViewDelegate", "leftButtonEnabled"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "organization"]
 - !private ["PSo20UIScrollViewDelegate", "origin"]
 - !private ["PSo20UIScrollViewDelegate", "photosScrollView"]
+- !private ["PSo20UIScrollViewDelegate", "rightButton"]
+- !private ["PSo20UIScrollViewDelegate", "rightButtonEnabled"]
 - !private ["PSo20UIScrollViewDelegate", "scrollView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -1913,12 +1994,16 @@ depends-member:
 - ["PSo16UIStateRestoring", "getImageWithColor"]
 - ["PSo16UIStateRestoring", "imageView"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "leftButton"]
+- ["PSo16UIStateRestoring", "leftButtonEnabled"]
 - !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "organization"]
 - ["PSo16UIStateRestoring", "origin"]
 - ["PSo16UIStateRestoring", "photosScrollView"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "rightButton"]
+- ["PSo16UIStateRestoring", "rightButtonEnabled"]
 - ["PSo16UIStateRestoring", "scrollView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -1994,10 +2079,14 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "getImageWithColor"]
 - !private ["PSo19UITextFieldDelegate", "imageView"]
 - !private ["PSo19UITextFieldDelegate", "init"]
+- !private ["PSo19UITextFieldDelegate", "leftButton"]
+- !private ["PSo19UITextFieldDelegate", "leftButtonEnabled"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
 - !private ["PSo19UITextFieldDelegate", "organization"]
 - !private ["PSo19UITextFieldDelegate", "origin"]
 - !private ["PSo19UITextFieldDelegate", "photosScrollView"]
+- !private ["PSo19UITextFieldDelegate", "rightButton"]
+- !private ["PSo19UITextFieldDelegate", "rightButtonEnabled"]
 - !private ["PSo19UITextFieldDelegate", "scrollView"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDragging"]
@@ -2080,10 +2169,14 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "getImageWithColor"]
 - !private ["PSo18UITextViewDelegate", "imageView"]
 - !private ["PSo18UITextViewDelegate", "init"]
+- !private ["PSo18UITextViewDelegate", "leftButton"]
+- !private ["PSo18UITextViewDelegate", "leftButtonEnabled"]
 - !private ["PSo18UITextViewDelegate", "navigationController"]
 - !private ["PSo18UITextViewDelegate", "organization"]
 - !private ["PSo18UITextViewDelegate", "origin"]
 - !private ["PSo18UITextViewDelegate", "photosScrollView"]
+- !private ["PSo18UITextViewDelegate", "rightButton"]
+- !private ["PSo18UITextViewDelegate", "rightButtonEnabled"]
 - !private ["PSo18UITextViewDelegate", "scrollView"]
 - ["PSo18UITextViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo18UITextViewDelegate", "scrollViewDidEndDragging"]
@@ -2150,6 +2243,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "contentSize"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "enabled"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "getImageWithColor"]
@@ -2157,12 +2251,16 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "leftButton"]
+- ["PSo18UITraitEnvironment", "leftButtonEnabled"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "organization"]
 - ["PSo18UITraitEnvironment", "origin"]
 - ["PSo18UITraitEnvironment", "photosScrollView"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
+- ["PSo18UITraitEnvironment", "rightButton"]
+- ["PSo18UITraitEnvironment", "rightButtonEnabled"]
 - ["PSo18UITraitEnvironment", "scrollView"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
@@ -2219,6 +2317,7 @@ depends-member:
 - !private ["CSo6UIView", "clipsToBounds"]
 - !private ["CSo6UIView", "contentSize"]
 - !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "enabled"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
@@ -2259,12 +2358,16 @@ depends-member:
 - ["CSo16UIViewController", "getImageWithColor"]
 - ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "leftButton"]
+- ["CSo16UIViewController", "leftButtonEnabled"]
 - !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "organization"]
 - ["CSo16UIViewController", "origin"]
 - ["CSo16UIViewController", "photosScrollView"]
 - !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "rightButton"]
+- ["CSo16UIViewController", "rightButtonEnabled"]
 - ["CSo16UIViewController", "scrollView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -2397,6 +2500,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "contentSize"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "enabled"]
 - !private ["PSs12_Reflectable", "enumerate"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
@@ -2423,12 +2527,12 @@ depends-member:
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Stride"]
 - !private ["PSs11_Strideable", "init"]
-- !private ["C10iZknu_0_0214ccOrganization", "headImageUrl"]
-- !private ["C10iZknu_0_0214ccOrganization", "name"]
-- !private ["C10iZknu_0_0214ccOrganization", "numberOfPeople"]
-- !private ["C10iZknu_0_0214ccOrganization", "photosUrl"]
-- !private ["C10iZknu_0_0214ccOrganization", "scale"]
-- !private ["C10iZknu_0_0214ccOrganization", "summary"]
+- !private ["C6OrgSys14ccOrganization", "headImageUrl"]
+- !private ["C6OrgSys14ccOrganization", "name"]
+- !private ["C6OrgSys14ccOrganization", "numberOfPeople"]
+- !private ["C6OrgSys14ccOrganization", "photosUrl"]
+- !private ["C6OrgSys14ccOrganization", "scale"]
+- !private ["C6OrgSys14ccOrganization", "summary"]
 depends-nominal:
 - !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
@@ -2496,8 +2600,8 @@ depends-nominal:
 - !private "V10ObjectiveC8Selector"
 - !private "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
-- "C10iZknu_0_0221SheTuanViewController"
-- !private "C10iZknu_0_0227ShenQingJiaRuViewController"
+- "C6OrgSys21SheTuanViewController"
+- !private "C6OrgSys27ShenQingJiaRuViewController"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "PSs10Streamable"
@@ -2575,7 +2679,7 @@ depends-nominal:
 - "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
-- !private "C10iZknu_0_0214ccOrganization"
+- !private "C6OrgSys14ccOrganization"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -2589,4 +2693,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/juno/Documents/git/zknu/iZknu_0.02/./GDataXMLNode.h"
-interface-hash: "d6a6308e9f148003b2eeccfbcbd396c3"
+interface-hash: "dff4150727bdfa170940e535ce329918"

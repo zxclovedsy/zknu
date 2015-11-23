@@ -43,8 +43,8 @@ public class ccOrgActivityConfigData {
                 let summaryElement = activity.elementsForName("summary")[0] as? GDataXMLElement
                 let summary = summaryElement?.stringValue()
                 //举办院系
-                let departmentElement = activity.elementsForName("department")[0] as? GDataXMLElement
-                let department = departmentElement?.stringValue()
+                let collegeElement = activity.elementsForName("college")[0] as? GDataXMLElement
+                let college = collegeElement?.stringValue()
                 //类型
                 let typeElement = activity.elementsForName("type")[0] as? GDataXMLElement
                 let type = typeElement?.stringValue()
@@ -68,7 +68,7 @@ public class ccOrgActivityConfigData {
                     }
                 }
 
-                let newActivity = ccOrgActivity(headImageUrl: headImageUrl, name: name, place: place, level: level, peopleNow: peopleNow, peopleMost: peopleMost, summary: summary, department: department, type: type, holdTime: holdTime, postTime: postTime, contractor: contractor, memberListId: membersId)
+                let newActivity = ccOrgActivity(headImageUrl: headImageUrl, name: name, place: place, level: level, peopleNow: peopleNow, peopleMost: peopleMost, summary: summary, college: college, type: type, holdTime: holdTime, postTime: postTime, contractor: contractor, memberListId: membersId)
                 newActivity.id = Int(id)!
                 
                 activityList.updateValue(newActivity, forKey: newActivity.id)                

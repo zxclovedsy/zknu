@@ -2,29 +2,35 @@
 provides-top-level:
 - "XinDeViewController"
 provides-nominal:
-- "C10iZknu_0_0219XinDeViewController"
+- "C6OrgSys19XinDeViewController"
 provides-member:
-- ["C10iZknu_0_0219XinDeViewController", ""]
+- ["C6OrgSys19XinDeViewController", ""]
 provides-dynamic-lookup:
-- "segmentedControlIndexChanged"
+- "viewDidAppear"
 - "newHuoDongViewController"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "setupLoadingView"
+- "loadingView"
 - "segmentedControl"
-- "newSheTuanViewController"
 - "setupSegmentedControl"
+- "didReceiveMemoryWarning"
+- "newSheTuanViewController"
+- "segmentedControlIndexChanged"
 depends-top-level:
-- !private "~="
-- !private "print"
-- !private "StringLiteralType"
-- "UIViewController"
-- !private "-"
 - "UISegmentedControl"
-- "XinDeViewController"
-- "NewHuoDongViewController"
-- !private "/"
+- "UIViewController"
 - !private "BooleanLiteralType"
+- !private "-"
+- !private "/"
+- "XinDeViewController"
+- !private "print"
+- "Bool"
+- "NewHuoDongViewController"
+- !private "tabBarViewController"
+- "UIActivityIndicatorView"
+- !private "StringLiteralType"
 - "NewSheTuanViewController"
+- !private "~="
 depends-member:
 - !private ["PSs9AnyObject", "NewHuoDongViewController"]
 - !private ["PSs9AnyObject", "NewSheTuanViewController"]
@@ -35,6 +41,7 @@ depends-member:
 - !private ["PSs9AnyObject", "frame"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "insertSegmentWithTitle"]
+- ["PSs9AnyObject", "loadingView"]
 - !private ["PSs9AnyObject", "navigationBar"]
 - !private ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "newHuoDongViewController"]
@@ -44,9 +51,12 @@ depends-member:
 - ["PSs9AnyObject", "segmentedControl"]
 - ["PSs9AnyObject", "segmentedControlIndexChanged"]
 - !private ["PSs9AnyObject", "selectedSegmentIndex"]
+- ["PSs9AnyObject", "setupLoadingView"]
 - ["PSs9AnyObject", "setupSegmentedControl"]
 - !private ["PSs9AnyObject", "subviews"]
+- !private ["PSs9AnyObject", "tabBarController"]
 - !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Index"]
@@ -79,6 +89,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "frame"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "insertSegmentWithTitle"]
+- ["PSs11CVarArgType", "loadingView"]
 - !private ["PSs11CVarArgType", "navigationBar"]
 - !private ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "newHuoDongViewController"]
@@ -88,9 +99,12 @@ depends-member:
 - ["PSs11CVarArgType", "segmentedControl"]
 - ["PSs11CVarArgType", "segmentedControlIndexChanged"]
 - !private ["PSs11CVarArgType", "selectedSegmentIndex"]
+- ["PSs11CVarArgType", "setupLoadingView"]
 - ["PSs11CVarArgType", "setupSegmentedControl"]
 - !private ["PSs11CVarArgType", "subviews"]
+- !private ["PSs11CVarArgType", "tabBarController"]
 - !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs14CollectionType", "Generator"]
@@ -116,6 +130,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "frame"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "insertSegmentWithTitle"]
+- ["PSs23CustomStringConvertible", "loadingView"]
 - !private ["PSs23CustomStringConvertible", "navigationBar"]
 - !private ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "newHuoDongViewController"]
@@ -125,10 +140,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "segmentedControl"]
 - ["PSs23CustomStringConvertible", "segmentedControlIndexChanged"]
 - !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
+- ["PSs23CustomStringConvertible", "setupLoadingView"]
 - ["PSs23CustomStringConvertible", "setupSegmentedControl"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "subviews"]
+- !private ["PSs23CustomStringConvertible", "tabBarController"]
 - !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
@@ -146,6 +164,7 @@ depends-member:
 - !private ["PSs9Equatable", "height"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "insertSegmentWithTitle"]
+- ["PSs9Equatable", "loadingView"]
 - !private ["PSs9Equatable", "navigationBar"]
 - !private ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "newHuoDongViewController"]
@@ -156,9 +175,12 @@ depends-member:
 - ["PSs9Equatable", "segmentedControl"]
 - ["PSs9Equatable", "segmentedControlIndexChanged"]
 - !private ["PSs9Equatable", "selectedSegmentIndex"]
+- ["PSs9Equatable", "setupLoadingView"]
 - ["PSs9Equatable", "setupSegmentedControl"]
 - !private ["PSs9Equatable", "subviews"]
+- !private ["PSs9Equatable", "tabBarController"]
 - !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - !private ["PSs9Equatable", "width"]
 - !private ["PSs9Equatable", "x"]
@@ -179,6 +201,7 @@ depends-member:
 - !private ["PSs8Hashable", "frame"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "insertSegmentWithTitle"]
+- ["PSs8Hashable", "loadingView"]
 - !private ["PSs8Hashable", "navigationBar"]
 - !private ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "newHuoDongViewController"]
@@ -188,9 +211,12 @@ depends-member:
 - ["PSs8Hashable", "segmentedControl"]
 - ["PSs8Hashable", "segmentedControlIndexChanged"]
 - !private ["PSs8Hashable", "selectedSegmentIndex"]
+- ["PSs8Hashable", "setupLoadingView"]
 - ["PSs8Hashable", "setupSegmentedControl"]
 - !private ["PSs8Hashable", "subviews"]
+- !private ["PSs8Hashable", "tabBarController"]
 - !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - !private ["PSs9Indexable", "Generator"]
@@ -225,6 +251,7 @@ depends-member:
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "insertSegmentWithTitle"]
+- ["PSo8NSCoding", "loadingView"]
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "newHuoDongViewController"]
@@ -234,9 +261,12 @@ depends-member:
 - ["PSo8NSCoding", "segmentedControl"]
 - ["PSo8NSCoding", "segmentedControlIndexChanged"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
+- ["PSo8NSCoding", "setupLoadingView"]
 - ["PSo8NSCoding", "setupSegmentedControl"]
 - !private ["PSo8NSCoding", "subviews"]
+- !private ["PSo8NSCoding", "tabBarController"]
 - !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo26NSExtensionRequestHandling", "NewHuoDongViewController"]
@@ -244,6 +274,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UISegmentedControl"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loadingView"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "newHuoDongViewController"]
@@ -251,13 +282,18 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "segmentedControl"]
 - ["PSo26NSExtensionRequestHandling", "segmentedControlIndexChanged"]
+- ["PSo26NSExtensionRequestHandling", "setupLoadingView"]
 - ["PSo26NSExtensionRequestHandling", "setupSegmentedControl"]
+- !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSNumber", "deinit"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NewHuoDongViewController"]
 - ["CSo8NSObject", "NewSheTuanViewController"]
+- ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
@@ -266,6 +302,7 @@ depends-member:
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "insertSegmentWithTitle"]
+- ["CSo8NSObject", "loadingView"]
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "newHuoDongViewController"]
@@ -275,9 +312,13 @@ depends-member:
 - ["CSo8NSObject", "segmentedControl"]
 - ["CSo8NSObject", "segmentedControlIndexChanged"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
+- ["CSo8NSObject", "setupLoadingView"]
 - ["CSo8NSObject", "setupSegmentedControl"]
 - !private ["CSo8NSObject", "subviews"]
+- !private ["CSo8NSObject", "tabBarController"]
+- !private ["CSo8NSObject", "tabBarViewController"]
 - !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "NewHuoDongViewController"]
 - !private ["PSo16NSObjectProtocol", "NewSheTuanViewController"]
@@ -288,6 +329,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertSegmentWithTitle"]
+- ["PSo16NSObjectProtocol", "loadingView"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "newHuoDongViewController"]
@@ -297,16 +339,19 @@ depends-member:
 - ["PSo16NSObjectProtocol", "segmentedControl"]
 - ["PSo16NSObjectProtocol", "segmentedControlIndexChanged"]
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
+- ["PSo16NSObjectProtocol", "setupLoadingView"]
 - ["PSo16NSObjectProtocol", "setupSegmentedControl"]
 - !private ["PSo16NSObjectProtocol", "subviews"]
+- !private ["PSo16NSObjectProtocol", "tabBarController"]
 - !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo7NSValue", "deinit"]
-- !private ["C10iZknu_0_0224NewHuoDongViewController", "init"]
-- !private ["C10iZknu_0_0224NewHuoDongViewController", "view"]
-- !private ["C10iZknu_0_0224NewSheTuanViewController", "init"]
-- !private ["C10iZknu_0_0224NewSheTuanViewController", "view"]
+- !private ["C6OrgSys24NewHuoDongViewController", "init"]
+- !private ["C6OrgSys24NewHuoDongViewController", "view"]
+- !private ["C6OrgSys24NewSheTuanViewController", "init"]
+- !private ["C6OrgSys24NewSheTuanViewController", "view"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "ValueChanged"]
 - ["Sq", "Some"]
@@ -360,6 +405,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "insertSegmentWithTitle"]
+- ["PSo21UIAppearanceContainer", "loadingView"]
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "newHuoDongViewController"]
@@ -369,9 +415,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "segmentedControl"]
 - ["PSo21UIAppearanceContainer", "segmentedControlIndexChanged"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
+- ["PSo21UIAppearanceContainer", "setupLoadingView"]
 - ["PSo21UIAppearanceContainer", "setupSegmentedControl"]
 - !private ["PSo21UIAppearanceContainer", "subviews"]
+- !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "addSubview"]
@@ -381,6 +430,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UISegmentedControl"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loadingView"]
 - !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "newHuoDongViewController"]
@@ -388,8 +438,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "segmentedControl"]
 - ["PSo18UIContentContainer", "segmentedControlIndexChanged"]
+- ["PSo18UIContentContainer", "setupLoadingView"]
 - ["PSo18UIContentContainer", "setupSegmentedControl"]
+- !private ["PSo18UIContentContainer", "tabBarController"]
 - !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
@@ -423,6 +476,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "insertSegmentWithTitle"]
+- ["PSo18UIFocusEnvironment", "loadingView"]
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "newHuoDongViewController"]
@@ -432,9 +486,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "segmentedControl"]
 - ["PSo18UIFocusEnvironment", "segmentedControlIndexChanged"]
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
+- ["PSo18UIFocusEnvironment", "setupLoadingView"]
 - ["PSo18UIFocusEnvironment", "setupSegmentedControl"]
 - !private ["PSo18UIFocusEnvironment", "subviews"]
+- !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo31UIImagePickerControllerDelegate", "init"]
@@ -448,8 +505,10 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "view"]
 - !private ["PSo20UIPickerViewDelegate", "init"]
 - !private ["PSo20UIPickerViewDelegate", "view"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "NewHuoDongViewController"]
 - ["CSo11UIResponder", "NewSheTuanViewController"]
+- ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
@@ -457,6 +516,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "insertSegmentWithTitle"]
+- ["CSo11UIResponder", "loadingView"]
 - !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "newHuoDongViewController"]
@@ -466,9 +526,13 @@ depends-member:
 - ["CSo11UIResponder", "segmentedControl"]
 - ["CSo11UIResponder", "segmentedControlIndexChanged"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
+- ["CSo11UIResponder", "setupLoadingView"]
 - ["CSo11UIResponder", "setupSegmentedControl"]
 - !private ["CSo11UIResponder", "subviews"]
+- !private ["CSo11UIResponder", "tabBarController"]
+- !private ["CSo11UIResponder", "tabBarViewController"]
 - !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
@@ -482,6 +546,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UISegmentedControl"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loadingView"]
 - !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "newHuoDongViewController"]
@@ -489,10 +554,16 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "segmentedControl"]
 - ["PSo16UIStateRestoring", "segmentedControlIndexChanged"]
+- ["PSo16UIStateRestoring", "setupLoadingView"]
 - ["PSo16UIStateRestoring", "setupSegmentedControl"]
+- !private ["PSo16UIStateRestoring", "tabBarController"]
 - !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo18UITabBarController", "loadingView"]
+- !private ["PSo26UITabBarControllerDelegate", "loadingView"]
+- !private ["PSo16UITabBarDelegate", "loadingView"]
 - !private ["PSo19UITextFieldDelegate", "init"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - !private ["PSo18UITextViewDelegate", "init"]
@@ -506,6 +577,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "insertSegmentWithTitle"]
+- ["PSo18UITraitEnvironment", "loadingView"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "newHuoDongViewController"]
@@ -515,9 +587,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "segmentedControl"]
 - ["PSo18UITraitEnvironment", "segmentedControlIndexChanged"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
+- ["PSo18UITraitEnvironment", "setupLoadingView"]
 - ["PSo18UITraitEnvironment", "setupSegmentedControl"]
 - !private ["PSo18UITraitEnvironment", "subviews"]
+- !private ["PSo18UITraitEnvironment", "tabBarController"]
 - !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
@@ -528,11 +603,14 @@ depends-member:
 - !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "selectedSegmentIndex"]
 - !private ["CSo6UIView", "subviews"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "NewHuoDongViewController"]
 - ["CSo16UIViewController", "NewSheTuanViewController"]
+- ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loadingView"]
 - !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "newHuoDongViewController"]
@@ -540,25 +618,36 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "segmentedControl"]
 - ["CSo16UIViewController", "segmentedControlIndexChanged"]
+- ["CSo16UIViewController", "setupLoadingView"]
 - ["CSo16UIViewController", "setupSegmentedControl"]
+- !private ["CSo16UIViewController", "tabBarController"]
+- !private ["CSo16UIViewController", "tabBarViewController"]
 - !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- ["C10iZknu_0_0219XinDeViewController", "NewHuoDongViewController"]
-- ["C10iZknu_0_0219XinDeViewController", "NewSheTuanViewController"]
-- ["C10iZknu_0_0219XinDeViewController", "UISegmentedControl"]
-- ["C10iZknu_0_0219XinDeViewController", "deinit"]
-- ["C10iZknu_0_0219XinDeViewController", "didReceiveMemoryWarning"]
-- ["C10iZknu_0_0219XinDeViewController", "init"]
-- !private ["C10iZknu_0_0219XinDeViewController", "navigationController"]
-- ["C10iZknu_0_0219XinDeViewController", "newHuoDongViewController"]
-- ["C10iZknu_0_0219XinDeViewController", "newSheTuanViewController"]
-- !private ["C10iZknu_0_0219XinDeViewController", "print"]
-- ["C10iZknu_0_0219XinDeViewController", "segmentedControl"]
-- ["C10iZknu_0_0219XinDeViewController", "segmentedControlIndexChanged"]
-- ["C10iZknu_0_0219XinDeViewController", "setupSegmentedControl"]
-- !private ["C10iZknu_0_0219XinDeViewController", "view"]
-- ["C10iZknu_0_0219XinDeViewController", "viewDidLoad"]
+- ["C6OrgSys19XinDeViewController", "Bool"]
+- ["C6OrgSys19XinDeViewController", "NewHuoDongViewController"]
+- ["C6OrgSys19XinDeViewController", "NewSheTuanViewController"]
+- ["C6OrgSys19XinDeViewController", "UIActivityIndicatorView"]
+- ["C6OrgSys19XinDeViewController", "UISegmentedControl"]
+- ["C6OrgSys19XinDeViewController", "deinit"]
+- ["C6OrgSys19XinDeViewController", "didReceiveMemoryWarning"]
+- ["C6OrgSys19XinDeViewController", "init"]
+- ["C6OrgSys19XinDeViewController", "loadingView"]
+- !private ["C6OrgSys19XinDeViewController", "navigationController"]
+- ["C6OrgSys19XinDeViewController", "newHuoDongViewController"]
+- ["C6OrgSys19XinDeViewController", "newSheTuanViewController"]
+- !private ["C6OrgSys19XinDeViewController", "print"]
+- ["C6OrgSys19XinDeViewController", "segmentedControl"]
+- ["C6OrgSys19XinDeViewController", "segmentedControlIndexChanged"]
+- ["C6OrgSys19XinDeViewController", "setupLoadingView"]
+- ["C6OrgSys19XinDeViewController", "setupSegmentedControl"]
+- !private ["C6OrgSys19XinDeViewController", "tabBarController"]
+- !private ["C6OrgSys19XinDeViewController", "tabBarViewController"]
+- !private ["C6OrgSys19XinDeViewController", "view"]
+- ["C6OrgSys19XinDeViewController", "viewDidAppear"]
+- ["C6OrgSys19XinDeViewController", "viewDidLoad"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -603,6 +692,7 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["C6OrgSys20tabBarViewController", "loadingView"]
 depends-nominal:
 - "PSs9AnyObject"
 - !private "Sa"
@@ -641,8 +731,8 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "CSo7NSValue"
-- !private "C10iZknu_0_0224NewHuoDongViewController"
-- !private "C10iZknu_0_0224NewSheTuanViewController"
+- !private "C6OrgSys24NewHuoDongViewController"
+- !private "C6OrgSys24NewSheTuanViewController"
 - "PSs21NilLiteralConvertible"
 - !private "PSs13OptionSetType"
 - "Sq"
@@ -677,12 +767,15 @@ depends-nominal:
 - !private "PSo20UIScrollViewDelegate"
 - !private "CSo18UISegmentedControl"
 - "PSo16UIStateRestoring"
+- !private "CSo18UITabBarController"
+- !private "PSo26UITabBarControllerDelegate"
+- !private "PSo16UITabBarDelegate"
 - !private "PSo19UITextFieldDelegate"
 - !private "PSo18UITextViewDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- "C10iZknu_0_0219XinDeViewController"
+- "C6OrgSys19XinDeViewController"
 - !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
@@ -696,6 +789,7 @@ depends-nominal:
 - "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
+- !private "C6OrgSys20tabBarViewController"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -709,4 +803,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/juno/Documents/git/zknu/iZknu_0.02/./GDataXMLNode.h"
-interface-hash: "de681171df63f5882efc5cac60564059"
+interface-hash: "afa63eec933f32be80138d854b44ff8c"

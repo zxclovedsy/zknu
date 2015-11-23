@@ -2,30 +2,30 @@
 provides-top-level:
 - "LiaoTianTableViewController"
 provides-nominal:
-- "C10iZknu_0_0227LiaoTianTableViewController"
+- "C6OrgSys27LiaoTianTableViewController"
 provides-member:
-- ["C10iZknu_0_0227LiaoTianTableViewController", ""]
+- ["C6OrgSys27LiaoTianTableViewController", ""]
 provides-dynamic-lookup:
-- "label"
-- "setupLabel"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
 - "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "setupLabel"
+- "label"
 depends-top-level:
-- "LiaoTianTableViewController"
-- "NSIndexPath"
 - "UITableView"
-- "UILabel"
+- "LiaoTianTableViewController"
 - !private "UIColor"
-- "UITableViewCell"
-- !private "StringLiteralType"
-- "UIViewController"
-- "Int"
-- "UITableViewDelegate"
 - "UITableViewDataSource"
+- "Int"
+- !private "StringLiteralType"
+- "NSIndexPath"
+- "UILabel"
+- "UIViewController"
+- "UITableViewCell"
+- "UITableViewDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UILabel"]
@@ -204,37 +204,37 @@ depends-member:
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "Int"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "NSIndexPath"]
-- !private ["C10iZknu_0_0227LiaoTianTableViewController", "UIColor"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "UILabel"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "UITableView"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "UITableViewCell"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "deinit"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "didReceiveMemoryWarning"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "indexPathForPreferredFocusedViewInTableView"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "init"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "label"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "numberOfSectionsInTableView"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidEndDecelerating"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidEndDragging"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidEndScrollingAnimation"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidEndZooming"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidScroll"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidScrollToTop"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewDidZoom"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewShouldScrollToTop"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewWillBeginDecelerating"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewWillBeginDragging"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewWillBeginZooming"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "scrollViewWillEndDragging"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "sectionIndexTitlesForTableView"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "setupLabel"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "tableView"]
-- !private ["C10iZknu_0_0227LiaoTianTableViewController", "title"]
-- !private ["C10iZknu_0_0227LiaoTianTableViewController", "view"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "viewDidLoad"]
-- ["C10iZknu_0_0227LiaoTianTableViewController", "viewForZoomingInScrollView"]
+- ["C6OrgSys27LiaoTianTableViewController", "Int"]
+- ["C6OrgSys27LiaoTianTableViewController", "NSIndexPath"]
+- !private ["C6OrgSys27LiaoTianTableViewController", "UIColor"]
+- ["C6OrgSys27LiaoTianTableViewController", "UILabel"]
+- ["C6OrgSys27LiaoTianTableViewController", "UITableView"]
+- ["C6OrgSys27LiaoTianTableViewController", "UITableViewCell"]
+- ["C6OrgSys27LiaoTianTableViewController", "deinit"]
+- ["C6OrgSys27LiaoTianTableViewController", "didReceiveMemoryWarning"]
+- ["C6OrgSys27LiaoTianTableViewController", "indexPathForPreferredFocusedViewInTableView"]
+- ["C6OrgSys27LiaoTianTableViewController", "init"]
+- ["C6OrgSys27LiaoTianTableViewController", "label"]
+- ["C6OrgSys27LiaoTianTableViewController", "numberOfSectionsInTableView"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidEndDecelerating"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidEndDragging"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidEndScrollingAnimation"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidEndZooming"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidScroll"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidScrollToTop"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewDidZoom"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewShouldScrollToTop"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewWillBeginDecelerating"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewWillBeginDragging"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewWillBeginZooming"]
+- ["C6OrgSys27LiaoTianTableViewController", "scrollViewWillEndDragging"]
+- ["C6OrgSys27LiaoTianTableViewController", "sectionIndexTitlesForTableView"]
+- ["C6OrgSys27LiaoTianTableViewController", "setupLabel"]
+- ["C6OrgSys27LiaoTianTableViewController", "tableView"]
+- !private ["C6OrgSys27LiaoTianTableViewController", "title"]
+- !private ["C6OrgSys27LiaoTianTableViewController", "view"]
+- ["C6OrgSys27LiaoTianTableViewController", "viewDidLoad"]
+- ["C6OrgSys27LiaoTianTableViewController", "viewForZoomingInScrollView"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UILabel"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -733,7 +733,7 @@ depends-nominal:
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
-- "C10iZknu_0_0227LiaoTianTableViewController"
+- "C6OrgSys27LiaoTianTableViewController"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"

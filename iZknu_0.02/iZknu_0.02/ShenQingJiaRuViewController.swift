@@ -16,7 +16,7 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     var textView: UITextView!
     
     var newImage = false
-    let departments = ["网络工程学院", "计算机科学与技术学院", "文学院", "政法学院", "外国语学院", "数学与统计学院", "物理与电信工程学院", "化学化工学院", "生命科学与农学学院", "教育科学学院", "美术学院", "音乐舞蹈学院", "体育学院", "经济与管理学院", "新闻与传媒学院", "机械与电气工程学院", "设计学院", "软件学院", "继续教育学院", "马克思主义学院", "公共艺术与职业技能教研部"]
+    let colleges = ["网络工程学院", "计算机科学与技术学院", "文学院", "政法学院", "外国语学院", "数学与统计学院", "物理与电信工程学院", "化学化工学院", "生命科学与农学学院", "教育科学学院", "美术学院", "音乐舞蹈学院", "体育学院", "经济与管理学院", "新闻与传媒学院", "机械与电气工程学院", "设计学院", "软件学院", "继续教育学院", "马克思主义学院", "公共艺术与职业技能教研部"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,13 +63,13 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return departments.count
+        return colleges.count
     }
     
     // MARK: - PickerViewDelegate
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return departments[row]
+        return colleges[row]
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -95,13 +95,13 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     
     // MARK: - UITextViewDelegate 
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
-        scrollView.contentOffset.y = 107
+        scrollView.contentOffset.y = 155
         self.navigationItem.rightBarButtonItem?.enabled = false
         return true
     }
     
     func textViewDidEndEditing(textView: UITextView) {
-        scrollView.contentOffset.y = -64
+        scrollView.contentOffset.y = 227
         self.isReadyToEnableDoneButton()
     }
 
@@ -118,7 +118,7 @@ class ShenQingJiaRuViewController: UIViewController, UITextFieldDelegate, UIImag
     
     // MARK: UIScrollViewDelegate
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        //print(scrollView.contentOffset.y)
+        print(scrollView.contentOffset.y)
     }
     
     // MARK: UI

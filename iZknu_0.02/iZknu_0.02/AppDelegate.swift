@@ -35,14 +35,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let woDeNavigationController = UINavigationController(rootViewController: WoDeTableViewController())
         woDeNavigationController.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named:"tabBarItem5"), selectedImage: UIImage(named: "tabBarItem5Selected"))
         
+        
         // 标签栏
-        let tabBarViewController = UITabBarController()
-        tabBarViewController.viewControllers = [huoDongNavigationController, sheTuanNavigationController, xinDeNavigationController, liaoTianNavigationController, woDeNavigationController]
+        let myTabBarViewController = tabBarViewController()
+        myTabBarViewController.viewControllers = [huoDongNavigationController, sheTuanNavigationController, xinDeNavigationController, liaoTianNavigationController, woDeNavigationController]
         
         // 初选择
-        tabBarViewController.selectedIndex = 0
+        myTabBarViewController.selectedIndex = 0
         
-        self.window?.rootViewController = tabBarViewController
+        self.window?.rootViewController = myTabBarViewController
 
         self.window?.makeKeyAndVisible()
         return true

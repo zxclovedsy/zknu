@@ -2,40 +2,40 @@
 provides-top-level:
 - "AppDelegate"
 provides-nominal:
-- "C10iZknu_0_0211AppDelegate"
+- "C6OrgSys11AppDelegate"
 provides-member:
-- ["C10iZknu_0_0211AppDelegate", ""]
+- ["C6OrgSys11AppDelegate", ""]
 provides-dynamic-lookup:
 - "window"
 - "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
 - "application"
 depends-top-level:
-- !private "UITabBarController"
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "UINavigationController"
-- !private "Array"
-- "UIResponder"
-- !private "UIScreen"
-- !private "UIColor"
+- !private "tabBarViewController"
 - "UIApplicationDelegate"
+- !private "BooleanLiteralType"
 - !private "LiaoTianTableViewController"
-- "UIApplication"
+- "UIResponder"
 - "AppDelegate"
-- !private "SheTuanTableViewController"
-- !private "XinDeViewController"
-- "UIWindow"
-- !private "StringLiteralType"
-- !private "HuoDongTableViewController"
-- "NSObject"
-- "AnyObject"
+- !private "UIColor"
 - !private "UIImage"
+- !private "XinDeViewController"
+- "UIApplication"
 - !private "WoDeTableViewController"
+- !private "UINavigationController"
+- !private "UIScreen"
+- "AnyObject"
+- !private "StringLiteralType"
+- "NSObject"
+- !private "HuoDongTableViewController"
 - !private "UITabBarItem"
+- "UIWindow"
+- !private "Array"
+- !private "SheTuanTableViewController"
+- "Bool"
 depends-member:
 - !private ["PSs9AnyObject", "HuoDongTableViewController"]
 - !private ["PSs9AnyObject", "LiaoTianTableViewController"]
@@ -44,7 +44,6 @@ depends-member:
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UINavigationController"]
 - !private ["PSs9AnyObject", "UIScreen"]
-- !private ["PSs9AnyObject", "UITabBarController"]
 - !private ["PSs9AnyObject", "UITabBarItem"]
 - !private ["PSs9AnyObject", "UIWindow"]
 - !private ["PSs9AnyObject", "WoDeTableViewController"]
@@ -69,41 +68,42 @@ depends-member:
 - !private ["PSs9AnyObject", "rootViewController"]
 - !private ["PSs9AnyObject", "selectedIndex"]
 - !private ["PSs9AnyObject", "tabBarItem"]
+- !private ["PSs9AnyObject", "tabBarViewController"]
 - !private ["PSs9AnyObject", "viewControllers"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
-- ["C10iZknu_0_0211AppDelegate", "AnyObject"]
-- ["C10iZknu_0_0211AppDelegate", "Bool"]
-- !private ["C10iZknu_0_0211AppDelegate", "HuoDongTableViewController"]
-- !private ["C10iZknu_0_0211AppDelegate", "LiaoTianTableViewController"]
-- ["C10iZknu_0_0211AppDelegate", "NSObject"]
-- !private ["C10iZknu_0_0211AppDelegate", "SheTuanTableViewController"]
-- ["C10iZknu_0_0211AppDelegate", "UIApplication"]
-- !private ["C10iZknu_0_0211AppDelegate", "UIColor"]
-- !private ["C10iZknu_0_0211AppDelegate", "UIImage"]
-- !private ["C10iZknu_0_0211AppDelegate", "UINavigationController"]
-- !private ["C10iZknu_0_0211AppDelegate", "UIScreen"]
-- !private ["C10iZknu_0_0211AppDelegate", "UITabBarController"]
-- !private ["C10iZknu_0_0211AppDelegate", "UITabBarItem"]
-- ["C10iZknu_0_0211AppDelegate", "UIWindow"]
-- !private ["C10iZknu_0_0211AppDelegate", "WoDeTableViewController"]
-- !private ["C10iZknu_0_0211AppDelegate", "XinDeViewController"]
-- ["C10iZknu_0_0211AppDelegate", "application"]
-- ["C10iZknu_0_0211AppDelegate", "applicationDidBecomeActive"]
-- ["C10iZknu_0_0211AppDelegate", "applicationDidEnterBackground"]
-- ["C10iZknu_0_0211AppDelegate", "applicationDidFinishLaunching"]
-- ["C10iZknu_0_0211AppDelegate", "applicationDidReceiveMemoryWarning"]
-- ["C10iZknu_0_0211AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
-- ["C10iZknu_0_0211AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
-- ["C10iZknu_0_0211AppDelegate", "applicationShouldRequestHealthAuthorization"]
-- ["C10iZknu_0_0211AppDelegate", "applicationSignificantTimeChange"]
-- ["C10iZknu_0_0211AppDelegate", "applicationWillEnterForeground"]
-- ["C10iZknu_0_0211AppDelegate", "applicationWillResignActive"]
-- ["C10iZknu_0_0211AppDelegate", "applicationWillTerminate"]
-- ["C10iZknu_0_0211AppDelegate", "deinit"]
-- ["C10iZknu_0_0211AppDelegate", "init"]
-- ["C10iZknu_0_0211AppDelegate", "window"]
+- ["C6OrgSys11AppDelegate", "AnyObject"]
+- ["C6OrgSys11AppDelegate", "Bool"]
+- !private ["C6OrgSys11AppDelegate", "HuoDongTableViewController"]
+- !private ["C6OrgSys11AppDelegate", "LiaoTianTableViewController"]
+- ["C6OrgSys11AppDelegate", "NSObject"]
+- !private ["C6OrgSys11AppDelegate", "SheTuanTableViewController"]
+- ["C6OrgSys11AppDelegate", "UIApplication"]
+- !private ["C6OrgSys11AppDelegate", "UIColor"]
+- !private ["C6OrgSys11AppDelegate", "UIImage"]
+- !private ["C6OrgSys11AppDelegate", "UINavigationController"]
+- !private ["C6OrgSys11AppDelegate", "UIScreen"]
+- !private ["C6OrgSys11AppDelegate", "UITabBarItem"]
+- ["C6OrgSys11AppDelegate", "UIWindow"]
+- !private ["C6OrgSys11AppDelegate", "WoDeTableViewController"]
+- !private ["C6OrgSys11AppDelegate", "XinDeViewController"]
+- ["C6OrgSys11AppDelegate", "application"]
+- ["C6OrgSys11AppDelegate", "applicationDidBecomeActive"]
+- ["C6OrgSys11AppDelegate", "applicationDidEnterBackground"]
+- ["C6OrgSys11AppDelegate", "applicationDidFinishLaunching"]
+- ["C6OrgSys11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C6OrgSys11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C6OrgSys11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C6OrgSys11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C6OrgSys11AppDelegate", "applicationSignificantTimeChange"]
+- ["C6OrgSys11AppDelegate", "applicationWillEnterForeground"]
+- ["C6OrgSys11AppDelegate", "applicationWillResignActive"]
+- ["C6OrgSys11AppDelegate", "applicationWillTerminate"]
+- ["C6OrgSys11AppDelegate", "deinit"]
+- ["C6OrgSys11AppDelegate", "init"]
+- !private ["C6OrgSys11AppDelegate", "tabBarViewController"]
+- ["C6OrgSys11AppDelegate", "window"]
 - !private ["Sa", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs11CVarArgType", "HuoDongTableViewController"]
@@ -113,7 +113,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UINavigationController"]
 - !private ["PSs11CVarArgType", "UIScreen"]
-- !private ["PSs11CVarArgType", "UITabBarController"]
 - !private ["PSs11CVarArgType", "UITabBarItem"]
 - !private ["PSs11CVarArgType", "UIWindow"]
 - !private ["PSs11CVarArgType", "WoDeTableViewController"]
@@ -138,6 +137,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "rootViewController"]
 - !private ["PSs11CVarArgType", "selectedIndex"]
 - !private ["PSs11CVarArgType", "tabBarItem"]
+- !private ["PSs11CVarArgType", "tabBarViewController"]
 - !private ["PSs11CVarArgType", "viewControllers"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", "window"]
@@ -152,7 +152,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UINavigationController"]
 - !private ["PSs23CustomStringConvertible", "UIScreen"]
-- !private ["PSs23CustomStringConvertible", "UITabBarController"]
 - !private ["PSs23CustomStringConvertible", "UITabBarItem"]
 - !private ["PSs23CustomStringConvertible", "UIWindow"]
 - !private ["PSs23CustomStringConvertible", "WoDeTableViewController"]
@@ -177,6 +176,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "rootViewController"]
 - !private ["PSs23CustomStringConvertible", "selectedIndex"]
 - !private ["PSs23CustomStringConvertible", "tabBarItem"]
+- !private ["PSs23CustomStringConvertible", "tabBarViewController"]
 - !private ["PSs23CustomStringConvertible", "viewControllers"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", "window"]
@@ -190,7 +190,6 @@ depends-member:
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UINavigationController"]
 - !private ["PSs9Equatable", "UIScreen"]
-- !private ["PSs9Equatable", "UITabBarController"]
 - !private ["PSs9Equatable", "UITabBarItem"]
 - !private ["PSs9Equatable", "UIWindow"]
 - !private ["PSs9Equatable", "WoDeTableViewController"]
@@ -215,6 +214,7 @@ depends-member:
 - !private ["PSs9Equatable", "rootViewController"]
 - !private ["PSs9Equatable", "selectedIndex"]
 - !private ["PSs9Equatable", "tabBarItem"]
+- !private ["PSs9Equatable", "tabBarViewController"]
 - !private ["PSs9Equatable", "viewControllers"]
 - !private ["PSs9Equatable", "whiteColor"]
 - ["PSs9Equatable", "window"]
@@ -226,7 +226,6 @@ depends-member:
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UINavigationController"]
 - !private ["PSs8Hashable", "UIScreen"]
-- !private ["PSs8Hashable", "UITabBarController"]
 - !private ["PSs8Hashable", "UITabBarItem"]
 - !private ["PSs8Hashable", "UIWindow"]
 - !private ["PSs8Hashable", "WoDeTableViewController"]
@@ -251,13 +250,14 @@ depends-member:
 - !private ["PSs8Hashable", "rootViewController"]
 - !private ["PSs8Hashable", "selectedIndex"]
 - !private ["PSs8Hashable", "tabBarItem"]
+- !private ["PSs8Hashable", "tabBarViewController"]
 - !private ["PSs8Hashable", "viewControllers"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
-- !private ["C10iZknu_0_0226HuoDongTableViewController", "init"]
+- !private ["C6OrgSys26HuoDongTableViewController", "init"]
 - !private ["PSs9Indexable", "Element"]
-- !private ["C10iZknu_0_0227LiaoTianTableViewController", "init"]
+- !private ["C6OrgSys27LiaoTianTableViewController", "init"]
 - !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableSliceable", "Element"]
@@ -285,7 +285,6 @@ depends-member:
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UINavigationController"]
 - !private ["CSo8NSObject", "UIScreen"]
-- !private ["CSo8NSObject", "UITabBarController"]
 - !private ["CSo8NSObject", "UITabBarItem"]
 - ["CSo8NSObject", "UIWindow"]
 - !private ["CSo8NSObject", "WoDeTableViewController"]
@@ -310,6 +309,7 @@ depends-member:
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "selectedIndex"]
 - !private ["CSo8NSObject", "tabBarItem"]
+- !private ["CSo8NSObject", "tabBarViewController"]
 - !private ["CSo8NSObject", "viewControllers"]
 - !private ["CSo8NSObject", "whiteColor"]
 - ["CSo8NSObject", "window"]
@@ -320,7 +320,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UINavigationController"]
 - !private ["PSo16NSObjectProtocol", "UIScreen"]
-- !private ["PSo16NSObjectProtocol", "UITabBarController"]
 - !private ["PSo16NSObjectProtocol", "UITabBarItem"]
 - !private ["PSo16NSObjectProtocol", "UIWindow"]
 - !private ["PSo16NSObjectProtocol", "WoDeTableViewController"]
@@ -345,6 +344,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "selectedIndex"]
 - !private ["PSo16NSObjectProtocol", "tabBarItem"]
+- !private ["PSo16NSObjectProtocol", "tabBarViewController"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", "window"]
@@ -354,7 +354,7 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs12SequenceType", "Element"]
-- !private ["C10iZknu_0_0226SheTuanTableViewController", "init"]
+- !private ["C6OrgSys26SheTuanTableViewController", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "makeKeyAndVisible"]
@@ -377,7 +377,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "UIImage"]
 - !private ["PSo21UIApplicationDelegate", "UINavigationController"]
 - !private ["PSo21UIApplicationDelegate", "UIScreen"]
-- !private ["PSo21UIApplicationDelegate", "UITabBarController"]
 - !private ["PSo21UIApplicationDelegate", "UITabBarItem"]
 - !private ["PSo21UIApplicationDelegate", "UIWindow"]
 - !private ["PSo21UIApplicationDelegate", "WoDeTableViewController"]
@@ -394,6 +393,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "tabBarViewController"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - !private ["CSo9UIBarItem", "init"]
@@ -431,7 +431,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UINavigationController"]
 - !private ["CSo11UIResponder", "UIScreen"]
-- !private ["CSo11UIResponder", "UITabBarController"]
 - !private ["CSo11UIResponder", "UITabBarItem"]
 - ["CSo11UIResponder", "UIWindow"]
 - !private ["CSo11UIResponder", "WoDeTableViewController"]
@@ -454,6 +453,7 @@ depends-member:
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "selectedIndex"]
 - !private ["CSo11UIResponder", "tabBarItem"]
+- !private ["CSo11UIResponder", "tabBarViewController"]
 - !private ["CSo11UIResponder", "viewControllers"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
@@ -467,6 +467,9 @@ depends-member:
 - !private ["CSo18UITabBarController", "init"]
 - !private ["CSo18UITabBarController", "selectedIndex"]
 - !private ["CSo18UITabBarController", "viewControllers"]
+- !private ["PSo26UITabBarControllerDelegate", "init"]
+- !private ["PSo26UITabBarControllerDelegate", "selectedIndex"]
+- !private ["PSo26UITabBarControllerDelegate", "viewControllers"]
 - !private ["PSo16UITabBarDelegate", "init"]
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "viewControllers"]
@@ -494,8 +497,8 @@ depends-member:
 - !private ["CSo8UIWindow", "init"]
 - !private ["CSo8UIWindow", "makeKeyAndVisible"]
 - !private ["CSo8UIWindow", "rootViewController"]
-- !private ["C10iZknu_0_0223WoDeTableViewController", "init"]
-- !private ["C10iZknu_0_0219XinDeViewController", "init"]
+- !private ["C6OrgSys23WoDeTableViewController", "init"]
+- !private ["C6OrgSys19XinDeViewController", "init"]
 - !private ["PSs10_ArrayType", "Element"]
 - !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
@@ -506,9 +509,12 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "makeKeyAndVisible"]
 - !private ["PSs12_Reflectable", "rootViewController"]
+- !private ["C6OrgSys20tabBarViewController", "init"]
+- !private ["C6OrgSys20tabBarViewController", "selectedIndex"]
+- !private ["C6OrgSys20tabBarViewController", "viewControllers"]
 depends-nominal:
 - "PSs9AnyObject"
-- "C10iZknu_0_0211AppDelegate"
+- "C6OrgSys11AppDelegate"
 - !private "Sa"
 - !private "PSs23ArrayLiteralConvertible"
 - "PSs11CVarArgType"
@@ -519,9 +525,9 @@ depends-nominal:
 - !private "PSo23DOPDropDownMenuDelegate"
 - "PSs9Equatable"
 - "PSs8Hashable"
-- !private "C10iZknu_0_0226HuoDongTableViewController"
+- !private "C6OrgSys26HuoDongTableViewController"
 - !private "PSs9Indexable"
-- !private "C10iZknu_0_0227LiaoTianTableViewController"
+- !private "C6OrgSys27LiaoTianTableViewController"
 - !private "PSs21MutableCollectionType"
 - !private "PSs16MutableIndexable"
 - !private "PSs16MutableSliceable"
@@ -534,7 +540,7 @@ depends-nominal:
 - !private "Sq"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs12SequenceType"
-- !private "C10iZknu_0_0226SheTuanTableViewController"
+- !private "C6OrgSys26SheTuanTableViewController"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
@@ -552,6 +558,7 @@ depends-nominal:
 - !private "PSo20UIScrollViewDelegate"
 - !private "PSo16UIStateRestoring"
 - !private "CSo18UITabBarController"
+- !private "PSo26UITabBarControllerDelegate"
 - !private "PSo16UITabBarDelegate"
 - !private "CSo12UITabBarItem"
 - !private "PSo21UITableViewDataSource"
@@ -560,14 +567,15 @@ depends-nominal:
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"
 - !private "CSo8UIWindow"
-- !private "C10iZknu_0_0223WoDeTableViewController"
-- !private "C10iZknu_0_0219XinDeViewController"
+- !private "C6OrgSys23WoDeTableViewController"
+- !private "C6OrgSys19XinDeViewController"
 - !private "PSs10_ArrayType"
 - !private "PSs24_ColorLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs24_ImageLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "PSs12_Reflectable"
+- !private "C6OrgSys20tabBarViewController"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

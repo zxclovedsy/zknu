@@ -11,17 +11,24 @@ import UIKit
 class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
     
     var organizationList: [Int: ccOrganization]!
+    var ids = [Int]()
+    var originalOrganizationList: [Int: ccOrganization]!
+    var originalIds = [Int]()
     
     var scrollView: UIScrollView!
     var tableView: UITableView!
+    var loadingView: UIActivityIndicatorView!
     var menu: DOPDropDownMenu!
     
-    let departments = ["所有院系", "网络工程学院", "计算机科学与技术学院", "文学院", "政法学院", "外国语学院", "数学与统计学院", "物理与电信工程学院", "化学化工学院", "生命科学与农学学院", "教育科学学院", "美术学院", "音乐舞蹈学院", "体育学院", "经济与管理学院", "新闻与传媒学院", "机械与电气工程学院", "设计学院", "软件学院", "继续教育学院", "马克思主义学院", "公共艺术与职业技能教研部"]
+    let colleges = ["所有院系", "网络工程学院", "计算机科学与技术学院", "文学院", "政法学院", "外国语学院", "数学与统计学院", "物理与电信工程学院", "化学化工学院", "生命科学与农学学院", "教育科学学院", "美术学院", "音乐舞蹈学院", "体育学院", "经济与管理学院", "新闻与传媒学院", "机械与电气工程学院", "设计学院", "软件学院", "继续教育学院", "马克思主义学院", "公共艺术与职业技能教研部"]
     let types = ["所有类型", "学术", "艺术", "公益", "爱好", "社会实践", "官方组织", "其它"]
     let recruitments = ["所有社团","招新", "已招满"]
     
+    var college = "所有院系"
+    var type = "所有类型"
+    var recruitment = "所有社团"
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "社团"
@@ -31,7 +38,12 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.setupScrollView()
         self.setupMenu()
         self.setupTableView()
+        self.setupLoadingView()
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.loadingView.stopAnimating()
     }
     
     // MARK: - menuDataSource
@@ -41,7 +53,7 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     
     func menu(menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
         switch column {
-        case 0: return departments.count
+        case 0: return colleges.count
         case 1: return types.count
         case 2: return recruitments.count
         default:
@@ -53,7 +65,7 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     func menu(menu: DOPDropDownMenu!, titleForRowAtIndexPath indexPath: DOPIndexPath!) -> String! {
         let row = indexPath.row
         switch indexPath.column {
-        case 0: return departments[row]
+        case 0: return colleges[row]
         case 1: return types[row]
         case 2: return recruitments[row]
         default:
@@ -63,12 +75,22 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func menu(menu: DOPDropDownMenu!, didSelectRowAtIndexPath indexPath: DOPIndexPath!) {
+        //筛选
         switch indexPath.column {
-        case 0: print("Selected 院系 \(departments[indexPath.row])")
-        case 1: print("Selected 类型 \(types[indexPath.row])")
-        case 2: print("Selected 人员状况 \(recruitments[indexPath.row])")
+        case 0: college = colleges[indexPath.row]
+        case 1: type = types[indexPath.row]
+        case 2: recruitment = recruitments[indexPath.row]
         default: assertionFailure("ERROR in did seletct menu ")
         }
+        var dic = originalOrganizationList
+        for (key, value) in dic {
+            if (college != colleges[0] && value.college != college) || (type != types[0] && value.type != type) || (recruitment != recruitments[0] && value.recruitment != recruitment) {
+                dic.removeValueForKey(key)
+            }
+        }
+        organizationList = dic
+        ids = Array(dic.keys)
+        tableView.reloadData()
     }
     
     // MARK: - UITableViewDataSource
@@ -83,18 +105,15 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "SheTuanTableCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? SheTuanTableViewCell
-        if cell == nil {
-            cell = SheTuanTableViewCell(style: .Default, reuseIdentifier: "cellIdentifier")
-        }
-        let id = indexPath.row
-        cell?.organization = organizationList[id]
-        return cell!
+        let cell = SheTuanTableViewCell()
+        let id = ids[indexPath.row]
+        cell.organization = organizationList[id]
+        return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let organization = organizationList[indexPath.row]
+        let id = ids[indexPath.row]
+        let organization = organizationList[id]
         let viewController = SheTuanViewController()
         viewController.organization  = organization
         self.navigationController?.pushViewController(viewController, animated: true)
@@ -106,6 +125,10 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
     func setupOrganizationList() {
         let dataManager = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
         organizationList = dataManager.configDataOrganization.organizationList
+        ids = Array(organizationList.keys)
+        
+        originalOrganizationList = organizationList
+        originalIds = ids
     }
     
     // MARK: - UI
@@ -136,6 +159,11 @@ class SheTuanTableViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.delegate = self
         self.tableView.rowHeight = 110
         self.view.addSubview(tableView)
+    }
+    
+    func setupLoadingView() {
+        let tab = self.tabBarController as! tabBarViewController
+        self.loadingView = tab.loadingView
     }
     
     

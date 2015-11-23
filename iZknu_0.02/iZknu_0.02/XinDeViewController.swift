@@ -13,13 +13,19 @@ class XinDeViewController: UIViewController {
     var segmentedControl: UISegmentedControl!
     var newHuoDongViewController: NewHuoDongViewController!
     var newSheTuanViewController: NewSheTuanViewController!
+    var loadingView: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupSegmentedControl()
+        self.setupLoadingView()
         newSheTuanViewController = NewSheTuanViewController()
         newHuoDongViewController = NewHuoDongViewController()
         self.view.addSubview(newHuoDongViewController.view)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        //self.loadingView.stopAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +48,11 @@ class XinDeViewController: UIViewController {
         segmentedControl.addTarget(self, action: "segmentedControlIndexChanged:", forControlEvents: .ValueChanged)
         
         self.navigationController?.navigationBar.addSubview(segmentedControl)
+    }
+    
+    func setupLoadingView() {
+        let tab = self.tabBarController as! tabBarViewController
+        self.loadingView = tab.loadingView
     }
    
     // MARK: Actions

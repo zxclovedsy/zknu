@@ -15,6 +15,10 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     var textFields: [UITextField]!
     var origin: CGPoint!
     var joined = false
+    var button: UIButton!
+    var buttonEnable = true
+    
+    var activity: ccOrgActivity!
     
     override func viewWillAppear(animated: Bool) {
         let clearImage = getImageWithColor(UIColor.clearColor(), size: (self.navigationController?.navigationBar.frame.size)!)
@@ -60,7 +64,11 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     func setupImageView() {
         imageView = UIImageView(frame: CGRect(x: 0, y: origin.y, width: self.view.frame.width, height: 200))
-        imageView.image = UIImage(named: "noImage")
+        if let image = UIImage(named: activity.headImageUrl) {
+            imageView.image = image
+        } else {
+            imageView.image = UIImage(named: "noImage")
+        }
         self.view.addSubview(imageView)
     }
     
@@ -76,7 +84,7 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func setupTextFields() {
-        let texts = ["活动名称", "活动时间", "活动地点", "院级／校级", "0／12"]
+        let texts = [activity.name, activity.holdTime, activity.place, activity.type, "\(activity.peopleNow) / \(activity.peopleMost)"]
         let originY = origin.y + imageView.frame.height + 20
         for (index, text) in texts.enumerate() {
             let textField = UITextField(frame: CGRect(x: 120, y: CGFloat(40 * index) + originY, width: 150, height: 20))
@@ -93,11 +101,10 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func setupTextView() {
-        let text = "这里是活动的具体简介……"
         let originY: CGFloat = 360.0 + 30
         let textView = UITextView(frame: CGRect(x: 20, y: originY, width: 280, height: 100))
         textView.delegate = self
-        textView.text = text
+        textView.text = activity.summary
         textView.textColor = UIColor.grayColor()
         textView.font = UIFont.systemFontOfSize(11)
         textView.layer.borderColor = UIColor.grayColor().CGColor
@@ -108,9 +115,14 @@ class HuoDongViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     func setupButton() {
         let y: CGFloat = 390 + 100 + 20
-        let button = UIButton(type: .System)
+        button = UIButton(type: .System)
         button.frame = CGRect(x: (self.view.frame.width - 100) / 2, y: y, width: 100, height: 20)
-        button.setTitle("立即报名", forState: .Normal)
+        if buttonEnable {
+            button.setTitle("立即报名", forState: .Normal)
+        } else {
+            button.setTitle("已报名", forState: .Normal)
+            button.enabled = false
+        }
         button.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchDown)
         self.view.addSubview(button)
     }

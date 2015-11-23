@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B805FD4B1BE8C940001DC7AA /* NewHuoDongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4A1BE8C940001DC7AA /* NewHuoDongViewController.swift */; };
 		B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B805FD4C1BE8C94C001DC7AA /* NewSheTuanViewController.swift */; };
+		B828F2C81C01815F0074B5BD /* ActivitiesXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B828F2C71C01815F0074B5BD /* ActivitiesXML.xml */; };
+		B828F2CA1C01B5D00074B5BD /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F2C91C01B5D00074B5BD /* tabBarViewController.swift */; };
+		B828F2CC1C01C56D0074B5BD /* woDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F2CB1C01C56D0074B5BD /* woDeSheTuanTableViewController.swift */; };
+		B828F2CE1C01C57B0074B5BD /* woDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F2CD1C01C57B0074B5BD /* woDeHuoDongTableViewController.swift */; };
+		B828F2D01C01C58C0074B5BD /* woDeGuanZhuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F2CF1C01C58C0074B5BD /* woDeGuanZhuTableViewController.swift */; };
+		B828F2D21C01C74F0074B5BD /* woDeSuperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F2D11C01C74F0074B5BD /* woDeSuperTableViewController.swift */; };
 		B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */; };
 		B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */; };
-		B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */; };
-		B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */; };
-		B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */; };
-		B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */; };
-		B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */; };
 		B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8466B611BF475AE0086EE0F /* UICarouselView.swift */; };
 		B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852566F1BD7D2B40028DD67 /* AppDelegate.swift */; };
 		B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85256761BD7D2B40028DD67 /* Assets.xcassets */; };
@@ -26,7 +27,6 @@
 		B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */; };
 		B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */; };
 		B871F1181C0055F700C9662D /* ccOrgActivityConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871F1171C0055F700C9662D /* ccOrgActivityConfigData.swift */; };
-		B871F11A1C00562200C9662D /* ActivitiesXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B871F1191C00562200C9662D /* ActivitiesXML.xml */; };
 		B871F11C1C00656200C9662D /* HuoDongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871F11B1C00656200C9662D /* HuoDongTableViewCell.swift */; };
 		B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B8A30DF01BFC9101009B77FB /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A30DEF1BFC9101009B77FB /* libxml2.2.tbd */; };
@@ -64,17 +64,18 @@
 /* Begin PBXFileReference section */
 		B805FD4A1BE8C940001DC7AA /* NewHuoDongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHuoDongViewController.swift; sourceTree = "<group>"; };
 		B805FD4C1BE8C94C001DC7AA /* NewSheTuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSheTuanViewController.swift; sourceTree = "<group>"; };
+		B828F2C71C01815F0074B5BD /* ActivitiesXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ActivitiesXML.xml; sourceTree = "<group>"; };
+		B828F2C91C01B5D00074B5BD /* tabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
+		B828F2CB1C01C56D0074B5BD /* woDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = woDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
+		B828F2CD1C01C57B0074B5BD /* woDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = woDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
+		B828F2CF1C01C58C0074B5BD /* woDeGuanZhuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = woDeGuanZhuTableViewController.swift; sourceTree = "<group>"; };
+		B828F2D11C01C74F0074B5BD /* woDeSuperTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = woDeSuperTableViewController.swift; sourceTree = "<group>"; };
 		B83025C61BF6C8CF00752EAE /* iZknu_0.02-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iZknu_0.02-Bridging-Header.h"; sourceTree = "<group>"; };
 		B83025C71BF6C8CF00752EAE /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
 		B83025C81BF6C8CF00752EAE /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
 		B83025CA1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShenQingJiaRuViewController.swift; sourceTree = "<group>"; };
-		B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
-		B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiaRuDeSheTuanTableViewController.swift; sourceTree = "<group>"; };
-		B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuangJianDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
-		B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanJiaDeHuoDongTableViewController.swift; sourceTree = "<group>"; };
-		B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeGuanZhuTableViewController.swift; sourceTree = "<group>"; };
 		B8466B611BF475AE0086EE0F /* UICarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICarouselView.swift; sourceTree = "<group>"; };
-		B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iZknu_0.02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B852566C1BD7D2B40028DD67 /* 社团管理系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "社团管理系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B852566F1BD7D2B40028DD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85256761BD7D2B40028DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iZknu_0.02/Assets.xcassets; sourceTree = "<group>"; };
 		B852567B1BD7D2B40028DD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = iZknu_0.02/Info.plist; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		B852569F1BD8AE270028DD67 /* WoDeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoDeTableViewController.swift; sourceTree = "<group>"; };
 		B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XinDeViewController.swift; sourceTree = "<group>"; };
 		B871F1171C0055F700C9662D /* ccOrgActivityConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ccOrgActivityConfigData.swift; sourceTree = "<group>"; };
-		B871F1191C00562200C9662D /* ActivitiesXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ActivitiesXML.xml; sourceTree = "<group>"; };
 		B871F11B1C00656200C9662D /* HuoDongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuoDongTableViewCell.swift; sourceTree = "<group>"; };
 		B8A30DEC1BFC90BA009B77FB /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		B8A30DED1BFC90DA009B77FB /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		B852566D1BD7D2B40028DD67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */,
+				B852566C1BD7D2B40028DD67 /* 社团管理系统.app */,
 				B85256801BD7D2B40028DD67 /* iZknu_0.02Tests.xctest */,
 			);
 			name = Products;
@@ -170,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B852566F1BD7D2B40028DD67 /* AppDelegate.swift */,
+				B828F2C91C01B5D00074B5BD /* tabBarViewController.swift */,
 				B85256991BD8AE010028DD67 /* HuoDongTableViewController.swift */,
 				B852569B1BD8AE0F0028DD67 /* SheTuanTableViewController.swift */,
 				B85256A31BD8C90B0028DD67 /* XinDeViewController.swift */,
@@ -241,7 +242,7 @@
 			children = (
 				B8A30E1C1BFCB24D009B77FB /* MembersXML.xml */,
 				B8A30E5D1BFEE5CA009B77FB /* OrganizationsXML.xml */,
-				B871F1191C00562200C9662D /* ActivitiesXML.xml */,
+				B828F2C71C01815F0074B5BD /* ActivitiesXML.xml */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -275,11 +276,10 @@
 		B8A3927C1BDA741A0062CA3E /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
-				B83BDC481BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift */,
-				B83BDC4A1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift */,
-				B83BDC4C1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift */,
-				B83BDC4E1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift */,
-				B83BDC501BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift */,
+				B828F2CB1C01C56D0074B5BD /* woDeSheTuanTableViewController.swift */,
+				B828F2CD1C01C57B0074B5BD /* woDeHuoDongTableViewController.swift */,
+				B828F2CF1C01C58C0074B5BD /* woDeGuanZhuTableViewController.swift */,
+				B828F2D11C01C74F0074B5BD /* woDeSuperTableViewController.swift */,
 			);
 			name = "我的";
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			);
 			name = iZknu_0.02;
 			productName = iZknu_0.02;
-			productReference = B852566C1BD7D2B40028DD67 /* iZknu_0.02.app */;
+			productReference = B852566C1BD7D2B40028DD67 /* 社团管理系统.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B852567F1BD7D2B40028DD67 /* iZknu_0.02Tests */ = {
@@ -377,7 +377,7 @@
 			files = (
 				B8A30E5E1BFEE5CA009B77FB /* OrganizationsXML.xml in Resources */,
 				B8A30E1D1BFCB24D009B77FB /* MembersXML.xml in Resources */,
-				B871F11A1C00562200C9662D /* ActivitiesXML.xml in Resources */,
+				B828F2C81C01815F0074B5BD /* ActivitiesXML.xml in Resources */,
 				B85256771BD7D2B40028DD67 /* Assets.xcassets in Resources */,
 				B8DD71501BD90A03003D8C15 /* Default-568h@2x.png in Resources */,
 			);
@@ -400,27 +400,25 @@
 				B8A30E081BFCAA39009B77FB /* ccBaseLogic.swift in Sources */,
 				B8A30E061BFCAA23009B77FB /* ccIF.swift in Sources */,
 				B8A30E171BFCAA9B009B77FB /* ccOrgMember.swift in Sources */,
-				B83BDC511BDDF59B008DA4A6 /* WoDeGuanZhuTableViewController.swift in Sources */,
 				B8A30E211BFDF380009B77FB /* ccOrganizationConfigData.swift in Sources */,
 				B8A30E021BFCAA17009B77FB /* ccDataManager.swift in Sources */,
 				B8A30E131BFCAA8D009B77FB /* ccOrgDataManager.swift in Sources */,
 				B8A30E1F1BFDEC65009B77FB /* ccOrgActivity.swift in Sources */,
+				B828F2CE1C01C57B0074B5BD /* woDeHuoDongTableViewController.swift in Sources */,
 				B83025CB1BF83E6E00752EAE /* ShenQingJiaRuViewController.swift in Sources */,
 				B852569E1BD8AE1C0028DD67 /* LiaoTianTableViewController.swift in Sources */,
 				B8A30DEE1BFC90DA009B77FB /* GDataXMLNode.m in Sources */,
 				B871F1181C0055F700C9662D /* ccOrgActivityConfigData.swift in Sources */,
 				B8A30E0F1BFCAA84009B77FB /* ccMemberConfigData.swift in Sources */,
-				B83BDC4D1BDDF57D008DA4A6 /* ChuangJianDeHuoDongTableViewController.swift in Sources */,
 				B8A30E111BFCAA88009B77FB /* ccOrganization.swift in Sources */,
 				B8466B621BF475AE0086EE0F /* UICarouselView.swift in Sources */,
-				B83BDC4F1BDDF58B008DA4A6 /* CanJiaDeHuoDongTableViewController.swift in Sources */,
-				B83BDC491BDDF527008DA4A6 /* ChuangJianDeSheTuanTableViewController.swift in Sources */,
 				B852569C1BD8AE0F0028DD67 /* SheTuanTableViewController.swift in Sources */,
 				B852569A1BD8AE010028DD67 /* HuoDongTableViewController.swift in Sources */,
-				B83BDC4B1BDDF53F008DA4A6 /* JiaRuDeSheTuanTableViewController.swift in Sources */,
 				B8A30E041BFCAA1D009B77FB /* ccLogicManager.swift in Sources */,
 				B8E3F0571BDB2833004C9431 /* SheTuanViewController.swift in Sources */,
 				B805FD4D1BE8C94C001DC7AA /* NewSheTuanViewController.swift in Sources */,
+				B828F2D21C01C74F0074B5BD /* woDeSuperTableViewController.swift in Sources */,
+				B828F2CA1C01B5D00074B5BD /* tabBarViewController.swift in Sources */,
 				B85256A01BD8AE270028DD67 /* WoDeTableViewController.swift in Sources */,
 				B8A30E0A1BFCAA4A009B77FB /* ccFileWapper.swift in Sources */,
 				B85256701BD7D2B40028DD67 /* AppDelegate.swift in Sources */,
@@ -430,8 +428,10 @@
 				B871F11C1C00656200C9662D /* HuoDongTableViewCell.swift in Sources */,
 				B8A392781BDA68AC0062CA3E /* HuoDongViewController.swift in Sources */,
 				B8A30E151BFCAA92009B77FB /* ccOrgIF.swift in Sources */,
+				B828F2CC1C01C56D0074B5BD /* woDeSheTuanTableViewController.swift in Sources */,
 				B85256A41BD8C90B0028DD67 /* XinDeViewController.swift in Sources */,
 				B83025C91BF6C8CF00752EAE /* DOPDropDownMenu.m in Sources */,
+				B828F2D01C01C58C0074B5BD /* woDeGuanZhuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -529,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
@@ -555,7 +555,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = OrgSys;
+				PRODUCT_NAME = "社团管理系统";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -580,7 +581,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = OrgSys;
+				PRODUCT_NAME = "社团管理系统";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
 			};

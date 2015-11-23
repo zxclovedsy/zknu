@@ -32,8 +32,9 @@ public class ccOrganizationConfigData {
                 let memberElement = membersElement?.elementsForName("member") as? [GDataXMLElement]
                 
                 for index in memberElement! {
-                    let id = Int(index.stringValue())
-                    membersId.append(id!)
+                    if let id = Int(index.stringValue()) {
+                        membersId.append(id)
+                    }
                 }
                 
                 let scaleElement = organization.elementsForName("scale")[0] as? GDataXMLElement
@@ -42,11 +43,11 @@ public class ccOrganizationConfigData {
                 let numberOfPeopleElement = organization.elementsForName("numberOfPeople")[0] as? GDataXMLElement
                 let numberOfPeople = Int((numberOfPeopleElement?.stringValue())!)
                 
-                let departmentElement = organization.elementsForName("department")[0] as? GDataXMLElement
-                let department = departmentElement?.stringValue()
+                let collegeElement = organization.elementsForName("college")[0] as? GDataXMLElement
+                let college = collegeElement?.stringValue()
                 
                 let recruitmentElement = organization.elementsForName("recruitment")[0] as? GDataXMLElement
-                let recruitment = (recruitmentElement?.stringValue()) == "true"
+                let recruitment = (recruitmentElement?.stringValue())
                 
                 let levelElement = organization.elementsForName("level")[0] as? GDataXMLElement
                 let level = levelElement?.stringValue()
@@ -60,7 +61,7 @@ public class ccOrganizationConfigData {
                 
                 for index in photoUrlElement! {
                     let photoUrl = index.stringValue()
-                    photosUrl.append(photoUrl!)
+                    photosUrl.append(photoUrl ?? " ")
                 }
                 
                 let typeElement = organization.elementsForName("type")[0] as? GDataXMLElement
@@ -74,7 +75,7 @@ public class ccOrganizationConfigData {
                     members.updateValue(dataManager.getMember(id)!, forKey: id)
                 }*/
                 
-                let newOrganization = ccOrganization(name: name!, summary: summary!, membersId: membersId, scale: scale!, numberOfPeople: numberOfPeople!, department: department!, recruitment: recruitment, level: level!, headImageUrl: headImageUrl!, photosUrl: photosUrl, type: type!)
+                let newOrganization = ccOrganization(name: name, summary: summary, membersId: membersId, scale: scale, numberOfPeople: numberOfPeople, college: college, recruitment: recruitment, level: level, headImageUrl: headImageUrl, photosUrl: photosUrl, type: type)
                 newOrganization.id = Int(id)!
                 
                 organizationList.updateValue(newOrganization, forKey: newOrganization.id)

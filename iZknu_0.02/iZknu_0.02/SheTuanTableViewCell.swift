@@ -40,7 +40,7 @@ class SheTuanTableViewCell: UITableViewCell {
         let numberOfPeopleLabel = UILabel(frame: CGRect(x: x, y: nameLabel.frame.origin.y + 20 + 20, width: 120, height: 20))
         nameLabel.text = organization.name
         numberOfPeopleLabel.text = "\(organization.numberOfPeople) / \(organization.scale)"
-        numberOfPeopleLabel.textAlignment = .Center
+        //numberOfPeopleLabel.textAlignment = .Center
         self.contentView.addSubview(nameLabel)
         self.contentView.addSubview(numberOfPeopleLabel)
         //self.setupImageView()

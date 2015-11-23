@@ -10,18 +10,23 @@ import UIKit
 
 class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var memberList = [Int: ccOrgMember]()
+    var me: ccOrgMember!
+    
     var tableView: UITableView!
     var touXiangImageView: UIImageView!
     var topView: UIView!
     var nameLabel: UILabel!
     var numberLabel: UILabel!
     
-    let info = ["创建的社团", "加入的社团", "创建的活动", "参加的活动", "我的关注"]
+    let info = ["我的社团", "我的活动", "我的关注"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "")
+        self.setupMemberList()
+        
         self.setupTopView()
         self.setupTableView()
         self.setupTouXiangImageView()
@@ -69,23 +74,30 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var pushViewController: UIViewController?
+        var pushViewController: woDeSuperTableViewController?
         switch indexPath.row {
-        case 0: pushViewController = ChuangJianDeSheTuanTableViewController() // 创建的社团
-        case 1: pushViewController = JiaRuDeSheTuanTableViewController()    // 加入的社团
-        case 2: pushViewController = ChuangJianDeHuoDongTableViewController()   // 创建的活动
-        case 3: pushViewController = CanJiaDeHuoDongTableViewController()   // 参加的活动
-        case 4: pushViewController = WoDeGuanZhuTableViewController()   // 我的关注
+        case 0: pushViewController = woDeSheTuanTableViewController() // 我的的社团
+        case 1: pushViewController = woDeHuoDongTableViewController()    // 我的活动
+        case 2: pushViewController = woDeGuanZhuTableViewController()   // 我的关注
         default:print("error")
         }
+        pushViewController?.me = me
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.navigationController?.pushViewController(pushViewController!, animated: true)
+    }
+    
+    // MARK: Data
+    func setupMemberList() {
+        let dtMgr = ccOrgIF.sharedInstance.getDataManager() as! ccOrgDataManager
+        memberList = dtMgr.configDataMember.memberList
+        me = dtMgr.getMember(0)
     }
     
     // MARK: UI
     
     func setupTopView() {
-        topView = UIView(frame: CGRect(x: 0, y: 20, width: view.frame.width, height: 80))
+        topView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100))
+        //topView.backgroundColor = UIColor.grayColor()
         self.view.addSubview(topView)
     }
     
@@ -103,22 +115,26 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func setupTouXiangImageView() {
-        touXiangImageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 60, height: 60))
-        touXiangImageView.image = UIImage(named: "noImage")
+        touXiangImageView = UIImageView(frame: CGRect(x: 10, y: 30, width: 60, height: 60))
+        if let image = UIImage(named: me.headImageUrl) {
+            touXiangImageView.image = image
+        } else {
+            touXiangImageView.image = UIImage(named: "noImage")
+        }
         touXiangImageView.layer.cornerRadius = touXiangImageView.frame.width / 2
         touXiangImageView.clipsToBounds = true
         self.topView.addSubview(touXiangImageView)
     }
     
     func setupLabels() {
-        nameLabel = UILabel(frame: CGRect(x: 90, y: 60, width: 90, height: 15))
+        nameLabel = UILabel(frame: CGRect(x: 90, y: 80, width: 90, height: 15))
         nameLabel.font = UIFont.systemFontOfSize(12)
-        nameLabel.text = "姓名 "
+        nameLabel.text = me.name
         self.topView.addSubview(nameLabel)
         
-        numberLabel = UILabel(frame: CGRect(x: 180, y: 60, width: 120, height: 15))
+        numberLabel = UILabel(frame: CGRect(x: 180, y: 80, width: 120, height: 15))
         numberLabel.font = UIFont.systemFontOfSize(12)
-        numberLabel.text = "学号 "
+        numberLabel.text = me.studentId
         self.topView.addSubview(numberLabel)
     }
     

@@ -49,10 +49,10 @@ class HuoDongTableViewCell: UITableViewCell {
         
         let textFieldTests = [activity.name, activity.holdTime, "\(activity.peopleNow) / \(activity.peopleMost)", activity.postTime]
         for (index, text) in textFieldTests.enumerate() {
-            let textField = UITextField(frame: CGRect(x: x + 80, y: 20 * CGFloat(index - 1), width: 80, height: 20))
+            let textField = UITextField(frame: CGRect(x: x + 60, y: 20 * CGFloat(index + 1), width: 80, height: 20))
             textField.text = text
             textField.userInteractionEnabled = false
-            textField.font = UIFont.systemFontOfSize(10)
+            textField.font = UIFont.systemFontOfSize(11)
             textField.textColor = UIColor.grayColor()
             self.contentView.addSubview(textField)
         }
