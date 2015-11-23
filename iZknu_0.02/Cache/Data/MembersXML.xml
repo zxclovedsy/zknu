@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrgMembers>
+    <OrgMember id = "0">
+        <studentId>201408090035</studentId>
+        <name>吴玉欣</name>
+        <headImageUrl>memHeadImage0</headImageUrl>
+        <grade></grade>
+        <college></college>
+        <activitiesId>
+            <activityId>0</activityId>
+        </activitiesId>
+        <organizationsId>
+            <organizationId>0</organizationId>
+        </organizationsId>
+        <organizationsFollowed>
+            <organizationFollowed>1</organizationFollowed>
+        </organizationsFollowed>
+    </OrgMember>
+</OrgMembers>

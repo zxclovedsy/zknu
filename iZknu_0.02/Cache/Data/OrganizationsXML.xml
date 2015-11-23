@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Organizations>
+    <Organization id="0">
+        <name>青年志愿者协会</name>
+        <summary>成立之初，它就是一直庞大的队伍；“志愿”二字，是它吸引青年才俊的亮点；“奉献、友爱、互助、进步”是它不变的宗旨，“我为人人，实现自我”是它开展活动的指南。它不曾刻意炒作自己，只是通过自己真诚的付出，受到了《中国教育报》、《大河报》等多家媒体的关注；它不曾假意美化自己，只是依靠团队的精诚合作，多次被评为“河南省高校优秀社团”；它不曾忘记自己的使命，义务支教、敬老爱老、环保宣传等志愿服务活动从未间断。它把“蓝丝带”挂满校园，它使校园的环境更加干净美丽，它让校园的秩序更加稳定有序。走出校园，走向社会，它已出发！“送人玫瑰，手留余香”，它值得我们为它颂歌！</summary>
+        <members>
+            <member></member>
+            <member></member>
+        </members>
+        <scale>100000</scale>
+        <numberOfPeople>5000</numberOfPeople>
+        <college>所有院系</college>
+        <recruitment>招新</recruitment>
+        <level>校级</level>
+        <headImageUrl>qingxie0</headImageUrl>
+        <photos>
+            <photo>qingxie1</photo>
+            <photo>qingxie16</photo>
+            <photo>qingxie17</photo>
+            <photo>qingxie6</photo>
+            <photo>qingxie7</photo>
+            <photo>qingxie8</photo>
+            <photo>qingxie9</photo>
+        </photos>
+        <type>公益</type>
+    </Organization>
+    <Organization id="1">
+        <name>霓裳汉服社</name>
+        <summary>玲玲环佩，悠悠我思，蝶冠玉簪，青丝步摇，充满了古典韵味的饰品们是不是让你感到爱不释手，心向往之？
+            每一件饰品都有着自己的理念和意蕴，每一件，都凝聚着工匠们的心血，倾注了使用者的感情。每一件，都属于各自的主人，有着它们自己的“人生”。每一件都那么与众不同，甚至每一道裂痕和缺口都有着独特的历史。
+            你是否也想要亲手创造出这些美丽的饰品，配上端庄的汉服？
+            霓裳汉服社【司珍部】，在这里你会学习到制作各类型饰品，女红，甚至汉服制作。只要你愿意学习，司珍部就是你的舞台，让我们一起学习讨论，亲手制作出美丽的珍宝。
+            霓裳汉服社，期待各位同袍加入。
+            九月，静候诸君。。</summary>
+        <members>
+            <member></member>
+            <member></member>
+        </members>
+        <scale>1000</scale>
+        <numberOfPeople>500</numberOfPeople>
+        <college>文学院</college>
+        <recruitment>招新</recruitment>
+        <level>院级</level>
+        <headImageUrl>hanfu0</headImageUrl>
+        <photos>
+            <photo>hanfu1</photo>
+            <photo>hanfu2</photo>
+            <photo>hanfu3</photo>
+            <photo>hanfu4</photo>
+            <photo>hanfu7</photo>
+            <photo>hanfu8</photo>
+            <photo>hanfu5</photo>
+        </photos>
+        <type>艺术</type>
+    </Organization>
+</Organizations>
+
