@@ -142,7 +142,7 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
         
         // haiBaoImageView
         haiBaoImageView = UIImageView(frame: CGRect(x: 20, y: 460, width: 150, height: 150))
-        haiBaoImageView.image = UIImage(named: "noImage")
+        haiBaoImageView.image = UIImage(named: "Cache/noImage")
         haiBaoImageView.userInteractionEnabled = true
         // tapGestureRecoginizer
         let tapGestureRecoginizer = UITapGestureRecognizer(target: self, action: "selectImageFromPhotoLibrary:")
@@ -193,7 +193,7 @@ class NewHuoDongViewController: UIViewController, UITextFieldDelegate, UITextVie
                 textView.text = ""
             }
         }
-        haiBaoImageView.image = UIImage(named: "noImage")
+        haiBaoImageView.image = UIImage(named: "Cache/noImage")
         newImage = false
         finishButton.enabled = false
         scrollView.contentOffset.y = 0

@@ -36,4 +36,156 @@
             <member> </member>
         </members>
     </OrgActivity>
+    <OrgActivity id = "11">
+        <headImageUrl>lunhua6</headImageUrl>
+        <name>轮滑迎新</name>
+        <place>杏坛广场</place>
+        <level>校级</level>
+        <peopleNow>15</peopleNow>
+        <peopleMost>40</peopleMost>
+        <summary>FLY轮滑社欢迎2015级新生！欢迎参加！</summary>
+        <college>所有院系</college>
+        <type>交流</type>
+        <holdTime>2015-9-30</holdTime>
+        <postTime>2015-9-25</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    
+    <OrgActivity id = "2">
+        <headImageUrl>shangwu0</headImageUrl>
+        <name>舞蹈表演与交流</name>
+        <place>音乐厅</place>
+        <level>校级</level>
+        <peopleNow>12</peopleNow>
+        <peopleMost>15</peopleMost>
+        <summary>尚舞社街舞社团始建于2002年3月22日，是我校第一批经学校审批承认的街舞社团。吸引了很多对舞蹈热爱并且坚持的同学们，广泛开展社团培训，新老成员交流，文艺演出等活动，活跃在学院各处。积极配合社联工作，力量逐渐壮大，已经成为周口师范学院内一个有影响力的社团，并逐步走向校外发展壮大。尚舞社街舞社团是一个非常有爱的大家庭，非常希望更多热爱舞蹈的同学的加入，我们将会举行更多的精彩活动，力争更多闪耀的舞台给我们的成员，展现我们的青春风采，快加入我们一起，舞动奇迹！</summary>
+        <college>所有院系</college>
+        <type>晚会</type>
+        <holdTime>2015-10-30</holdTime>
+        <postTime>2015-10-25</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    
+    <OrgActivity id = "4">
+        <headImageUrl>jingwu0</headImageUrl>
+        <name>中华武术</name>
+        <place>体育馆</place>
+        <level>校级</level>
+        <peopleNow>11</peopleNow>
+        <peopleMost>45</peopleMost>
+        <summary>精武以体、智、德三育为宗旨，倡导和发扬爱国、修身、正义和助人的优良精神。周口师范学院11级生物工程专业、STS武社联盟前社长郑海亚一直以精武精神要求自己和自己的社员，将STS武社联盟从即将消逝的边缘建设成一个和谐融洽，积极向上的大家庭。并带领社团骨干在全校各院系巡回演出，使双节棍风靡全校，将双节棍运动推向有史以来的巅峰。活的最有价值、最有意义的人，并不是年岁最长的人，而是对生活最有感触的人。回首武社三年生活点滴，郑海亚动情地说道：“这三年里经历了许多酸甜苦辣，各种经历让我成长了许多。很累，但是很快乐。”或许正是这份敢于担当、勇于历练的精神，让他的人生有了厚度、深度。这也让他最终当选为“2014届周口师范学院十大明星社长”。</summary>
+        <college>所有院系</college>
+        <type>交流</type>
+        <holdTime>2015-10-10</holdTime>
+        <postTime>2015-10-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    <OrgActivity id = "5">
+        <headImageUrl>mingshi0</headImageUrl>
+        <name>爱心摊位</name>
+        <place>三食堂门口</place>
+        <level>校级</level>
+        <peopleNow>15</peopleNow>
+        <peopleMost>55</peopleMost>
+        <summary>本次爱心摊位由周口师范学院铭师讲社开设，为期一星期。期间，同学们热情光顾，购买自己中意的文具，自觉付款找零，井然有序。铭师讲社以会费为本钱批发文具出售，开设了周口师范学院首个诚信摊位，其收获的不仅仅是利润，还有一份份真诚。</summary>
+        <college>所有院系</college>
+        <type>宣传</type>
+        <holdTime>2015-6-10</holdTime>
+        <postTime>2015-6-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    <OrgActivity id = "6">
+        <headImageUrl>kule6</headImageUrl>
+        <name>游周口</name>
+        <place>东门口</place>
+        <level>校级</level>
+        <peopleNow>15</peopleNow>
+        <peopleMost>55</peopleMost>
+        <summary>我们连续几年获得优秀社团称号，有舞台表演，刷周口附近最远到过嵩山，每年都去淮阳庙会，像周口工作，周口市体育馆，周口生态园，周口碧桂园，人民公园，北广场，夜刷，雨刷，速滑，倒滑，平地花式绕庄，花式刹停，跳高，跳远，飞人，单轮转，双轮转，单轮茶壶，包你眼福，给你刺激，还等什么，快来加入我们吧</summary>
+        <college>网络工程学院</college>
+        <type>宣传</type>
+        <holdTime>2015-4-10</holdTime>
+        <postTime>2015-4-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    
+    
+    
+    
+    
+    <OrgActivity id = "9">
+        <headImageUrl>chenchu0</headImageUrl>
+        <name>ppt大赛</name>
+        <place>一号教学楼</place>
+        <level>院级</level>
+        <peopleNow>5</peopleNow>
+        <peopleMost>18</peopleMost>
+        <summary>全校举办的ppt比赛</summary>
+        <college>周口师范学院</college>
+        <type>比赛</type>
+        <holdTime>2015-5-10</holdTime>
+        <postTime>2015-5-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    <OrgActivity id = "10">
+        <headImageUrl>chenchu1</headImageUrl>
+        <name>演讲比赛</name>
+        <place>一号教学楼</place>
+        <level>院级</level>
+        <peopleNow>5</peopleNow>
+        <peopleMost>18</peopleMost>
+        <summary>三个社团联合举行的演讲比赛</summary>
+        <college>软件学院</college>
+        <type>比赛</type>
+        <holdTime>2015-5-10</holdTime>
+        <postTime>2015-5-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+    <OrgActivity id = "3">
+        <headImageUrl>yingyu3</headImageUrl>
+        <name>英文朗诵</name>
+        <place>一号教学楼</place>
+        <level>院级</level>
+        <peopleNow>8</peopleNow>
+        <peopleMost>28</peopleMost>
+        <summary>英语角交流会结束的时间到了，同学们还不舍得离去，仍然激情四射的畅谈。文学院汉语言文学专业的齐晓美说:“一门语言的学习最好的就是培养语感，这种交流的方式，在培养我语感的同时也使我得到了锻炼。英语学习我会用这种方式继续下去，相信通过我的努力，英语会变的SO Easy。”</summary>
+        <college>设计学院</college>
+        <type>比赛</type>
+        <holdTime>2015-9-10</holdTime>
+        <postTime>2015-9-5</postTime>
+        <contractor></contractor>
+        <members>
+            <member> </member>
+            <member> </member>
+        </members>
+    </OrgActivity>
+
 </OrgActivities>

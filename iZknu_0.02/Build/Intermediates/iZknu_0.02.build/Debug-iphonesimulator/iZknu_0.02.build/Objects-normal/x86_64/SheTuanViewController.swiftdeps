@@ -6,68 +6,66 @@ provides-nominal:
 provides-member:
 - ["C6OrgSys21SheTuanViewController", ""]
 provides-dynamic-lookup:
-- "getImageWithColor"
-- "setupButton"
-- "shenQingJiaRuButtonTapped"
-- "setupTextFields"
-- "scrollView"
-- "viewWillDisappear"
-- "imageView"
-- "textFields"
-- "didReceiveMemoryWarning"
-- "rightButton"
-- "setupTextView"
+- "leftButtonEnabled"
 - "photosScrollView"
-- "viewWillAppear"
-- "setupPhotosScrollView"
-- "setupScrollView"
-- "woYaoGuanZhuButtonTapped"
-- "setupLabels"
 - "textViewShouldBeginEditing"
 - "organization"
-- "leftButtonEnabled"
-- "leftButton"
-- "viewDidLoad"
-- "setupImageView"
+- "woYaoGuanZhuButtonTapped"
+- "setupPhotosScrollView"
+- "didReceiveMemoryWarning"
 - "rightButtonEnabled"
+- "setupScrollView"
+- "scrollView"
+- "imageView"
+- "leftButton"
+- "setupImageView"
+- "shenQingJiaRuButtonTapped"
+- "setupTextView"
+- "textFields"
+- "setupTextFields"
 - "textFieldShouldBeginEditing"
+- "rightButton"
+- "viewWillAppear"
+- "setupLabels"
+- "getImageWithColor"
+- "viewWillDisappear"
+- "setupButton"
+- "viewDidLoad"
 depends-top-level:
-- !private "CGRectMake"
-- !private "UIGraphicsEndImageContext"
-- !private "CGRect"
-- "CGSize"
-- "BooleanLiteralType"
-- !private "UIFont"
-- !private "Array"
-- !private "UIAlertView"
-- "UIColor"
-- !private "CGFloat"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIApplication"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- "UITextView"
-- "Bool"
-- !private "UINavigationController"
-- !private "/"
-- "SheTuanViewController"
 - "ccOrganization"
-- !private "+"
-- "UITextField"
-- "UITextViewDelegate"
-- !private "+="
-- !private "-"
-- "UIImageView"
 - "UIImage"
-- !private "UILabel"
+- !private "+"
 - "UIScrollView"
-- !private "UIRectFill"
-- "UITextFieldDelegate"
-- "CGPoint"
-- !private "ShenQingJiaRuViewController"
-- !private "=="
-- "UIButton"
+- "UITextView"
+- !private "UIFont"
+- !private "UIGraphicsEndImageContext"
 - "UIViewController"
 - !private "*"
+- "UIButton"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- "UIColor"
+- !private "CGRect"
+- !private "=="
+- !private "+="
+- "UITextFieldDelegate"
+- "BooleanLiteralType"
+- !private "UIApplication"
+- "UITextField"
+- "Bool"
+- "CGPoint"
+- !private "UIRectFill"
+- !private "/"
+- "UIImageView"
+- !private "Array"
+- !private "UILabel"
+- "UITextViewDelegate"
+- !private "CGFloat"
+- "CGSize"
+- !private "CGRectMake"
+- !private "-"
+- "SheTuanViewController"
+- !private "UIAlertView"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -78,7 +76,6 @@ depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "CGSize"]
-- !private ["PSs9AnyObject", "ShenQingJiaRuViewController"]
 - !private ["PSs9AnyObject", "UIAlertView"]
 - !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "UIButton"]
@@ -90,7 +87,6 @@ depends-member:
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageView"]
 - !private ["PSs9AnyObject", "UILabel"]
-- !private ["PSs9AnyObject", "UINavigationController"]
 - !private ["PSs9AnyObject", "UIRectFill"]
 - !private ["PSs9AnyObject", "UIScrollView"]
 - !private ["PSs9AnyObject", "UITextField"]
@@ -126,7 +122,6 @@ depends-member:
 - ["PSs9AnyObject", "origin"]
 - ["PSs9AnyObject", "photosScrollView"]
 - !private ["PSs9AnyObject", "photosUrl"]
-- !private ["PSs9AnyObject", "presentViewController"]
 - ["PSs9AnyObject", "rightButton"]
 - ["PSs9AnyObject", "rightButtonEnabled"]
 - !private ["PSs9AnyObject", "scale"]
@@ -245,7 +240,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "CGSize"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "ShenQingJiaRuViewController"]
 - !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "UIAlertView"]
 - !private ["PSs11CVarArgType", "UIApplication"]
@@ -258,7 +252,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageView"]
 - !private ["PSs11CVarArgType", "UILabel"]
-- !private ["PSs11CVarArgType", "UINavigationController"]
 - !private ["PSs11CVarArgType", "UIRectFill"]
 - !private ["PSs11CVarArgType", "UIScrollView"]
 - !private ["PSs11CVarArgType", "UITextField"]
@@ -294,7 +287,6 @@ depends-member:
 - ["PSs11CVarArgType", "origin"]
 - ["PSs11CVarArgType", "photosScrollView"]
 - !private ["PSs11CVarArgType", "photosUrl"]
-- !private ["PSs11CVarArgType", "presentViewController"]
 - ["PSs11CVarArgType", "rightButton"]
 - ["PSs11CVarArgType", "rightButtonEnabled"]
 - !private ["PSs11CVarArgType", "scale"]
@@ -388,7 +380,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "ShenQingJiaRuViewController"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIAlertView"]
@@ -402,7 +393,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageView"]
 - !private ["PSs23CustomStringConvertible", "UILabel"]
-- !private ["PSs23CustomStringConvertible", "UINavigationController"]
 - !private ["PSs23CustomStringConvertible", "UIRectFill"]
 - !private ["PSs23CustomStringConvertible", "UIScrollView"]
 - !private ["PSs23CustomStringConvertible", "UITextField"]
@@ -443,7 +433,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "origin"]
 - ["PSs23CustomStringConvertible", "photosScrollView"]
 - !private ["PSs23CustomStringConvertible", "photosUrl"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
 - ["PSs23CustomStringConvertible", "rightButton"]
 - ["PSs23CustomStringConvertible", "rightButtonEnabled"]
 - !private ["PSs23CustomStringConvertible", "scale"]
@@ -519,7 +508,6 @@ depends-member:
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "Normal"]
-- !private ["PSs9Equatable", "ShenQingJiaRuViewController"]
 - !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "System"]
 - !private ["PSs9Equatable", "TouchDown"]
@@ -534,7 +522,6 @@ depends-member:
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageView"]
 - !private ["PSs9Equatable", "UILabel"]
-- !private ["PSs9Equatable", "UINavigationController"]
 - !private ["PSs9Equatable", "UIRectFill"]
 - !private ["PSs9Equatable", "UIScrollView"]
 - !private ["PSs9Equatable", "UITextField"]
@@ -572,7 +559,6 @@ depends-member:
 - ["PSs9Equatable", "origin"]
 - ["PSs9Equatable", "photosScrollView"]
 - !private ["PSs9Equatable", "photosUrl"]
-- !private ["PSs9Equatable", "presentViewController"]
 - ["PSs9Equatable", "rightButton"]
 - ["PSs9Equatable", "rightButtonEnabled"]
 - !private ["PSs9Equatable", "scale"]
@@ -658,7 +644,6 @@ depends-member:
 - !private ["PSs8Hashable", "Compact"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "ShenQingJiaRuViewController"]
 - !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "System"]
 - !private ["PSs8Hashable", "UIAlertView"]
@@ -672,7 +657,6 @@ depends-member:
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageView"]
 - !private ["PSs8Hashable", "UILabel"]
-- !private ["PSs8Hashable", "UINavigationController"]
 - !private ["PSs8Hashable", "UIRectFill"]
 - !private ["PSs8Hashable", "UIScrollView"]
 - !private ["PSs8Hashable", "UITextField"]
@@ -709,7 +693,6 @@ depends-member:
 - ["PSs8Hashable", "origin"]
 - ["PSs8Hashable", "photosScrollView"]
 - !private ["PSs8Hashable", "photosUrl"]
-- !private ["PSs8Hashable", "presentViewController"]
 - ["PSs8Hashable", "rightButton"]
 - ["PSs8Hashable", "rightButtonEnabled"]
 - !private ["PSs8Hashable", "scale"]
@@ -830,7 +813,6 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "CGSize"]
-- !private ["PSo8NSCoding", "ShenQingJiaRuViewController"]
 - !private ["PSo8NSCoding", "UIAlertView"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIButton"]
@@ -842,7 +824,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageView"]
 - !private ["PSo8NSCoding", "UILabel"]
-- !private ["PSo8NSCoding", "UINavigationController"]
 - !private ["PSo8NSCoding", "UIRectFill"]
 - !private ["PSo8NSCoding", "UIScrollView"]
 - !private ["PSo8NSCoding", "UITextField"]
@@ -874,7 +855,6 @@ depends-member:
 - ["PSo8NSCoding", "organization"]
 - ["PSo8NSCoding", "origin"]
 - ["PSo8NSCoding", "photosScrollView"]
-- !private ["PSo8NSCoding", "presentViewController"]
 - ["PSo8NSCoding", "rightButton"]
 - ["PSo8NSCoding", "rightButtonEnabled"]
 - ["PSo8NSCoding", "scrollView"]
@@ -941,7 +921,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
-- !private ["PSo26NSExtensionRequestHandling", "ShenQingJiaRuViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertView"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
@@ -953,7 +932,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
 - !private ["PSo26NSExtensionRequestHandling", "UILabel"]
-- !private ["PSo26NSExtensionRequestHandling", "UINavigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIRectFill"]
 - !private ["PSo26NSExtensionRequestHandling", "UIScrollView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITextField"]
@@ -969,7 +947,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "organization"]
 - ["PSo26NSExtensionRequestHandling", "origin"]
 - ["PSo26NSExtensionRequestHandling", "photosScrollView"]
-- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - ["PSo26NSExtensionRequestHandling", "rightButton"]
 - ["PSo26NSExtensionRequestHandling", "rightButtonEnabled"]
 - ["PSo26NSExtensionRequestHandling", "scrollView"]
@@ -1023,7 +1000,6 @@ depends-member:
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - ["CSo8NSObject", "CGSize"]
-- !private ["CSo8NSObject", "ShenQingJiaRuViewController"]
 - !private ["CSo8NSObject", "UIAlertView"]
 - !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
@@ -1035,7 +1011,6 @@ depends-member:
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UILabel"]
-- !private ["CSo8NSObject", "UINavigationController"]
 - !private ["CSo8NSObject", "UIRectFill"]
 - ["CSo8NSObject", "UIScrollView"]
 - ["CSo8NSObject", "UITextField"]
@@ -1072,7 +1047,6 @@ depends-member:
 - ["CSo8NSObject", "origin"]
 - ["CSo8NSObject", "photosScrollView"]
 - !private ["CSo8NSObject", "photosUrl"]
-- !private ["CSo8NSObject", "presentViewController"]
 - ["CSo8NSObject", "rightButton"]
 - ["CSo8NSObject", "rightButtonEnabled"]
 - !private ["CSo8NSObject", "scale"]
@@ -1137,7 +1111,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
-- !private ["PSo16NSObjectProtocol", "ShenQingJiaRuViewController"]
 - !private ["PSo16NSObjectProtocol", "UIAlertView"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
@@ -1149,7 +1122,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageView"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
-- !private ["PSo16NSObjectProtocol", "UINavigationController"]
 - !private ["PSo16NSObjectProtocol", "UIRectFill"]
 - !private ["PSo16NSObjectProtocol", "UIScrollView"]
 - !private ["PSo16NSObjectProtocol", "UITextField"]
@@ -1185,7 +1157,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "origin"]
 - ["PSo16NSObjectProtocol", "photosScrollView"]
 - !private ["PSo16NSObjectProtocol", "photosUrl"]
-- !private ["PSo16NSObjectProtocol", "presentViewController"]
 - ["PSo16NSObjectProtocol", "rightButton"]
 - ["PSo16NSObjectProtocol", "rightButtonEnabled"]
 - !private ["PSo16NSObjectProtocol", "scale"]
@@ -1292,7 +1263,6 @@ depends-member:
 - !private ["C6OrgSys21SheTuanViewController", "CGRect"]
 - !private ["C6OrgSys21SheTuanViewController", "CGRectMake"]
 - ["C6OrgSys21SheTuanViewController", "CGSize"]
-- !private ["C6OrgSys21SheTuanViewController", "ShenQingJiaRuViewController"]
 - !private ["C6OrgSys21SheTuanViewController", "UIAlertView"]
 - !private ["C6OrgSys21SheTuanViewController", "UIApplication"]
 - ["C6OrgSys21SheTuanViewController", "UIButton"]
@@ -1304,7 +1274,6 @@ depends-member:
 - ["C6OrgSys21SheTuanViewController", "UIImage"]
 - ["C6OrgSys21SheTuanViewController", "UIImageView"]
 - !private ["C6OrgSys21SheTuanViewController", "UILabel"]
-- !private ["C6OrgSys21SheTuanViewController", "UINavigationController"]
 - !private ["C6OrgSys21SheTuanViewController", "UIRectFill"]
 - ["C6OrgSys21SheTuanViewController", "UIScrollView"]
 - ["C6OrgSys21SheTuanViewController", "UITextField"]
@@ -1365,7 +1334,6 @@ depends-member:
 - ["C6OrgSys21SheTuanViewController", "viewWillAppear"]
 - ["C6OrgSys21SheTuanViewController", "viewWillDisappear"]
 - ["C6OrgSys21SheTuanViewController", "woYaoGuanZhuButtonTapped"]
-- !private ["C6OrgSys27ShenQingJiaRuViewController", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs17SignedIntegerType", "Stride"]
@@ -1426,7 +1394,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
-- !private ["PSo21UIAppearanceContainer", "ShenQingJiaRuViewController"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertView"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
@@ -1438,7 +1405,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageView"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
-- !private ["PSo21UIAppearanceContainer", "UINavigationController"]
 - !private ["PSo21UIAppearanceContainer", "UIRectFill"]
 - !private ["PSo21UIAppearanceContainer", "UIScrollView"]
 - !private ["PSo21UIAppearanceContainer", "UITextField"]
@@ -1465,7 +1431,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "organization"]
 - ["PSo21UIAppearanceContainer", "origin"]
 - ["PSo21UIAppearanceContainer", "photosScrollView"]
-- !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - ["PSo21UIAppearanceContainer", "rightButton"]
 - ["PSo21UIAppearanceContainer", "rightButtonEnabled"]
 - ["PSo21UIAppearanceContainer", "scrollView"]
@@ -1540,7 +1505,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "CGSize"]
-- !private ["PSo18UIContentContainer", "ShenQingJiaRuViewController"]
 - !private ["PSo18UIContentContainer", "UIAlertView"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIButton"]
@@ -1552,7 +1516,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageView"]
 - !private ["PSo18UIContentContainer", "UILabel"]
-- !private ["PSo18UIContentContainer", "UINavigationController"]
 - !private ["PSo18UIContentContainer", "UIRectFill"]
 - !private ["PSo18UIContentContainer", "UIScrollView"]
 - !private ["PSo18UIContentContainer", "UITextField"]
@@ -1568,7 +1531,6 @@ depends-member:
 - ["PSo18UIContentContainer", "organization"]
 - ["PSo18UIContentContainer", "origin"]
 - ["PSo18UIContentContainer", "photosScrollView"]
-- !private ["PSo18UIContentContainer", "presentViewController"]
 - ["PSo18UIContentContainer", "rightButton"]
 - ["PSo18UIContentContainer", "rightButtonEnabled"]
 - ["PSo18UIContentContainer", "scrollView"]
@@ -1670,7 +1632,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
-- !private ["PSo18UIFocusEnvironment", "ShenQingJiaRuViewController"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertView"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
@@ -1682,7 +1643,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageView"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
-- !private ["PSo18UIFocusEnvironment", "UINavigationController"]
 - !private ["PSo18UIFocusEnvironment", "UIRectFill"]
 - !private ["PSo18UIFocusEnvironment", "UIScrollView"]
 - !private ["PSo18UIFocusEnvironment", "UITextField"]
@@ -1709,7 +1669,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "organization"]
 - ["PSo18UIFocusEnvironment", "origin"]
 - ["PSo18UIFocusEnvironment", "photosScrollView"]
-- !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - ["PSo18UIFocusEnvironment", "rightButton"]
 - ["PSo18UIFocusEnvironment", "rightButtonEnabled"]
 - ["PSo18UIFocusEnvironment", "scrollView"]
@@ -1764,7 +1723,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UIImage", "init"]
-- !private ["PSo31UIImagePickerControllerDelegate", "init"]
 - !private ["CSo11UIImageView", "frame"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
@@ -1781,19 +1739,13 @@ depends-member:
 - !private ["CSo15UINavigationBar", "clipsToBounds"]
 - !private ["CSo15UINavigationBar", "frame"]
 - !private ["CSo15UINavigationBar", "setBackgroundImage"]
-- !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "navigationBar"]
-- !private ["CSo22UINavigationController", "presentViewController"]
-- !private ["PSo30UINavigationControllerDelegate", "init"]
-- !private ["PSo22UIPickerViewDataSource", "init"]
-- !private ["PSo20UIPickerViewDelegate", "init"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGPoint"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - ["CSo11UIResponder", "CGSize"]
-- !private ["CSo11UIResponder", "ShenQingJiaRuViewController"]
 - !private ["CSo11UIResponder", "UIAlertView"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
@@ -1805,7 +1757,6 @@ depends-member:
 - ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UILabel"]
-- !private ["CSo11UIResponder", "UINavigationController"]
 - !private ["CSo11UIResponder", "UIRectFill"]
 - ["CSo11UIResponder", "UIScrollView"]
 - ["CSo11UIResponder", "UITextField"]
@@ -1833,7 +1784,6 @@ depends-member:
 - ["CSo11UIResponder", "organization"]
 - ["CSo11UIResponder", "origin"]
 - ["CSo11UIResponder", "photosScrollView"]
-- !private ["CSo11UIResponder", "presentViewController"]
 - ["CSo11UIResponder", "rightButton"]
 - ["CSo11UIResponder", "rightButtonEnabled"]
 - ["CSo11UIResponder", "scrollView"]
@@ -1903,7 +1853,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "CGRectMake"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
-- !private ["PSo20UIScrollViewDelegate", "ShenQingJiaRuViewController"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertView"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIButton"]
@@ -1915,14 +1864,12 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImageView"]
 - !private ["PSo20UIScrollViewDelegate", "UILabel"]
-- !private ["PSo20UIScrollViewDelegate", "UINavigationController"]
 - !private ["PSo20UIScrollViewDelegate", "UIRectFill"]
 - !private ["PSo20UIScrollViewDelegate", "UIScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "UITextField"]
 - !private ["PSo20UIScrollViewDelegate", "UITextView"]
 - !private ["PSo20UIScrollViewDelegate", "getImageWithColor"]
 - !private ["PSo20UIScrollViewDelegate", "imageView"]
-- !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "leftButton"]
 - !private ["PSo20UIScrollViewDelegate", "leftButtonEnabled"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
@@ -1973,7 +1920,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
-- !private ["PSo16UIStateRestoring", "ShenQingJiaRuViewController"]
 - !private ["PSo16UIStateRestoring", "UIAlertView"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
@@ -1985,7 +1931,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageView"]
 - !private ["PSo16UIStateRestoring", "UILabel"]
-- !private ["PSo16UIStateRestoring", "UINavigationController"]
 - !private ["PSo16UIStateRestoring", "UIRectFill"]
 - !private ["PSo16UIStateRestoring", "UIScrollView"]
 - !private ["PSo16UIStateRestoring", "UITextField"]
@@ -2001,7 +1946,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "organization"]
 - ["PSo16UIStateRestoring", "origin"]
 - ["PSo16UIStateRestoring", "photosScrollView"]
-- !private ["PSo16UIStateRestoring", "presentViewController"]
 - ["PSo16UIStateRestoring", "rightButton"]
 - ["PSo16UIStateRestoring", "rightButtonEnabled"]
 - ["PSo16UIStateRestoring", "scrollView"]
@@ -2059,7 +2003,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "CGRect"]
 - !private ["PSo19UITextFieldDelegate", "CGRectMake"]
 - !private ["PSo19UITextFieldDelegate", "CGSize"]
-- !private ["PSo19UITextFieldDelegate", "ShenQingJiaRuViewController"]
 - !private ["PSo19UITextFieldDelegate", "UIAlertView"]
 - !private ["PSo19UITextFieldDelegate", "UIApplication"]
 - !private ["PSo19UITextFieldDelegate", "UIButton"]
@@ -2071,14 +2014,12 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UIImageView"]
 - !private ["PSo19UITextFieldDelegate", "UILabel"]
-- !private ["PSo19UITextFieldDelegate", "UINavigationController"]
 - !private ["PSo19UITextFieldDelegate", "UIRectFill"]
 - !private ["PSo19UITextFieldDelegate", "UIScrollView"]
 - !private ["PSo19UITextFieldDelegate", "UITextField"]
 - !private ["PSo19UITextFieldDelegate", "UITextView"]
 - !private ["PSo19UITextFieldDelegate", "getImageWithColor"]
 - !private ["PSo19UITextFieldDelegate", "imageView"]
-- !private ["PSo19UITextFieldDelegate", "init"]
 - !private ["PSo19UITextFieldDelegate", "leftButton"]
 - !private ["PSo19UITextFieldDelegate", "leftButtonEnabled"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
@@ -2149,7 +2090,6 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "CGRect"]
 - !private ["PSo18UITextViewDelegate", "CGRectMake"]
 - !private ["PSo18UITextViewDelegate", "CGSize"]
-- !private ["PSo18UITextViewDelegate", "ShenQingJiaRuViewController"]
 - !private ["PSo18UITextViewDelegate", "UIAlertView"]
 - !private ["PSo18UITextViewDelegate", "UIApplication"]
 - !private ["PSo18UITextViewDelegate", "UIButton"]
@@ -2161,14 +2101,12 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "UIImage"]
 - !private ["PSo18UITextViewDelegate", "UIImageView"]
 - !private ["PSo18UITextViewDelegate", "UILabel"]
-- !private ["PSo18UITextViewDelegate", "UINavigationController"]
 - !private ["PSo18UITextViewDelegate", "UIRectFill"]
 - !private ["PSo18UITextViewDelegate", "UIScrollView"]
 - !private ["PSo18UITextViewDelegate", "UITextField"]
 - !private ["PSo18UITextViewDelegate", "UITextView"]
 - !private ["PSo18UITextViewDelegate", "getImageWithColor"]
 - !private ["PSo18UITextViewDelegate", "imageView"]
-- !private ["PSo18UITextViewDelegate", "init"]
 - !private ["PSo18UITextViewDelegate", "leftButton"]
 - !private ["PSo18UITextViewDelegate", "leftButtonEnabled"]
 - !private ["PSo18UITextViewDelegate", "navigationController"]
@@ -2219,7 +2157,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
-- !private ["PSo18UITraitEnvironment", "ShenQingJiaRuViewController"]
 - !private ["PSo18UITraitEnvironment", "UIAlertView"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
@@ -2231,7 +2168,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageView"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
-- !private ["PSo18UITraitEnvironment", "UINavigationController"]
 - !private ["PSo18UITraitEnvironment", "UIRectFill"]
 - !private ["PSo18UITraitEnvironment", "UIScrollView"]
 - !private ["PSo18UITraitEnvironment", "UITextField"]
@@ -2258,7 +2194,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "organization"]
 - ["PSo18UITraitEnvironment", "origin"]
 - ["PSo18UITraitEnvironment", "photosScrollView"]
-- !private ["PSo18UITraitEnvironment", "presentViewController"]
 - ["PSo18UITraitEnvironment", "rightButton"]
 - ["PSo18UITraitEnvironment", "rightButtonEnabled"]
 - ["PSo18UITraitEnvironment", "scrollView"]
@@ -2336,7 +2271,6 @@ depends-member:
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "CGRectMake"]
 - ["CSo16UIViewController", "CGSize"]
-- !private ["CSo16UIViewController", "ShenQingJiaRuViewController"]
 - !private ["CSo16UIViewController", "UIAlertView"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIButton"]
@@ -2348,7 +2282,6 @@ depends-member:
 - ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UILabel"]
-- !private ["CSo16UIViewController", "UINavigationController"]
 - !private ["CSo16UIViewController", "UIRectFill"]
 - ["CSo16UIViewController", "UIScrollView"]
 - ["CSo16UIViewController", "UITextField"]
@@ -2365,7 +2298,6 @@ depends-member:
 - ["CSo16UIViewController", "organization"]
 - ["CSo16UIViewController", "origin"]
 - ["CSo16UIViewController", "photosScrollView"]
-- !private ["CSo16UIViewController", "presentViewController"]
 - ["CSo16UIViewController", "rightButton"]
 - ["CSo16UIViewController", "rightButtonEnabled"]
 - ["CSo16UIViewController", "scrollView"]
@@ -2601,7 +2533,6 @@ depends-nominal:
 - !private "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
 - "C6OrgSys21SheTuanViewController"
-- !private "C6OrgSys27ShenQingJiaRuViewController"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "PSs10Streamable"
@@ -2628,15 +2559,11 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "CSo6UIFont"
 - !private "CSo7UIImage"
-- !private "PSo31UIImagePickerControllerDelegate"
 - !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
 - !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
-- !private "PSo30UINavigationControllerDelegate"
-- !private "PSo22UIPickerViewDataSource"
-- !private "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"

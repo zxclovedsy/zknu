@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Organizations>
-    <Organization id="0">
+    <Organization id="9">
         <name>青年志愿者协会</name>
         <summary>成立之初，它就是一直庞大的队伍；“志愿”二字，是它吸引青年才俊的亮点；“奉献、友爱、互助、进步”是它不变的宗旨，“我为人人，实现自我”是它开展活动的指南。它不曾刻意炒作自己，只是通过自己真诚的付出，受到了《中国教育报》、《大河报》等多家媒体的关注；它不曾假意美化自己，只是依靠团队的精诚合作，多次被评为“河南省高校优秀社团”；它不曾忘记自己的使命，义务支教、敬老爱老、环保宣传等志愿服务活动从未间断。它把“蓝丝带”挂满校园，它使校园的环境更加干净美丽，它让校园的秩序更加稳定有序。走出校园，走向社会，它已出发！“送人玫瑰，手留余香”，它值得我们为它颂歌！</summary>
         <members>
@@ -24,7 +24,7 @@
         </photos>
         <type>公益</type>
     </Organization>
-    <Organization id="1">
+    <Organization id="10">
         <name>霓裳汉服社</name>
         <summary>玲玲环佩，悠悠我思，蝶冠玉簪，青丝步摇，充满了古典韵味的饰品们是不是让你感到爱不释手，心向往之？
             每一件饰品都有着自己的理念和意蕴，每一件，都凝聚着工匠们的心血，倾注了使用者的感情。每一件，都属于各自的主人，有着它们自己的“人生”。每一件都那么与众不同，甚至每一道裂痕和缺口都有着独特的历史。
@@ -53,5 +53,170 @@
         </photos>
         <type>艺术</type>
     </Organization>
+    <Organization id="7">
+        <name>FLY轮滑社</name>
+        <summary>青青校园，悠悠岁月，FLY轮滑，秀出精彩。社团以轮滑爱好者提供交流平台，培养技术精英，提高学生身体素质，丰富学生课余生活，推广轮滑运动为宗旨，展现自我魅力，弘扬青春风采。烈火般的热情，朝阳般的活力，用轮滑展示昂扬青春。羡慕那些飞炫的身影吗，FLY轮滑，享受轮滑的精彩人生。</summary>
+        <members>
+            <member></member>
+            <member></member>
+        </members>
+        <scale>800</scale>
+        <numberOfPeople>400</numberOfPeople>
+        <college>所有院系</college>
+        <recruitment>招新</recruitment>
+        <level>校级</level>
+        <headImageUrl>lunhua0</headImageUrl>
+        <photos>
+            <photo>lunhua1</photo>
+            <photo>lunhua2</photo>
+            <photo>lunhua3</photo>
+            <photo>lunhua4</photo>
+            <photo>lunhua5</photo>
+            <photo>lunhua6</photo>
+            <photo>lunhua7</photo>
+        </photos>
+        <type>爱好</type>
+    </Organization>
+
+<Organization id="6">
+    <name>尚舞社
+</name>
+    <summary>
+        “丰富业余生活，提高自身修养，跳出韵律节奏，舞动青春风采”为宗旨的他们，用舞姿感染他人。作为学校的第一批街舞团体，他们为最初的梦想一直在快乐的坚持着。他们经常代表本校和本市参加各种省内省外的街舞比赛。他们举办各种各样的活动，参加周口地区街舞比赛。通过举办晚会专场晚会增进社员之间感情，先后获得了河南省锋翼杯第十届歌舞大赛银奖，河南省可口可乐杯街舞大赛金奖，河南省第十二届高校街舞大赛金奖。他们的奇迹将会一直舞动下去。</summary>
+    <members>
+        <member></member>
+        <member></member>
+    </members>
+    <scale>100</scale>
+    <numberOfPeople>90</numberOfPeople>
+    <college>音乐舞蹈学院</college>
+    <recruitment>已招满</recruitment>
+    <level>校级</level>
+    <headImageUrl>shangwu0</headImageUrl>
+    <photos>
+        <photo>shangwu1</photo>
+        <photo>shangwu2</photo>
+        <photo>shangwu3</photo>
+        <photo>shangwu4</photo>
+        <photo>shangwu5</photo>
+        <photo>shangwu6</photo>
+        <photo>shangwu7</photo>
+    </photos>
+    <type>艺术</type>
+</Organization>
+
+<Organization id="5">
+    <name>精武社
+    </name>
+    <summary>
+       东方之旭，冉冉升起。文明的喷薄，人才的聚集，使满腔的热血被融进了中华武学的精髓之中。“自强不息，尚武崇德。修身立本，习文弘道”的精神和“自强勇敢，勤劳正义”的品质。使中国武术蓬勃扎根于周口师范学院。精武社全面教授学员武术，同时设有武术套路，武术技击器械和武德武学知识四大课程，宣扬国术精神与知识。精武社组建周师第一支武术表演队，也为“华光杯”“河南省大学生运动会”等大型比赛选拔竞赛队员。精武社以“精益求精，武动人生”为口号，为周师众多武术爱好者提供展示自我的舞台。</summary>
+    <members>
+        <member></member>
+        <member></member>
+    </members>
+    <scale>200</scale>
+    <numberOfPeople>110</numberOfPeople>
+    <college>体育学院</college>
+    <recruitment>已招满</recruitment>
+    <level>校级</level>
+    <headImageUrl>jingwu1</headImageUrl>
+    <photos>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+        <photo>jingwu1</photo>
+    </photos>
+    <type>其他</type>
+</Organization>
+
+<Organization id="3">
+    <name>酷乐轮滑
+    </name>
+    <summary>
+        顺畅飘逸的身影，精绝完美的转身，酷乐轮滑带你走进轮滑的神奇世界！以丰富大学校园生活为目的，酷乐轮滑定时的教授活动也促进了会员间的交流，提高了社团的团队协作能力。精湛娴熟的速滑、平花技巧让人惊叹不已。轮滑，不仅是代步工具，更是引领时尚的先行者。酷乐轮滑，滑出精彩大学！</summary>
+    <members>
+        <member></member>
+        <member></member>
+    </members>
+    <scale>70</scale>
+    <numberOfPeople>30</numberOfPeople>
+    <college>物理与电信工程学院</college>
+    <recruitment>未招满</recruitment>
+    <level>校级</level>
+    <headImageUrl>kule0</headImageUrl>
+    <photos>
+        <photo>kelu1</photo>
+        <photo>kelu2</photo>
+        <photo>kule3</photo>
+        <photo>kule4</photo>
+        <photo>kule5</photo>
+        <photo>kule6</photo>
+        <photo>kule7</photo>
+    </photos>
+    <type>其他</type>
+</Organization>
+
+<Organization id="1">
+    <name>家电维修协会
+    </name>
+    <summary>
+        本着“加强社团建设，提升服务质量”的原则，家电维修协会致力于为同学们服务，为周边群众服务。强大的师资力量，严谨、认真、负责的工作作风，使得家电维修协会朝气蓬勃。每周定时定点的义务维修服务已成为我校的一道特色风景，它既提高了会员个人的综合能力，也真正解决了学生的实际需求。无私奉献，不怕麻烦事同学们对他们的一致评价。有家电维修协会在，我们的学校将会更加美好！
+</summary>
+    <members>
+        <member></member>
+        <member></member>
+    </members>
+    <scale>10</scale>
+    <numberOfPeople>9</numberOfPeople>
+    <college>物理与电信工程学院</college>
+    <recruitment>未招满</recruitment>
+    <level>校级</level>
+    <headImageUrl>jiadian0</headImageUrl>
+    <photos>
+        <photo>jiadian1</photo>
+        <photo>jiadian2</photo>
+        <photo>jiadian3</photo>
+        <photo>jiadian4</photo>
+        <photo>jiadian5</photo>
+        <photo>jiadian6</photo>
+        <photo>jiadian5</photo>
+    </photos>
+    <type>其他</type>
+</Organization>
+
+<Organization id="8">
+    <name>陈楚风文学社
+    </name>
+    <summary>
+        1.加入社团者，将有机会发表文章于陈楚风文学网上，且有机会得到相应的稿费
+        2.有喜欢写网文的社员，届时我会联系网文方面的大神，给予其相关方面的指导，到时候成为了大神可别忘了我哦/呲牙
+        3.社团会开启活动，我会带领大家去博物馆，生态园，社会实践甚至是KTV唱歌也可以/微笑
+        4.我会每周在群里开展知识讲堂，让大家能够通过聊天的方式能够学习更多的知识
+        不要让梦想躲藏在看不见的地方，快点加入我们吧
+    </summary>
+    <members>
+        <member></member>
+        <member></member>
+    </members>
+    <scale>100</scale>
+    <numberOfPeople>90</numberOfPeople>
+    <college>网络工程学院</college>
+    <recruitment>未招满</recruitment>
+    <level>校级</level>
+    <headImageUrl>chenchu0</headImageUrl>
+    <photos>
+        <photo>chenchu1</photo>
+        <photo>chenchu2</photo>
+        <photo>chenchu3</photo>
+        <photo>chenchu4</photo>
+        <photo>chenchu5</photo>
+        <photo>chenchu4</photo>
+        <photo>chenchu5</photo>
+    </photos>
+    <type>其他</type>
+</Organization>
 </Organizations>
 

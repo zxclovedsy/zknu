@@ -100,7 +100,7 @@
 		B828F4011C02DFA00074B5BD /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		B828F4261C02E03C0074B5BD /* iZknu_0.02-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iZknu_0.02-Bridging-Header.h"; sourceTree = "<group>"; };
 		B828F4951C02E6690074B5BD /* Cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cache; sourceTree = "<group>"; };
-		B852566C1BD7D2B40028DD67 /* 社团管理系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "社团管理系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B852566C1BD7D2B40028DD67 /* i社团.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i社团.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85256761BD7D2B40028DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		B852567B1BD7D2B40028DD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		B85256801BD7D2B40028DD67 /* iZknu_0.02Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iZknu_0.02Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +209,7 @@
 		B852566D1BD7D2B40028DD67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B852566C1BD7D2B40028DD67 /* 社团管理系统.app */,
+				B852566C1BD7D2B40028DD67 /* i社团.app */,
 				B85256801BD7D2B40028DD67 /* iZknu_0.02Tests.xctest */,
 			);
 			name = Products;
@@ -242,7 +242,7 @@
 			);
 			name = iZknu_0.02;
 			productName = iZknu_0.02;
-			productReference = B852566C1BD7D2B40028DD67 /* 社团管理系统.app */;
+			productReference = B852566C1BD7D2B40028DD67 /* i社团.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B852567F1BD7D2B40028DD67 /* iZknu_0.02Tests */ = {
@@ -486,7 +486,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_MODULE_NAME = OrgSys;
-				PRODUCT_NAME = "社团管理系统";
+				PRODUCT_NAME = "i社团";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -512,7 +512,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.iZknu-0-02";
 				PRODUCT_MODULE_NAME = OrgSys;
-				PRODUCT_NAME = "社团管理系统";
+				PRODUCT_NAME = "i社团";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iZknu_0.02-Bridging-Header.h";
 			};

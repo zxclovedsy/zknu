@@ -125,7 +125,7 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     func setupPhotosScrollView() {
         photosScrollView = UIScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.width, height: 80))
         var images: [UIImage] = []
-        let noImage = UIImage(named: "noImage")!
+        let noImage = UIImage(named: "Cache/noImage")!
         for nameUrl in organization.photosUrl {
             if let image = UIImage(named: nameUrl) {
                 images.append(image)
@@ -201,9 +201,11 @@ class SheTuanViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     func shenQingJiaRuButtonTapped(sender: UIButton) {
-        let shenQingJiaRuViewController = ShenQingJiaRuViewController()
+        /*let shenQingJiaRuViewController = ShenQingJiaRuViewController()
         let navigationController = UINavigationController(rootViewController: shenQingJiaRuViewController)
-        self.navigationController?.presentViewController(navigationController, animated: true, completion: nil)
+        self.navigationController?.presentViewController(navigationController, animated: true, completion: nil)*/
+        let alertView = UIAlertView(title: "申请请求已经上传", message: "", delegate: self, cancelButtonTitle: "OK")
+        alertView.show()
         
     }
 

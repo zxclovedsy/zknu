@@ -3,17 +3,17 @@
     <OrgMember id = "0">
         <studentId>201408090035</studentId>
         <name>吴玉欣</name>
-        <headImageUrl>memHeadImage0</headImageUrl>
+        <headImageUrl>Cache/memHeadImage0</headImageUrl>
         <grade></grade>
         <college></college>
         <activitiesId>
-            <activityId>0</activityId>
+            <activityId>1</activityId>
         </activitiesId>
         <organizationsId>
-            <organizationId>0</organizationId>
+            <organizationId>9</organizationId>
         </organizationsId>
         <organizationsFollowed>
-            <organizationFollowed>1</organizationFollowed>
+            <organizationFollowed>10</organizationFollowed>
         </organizationsFollowed>
     </OrgMember>
 </OrgMembers>

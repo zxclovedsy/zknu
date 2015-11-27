@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6OrgSys27LiaoTianTableViewController", ""]
 provides-dynamic-lookup:
-- "label"
 - "tableView"
 - "tableView"
 - "tableView"
-- "didReceiveMemoryWarning"
-- "setupLabel"
 - "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
+- "label"
 - "viewDidLoad"
+- "setupLabel"
 depends-top-level:
 - "UIViewController"
-- !private "UIColor"
-- "LiaoTianTableViewController"
-- "UITableView"
 - "Int"
+- "LiaoTianTableViewController"
 - "NSIndexPath"
-- "UILabel"
-- !private "StringLiteralType"
 - "UITableViewCell"
+- !private "UIColor"
 - "UITableViewDataSource"
+- !private "StringLiteralType"
 - "UITableViewDelegate"
+- "UILabel"
+- "UITableView"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UILabel"]

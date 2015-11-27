@@ -68,7 +68,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
             cell = UITableViewCell(style: .Default, reuseIdentifier: cellIdentifier)
         }
         cell?.textLabel?.text = info[indexPath.row]
-        cell?.imageView?.image = UIImage(named: "noImage")
+        //cell?.imageView?.image = UIImage(named: "Cache/wode\(indexPath.row)")
         
         return cell!
     }
@@ -106,7 +106,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         let tabBarHeight = (self.tabBarController?.tabBar.frame.height)!
         let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
         tableView = UITableView(frame: CGRect(x: 0, y: y, width: self.view.frame.width, height: self.view.frame.height - tabBarHeight - topView.frame.height - statusBarHeight))
-        //tableView.rowHeight = 60
+        tableView.rowHeight = 60
         tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self
@@ -119,7 +119,7 @@ class WoDeTableViewController: UIViewController, UITableViewDataSource, UITableV
         if let image = UIImage(named: me.headImageUrl) {
             touXiangImageView.image = image
         } else {
-            touXiangImageView.image = UIImage(named: "noImage")
+            touXiangImageView.image = UIImage(named: "Cache/noImage")
         }
         touXiangImageView.layer.cornerRadius = touXiangImageView.frame.width / 2
         touXiangImageView.clipsToBounds = true
